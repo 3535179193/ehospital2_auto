@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取searchDepManDepartment.xlsx文件</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在科室管理-科室名称输入框输入：皮肤科</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-搜索科室按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-包含的二级科室的文本信息</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:包含的二级科室：皮肤科</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（皮肤科）包含预期结果（皮肤科），搜索科室成功</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取searchDocManDoctor.xlsx文件</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医生管理-医生名称输入框输入：西</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理-搜索医生按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取医生管理-医生姓名的文本信息</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DoctorManagePage:医生姓名："贾西贝"</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（贾西贝）包含预期结果（贾西贝），搜索成功</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取updateHospitalInformation.xlsx文件</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击微官网管理</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院基本信息</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院名称输入框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院名称输入框输入：宿迁市人民医院</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-取号地点输入框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-取号地点输入框输入：取号地点</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-取卡地点输入框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-取卡地点输入框输入：取卡地点</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院等级输入框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院等级输入框输入：三级甲等</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院信息-请选择省下拉框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院信息-选择省按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院信息-请选择省下拉框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院信息-选择市按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院地址输入框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院地址输入框输入：医院地址</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-官方网站输入框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-官方网站输入框输入：https://www.baidu/com</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院电话输入框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院电话输入框输入：17621851286</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院交通输入框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院交通输入框输入：医院交通</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院介绍输入框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院介绍输入框输入：医院简介</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-经度输入框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-经度输入框输入：111.111</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-纬度输入框</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-纬度输入框输入：111.111</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取loginSuccess.xlsx文件</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取用户名的文本信息</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（undefined）与预期结果（undefined）相等，登录成功</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取selectSubscriptionDate.xlsx文件</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-预约日期-起始日期选择器</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-切换年/月份按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-切换年/月份按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-默认年份按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-默认月份按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-默认日期按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+    </line>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="120698" started-at="2017-11-05T09:02:03Z" finished-at="2017-11-05T09:04:03Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="120698" started-at="2017-11-05T09:02:03Z" finished-at="2017-11-05T09:04:03Z">
+      <class name="com.witontek.ehospital2.test.HospitalInformationTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2c9f9fb0]" name="beforeMethod" is-config="true" duration-ms="14635" started-at="2017-11-05T17:02:57Z" finished-at="2017-11-05T17:03:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="updateHospitalInformation(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2c9f9fb0]" name="updateHospitalInformation" duration-ms="4630" started-at="2017-11-05T17:03:12Z" data-provider="updateHospitalInformation" finished-at="2017-11-05T17:03:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[更新医院信息成功]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[贾西贝]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{cardAddress=取卡地点, website=https://www.baidu/com, hospitalLevel=三级甲等, latitude=111.111, hospitalAddress=医院地址, hospitalName=宿迁市人民医院, numberAddress=取号地点, hospitalPhone=17621851286, hospitalTraffic=医院交通, hospitalSummary=医院简介, longitude=111.111}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击微官网管理</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院基本信息</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院名称输入框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院名称输入框输入：宿迁市人民医院</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-取号地点输入框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-取号地点输入框输入：取号地点</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-取卡地点输入框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-取卡地点输入框输入：取卡地点</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院等级输入框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院等级输入框输入：三级甲等</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院信息-请选择省下拉框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院信息-选择省按钮</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院信息-请选择省下拉框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院信息-选择市按钮</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院地址输入框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院地址输入框输入：医院地址</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-官方网站输入框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-官方网站输入框输入：https://www.baidu/com</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院电话输入框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院电话输入框输入：17621851286</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院交通输入框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院交通输入框输入：医院交通</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院介绍输入框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院介绍输入框输入：医院简介</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-经度输入框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-经度输入框输入：111.111</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-纬度输入框</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-纬度输入框输入：111.111</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateHospitalInformation -->
+      </class> <!-- com.witontek.ehospital2.test.HospitalInformationTest -->
+      <class name="com.witontek.ehospital2.test.LoginTest">
+        <test-method status="PASS" signature="loginSuccess(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.LoginTest@2096442d]" name="loginSuccess" duration-ms="13206" started-at="2017-11-05T17:03:16Z" data-provider="loginSuccess" finished-at="2017-11-05T17:03:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[登录成功]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[undefined]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{password=admin, userName=sqsrmyyadmin, validation=1111}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取用户名的文本信息</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（undefined）与预期结果（undefined）相等，登录成功</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSuccess -->
+      </class> <!-- com.witontek.ehospital2.test.LoginTest -->
+      <class name="com.witontek.ehospital2.test.SubscriptionManageTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@9f70c54]" name="beforeMethod" is-config="true" duration-ms="14734" started-at="2017-11-05T17:03:30Z" finished-at="2017-11-05T17:03:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="selectSubscriptionDate(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@9f70c54]" name="selectSubscriptionDate" duration-ms="2952" started-at="2017-11-05T17:03:44Z" data-provider="selectSubscriptionDate" finished-at="2017-11-05T17:03:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[点击预约日期]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[不知道啊]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-预约日期-起始日期选择器</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-切换年/月份按钮</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-切换年/月份按钮</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-默认年份按钮</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-默认月份按钮</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-默认日期按钮</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectSubscriptionDate -->
+      </class> <!-- com.witontek.ehospital2.test.SubscriptionManageTest -->
+      <class name="com.witontek.ehospital2.test.DepartmentManageTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@52af6cff]" name="beforeTest" is-config="true" duration-ms="5273" started-at="2017-11-05T17:02:03Z" finished-at="2017-11-05T17:02:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@735b478]" name="beforeTest" is-config="true" duration-ms="3699" started-at="2017-11-05T17:02:08Z" finished-at="2017-11-05T17:02:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2c9f9fb0]" name="beforeTest" is-config="true" duration-ms="3514" started-at="2017-11-05T17:02:12Z" finished-at="2017-11-05T17:02:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@2096442d]" name="beforeTest" is-config="true" duration-ms="3557" started-at="2017-11-05T17:02:15Z" finished-at="2017-11-05T17:02:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@9f70c54]" name="beforeTest" is-config="true" duration-ms="3777" started-at="2017-11-05T17:02:19Z" finished-at="2017-11-05T17:02:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@52af6cff]" name="beforeMethod" is-config="true" duration-ms="13691" started-at="2017-11-05T17:02:23Z" finished-at="2017-11-05T17:02:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="searchDepManDepartment(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@52af6cff]" name="searchDepManDepartment" duration-ms="3273" started-at="2017-11-05T17:02:37Z" data-provider="searchDepManDepartment" finished-at="2017-11-05T17:02:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[搜索科室成功]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[皮肤科]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{searchCondition=皮肤科}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在科室管理-科室名称输入框输入：皮肤科</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-搜索科室按钮</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-包含的二级科室的文本信息</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:包含的二级科室：皮肤科</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（皮肤科）包含预期结果（皮肤科），搜索科室成功</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchDepManDepartment -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@52af6cff]" name="afterTest" is-config="true" duration-ms="4072" started-at="2017-11-05T17:03:47Z" finished-at="2017-11-05T17:03:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@735b478]" name="afterTest" is-config="true" duration-ms="3006" started-at="2017-11-05T17:03:51Z" finished-at="2017-11-05T17:03:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2c9f9fb0]" name="afterTest" is-config="true" duration-ms="3001" started-at="2017-11-05T17:03:54Z" finished-at="2017-11-05T17:03:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@2096442d]" name="afterTest" is-config="true" duration-ms="3001" started-at="2017-11-05T17:03:57Z" finished-at="2017-11-05T17:04:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@9f70c54]" name="afterTest" is-config="true" duration-ms="3002" started-at="2017-11-05T17:04:00Z" finished-at="2017-11-05T17:04:03Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.witontek.ehospital2.test.DepartmentManageTest -->
+      <class name="com.witontek.ehospital2.test.DoctorManageTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@735b478]" name="beforeMethod" is-config="true" duration-ms="13419" started-at="2017-11-05T17:02:41Z" finished-at="2017-11-05T17:02:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="searchDocManDoctor(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@735b478]" name="searchDocManDoctor" duration-ms="3027" started-at="2017-11-05T17:02:54Z" data-provider="searchDocManDoctor" finished-at="2017-11-05T17:02:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[搜索成功]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[贾西贝]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{searchCondition=西}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医生管理-医生名称输入框输入：西</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理-搜索医生按钮</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取医生管理-医生姓名的文本信息</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DoctorManagePage:医生姓名："贾西贝"</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（贾西贝）包含预期结果（贾西贝），搜索成功</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchDocManDoctor -->
+      </class> <!-- com.witontek.ehospital2.test.DoctorManageTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

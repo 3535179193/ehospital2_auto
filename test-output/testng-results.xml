@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.PropertiesUtils:读取url.properties文件中的LOGIN_URL</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.PropertiesUtils:读取driverPath.properties文件中的CHROME_DRIVER_PATH</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取loginSuccess.xlsx文件</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/eHospital3/login.jsp</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszwyyadmin</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:提交登录按钮</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.LoginPage:登录后台成功</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取用户名的文本</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（sqszwyyadmin）中包含预期结果（sqszwyyadmin），登录成功</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取loginFail.xlsx文件</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/eHospital3/login.jsp</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszwyyadmin</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admi</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:提交登录按钮</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取提示信息的文本</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:red'>【error】com.witontek.ehospital2.base.AssertUtils:实际结果（用户名或密码错误!）与预期结果（实际与预期不符！！）不相等，密码错误</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span>]]>
+    </line>
+    <line>
+      <![CDATA[<a target='_blank' href='D:\java\workspace\ehospital_copy1\screenShot\2017-09-27 20.14.41-picture.png'><img width='500' src='D:\java\workspace\ehospital_copy1\screenShot\2017-09-27 20.14.41-picture.png' /></a>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【图片地址】D:\java\workspace\ehospital_copy1\screenShot\2017-09-27 20.14.41-picture.png</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/eHospital3/login.jsp</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszwyyadmin</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:提交登录按钮</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取提示信息的文本</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（验证码错误!）与预期结果（验证码错误!）相等，验证码为空</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取loginSuccess.xlsx文件</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/eHospital3/login.jsp</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszwyyadmin</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:提交登录按钮</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.LoginPage:登录后台成功</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理系统</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击智能到诊</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:跳转至智能到诊表单</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预览</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击男性正面头部</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span>]]>
+    </line>
+  </reporter-output>
+  <suite name="suite1" duration-ms="50595" started-at="2017-09-27T12:14:19Z" finished-at="2017-09-27T12:15:10Z">
+    <groups>
+    </groups>
+    <test name="test1" duration-ms="27563" started-at="2017-09-27T12:14:19Z" finished-at="2017-09-27T12:14:47Z">
+      <class name="com.witontek.ehospital2.test.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@3fd7a715]" name="beforeTest" is-config="true" duration-ms="5415" started-at="2017-09-27T20:14:19Z" finished-at="2017-09-27T20:14:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.PropertiesUtils:读取url.properties文件中的LOGIN_URL</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.PropertiesUtils:读取driverPath.properties文件中的CHROME_DRIVER_PATH</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginSuccess(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.LoginTest@3fd7a715]" name="loginSuccess" duration-ms="10659" started-at="2017-09-27T20:14:26Z" data-provider="loginSuccess" finished-at="2017-09-27T20:14:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[登录成功]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sqszwyyadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{password=admin, userName=sqszwyyadmin, validation=1111}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/eHospital3/login.jsp</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszwyyadmin</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:提交登录按钮</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.LoginPage:登录后台成功</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取用户名的文本</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（sqszwyyadmin）中包含预期结果（sqszwyyadmin），登录成功</span>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginSuccess -->
+        <test-method status="PASS" signature="loginFail(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.LoginTest@3fd7a715]" name="loginFail" duration-ms="4806" started-at="2017-09-27T20:14:36Z" data-provider="loginFail" finished-at="2017-09-27T20:14:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[密码错误]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[实际与预期不符！！]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{password=admi, userName=sqszwyyadmin, validation=1111}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/eHospital3/login.jsp</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszwyyadmin</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admi</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:提交登录按钮</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取提示信息的文本</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:red'>【error】com.witontek.ehospital2.base.AssertUtils:实际结果（用户名或密码错误!）与预期结果（实际与预期不符！！）不相等，密码错误</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span>]]>
+            </line>
+            <line>
+              <![CDATA[<a target='_blank' href='D:\java\workspace\ehospital_copy1\screenShot\2017-09-27 20.14.41-picture.png'><img width='500' src='D:\java\workspace\ehospital_copy1\screenShot\2017-09-27 20.14.41-picture.png' /></a>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【图片地址】D:\java\workspace\ehospital_copy1\screenShot\2017-09-27 20.14.41-picture.png</span>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginFail -->
+        <test-method status="PASS" signature="loginFail(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.LoginTest@3fd7a715]" name="loginFail" duration-ms="1145" started-at="2017-09-27T20:14:41Z" data-provider="loginFail" finished-at="2017-09-27T20:14:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[验证码为空]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[验证码错误!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{password=admin, userName=sqszwyyadmin, validation=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/eHospital3/login.jsp</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszwyyadmin</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:提交登录按钮</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取提示信息的文本</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（验证码错误!）与预期结果（验证码错误!）相等，验证码为空</span>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginFail -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@3fd7a715]" name="afterTest" is-config="true" duration-ms="4392" started-at="2017-09-27T20:14:42Z" finished-at="2017-09-27T20:14:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.witontek.ehospital2.test.LoginTest -->
+    </test> <!-- test1 -->
+    <test name="test2" duration-ms="22934" started-at="2017-09-27T12:14:47Z" finished-at="2017-09-27T12:15:10Z">
+      <class name="com.witontek.ehospital2.test.demo_03">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.demo_03@2833cc44]" name="beforeTest" is-config="true" duration-ms="4314" started-at="2017-09-27T20:14:47Z" finished-at="2017-09-27T20:14:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.demo_03@2833cc44]" name="test" duration-ms="14409" started-at="2017-09-27T20:14:51Z" data-provider="loginSuccess" finished-at="2017-09-27T20:15:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[登录成功]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sqszwyyadmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{password=admin, userName=sqszwyyadmin, validation=1111}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/eHospital3/login.jsp</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszwyyadmin</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:提交登录按钮</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.LoginPage:登录后台成功</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理系统</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击智能到诊</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:跳转至智能到诊表单</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预览</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击男性正面头部</span>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.demo_03@2833cc44]" name="afterTest" is-config="true" duration-ms="4020" started-at="2017-09-27T20:15:06Z" finished-at="2017-09-27T20:15:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.witontek.ehospital2.test.demo_03 -->
+    </test> <!-- test2 -->
+  </suite> <!-- suite1 -->
+</testng-results>

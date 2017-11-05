@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.witontek.ehospital2.test.LoginTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.witontek.ehospital2.test.LoginTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="loginFail" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.witontek.ehospital2.test.LoginTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.witontek.ehospital2.test.LoginTest] -->

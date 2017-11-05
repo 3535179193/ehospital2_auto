@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="医路通后台首页">
+    <Locator name="用户名" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.userName']"		>userName</Locator>
+    <Locator name="修改密码" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'修改密码')]"			>modifyPasswordButton</Locator>
+	<Locator name="退出按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'退出')]"				>loginOutButton</Locator>
+	
+	<Locator name="医院配置" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'医院配置')]"			>hospitalConfigButton</Locator>
+		<Locator name="微信公众号配置" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'微信公众号配置')]"	>wechatConfigButton</Locator>
+		<Locator name="支付宝服务窗配置" locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'支付宝服务窗配置')]"	>alipayConfigButton</Locator>
+		<Locator name="自定义菜单配置" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'自定义菜单配置')]"	>menuConfigButton</Locator>
+		<Locator name="医院公共参数配置" locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'医院公共参数配置')]"	>parameterConfigButton</Locator>
+		<Locator name="提示消息设置" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'提示消息设置')]"		>templateConfigButton</Locator>
+		<Locator name="权限管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'权限管理')]"			>permissionManageButton</Locator>
+	
+    <Locator name="微官网管理" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'微官网管理')]"			>miniWebsiteButton</Locator>
+		<Locator name="医院基本信息" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'医院基本信息')]"		>hospitalInformationButton</Locator>
+		<Locator name="内容管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'内容管理')]"			>contentManagementButton</Locator>
+		<Locator name="分类管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'分类管理')]"			>categoryButton</Locator>
+    
+	<Locator name="业务信息管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'业务信息管理')]"		>businessInformationButton</Locator>
+		<Locator name="科室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'科室管理')]"			>departmentManageButton</Locator>
+		<Locator name="值班室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'值班室管理')]"		>dutyRoomManageButton</Locator>
+		<Locator name="医生管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'医生管理')]"			>doctorManageButton</Locator>
+		<Locator name="排班管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'排班管理')]"			>scheduleManageButton</Locator>
+		<Locator name="预约管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'预约管理')]"			>subscriptionManageButton</Locator>
+		<Locator name="排队管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'排队管理')]"			>lineUpManageButton</Locator>
+		<Locator name="就医咨询管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'就医咨询管理')]"		>consultManageButton</Locator>
+		<Locator name="就医评价管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'就医评价管理')]"		>appraiseManageButton</Locator>
+		<Locator name="挂号管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'挂号管理')]"			>registerManageButton</Locator>
+		<Locator name="智能导诊" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'智能导诊')]"			>smartGuideButton</Locator>
+		<Locator name="科室繁忙度" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'科室繁忙度')]"		>departmentBusynessButton</Locator>
+		<Locator name="收费项目" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'收费项目')]"			>payItemButton</Locator>
+				
+	<Locator name="统计分析" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'统计分析')]"			>analysisButton</Locator>
+		<Locator name="登录日志" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'登录日志')]"			>loginLogButton</Locator>
+		<Locator name="注册用户管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'注册用户管理')]"		>registerUserManageButton</Locator>
+		<Locator name="就诊人管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'就诊人管理')]"		>patientManagementButton</Locator>
+		<Locator name="检查报告统计" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'检查报告统计')]"		>inspectReportAnalysisButton</Locator>
+		<Locator name="缴费记录管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'缴费记录管理')]"		>payRecordManageButton</Locator>
+		<Locator name="自动对账管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'自动对账管理')]"		>automaticCheckAccountButton</Locator>	
+	
+	
+	
+	
+	<!--	<Locator name="线下缴费管理" locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'线下缴费管理')]" >manFace</Locator>
+	<Locator name="DEV-MENU" locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'DEV-MENU')]" ></Locator>	-->
+	
+
+</Page>

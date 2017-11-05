@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="后台登录页面">
+    <!--	<Locator name="提示信息" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//*[@id='loginForm']/div[2]" >promptInformation</Locator>	-->
+    
+    <Locator name="用户名输入框" locatorWay="XPATH"	waitTime="10"	attributeValue="//*[@name='u_name']" 		>userNameInputBox</Locator>
+    <Locator name="密码输入框"   locatorWay="XPATH"	waitTime="10"	attributeValue="//*[@name='u_pass']"		>passwordInputBox</Locator>
+    <Locator name="验证码输入框" locatorWay="XPATH"	waitTime="10"	attributeValue="//*[@name='verification']" 	>validationInputBox</Locator>
+    <Locator name="登录按钮"		locatorWay="XPATH" 	waitTime="10"	attributeValue="//*[@type='submit']"		>loginButton</Locator>		
+</Page>

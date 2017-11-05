@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 28 21:05:39 CST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>23 seconds (23923 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.witontek.ehospital2.test.LoginTest.loginFail()'><b>loginFail</b><br>Test class: com.witontek.ehospital2.test.LoginTest<br>Parameters: 密码错误, 实际与预期不符！！, {password=admi, userName=sqszwyyadmin, validation=1111}<br/>
+<a href="#Output-619985571" onClick='toggleBox("Output-619985571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-619985571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-619985571">
+<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/eHospital3/login.jsp</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszwyyadmin</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admi</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:提交登录按钮</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取提示信息的文本</span><br/>
+<span style='color:red'>【error】com.witontek.ehospital2.base.AssertUtils:实际结果（用户名或密码错误!）与预期结果（实际与预期不符！！）不相等，密码错误</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br/>
+<a target='_blank' href='D:\java\workspace\ehospital_copy1\screenShot\2017-09-28 21.05.54-picture.png'><img width='500' src='D:\java\workspace\ehospital_copy1\screenShot\2017-09-28 21.05.54-picture.png' /></a><br/>
+<span style='color:blue'>【图片地址】D:\java\workspace\ehospital_copy1\screenShot\2017-09-28 21.05.54-picture.png</span><br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.witontek.ehospital2.test.LoginTest@67b6d4ae</td></tr>
+<tr>
+<td title='com.witontek.ehospital2.test.LoginTest.loginFail()'><b>loginFail</b><br>Test class: com.witontek.ehospital2.test.LoginTest<br>Parameters: 验证码为空, 验证码错误!, {password=admin, userName=sqszwyyadmin, validation=}<br/>
+<a href="#Output-1009326765" onClick='toggleBox("Output-1009326765", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1009326765" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1009326765">
+<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/eHospital3/login.jsp</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszwyyadmin</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:提交登录按钮</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取提示信息的文本</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（验证码错误!）与预期结果（验证码错误!）相等，验证码为空</span><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.witontek.ehospital2.test.LoginTest@67b6d4ae</td></tr>
+<tr>
+<td title='com.witontek.ehospital2.test.LoginTest.loginSuccess()'><b>loginSuccess</b><br>Test class: com.witontek.ehospital2.test.LoginTest<br>Parameters: 登录成功, sqszwyyadmin, {password=admin, userName=sqszwyyadmin, validation=1111}<br/>
+<a href="#Output-1002041276" onClick='toggleBox("Output-1002041276", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1002041276" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1002041276">
+<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/eHospital3/login.jsp</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszwyyadmin</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:提交登录按钮</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.page.LoginPage:登录后台成功</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取用户名的文本</span><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（sqszwyyadmin）中包含预期结果（sqszwyyadmin），登录成功</span><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.witontek.ehospital2.test.LoginTest@67b6d4ae</td></tr>
+</table><p>
+</body>
+</html>

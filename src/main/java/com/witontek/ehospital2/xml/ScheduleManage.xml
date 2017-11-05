@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  <Page name="排班管理">
+
+	<Locator name="导入专家排班" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入专家排班')]"								>importSpecialSchedule</Locator>
+	<Locator name="导入专家排班号源与挂号费用"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入专家排班号源与挂号费用')]"			>importNumberAndFee</Locator>
+	<Locator name="导入普通排班" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入普通排班')]"								>importGeneralSchedule</Locator>
+	<Locator name="下载所有EXCEL模板"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'下载所有EXCEL模板')]"							>downloadAllExcel</Locator>
+	<Locator name="获取排班" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'获取排班')]"									>getSchedule</Locator>
+	<Locator name="批量停诊" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'批量停诊')]"									>batchStopMedical</Locator>
+	<Locator name="批量开诊" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'批量开诊')]"									>batchStartMedical</Locator>
+
+	<Locator name="选择起始日期" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.start_time']"								>selectStartDate</Locator>
+	<Locator name="选择结束日期"			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.end_time ']"								>selectEndDate</Locator>
+	
+	<Locator name="导入普通排班" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入普通排班')]"							>downloadDoctorExcel</Locator>
+	<Locator name="下载所有EXCEL模板"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'下载所有EXCEL模板')]"								>exportDoctorInfo</Locator>
+	<Locator name="获取排班" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'获取排班')]"									>synchronousDoctorHIS</Locator>
+	<Locator name="医生名称输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchDoctorStr']"							>doctorNameInputBox</Locator>
+	<Locator name="搜索医生按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.searchDoctorName()']"						>searchDoctorNameButton</Locator>
+	
+	
+	
+	
+	
+	
+	
+	<Locator name="工号" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_code']"			index="0"				>doctorCode</Locator>
+    <Locator name="医生姓名" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_name']"			index="0"				>doctorName</Locator>
+	<Locator name="所属科室" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.departmentNameStr']"	index="0"				>belongToDepartment</Locator>
+	<Locator name="人员类别" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.work_job']"				index="0"				>personalType</Locator>
+    <Locator name="医院职称" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.cli_job_title']"		index="0"				>hospitalTitle</Locator>
+	<Locator name="职位" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.job_postion']"			index="0"				>postion</Locator>
+	<Locator name="学术职称" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.edu_job_title']"		index="0"				>academicTitle</Locator>
+	
+	<Locator name="医生管理-编辑" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'编辑')]"						index="0"				>docManageEdit</Locator>
+    <Locator name="医生管理-删除" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'删除')]"						index="0"				>docManageDelete</Locator>
+	<Locator name="医生管理-重置密码" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'重置密码')]"					index="0"				>docManageResetPassword</Locator>
+	<Locator name="医生管理-上移" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="0"				>docManageMoveUp</Locator>
+    <Locator name="医生管理-下移" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"				>docManageMoveDown</Locator>
+	<Locator name="医生管理-置顶" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="0"				>docManageMoveTop</Locator>
+		
+	
+	<Locator name="医生管理-每页记录数" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"								>docManageEachPageRecorders</Locator>
+    <Locator name="医生管理-总记录数" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='doctor-management-page']/page/div[1]/div[2]/span[1]"	>docManageTotalRecorders</Locator>
+	<Locator name="医生管理-总页数" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"									>docManageTotalPages</Locator>
+	<Locator name="医生管理-当前页数" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='doctor-management-page']/page/div[1]/div[2]/span[3]"	>docManageCurrentPages</Locator>
+	<Locator name="医生管理-第一页"	 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'第一页')]"											>docManagePreviousPage</Locator>
+	<Locator name="医生管理-上一页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上一页')]"											>docManageLongitude</Locator>	
+	<Locator name="医生管理-下一页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下一页')]"											>docManageNextPage</Locator>
+	<Locator name="医生管理-最末页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'最末页')]"											>docManageLastPage</Locator>
+
+</Page>--> 

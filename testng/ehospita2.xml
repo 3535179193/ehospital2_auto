@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite1">
+	<test name="test1" preserve-order="true">
+		<classes>
+			<class name="com.witontek.ehospital2.test.LoginTest">
+				<methods>
+					<include name="loginSuccess"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test2" preserve-order="true">
+		<classes>
+			<class name="com.witontek.ehospital2.test.DepartmentManageTest">
+				<methods>
+					<include name="searchDepManDepartment"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test3" preserve-order="true">
+		<classes>
+			<class name="com.witontek.ehospital2.test.DoctorManageTest">
+				<methods>
+					<include name="searchDocManDoctor"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test4" preserve-order="true">
+		<classes>
+			<class name="com.witontek.ehospital2.test.SubscriptionManageTest">
+				<methods>
+					<include name="selectSubscriptionDate"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test5" preserve-order="true">
+		<classes>
+			<class name="com.witontek.ehospital2.test.HospitalInformationTest">
+				<methods>
+					<include name="updateHospitalInformation"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+</suite>

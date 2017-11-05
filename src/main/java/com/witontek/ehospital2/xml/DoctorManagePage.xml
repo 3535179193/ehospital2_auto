@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="医生管理">
+
+	<Locator name="医生管理-导入医生信息按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入医生信息')]"						>docManImportDoctorInfoButton</Locator>
+	<Locator name="医生管理-新增医生信息按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'新增医生信息')]"						>docManAddDoctorInfoButton</Locator>
+	<Locator name="医生管理-下载医生表Excel模板按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'下载医生表Excel模板')]"					>docManDownloadDoctorExcelButton</Locator>
+	<Locator name="医生管理-导出医生信息按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导出医生信息')]"						>docManExportDoctorInfoButton</Locator>
+	<Locator name="医生管理-同步医生HIS数据按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'同步HIS数据')]"							>docManSynchronousDoctorHISButton</Locator>
+    
+	<Locator name="医生管理-医生名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchDoctorStr']"					>docManDoctorNameInputBox</Locator>
+	<Locator name="医生管理-搜索医生按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.searchDoctorName()']"				>docManSearchDoctorNameButton</Locator>
+	
+	<Locator name="医生管理-工号" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_code']"			index="0"		>docManDoctorCode</Locator>
+    <Locator name="医生管理-医生姓名" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_name']"			index="0"		>docManDoctorName</Locator>
+	<Locator name="医生管理-所属科室" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.departmentNameStr']"	index="0"		>docManBelongToDepartment</Locator>
+	<Locator name="医生管理-人员类别" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.work_job']"				index="0"		>docManPersonalType</Locator>
+    <Locator name="医生管理-医院职称" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.cli_job_title']"		index="0"		>docManHospitalTitle</Locator>
+	<Locator name="医生管理-职位" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.job_postion']"			index="0"		>docManPostion</Locator>
+	<Locator name="医生管理-学术职称" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.edu_job_title']"		index="0"		>docManAcademicTitle</Locator>
+	
+	<Locator name="医生管理-编辑按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'编辑')]"						index="0"		>docManEditButton</Locator>
+    <Locator name="医生管理-删除按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'删除')]"						index="0"		>docManDeleteButton</Locator>
+	<Locator name="医生管理-重置密码按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'重置密码')]"					index="0"		>docManResetPasswordButton</Locator>
+	<Locator name="医生管理-上移按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="0"		>docManMoveUpButton</Locator>
+    <Locator name="医生管理-下移按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"		>docManMoveDownButton</Locator>
+	<Locator name="医生管理-置顶按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="0"		>docManMoveTopButton</Locator>
+		
+	
+	<Locator name="医生管理-每页显示数下拉框" locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"						>docManEachPageRecordersDropBox</Locator>
+    <Locator name="医生管理-总记录数" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='doctor-management-page']/page/div[1]/div[2]/span[1]"	>docManTotalRecorders</Locator>
+	<Locator name="医生管理-总页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"									>docManTotalPages</Locator>
+	<Locator name="医生管理-当前页数" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='doctor-management-page']/page/div[1]/div[2]/span[3]"	>docManCurrentPages</Locator>
+	<Locator name="医生管理-第一页按钮"	 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'第一页')]"											>docManFirstPageButton</Locator>
+	<Locator name="医生管理-上一页按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上一页')]"											>docManPreviousPageButton</Locator>	
+	<Locator name="医生管理-下一页按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下一页')]"											>docManNextPageButton</Locator>
+	<Locator name="医生管理-最末页按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'最末页')]"											>docManLastPageButton</Locator>
+
+</Page>

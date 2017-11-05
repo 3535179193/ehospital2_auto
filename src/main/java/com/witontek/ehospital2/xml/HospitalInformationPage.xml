@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="医院基本信息">
+
+	<Locator name="医院信息-医院名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.responseData.hospital_name']"			>hosInfHospitalNameInputBox</Locator>
+	<Locator name="医院信息-取号地点输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.responseData.number_addr']"			>hosInfNumberAddressInputBox</Locator>
+	<Locator name="医院信息-取卡地点输入框"	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.responseData.card_window']"			>hosInfCardAddressInputBox</Locator>
+	<Locator name="医院信息-医院等级输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.responseData.hospital_level']"			>hosInfHospitalLevelInputBox</Locator>
+
+	<Locator name="医院信息-请选择省下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.responseData.province']"				>hosInfSelectProvinceDropBox</Locator>
+		<Locator name="医院信息-选择省按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//option[@ng-repeat='item in $ctrl.provinceList']"	index="9"	>hosInfSelectProvinceButton</Locator>
+	
+	<Locator name="医院信息-请选择省下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.responseData.province']"				>hosInfSelectCityDropBox</Locator>
+		<Locator name="医院信息-选择市按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//option[@ng-repeat='item in $ctrl.cityList']"		index="12"	>hosInfSelectCityButton</Locator>
+		
+	<Locator name="医院信息-医院地址输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.responseData.hospital_addr']"			>hosInfHospitalAddressInputBox</Locator>
+	<Locator name="医院信息-官方网站输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.responseData.website']"				>hosInfWebsiteInputBox</Locator>
+    <Locator name="医院信息-医院电话输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.responseData.tel']"					>hosInfHospitalPhoneInputBox</Locator>
+	<Locator name="医院信息-医院交通输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//textarea[@ng-model='$ctrl.responseData.hospital_traffic']"	>hosInfHospitalTrafficInputBox</Locator>
+	<Locator name="医院信息-医院介绍输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//textarea[@ng-model='$ctrl.responseData.hospital_summary']"	>hosInfHospitalSummaryInputBox</Locator>
+	<Locator name="医院信息-经度输入框"		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.responseData.longitude']"				>hosInfLongitudeInputBox</Locator>
+	<Locator name="医院信息-纬度输入框"		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.responseData.latitude']"				>hosInfLatitudeInputBox</Locator>
+	
+	<Locator name="医院信息-上传图片按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-click='$ctrl.selectFileHandle('fileImgData')']"		>hosInfUpLoadPicture</Locator>
+	<Locator name="医院信息-上传LOGO按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-click='$ctrl.selectFileHandle('fileLogoData')']"		>hosInfUpLoadLogo</Locator>
+	<Locator name="医院信息-保存按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'保存')]"									>hosInfSaveButton</Locator>
+
+</Page>

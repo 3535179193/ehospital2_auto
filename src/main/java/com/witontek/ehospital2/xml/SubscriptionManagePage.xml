@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="预约管理">
+
+	<Locator name="预约管理-预约日期-起始日期选择器" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.dateData.create_start_date']"	>subManSubscriptionStartDateSelector</Locator>
+		<Locator name="预约管理-预约日期-起始日期月份选择器"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"						>subManSubscriptionStartDateMonthSelector</Locator>
+		<Locator name="预约管理-预约日期-起始日期默认月份按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-info active']"		>subManSubscriptionStartDateDefaultMonthButton</Locator>
+		<Locator name="预约管理-预约日期-起始日期默认日期按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-sm btn-info active']"	>subManSubscriptionStartDateDefaultDayButton</Locator>
+	
+	<Locator name="预约管理-预约日期-结束日期选择器"			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.dateData.create_end_date']"	>subManSubscriptionEndDateSelector</Locator>
+		<Locator name="预约管理-预约日期-结束日期月份选择器"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"						>subManSubscriptionEndDateMonthSelector</Locator>
+		<Locator name="预约管理-预约日期-结束日期默认月份按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-info active']"		>subManSubscriptionEndDateDefaultMonthButton</Locator>
+		<Locator name="预约管理-预约日期-结束日期默认日期按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-sm btn-info active']"	>subManSubscriptionEndDateDefaultDayButton</Locator>
+	
+	<Locator name="预约管理-就诊日期-起始日期选择器"			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.dateData.clinic_start_date']"	>subManClinicStartDateSelector</Locator>
+		<Locator name="预约管理-预约日期-起始日期月份选择器"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"						>subManClinicStartDateMonthSelector</Locator>
+		<Locator name="预约管理-预约日期-起始日期默认月份按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-info active']"		>subManClinicStartDateDefaultMonthButton</Locator>
+		<Locator name="预约管理-预约日期-起始日期默认日期按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-sm btn-info active']"	>subManClinicStartDateDefaultDayButton</Locator>
+	
+	<Locator name="预约管理-就诊日期-结束日期选择器"			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.dateData.clinic_end_date']"	>subManClinicEndDateSelector</Locator>
+		<Locator name="预约管理-预约日期-起始日期月份选择器"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"						>subManClinicEndDateMonthSelector</Locator>
+		<Locator name="预约管理-预约日期-起始日期默认月份按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-info active']"		>subManClinicEndDateDefaultMonthButton</Locator>
+		<Locator name="预约管理-预约日期-起始日期默认日期按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-sm btn-info active']"	>subManClinicEndDateDefaultDayButton</Locator>
+
+		<Locator name="预约管理-切换年/月份按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"									>subManYearMonthSelector</Locator>
+		<Locator name="预约管理-默认年份按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(@class,'btn btn-default btn-info')]"				>subManDefaultYearButton</Locator>
+		<Locator name="预约管理-默认月份按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(@class,'btn btn-default btn-info')]"				>subManDefaultMonthButton</Locator>
+		<Locator name="预约管理-默认日期按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(@class,'btn btn-default btn-sm btn-info')]"		>subManDefaultDayButton</Locator>
+
+	
+					
+	<Locator name="预约管理-搜索科室输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.requestData.department_name']"		>subManDepartmentInputBox</Locator>
+	<Locator name="预约管理-搜索医生输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.requestData.doctor_name']"			>subManDoctorNameInputBox</Locator>
+	<Locator name="预约管理-搜索病人输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.requestData.real_name']"			>subManPatientNameInputBox</Locator>
+
+	<Locator name="预约管理-选择状态下拉框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.requestData.status']"				>subManSelectStateDropBox</Locator>
+	<Locator name="预约管理-选择状态"			locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.requestData.status']/option"	index="1"	>subManSelectStateButton</Locator>
+	
+	<Locator name="预约管理-搜索" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'搜索')]"								>subManSearchButton</Locator>
+	
+	<Locator name="预约管理-导出搜索结果"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导出搜索结果')]"						>subManExportSearchResultButton</Locator>
+	<Locator name="预约管理-导出后一工作日预约" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.exportSubscription()']"			>subManExportWorkDaySubscriptionButton</Locator>
+	
+
+	<!--  <Locator name="工号" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_code']"			index="0"				>doctorCode</Locator>
+    <Locator name="医生姓名" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_name']"			index="0"				>doctorName</Locator>
+	<Locator name="所属科室" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.departmentNameStr']"	index="0"				>belongToDepartment</Locator>
+	<Locator name="人员类别" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.work_job']"				index="0"				>personalType</Locator>
+    <Locator name="医院职称" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.cli_job_title']"		index="0"				>hospitalTitle</Locator>
+	<Locator name="职位" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.job_postion']"			index="0"				>postion</Locator>
+	<Locator name="学术职称" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.edu_job_title']"		index="0"				>academicTitle</Locator>
+	
+	<Locator name="医生管理-编辑" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'编辑')]"						index="0"				>docManageEdit</Locator>
+    <Locator name="医生管理-删除" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'删除')]"						index="0"				>docManageDelete</Locator>
+	<Locator name="医生管理-重置密码" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'重置密码')]"					index="0"				>docManageResetPassword</Locator>
+	<Locator name="医生管理-上移" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="0"				>docManageMoveUp</Locator>
+    <Locator name="医生管理-下移" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"				>docManageMoveDown</Locator>
+	<Locator name="医生管理-置顶" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="0"				>docManageMoveTop</Locator>
+		-->
+	
+	<Locator name="预约管理-每页显示条数"	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"								>subManEachPageRecorders</Locator>
+    <Locator name="预约管理-总记录数" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']div[2]/span[1]"						>subManTotalRecorders</Locator>
+	<Locator name="预约管理-总页数" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"									>subManTotalPages</Locator>
+	<Locator name="预约管理-当前页数" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']div[2]/span[3]"						>subManCurrentPages</Locator>
+	<Locator name="预约管理-第一页"	 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'第一页')]"											>subManPreviousPage</Locator>
+	<Locator name="预约管理-上一页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上一页')]"											>subManLongitude</Locator>	
+	<Locator name="预约管理-下一页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下一页')]"											>subManNextPage</Locator>
+	<Locator name="预约管理-最末页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'最末页')]"											>subManLastPage</Locator>
+
+</Page>
