@@ -7,7 +7,7 @@
 	<Locator name="科室管理-同步科室HIS数据按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'同步HIS数据')]"					>depManSynchronousDepartmentHISButton</Locator>
     
 	<Locator name="科室管理-科室名称输入框" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchDepartmentStr']"		>depManDepartmentNameInputBox</Locator>
-	<Locator name="科室管理-搜索科室按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'搜索科室')]"					>depManSearchDepartmentButton</Locator>
+	<Locator name="科室管理-搜索科室按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'搜索')]"					>depManSearchDepartmentButton</Locator>
 	<Locator name="科室管理-新增一级科室按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'新增一级科室')]"				>depManAddFirstDepartmentButton</Locator>
 	
 	<Locator name="科室管理-一级科室名称" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.category_name']"		index="0"		>depManCategory</Locator>

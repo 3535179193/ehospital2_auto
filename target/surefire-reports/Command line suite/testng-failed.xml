@@ -3,13 +3,14 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test name="Command line test(failed)">
     <classes>
-      <class name="com.witontek.ehospital2.test.LoginTest">
+      <class name="com.witontek.ehospital2.test.DepartmentManageTest">
         <methods>
-          <include name="loginSuccess" invocation-numbers="0"/>
-          <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="searchDepManDepartment"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.witontek.ehospital2.test.LoginTest -->
+      </class> <!-- com.witontek.ehospital2.test.DepartmentManageTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

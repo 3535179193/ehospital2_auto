@@ -17,7 +17,7 @@ public class WebElementsUtils extends BrowserUtils{
 	
 	
 	//定位页面元素
-	public WebElement getElement(Locator locator){
+	public WebElement getElement(final Locator locator){
 		WebElement webElement = null;
 		if(locator.getIndex()==999)
 			try{
@@ -48,7 +48,7 @@ public class WebElementsUtils extends BrowserUtils{
 	}
 	
 	//每定位一个元素都加上一个显示等待
-	public WebElement findElement(Locator locator){
+	public WebElement findElement(final Locator locator){
 		WebElement webElement=null;
 		WebDriverWait wait=new WebDriverWait(driver, locator.getWaitTime());
 		
@@ -64,7 +64,7 @@ public class WebElementsUtils extends BrowserUtils{
 	}
 
 	//点击
-	public void click(Locator locator){
+	public void click(final Locator locator){
 		try{
 			findElement(locator).click();
 		}catch(Exception e){
@@ -74,7 +74,7 @@ public class WebElementsUtils extends BrowserUtils{
 	}
 	
 	//先清空输入框再输入
-	public void clearAndInput(Locator locator,String content){
+	public void clearAndInput(final Locator locator,String content){
 		try{
 			findElement(locator).clear();
 		}catch(Exception e){
@@ -91,7 +91,7 @@ public class WebElementsUtils extends BrowserUtils{
 	}
 	
 	//输入
-	public void input(Locator locator,String content){
+	public void input(final Locator locator,String content){
 		try{
 			findElement(locator).sendKeys(content);
 		}catch(Exception e){
@@ -101,7 +101,7 @@ public class WebElementsUtils extends BrowserUtils{
 	}
 	
 	//提交
-	public void submit(Locator locator){
+	public void submit(final Locator locator){
 		try{
 			findElement(locator).submit();
 		}catch(Exception e){
@@ -111,7 +111,7 @@ public class WebElementsUtils extends BrowserUtils{
 	}
 	
 	//获取页面元素文本信息
-	public String getText(Locator locator){
+	public String getText(final Locator locator){
 		String text=null;
 		try{
 			text=findElement(locator).getText();
@@ -123,7 +123,7 @@ public class WebElementsUtils extends BrowserUtils{
 	}
 	
 	//跳转frame
-	public void switchToFrame(Locator locator){
+	public void switchToFrame(final Locator locator){
 		try{
 			driver.switchTo().frame(findElement(locator));
 		}catch(Exception e){

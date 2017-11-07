@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-skipped">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods,  1 skipped,  4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods skipped suite-Command_line_suite"> (hide)</a> <!-- hide-methods skipped suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods skipped suite-Command_line_suite"> (show)</a> <!-- show-methods skipped suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.witontek.ehospital2.test.DepartmentManageTest" hash-for-method="searchDepManDepartment">searchDepManDepartment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,11 +117,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.witontek.ehospital2.test.LoginTest" hash-for-method="loginSuccess(登录成功, undefined, {password=admin, userName=sqsrmyyadmin, validation=1111})">loginSuccess(登录成功, undefined, {password=admin, userName=sqsrmyyadmin, validation=1111})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.witontek.ehospital2.test.DepartmentManageTest" hash-for-method="searchDepManDepartment(搜索科室成功, 皮肤科, {searchCondition=皮肤科})">searchDepManDepartment(搜索科室成功, 皮肤科, {searchCondition=皮肤科})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,6 +146,33 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.witontek.ehospital2.test.DepartmentManageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchDepManDepartment">
+                  </a> <!-- searchDepManDepartment -->
+                  <span class="method-name">searchDepManDepartment</span>
+                  <div class="stack-trace">java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]
+	at com.witontek.ehospital2.base.Log.errorShot(Log.java:39)
+	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:32)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:58)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:55)
+	at com.witontek.ehospital2.base.WebElementsUtils.input(WebElementsUtils.java:96)
+	at com.witontek.ehospital2.page.LoginPage.login(LoginPage.java:26)
+	at com.witontek.ehospital2.test.DepartmentManageTest.beforeMethod(DepartmentManageTest.java:41)
+... Removed 42 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -172,22 +208,6 @@
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.witontek.ehospital2.test.HospitalInformationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="updateHospitalInformation(更新医院信息成功, 贾西贝, {cardAddress=取卡地点, website=https://www.baidu/com, hospitalLevel=三级甲等, latitude=111.11...)">
-                  </a> <!-- updateHospitalInformation(更新医院信息成功, 贾西贝, {cardAddress=取卡地点, website=https://www.baidu/com, hospitalLevel=三级甲等, latitude=111.11...) -->
-                  <span class="method-name">updateHospitalInformation</span>
-                  <span class="parameters">(更新医院信息成功, 贾西贝, {cardAddress=取卡地点, website=https://www.baidu/com, hospitalLevel=三级甲等, latitude=111.111, hospitalAddress=医院地址, hospitalName=宿迁市人民医院, numberAddress=取号地点, hospitalPhone=17621851286, hospitalTraffic=医院交通, hospitalSummary=医院简介, longitude=111.111})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.witontek.ehospital2.test.SubscriptionManageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -204,15 +224,15 @@
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.witontek.ehospital2.test.DepartmentManageTest</span>
+              <span class="class-name">com.witontek.ehospital2.test.HospitalInformationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchDepManDepartment(搜索科室成功, 皮肤科, {searchCondition=皮肤科})">
-                  </a> <!-- searchDepManDepartment(搜索科室成功, 皮肤科, {searchCondition=皮肤科}) -->
-                  <span class="method-name">searchDepManDepartment</span>
-                  <span class="parameters">(搜索科室成功, 皮肤科, {searchCondition=皮肤科})</span>
+                  <a name="updateHospitalInformation(更新医院信息成功, 贾西贝, {cardAddress=取卡地点, website=https://www.baidu/com, hospitalLevel=三级甲等, latitude=111.11...)">
+                  </a> <!-- updateHospitalInformation(更新医院信息成功, 贾西贝, {cardAddress=取卡地点, website=https://www.baidu/com, hospitalLevel=三级甲等, latitude=111.11...) -->
+                  <span class="method-name">updateHospitalInformation</span>
+                  <span class="parameters">(更新医院信息成功, 贾西贝, {cardAddress=取卡地点, website=https://www.baidu/com, hospitalLevel=三级甲等, latitude=111.111, hospitalAddress=医院地址, hospitalName=宿迁市人民医院, numberAddress=取号地点, hospitalPhone=17621851286, hospitalTraffic=医院交通, hospitalSummary=医院简介, longitude=111.111})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -276,28 +296,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginSuccess')
 data.setCell(0, 2, 'com.witontek.ehospital2.test.LoginTest')
-data.setCell(0, 3, 13206);
+data.setCell(0, 3, 20015);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'updateHospitalInformation')
 data.setCell(1, 2, 'com.witontek.ehospital2.test.HospitalInformationTest')
-data.setCell(1, 3, 4630);
+data.setCell(1, 3, 12305);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'searchDepManDepartment')
-data.setCell(2, 2, 'com.witontek.ehospital2.test.DepartmentManageTest')
-data.setCell(2, 3, 3273);
+data.setCell(2, 1, 'searchDocManDoctor')
+data.setCell(2, 2, 'com.witontek.ehospital2.test.DoctorManageTest')
+data.setCell(2, 3, 5312);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'searchDocManDoctor')
-data.setCell(3, 2, 'com.witontek.ehospital2.test.DoctorManageTest')
-data.setCell(3, 3, 3027);
+data.setCell(3, 1, 'selectSubscriptionDate')
+data.setCell(3, 2, 'com.witontek.ehospital2.test.SubscriptionManageTest')
+data.setCell(3, 3, 4375);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'selectSubscriptionDate')
-data.setCell(4, 2, 'com.witontek.ehospital2.test.SubscriptionManageTest')
-data.setCell(4, 3, 2952);
+data.setCell(4, 1, 'searchDepManDepartment')
+data.setCell(4, 2, 'com.witontek.ehospital2.test.DepartmentManageTest')
+data.setCell(4, 3, 0);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -308,20 +328,6 @@ return data;
             <span class="header-content">Reporter output for Command line suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">searchDepManDepartment(搜索科室成功, 皮肤科, {searchCondition=皮肤科})</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在科室管理-科室名称输入框输入：皮肤科</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-搜索科室按钮</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-包含的二级科室的文本信息</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:包含的二级科室：皮肤科</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（皮肤科）包含预期结果（皮肤科），搜索科室成功</span><br /></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">updateHospitalInformation(更新医院信息成功, 贾西贝, {cardAddress=取卡地点, website=https://www.baidu/com, hospitalLevel=三级甲等, latitude=111.11...)</span>
               <div class="reporter-method-output-div">
@@ -357,6 +363,20 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
+              <span class="reporter-method-name">searchDocManDoctor(搜索成功, 贾西贝, {searchCondition=西})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /></span>
+                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /></span>
+                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理</span><br /></span>
+                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医生管理-医生名称输入框输入：西</span><br /></span>
+                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理-搜索医生按钮</span><br /></span>
+                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /></span>
+                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取医生管理-医生姓名的文本信息</span><br /></span>
+                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.page.DoctorManagePage:医生姓名："贾西贝"</span><br /></span>
+                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（贾西贝）包含预期结果（贾西贝），搜索成功</span><br /></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">loginSuccess(登录成功, undefined, {password=admin, userName=sqsrmyyadmin, validation=1111})</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br /></span>
@@ -383,17 +403,9 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">searchDocManDoctor(搜索成功, 贾西贝, {searchCondition=西})</span>
+              <span class="reporter-method-name">searchDepManDepartment</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医生管理-医生名称输入框输入：西</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理-搜索医生按钮</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取医生管理-医生姓名的文本信息</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.page.DoctorManagePage:医生姓名："贾西贝"</span><br /></span>
-                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（贾西贝）包含预期结果（贾西贝），搜索成功</span><br /></span>
+                <span class="reporter-method-output"><span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取searchDocManDoctor.xlsx文件</span><br /></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -421,115 +433,78 @@ return data;
               <div class="chronological-class-name">com.witontek.ehospital2.test.DoctorManageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">5273 ms</span>
+                <span class="method-start">33149 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.witontek.ehospital2.test.HospitalInformationTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">8972 ms</span>
+                <span class="method-start">54035 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.witontek.ehospital2.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">12486 ms</span>
+                <span class="method-start">70423 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.witontek.ehospital2.test.SubscriptionManageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">16043 ms</span>
+                <span class="method-start">86385 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.witontek.ehospital2.test.DepartmentManageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">20745 ms</span>
+                <span class="method-start">115781 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchDepManDepartment(搜索科室成功, 皮肤科, {searchCondition=皮肤科})</span>
-                <span class="method-start">34437 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.witontek.ehospital2.test.DoctorManageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">37782 ms</span>
+                <span class="method-start">154454 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchDocManDoctor(搜索成功, 贾西贝, {searchCondition=西})</span>
-                <span class="method-start">51201 ms</span>
+                <span class="method-start">174352 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.witontek.ehospital2.test.HospitalInformationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">54337 ms</span>
+                <span class="method-start">180149 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">updateHospitalInformation(更新医院信息成功, 贾西贝, {cardAddress=取卡地点, website=https://www.baidu/com, hospitalLevel=三级甲等, latitude=111.11...)</span>
-                <span class="method-start">68972 ms</span>
+                <span class="method-start">204429 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.witontek.ehospital2.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginSuccess(登录成功, undefined, {password=admin, userName=sqsrmyyadmin, validation=1111})</span>
-                <span class="method-start">73655 ms</span>
+                <span class="method-start">217158 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.witontek.ehospital2.test.SubscriptionManageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">86919 ms</span>
+                <span class="method-start">237499 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectSubscriptionDate(点击预约日期, 不知道啊, {})</span>
-                <span class="method-start">101653 ms</span>
+                <span class="method-start">260815 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.witontek.ehospital2.test.DepartmentManageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">104605 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.witontek.ehospital2.test.DoctorManageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">108677 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.witontek.ehospital2.test.HospitalInformationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">111683 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.witontek.ehospital2.test.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">114684 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.witontek.ehospital2.test.SubscriptionManageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">117685 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
