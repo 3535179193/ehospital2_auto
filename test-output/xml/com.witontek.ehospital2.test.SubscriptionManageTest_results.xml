@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.232">
+           time="5.453">
   <properties />
   
   
-            <testcase name="selectSubscriptionDate" time="3.232" classname="com.witontek.ehospital2.test.SubscriptionManageTest" />
+            <testcase name="selectSubscriptionDate" time="5.453" classname="com.witontek.ehospital2.test.SubscriptionManageTest" />
       
 </testsuite>
