@@ -1,8 +1,0 @@
-2017-10-16 14:13:57.003 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.PropertiesUtils:读取url.properties文件中的LOGIN_URL
-2017-10-16 14:13:57.041 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.PropertiesUtils:读取url.properties文件中的NEW_LOGIN_URL
-2017-10-16 14:13:57.045 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.PropertiesUtils:读取driverPath.properties文件中的CHROME_DRIVER_PATH
-2017-10-16 14:14:03.156 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
-2017-10-16 14:15:39.526 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.PropertiesUtils:读取url.properties文件中的LOGIN_URL
-2017-10-16 14:15:39.538 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.PropertiesUtils:读取url.properties文件中的NEW_LOGIN_URL
-2017-10-16 14:15:39.539 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.PropertiesUtils:读取driverPath.properties文件中的CHROME_DRIVER_PATH
-2017-10-16 14:15:44.930 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
