@@ -12,7 +12,7 @@ public class DriverUtils {
 	private static Log log=new Log(DriverUtils.class);
 	
 	public static WebDriver getChromeDriver(){
-		System.setProperty("webdriver.chrome.driver", Global.CHROME_DRIVER_PATH);
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+Global.CHROME_DRIVER_PATH);
 		driver=new ChromeDriver();
 		
 		driver.manage().window().maximize();

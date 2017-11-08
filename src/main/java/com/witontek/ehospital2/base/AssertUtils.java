@@ -11,24 +11,6 @@ public class AssertUtils extends BasePage {
 
 	private static Log log = new Log(AssertUtils.class);
 
-	// public static void assertStringContains(String actual,String
-	// expectedResult,String caseName){
-	// log.info("实际结果（"+actual+"）中包含预期结果（"+expectedResult+"），"+caseName);
-	// Assert.assertEquals(true, actual.contains(expectedResult));
-	// }
-	//
-	// public static void assertStringEquals(String actual,String
-	// expectedResult,String caseName){
-	// log.info("实际结果（"+actual+"）与预期结果（"+expectedResult+"）相等，"+caseName);
-	// Assert.assertEquals(actual,expectedResult);
-	// }
-	//
-	// public static void assertIntEquals(int actual,int expectedResult,String
-	// caseName){
-	// log.info("实际结果（"+actual+"）与预期结果（"+expectedResult+"）相等，"+caseName);
-	// Assert.assertEquals(actual,expectedResult);
-	// }
-	
 	public static void assertActualEqualExpect(String actual,String expectedResult, String caseName) {
 		if (actual.equals(expectedResult)) {
 			log.info("实际结果（" + actual + "）与预期结果（" + expectedResult + "）相等，"+ caseName);
