@@ -13,10 +13,14 @@ public class DepartmentMange extends DepartmentManagePage{
 
 	private Log log=new Log(DepartmentMange.class);
 	
+	//科室管理-搜索科室
 	public String searchDepManDepartment(String searchCondition){
 		clickDepartmentManageButton();
-		searchDepManDepartmentName(searchCondition);
+		inputDepManDepartmentName(searchCondition);
+		clickDepManSearchDepartmentButton();
 		sleep(1);
 		return getDepManContainDepartments();
 	}
+	
+	
 }

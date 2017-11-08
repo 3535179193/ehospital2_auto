@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="18.330">
+           time="15.120">
   <properties />
   
   
-            <testcase name="loginSuccess" time="18.330" classname="com.witontek.ehospital2.test.LoginTest" />
+            <testcase name="loginSuccess" time="15.120" classname="com.witontek.ehospital2.test.LoginTest" />
       
 </testsuite>

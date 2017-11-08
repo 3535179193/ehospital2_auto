@@ -7,23 +7,39 @@
 	<Locator name="科室管理-同步科室HIS数据按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'同步HIS数据')]"					>depManSynchronousDepartmentHISButton</Locator>
     
 	<Locator name="科室管理-科室名称输入框" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchDepartmentStr']"		>depManDepartmentNameInputBox</Locator>
-	<Locator name="科室管理-搜索科室按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'搜索')]"					>depManSearchDepartmentButton</Locator>
+	<Locator name="科室管理-搜索科室按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'搜索')]"						>depManSearchDepartmentButton</Locator>
+	
 	<Locator name="科室管理-新增一级科室按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'新增一级科室')]"				>depManAddFirstDepartmentButton</Locator>
+		<Locator name="新增一级科室-科室名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.firstDepartmentData.category_name']"		>addCateDepartmentNameInputBox</Locator>
+		<Locator name="新增一级科室-科室编码输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.firstDepartmentData.category_code']"		>addCateDepartmentCodeInputBox</Locator>
+		<Locator name="新增一级科室-科室LOGO按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-click='$ctrl.selectFileHandle()']"						>addCateDepartmentLogoButton</Locator>
+		<Locator name="新增一级科室-保存按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'新增')]"										>addCateSaveButton</Locator>
+		<Locator name="新增一级科室-返回按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'返回')]"										>addCateReturnButton</Locator>
 	
-	<Locator name="科室管理-一级科室名称" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.category_name']"		index="0"		>depManCategory</Locator>
-	<Locator name="科室管理-包含的二级科室" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.department_name']"		index="0"		>depManContainDepartments</Locator>
+	<Locator name="科室管理-序号" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='$index+1']"					index="0"	>depManNumber</Locator>
+	<Locator name="科室管理-一级科室名称" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.category_name']"		index="0"	>depManCategory</Locator>
+	<Locator name="科室管理-包含的二级科室" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.department_name']"		index="0"	>depManContainDepartments</Locator>
+
+	<Locator name="科室管理-编辑按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'编辑')]"						index="0"	>depManEditButton</Locator>
+  		<Locator name="编辑一级科室-科室名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.firstDepartmentData.category_name']"		>ediCateDepartmentNameInputBox</Locator>
+		<Locator name="编辑一级科室-科室编码输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.firstDepartmentData.category_code']"		>ediCateDepartmentCodeInputBox</Locator>
+		<Locator name="编辑一级科室-科室LOGO按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-click='$ctrl.selectFileHandle()']"						>ediCateDepartmentLogoButton</Locator>
+		<Locator name="编辑一级科室-修改按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'修改')]"										>ediCateEditButton</Locator>
+		<Locator name="编辑一级科室-返回按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'返回')]"										>ediCateReturnButton</Locator>
 	
-	<Locator name="科室管理-编辑按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'编辑')]"						index="0"		>depManEditButton</Locator>
-    <Locator name="科室管理-删除按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'删除')]"						index="0"		>depManDeleteButton</Locator>
-	<Locator name="科室管理-查看二级科室按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'查看二级科室')]"				index="0"		>depManViewDepartmentButton</Locator>
-	<Locator name="科室管理-上移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="0"		>depManMoveUpButton</Locator>
-    <Locator name="科室管理-下移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"		>depManMoveDownButton</Locator>
-	<Locator name="科室管理-置顶按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="0"		>depManMoveTopButton</Locator>
+    
+    <Locator name="科室管理-删除按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'删除')]"						index="0"	>depManDeleteButton</Locator>
+	<Locator name="科室管理-查看二级科室按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'查看二级科室')]"				index="0"	>depManViewDepartmentButton</Locator>
+	<Locator name="科室管理-上移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="0"	>depManMoveUpButton</Locator>
+    <Locator name="科室管理-下移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"	>depManMoveDownButton</Locator>
+	<Locator name="科室管理-置顶按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="0"	>depManMoveTopButton</Locator>
 	
-	<Locator name="科室管理-每页显示数下拉框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"				>depManEachPageRecordersDropBox</Locator>
-    <Locator name="科室管理-总记录数" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div[2]/span[1]"	>depManTotalRecorders</Locator>
-	<Locator name="科室管理-总页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"							>depManTotalPages</Locator>
-	<Locator name="科室管理-当前页数" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div[2]/span[3]"	>depManCurrentPages</Locator>
+	<Locator name="科室管理-每页显示数下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"						>depManEachPageRecordersDropBox</Locator>
+	<Locator name="科室管理-选中每页显示10条" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']/option"	index="0"	>depManEachPageTenRecorders</Locator>
+	
+	<Locator name="科室管理-总记录数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div[2]/span[1]"	>depManTotalRecorders</Locator>
+	<Locator name="科室管理-总页数" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"							>depManTotalPages</Locator>
+	<Locator name="科室管理-当前页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div[2]/span[3]"	>depManCurrentPage</Locator>
 	<Locator name="科室管理-第一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'第一页')]"									>depManFirstPageButton</Locator>
 	<Locator name="科室管理-上一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上一页')]"									>depManPreviousPageButton</Locator>	
 	<Locator name="科室管理-下一页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下一页')]"									>depManNextPageButton</Locator>
