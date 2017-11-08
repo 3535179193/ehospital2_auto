@@ -1,138 +1,156 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="1" name="TestSuite" time="377.618" errors="0" skipped="6">
+<testsuite tests="5" failures="0" name="TestSuite" time="38.628" errors="0" skipped="0">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="D:\java\jdk1.8.0_144\jre\bin"/>
-    <property name="java.vm.version" value="25.144-b01"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ningjing\.jenkins\workspace\eHospital2"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
-    <property name="user.country" value="CN"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\"/>
-    <property name="java.runtime.version" value="1.8.0_144-b01"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="LOGONSERVER" value="\\DESKTOP-26I71CM"/>
+    <property name="ProgramData" value="C:\ProgramData"/>
+    <property name="java.home" value="D:\java\jdk1.8.0_144\jre"/>
+    <property name="TITLE" value="Tomcat"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="CATALINA_HOME" value="D:\java\apache-tomcat-9.0.0.M26"/>
+    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
     <property name="java.endorsed.dirs" value="D:\java\jdk1.8.0_144\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
+    <property name="PSModulePath" value="C:\Program Files (x86)\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;D:\java\AutoIt3\AutoItX"/>
+    <property name="=::" value="::\"/>
+    <property name="USERDOMAIN" value="DESKTOP-26I71CM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="JAVA_OPTS" value="&quot;-Dhudson.model.DirectoryBrowserSupport.CSP=\&quot;sandbox; default-src &apos;self&apos;;\&quot;&quot; &quot;-Djdk.tls.ephemeralDHKeySize=2048&quot; -Djava.protocol.handler.pkgs=org.apache.catalina.webresources"/>
+    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="JOB_NAME" value="eHospital2"/>
+    <property name="COMPUTERNAME" value="DESKTOP-26I71CM"/>
+    <property name="EXECUTABLE" value="D:\java\apache-tomcat-9.0.0.M26\bin\catalina.bat"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="user.name" value="ningjing"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="windir" value="C:\Windows"/>
+    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 58 Stepping 9, GenuineIntel"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="LOCALAPPDATA" value="C:\Users\ningjing\AppData\Local"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/eHospital2/8/display/redirect?page=changes"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="user.script" value=""/>
+    <property name="path.separator" value=";"/>
+    <property name="NUMBER_OF_PROCESSORS" value="4"/>
+    <property name="BUILD_TAG" value="jenkins-eHospital2-8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main D:\java\apache-maven-3.5.0 D:\java\apache-tomcat-9.0.0.M26\webapps\jenkins\WEB-INF\lib\remoting-3.10.2.jar C:\Users\ningjing\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar C:\Users\ningjing\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar 50681"/>
+    <property name="JENKINS_SERVER_COOKIE" value="95a17604a310abd4"/>
+    <property name="=D:" value="D:\java\apache-tomcat-9.0.0.M26\bin"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="Path" value="D:\java\jdk1.8.0_144/bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\java\jdk1.8.0_144\bin;D:\java\nodejs\;D:\java\apache-maven-3.5.0\bin;D:\Ruanjian\GitExtensions\;C:\Users\ningjing\AppData\Local\Microsoft\WindowsApps;C:\Users\ningjing\AppData\Roaming\npm"/>
     <property name="java.io.tmpdir" value="C:\Users\ningjing\AppData\Local\Temp\"/>
+    <property name="APPDATA" value="C:\Users\ningjing\AppData\Roaming"/>
+    <property name="user.language" value="zh"/>
+    <property name="CATALINA_TMPDIR" value="D:\java\apache-tomcat-9.0.0.M26\temp"/>
     <property name="line.separator" value="
 "/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\java\apache-maven-3.5.0\bin\..\bin\m2.conf"/>
-    <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="D:\java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\java\apache-maven-3.5.0/bin;D:\java\jdk1.8.0_144/bin;D:\java\jdk1.8.0_144/bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\java\jdk1.8.0_144\bin;D:\java\nodejs\;D:\java\apache-maven-3.5.0\bin;D:\Ruanjian\GitExtensions\;C:\Users\ningjing\AppData\Local\Microsoft\WindowsApps;C:\Users\ningjing\AppData\Roaming\npm;."/>
-    <property name="maven.conf" value="D:\java\apache-maven-3.5.0\bin\../conf"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="D:\java\apache-maven-3.5.0\bin\..\lib\jansi-native\windows64"/>
-    <property name="user.home" value="C:\Users\ningjing"/>
-    <property name="user.timezone" value="Asia/Shanghai"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="GBK"/>
-    <property name="user.name" value="ningjing"/>
-    <property name="java.class.path" value="D:\java\apache-maven-3.5.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="D:\java\jdk1.8.0_144\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -f D:\java\workspace\ehospital2_auto\pom.xml test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="zh"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="ACTION" value="start"/>
+    <property name="M2_HOME" value="D:\java\apache-maven-3.5.0"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_144"/>
-    <property name="java.ext.dirs" value="D:\java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="D:\java\jdk1.8.0_144\jre\lib\resources.jar;D:\java\jdk1.8.0_144\jre\lib\rt.jar;D:\java\jdk1.8.0_144\jre\lib\sunrsasign.jar;D:\java\jdk1.8.0_144\jre\lib\jsse.jar;D:\java\jdk1.8.0_144\jre\lib\jce.jar;D:\java\jdk1.8.0_144\jre\lib\charsets.jar;D:\java\jdk1.8.0_144\jre\lib\jfr.jar;D:\java\jdk1.8.0_144\jre\classes"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="D:\java\apache-maven-3.5.0\bin\.."/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.desktop" value="windows"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="BUILD_DISPLAY_NAME" value="#8"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="CATALINA_BASE" value="D:\java\apache-tomcat-9.0.0.M26"/>
+    <property name="HUDSON_SERVER_COOKIE" value="95a17604a310abd4"/>
+    <property name="JRE_HOME" value="D:\java\jdk1.8.0_144"/>
+    <property name="_EXECJAVA" value="start &quot;Tomcat&quot; &quot;D:\java\jdk1.8.0_144\bin\java.exe&quot;"/>
+    <property name="_RUNJAVA" value="&quot;D:\java\jdk1.8.0_144\bin\java.exe&quot;"/>
+    <property name="MAVEN_HOME" value="D:\java\apache-maven-3.5.0"/>
+    <property name="SESSIONNAME" value="Console"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="maven3.interceptor.common" value="C:\Users\ningjing\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.12-alpha-1.jar"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="LOGGING_CONFIG" value="-Djava.util.logging.config.file=&quot;D:\java\apache-tomcat-9.0.0.M26\conf\logging.properties&quot;"/>
+    <property name="HOMEPATH" value="\Users\ningjing"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="8"/>
+    <property name="maven3.interceptor" value="C:\Users\ningjing\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.12-alpha-1.jar"/>
+    <property name="java.library.path" value="D:\java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\java\apache-maven-3.5.0/bin;D:\java\jdk1.8.0_144/bin;D:\java\jdk1.8.0_144/bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\java\jdk1.8.0_144\bin;D:\java\nodejs\;D:\java\apache-maven-3.5.0\bin;D:\Ruanjian\GitExtensions\;C:\Users\ningjing\AppData\Local\Microsoft\WindowsApps;C:\Users\ningjing\AppData\Roaming\npm;."/>
+    <property name="HOMEDRIVE" value="C:"/>
+    <property name="POM_GROUPID" value="com.witontek"/>
+    <property name="POM_ARTIFACTID" value="ehospital2"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="JSSE_OPTS" value="&quot;-Djdk.tls.ephemeralDHKeySize=2048&quot;"/>
+    <property name="LOGGING_MANAGER" value="-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager"/>
+    <property name="_RUNJDB" value="&quot;D:\java\jdk1.8.0_144\bin\jdb.exe&quot;"/>
+    <property name="OneDrive" value="C:\Users\ningjing\OneDrive"/>
+    <property name="RUN_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/eHospital2/8/display/redirect"/>
+    <property name="MAINCLASS" value="org.apache.catalina.startup.Bootstrap"/>
+    <property name="JENKINS_HOME" value="C:\Users\ningjing\.jenkins"/>
+    <property name="BUILD_ID" value="8"/>
+    <property name="TEMP" value="C:\Users\ningjing\AppData\Local\Temp"/>
+    <property name="sun.boot.library.path" value="D:\java\jdk1.8.0_144\jre\bin"/>
+    <property name="JDK_JAVA_OPTIONS" value=" --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="user.variant" value=""/>
+    <property name="PROCESSOR_REVISION" value="3a09"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="HUDSON_HOME" value="C:\Users\ningjing\.jenkins"/>
+    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
+    <property name="PATH+MAVEN" value="D:\java\apache-maven-3.5.0/bin"/>
+    <property name="USERDOMAIN_ROAMINGPROFILE" value="DESKTOP-26I71CM"/>
+    <property name="PROMPT" value="$P$G"/>
+    <property name="CURRENT_DIR" value="D:\java\apache-tomcat-9.0.0.M26\bin"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="JAVA_HOME" value="D:\java\jdk1.8.0_144"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="NODE_LABELS" value="master"/>
     <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="USERPROFILE" value="C:\Users\ningjing"/>
+    <property name="JOB_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/eHospital2/display/redirect"/>
+    <property name="java.ext.dirs" value="D:\java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\ningjing"/>
+    <property name="USERNAME" value="ningjing"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
+    <property name="user.dir" value="D:\java\workspace\ehospital2_auto"/>
+    <property name="maven.conf" value="D:\java\apache-maven-3.5.0\conf"/>
+    <property name="ProgramW6432" value="C:\Program Files"/>
+    <property name="TMP" value="C:\Users\ningjing\AppData\Local\Temp"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="java.class.path" value="C:\Users\ningjing\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.12-alpha-1.jar;D:\java\apache-maven-3.5.0\boot\plexus-classworlds-2.5.2.jar;D:\java\apache-maven-3.5.0/conf/logging"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="JAVA_TOOL_OPTIONS" value="-Dfile.encoding=UTF-8"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="WORKSPACE" value="C:\Users\ningjing\.jenkins\workspace\eHospital2"/>
+    <property name="ComSpec" value="C:\Windows\system32\cmd.exe"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="SystemRoot" value="C:\Windows"/>
+    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="ProgramFiles" value="C:\Program Files"/>
+    <property name="sun.boot.class.path" value="D:\java\jdk1.8.0_144\jre\lib\resources.jar;D:\java\jdk1.8.0_144\jre\lib\rt.jar;D:\java\jdk1.8.0_144\jre\lib\sunrsasign.jar;D:\java\jdk1.8.0_144\jre\lib\jsse.jar;D:\java\jdk1.8.0_144\jre\lib\jce.jar;D:\java\jdk1.8.0_144\jre\lib\charsets.jar;D:\java\jdk1.8.0_144\jre\lib\jfr.jar;D:\java\jdk1.8.0_144\jre\classes"/>
+    <property name="PATH+JDK" value="D:\java\jdk1.8.0_144/bin"/>
+    <property name="user.country" value="CN"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="maven.home" value="D:\java\apache-maven-3.5.0"/>
+    <property name="JOB_BASE_NAME" value="eHospital2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="ehospital2"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
   </properties>
-  <testcase classname="com.witontek.ehospital2.test.DepartmentManageTest" name="beforeMethod" time="157.169">
-    <failure message="故意断言失败，并中断执行此用例 expected [2] but found [1]" type="java.lang.AssertionError">java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:388)
-	at com.witontek.ehospital2.base.Log.errorShot(Log.java:39)
-	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:32)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:58)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:55)
-	at com.witontek.ehospital2.base.WebElementsUtils.input(WebElementsUtils.java:96)
-	at com.witontek.ehospital2.page.LoginPage.login(LoginPage.java:26)
-	at com.witontek.ehospital2.test.DepartmentManageTest.beforeMethod(DepartmentManageTest.java:41)
-</failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@383534aa
-01:30:08.728 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
-01:30:29.646 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
-01:30:46.006 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
-01:31:01.992 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
-01:31:20.558 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
-01:31:31.380 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.ExcelUtils:读取searchDepManDepartment.xlsx文件
-01:31:38.529 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/
-01:32:08.949 [main] ERROR com.witontek.ehospital2.base.Log - 【error】com.witontek.ehospital2.base.WebElementsUtils:查找用户名输入框的网页元素时出错
-01:32:09.652 [main] INFO  com.witontek.ehospital2.base.Log - 【info】com.witontek.ehospital2.base.BrowserUtils:截图成功
-</system-out>
-    <system-err>Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 8065
-Only local connections are allowed.
-十一月 07, 2017 1:30:07 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
-信息: Detected dialect: OSS
-Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 19439
-Only local connections are allowed.
-十一月 07, 2017 1:30:28 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
-信息: Detected dialect: OSS
-Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 44302
-Only local connections are allowed.
-十一月 07, 2017 1:30:42 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
-信息: Detected dialect: OSS
-Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 3666
-Only local connections are allowed.
-十一月 07, 2017 1:31:00 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
-信息: Detected dialect: OSS
-Starting ChromeDriver 2.29.461591 (62ebf098771772160f391d75e589dc567915b233) on port 3762
-Only local connections are allowed.
-十一月 07, 2017 1:31:19 上午 org.openqa.selenium.remote.ProtocolHandshake createSession
-信息: Detected dialect: OSS
-</system-err>
-  </testcase>
-  <testcase classname="com.witontek.ehospital2.test.DepartmentManageTest" name="searchDepManDepartment" time="157.177">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.witontek.ehospital2.test.DoctorManageTest" name="searchDocManDoctor" time="4.702"/>
-  <testcase classname="com.witontek.ehospital2.test.HospitalInformationTest" name="updateHospitalInformation" time="12.305"/>
-  <testcase classname="com.witontek.ehospital2.test.LoginTest" name="loginSuccess" time="20.011"/>
-  <testcase classname="com.witontek.ehospital2.test.SubscriptionManageTest" name="selectSubscriptionDate" time="4.375"/>
-  <testcase classname="com.witontek.ehospital2.test.DepartmentManageTest" name="afterTest" time="4.375">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.witontek.ehospital2.test.DepartmentManageTest" name="afterTest" time="4.375">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.witontek.ehospital2.test.DepartmentManageTest" name="afterTest" time="4.375">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.witontek.ehospital2.test.DepartmentManageTest" name="afterTest" time="4.375">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.witontek.ehospital2.test.DepartmentManageTest" name="afterTest" time="4.379">
-    <skipped/>
-  </testcase>
+  <testcase classname="com.witontek.ehospital2.test.DepartmentManageTest" name="searchDepManDepartment" time="4.804"/>
+  <testcase classname="com.witontek.ehospital2.test.DoctorManageTest" name="searchDocManDoctor" time="4.315"/>
+  <testcase classname="com.witontek.ehospital2.test.HospitalInformationTest" name="updateHospitalInformation" time="6.199"/>
+  <testcase classname="com.witontek.ehospital2.test.LoginTest" name="loginSuccess" time="18.708"/>
+  <testcase classname="com.witontek.ehospital2.test.SubscriptionManageTest" name="selectSubscriptionDate" time="4.602"/>
 </testsuite>

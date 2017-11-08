@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 07 01:29:35 CST 2017</td>
+<td>Started on:</td><td>Thu Nov 09 00:51:27 CST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>265 seconds (265194 ms)</td>
+<tr><td>Total time:</td><td>202 seconds (202478 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,126 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.witontek.ehospital2.test.DepartmentManageTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br/>
-<a href="#Output-1917442783" onClick='toggleBox("Output-1917442783", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1917442783" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1917442783">
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.BrowserUtils:´ò¿ªÍøÖ·:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br /><br/>
-<span style='color:red'>¡¾error¡¿com.witontek.ehospital2.base.WebElementsUtils:²éÕÒÓÃ»§ÃûÊäÈë¿òµÄÍøÒ³ÔªËØÊ±³ö´í</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.BrowserUtils:½ØÍ¼³É¹¦</span><br /><br/>
-<a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-11-07 01.32.08-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-11-07 01.32.08-picture.png' /></a><br/>
-<span style='color:blue'>¡¾Í¼Æ¬µØÖ·¡¿D:\java\workspace\ehospital2_auto\screenShot\2017-11-07 01.32.08-picture.png</span><br /><br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: ¹ÊÒâ¶ÏÑÔÊ§°Ü£¬²¢ÖĞ¶ÏÖ´ĞĞ´ËÓÃÀı expected [2] but found [1]
-	at com.witontek.ehospital2.base.Log.errorShot(Log.java:39)
-	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:32)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:58)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:55)
-	at com.witontek.ehospital2.base.WebElementsUtils.input(WebElementsUtils.java:96)
-	at com.witontek.ehospital2.page.LoginPage.login(LoginPage.java:26)
-	at com.witontek.ehospital2.test.DepartmentManageTest.beforeMethod(DepartmentManageTest.java:41)
-... Removed 42 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1917442783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1917442783'><pre>java.lang.AssertionError: ¹ÊÒâ¶ÏÑÔÊ§°Ü£¬²¢ÖĞ¶ÏÖ´ĞĞ´ËÓÃÀı expected [2] but found [1]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:388)
-	at com.witontek.ehospital2.base.Log.errorShot(Log.java:39)
-	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:32)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:58)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:55)
-	at com.witontek.ehospital2.base.WebElementsUtils.input(WebElementsUtils.java:96)
-	at com.witontek.ehospital2.page.LoginPage.login(LoginPage.java:26)
-	at com.witontek.ehospital2.test.DepartmentManageTest.beforeMethod(DepartmentManageTest.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</pre></div></td>
-<td>38</td>
-<td>com.witontek.ehospital2.test.DepartmentManageTest@3551a94</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.witontek.ehospital2.test.DepartmentManageTest.afterTest()'><b>afterTest</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest</td>
-<td></td>
-<td>0</td>
-<td>com.witontek.ehospital2.test.DepartmentManageTest@3551a94</td></tr>
-<tr>
-<td title='com.witontek.ehospital2.test.DepartmentManageTest.afterTest()'><b>afterTest</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest</td>
-<td></td>
-<td>0</td>
-<td>com.witontek.ehospital2.test.DoctorManageTest@531be3c5</td></tr>
-<tr>
-<td title='com.witontek.ehospital2.test.DepartmentManageTest.afterTest()'><b>afterTest</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest</td>
-<td></td>
-<td>0</td>
-<td>com.witontek.ehospital2.test.HospitalInformationTest@52af6cff</td></tr>
-<tr>
-<td title='com.witontek.ehospital2.test.DepartmentManageTest.afterTest()'><b>afterTest</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest</td>
-<td></td>
-<td>0</td>
-<td>com.witontek.ehospital2.test.LoginTest@735b478</td></tr>
-<tr>
-<td title='com.witontek.ehospital2.test.DepartmentManageTest.afterTest()'><b>afterTest</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest</td>
-<td></td>
-<td>0</td>
-<td>com.witontek.ehospital2.test.SubscriptionManageTest@2c9f9fb0</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -195,186 +75,123 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.witontek.ehospital2.test.LoginTest.loginSuccess()'><b>loginSuccess</b><br>Test class: com.witontek.ehospital2.test.LoginTest<br>Parameters: µÇÂ¼³É¹¦, undefined, {password=admin, userName=sqsrmyyadmin, validation=1111}<br/>
-<a href="#Output-1137989065" onClick='toggleBox("Output-1137989065", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.witontek.ehospital2.test.LoginTest.loginSuccess()'><b>loginSuccess</b><br>Test class: com.witontek.ehospital2.test.LoginTest<br>Parameters: ç™»å½•æˆåŠŸ, undefined, {password=admin, userName=sqsrmyyadmin, validation=1111}<br/>
+<a href="#Output-211199210" onClick='toggleBox("Output-211199210", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1137989065" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1137989065">
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.BrowserUtils:´ò¿ªÍøÖ·:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÓÃ»§ÃûÊäÈë¿òÊäÈë£ºsqsrmyyadmin</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÃÜÂëÊäÈë¿òÊäÈë£ºadmin</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÑéÖ¤ÂëÊäÈë¿òÊäÈë£º1111</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷µÇÂ¼°´Å¥</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:»ñÈ¡ÓÃ»§ÃûµÄÎÄ±¾ĞÅÏ¢</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.AssertUtils:Êµ¼Ê½á¹û£¨undefined£©ÓëÔ¤ÆÚ½á¹û£¨undefined£©ÏàµÈ£¬µÇÂ¼³É¹¦</span><br /><br/>
+<a href="#Output-211199210" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-211199210">
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.BrowserUtils:æ‰“å¼€ç½‘å€:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨ç”¨æˆ·åè¾“å…¥æ¡†è¾“å…¥ï¼šsqsrmyyadmin</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨å¯†ç è¾“å…¥æ¡†è¾“å…¥ï¼šadmin</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨éªŒè¯ç è¾“å…¥æ¡†è¾“å…¥ï¼š1111</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»ç™»å½•æŒ‰é’®</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:è·å–ç”¨æˆ·åçš„æ–‡æœ¬ä¿¡æ¯</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.AssertUtils:å®é™…ç»“æœï¼ˆundefinedï¼‰ä¸é¢„æœŸç»“æœï¼ˆundefinedï¼‰ç›¸ç­‰ï¼Œç™»å½•æˆåŠŸ</span><br /><br/>
 </div>
 </td>
 <td></td>
-<td>20</td>
+<td>18</td>
 <td>com.witontek.ehospital2.test.LoginTest@735b478</td></tr>
 <tr>
-<td title='com.witontek.ehospital2.test.DoctorManageTest.searchDocManDoctor()'><b>searchDocManDoctor</b><br>Test class: com.witontek.ehospital2.test.DoctorManageTest<br>Parameters: ËÑË÷³É¹¦, ¼ÖÎ÷±´, {searchCondition=Î÷}<br/>
-<a href="#Output-1998882269" onClick='toggleBox("Output-1998882269", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.witontek.ehospital2.test.DepartmentManageTest.searchDepManDepartment()'><b>searchDepManDepartment</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br>Parameters: æœç´¢ç§‘å®¤æˆåŠŸ, çš®è‚¤ç§‘, {searchCondition=çš®è‚¤ç§‘}<br/>
+<a href="#Output-1255109302" onClick='toggleBox("Output-1255109302", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1998882269" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1998882269">
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷ÒµÎñĞÅÏ¢¹ÜÀí</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.BrowserUtils:µÈ´ı1Ãë</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ò½Éú¹ÜÀí</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½Éú¹ÜÀí-Ò½ÉúÃû³ÆÊäÈë¿òÊäÈë£ºÎ÷</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ò½Éú¹ÜÀí-ËÑË÷Ò½Éú°´Å¥</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.BrowserUtils:µÈ´ı1Ãë</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:»ñÈ¡Ò½Éú¹ÜÀí-Ò½ÉúĞÕÃûµÄÎÄ±¾ĞÅÏ¢</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.page.DoctorManagePage:Ò½ÉúĞÕÃû£º"¼ÖÎ÷±´"</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.AssertUtils:Êµ¼Ê½á¹û£¨¼ÖÎ÷±´£©°üº¬Ô¤ÆÚ½á¹û£¨¼ÖÎ÷±´£©£¬ËÑË÷³É¹¦</span><br /><br/>
+<a href="#Output-1255109302" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1255109302">
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»ä¸šåŠ¡ä¿¡æ¯ç®¡ç†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.BrowserUtils:ç­‰å¾…1ç§’</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»ç§‘å®¤ç®¡ç†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨ç§‘å®¤ç®¡ç†-ç§‘å®¤åç§°è¾“å…¥æ¡†è¾“å…¥ï¼šçš®è‚¤ç§‘</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»ç§‘å®¤ç®¡ç†-æœç´¢ç§‘å®¤æŒ‰é’®</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.BrowserUtils:ç­‰å¾…1ç§’</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:è·å–ç§‘å®¤ç®¡ç†-åŒ…å«çš„äºŒçº§ç§‘å®¤çš„æ–‡æœ¬ä¿¡æ¯</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.page.DepartmentManagePage:åŒ…å«çš„äºŒçº§ç§‘å®¤ï¼šçš®è‚¤ç§‘</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.AssertUtils:å®é™…ç»“æœï¼ˆçš®è‚¤ç§‘ï¼‰åŒ…å«é¢„æœŸç»“æœï¼ˆçš®è‚¤ç§‘ï¼‰ï¼Œæœç´¢ç§‘å®¤æˆåŠŸ</span><br /><br/>
 </div>
 </td>
 <td></td>
 <td>5</td>
+<td>com.witontek.ehospital2.test.DepartmentManageTest@3551a94</td></tr>
+<tr>
+<td title='com.witontek.ehospital2.test.DoctorManageTest.searchDocManDoctor()'><b>searchDocManDoctor</b><br>Test class: com.witontek.ehospital2.test.DoctorManageTest<br>Parameters: æœç´¢æˆåŠŸ, è´¾è¥¿è´, {searchCondition=è¥¿}<br/>
+<a href="#Output-1061018585" onClick='toggleBox("Output-1061018585", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1061018585" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1061018585">
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»ä¸šåŠ¡ä¿¡æ¯ç®¡ç†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.BrowserUtils:ç­‰å¾…1ç§’</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»åŒ»ç”Ÿç®¡ç†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»ç”Ÿç®¡ç†-åŒ»ç”Ÿåç§°è¾“å…¥æ¡†è¾“å…¥ï¼šè¥¿</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»åŒ»ç”Ÿç®¡ç†-æœç´¢åŒ»ç”ŸæŒ‰é’®</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.BrowserUtils:ç­‰å¾…1ç§’</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:è·å–åŒ»ç”Ÿç®¡ç†-åŒ»ç”Ÿå§“åçš„æ–‡æœ¬ä¿¡æ¯</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.page.DoctorManagePage:åŒ»ç”Ÿå§“åï¼š"è´¾è¥¿è´"</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.AssertUtils:å®é™…ç»“æœï¼ˆè´¾è¥¿è´ï¼‰åŒ…å«é¢„æœŸç»“æœï¼ˆè´¾è¥¿è´ï¼‰ï¼Œæœç´¢æˆåŠŸ</span><br /><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
 <td>com.witontek.ehospital2.test.DoctorManageTest@531be3c5</td></tr>
 <tr>
-<td title='com.witontek.ehospital2.test.SubscriptionManageTest.selectSubscriptionDate()'><b>selectSubscriptionDate</b><br>Test class: com.witontek.ehospital2.test.SubscriptionManageTest<br>Parameters: µã»÷Ô¤Ô¼ÈÕÆÚ, ²»ÖªµÀ°¡, {}<br/>
-<a href="#Output-778337881" onClick='toggleBox("Output-778337881", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.witontek.ehospital2.test.SubscriptionManageTest.selectSubscriptionDate()'><b>selectSubscriptionDate</b><br>Test class: com.witontek.ehospital2.test.SubscriptionManageTest<br>Parameters: ç‚¹å‡»é¢„çº¦æ—¥æœŸ, ä¸çŸ¥é“å•Š, {}<br/>
+<a href="#Output-680865258" onClick='toggleBox("Output-680865258", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-778337881" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-778337881">
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷ÒµÎñĞÅÏ¢¹ÜÀí</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.BrowserUtils:µÈ´ı1Ãë</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ô¤Ô¼¹ÜÀí</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ô¤Ô¼¹ÜÀí-Ô¤Ô¼ÈÕÆÚ-ÆğÊ¼ÈÕÆÚÑ¡ÔñÆ÷</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ô¤Ô¼¹ÜÀí-ÇĞ»»Äê/ÔÂ·İ°´Å¥</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ô¤Ô¼¹ÜÀí-ÇĞ»»Äê/ÔÂ·İ°´Å¥</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ô¤Ô¼¹ÜÀí-Ä¬ÈÏÄê·İ°´Å¥</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ô¤Ô¼¹ÜÀí-Ä¬ÈÏÔÂ·İ°´Å¥</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ô¤Ô¼¹ÜÀí-Ä¬ÈÏÈÕÆÚ°´Å¥</span><br /><br/>
+<a href="#Output-680865258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-680865258">
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»ä¸šåŠ¡ä¿¡æ¯ç®¡ç†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.BrowserUtils:ç­‰å¾…1ç§’</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»é¢„çº¦ç®¡ç†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»é¢„çº¦ç®¡ç†-é¢„çº¦æ—¥æœŸ-èµ·å§‹æ—¥æœŸé€‰æ‹©å™¨</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»é¢„çº¦ç®¡ç†-åˆ‡æ¢å¹´/æœˆä»½æŒ‰é’®</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»é¢„çº¦ç®¡ç†-åˆ‡æ¢å¹´/æœˆä»½æŒ‰é’®</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»é¢„çº¦ç®¡ç†-é»˜è®¤å¹´ä»½æŒ‰é’®</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»é¢„çº¦ç®¡ç†-é»˜è®¤æœˆä»½æŒ‰é’®</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»é¢„çº¦ç®¡ç†-é»˜è®¤æ—¥æœŸæŒ‰é’®</span><br /><br/>
 </div>
 </td>
 <td></td>
 <td>4</td>
 <td>com.witontek.ehospital2.test.SubscriptionManageTest@2c9f9fb0</td></tr>
 <tr>
-<td title='com.witontek.ehospital2.test.HospitalInformationTest.updateHospitalInformation()'><b>updateHospitalInformation</b><br>Test class: com.witontek.ehospital2.test.HospitalInformationTest<br>Parameters: ¸üĞÂÒ½ÔºĞÅÏ¢³É¹¦, ¼ÖÎ÷±´, {cardAddress=È¡¿¨µØµã, website=https://www.baidu/com, hospitalLevel=Èı¼¶¼×µÈ, latitude=111.111, hospitalAddress=Ò½ÔºµØÖ·, hospitalName=ËŞÇ¨ÊĞÈËÃñÒ½Ôº, numberAddress=È¡ºÅµØµã, hospitalPhone=17621851286, hospitalTraffic=Ò½Ôº½»Í¨, hospitalSummary=Ò½Ôº¼ò½é, longitude=111.111}<br/>
-<a href="#Output-404586280" onClick='toggleBox("Output-404586280", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.witontek.ehospital2.test.HospitalInformationTest.updateHospitalInformation()'><b>updateHospitalInformation</b><br>Test class: com.witontek.ehospital2.test.HospitalInformationTest<br>Parameters: æ›´æ–°åŒ»é™¢ä¿¡æ¯æˆåŠŸ, è´¾è¥¿è´, {cardAddress=å–å¡åœ°ç‚¹, website=https://www.baidu/com, hospitalLevel=ä¸‰çº§ç”²ç­‰, latitude=111.111, hospitalAddress=åŒ»é™¢åœ°å€, hospitalName=å®¿è¿å¸‚äººæ°‘åŒ»é™¢, numberAddress=å–å·åœ°ç‚¹, hospitalPhone=17621851286, hospitalTraffic=åŒ»é™¢äº¤é€š, hospitalSummary=åŒ»é™¢ç®€ä»‹, longitude=111.111}<br/>
+<a href="#Output-1769252629" onClick='toggleBox("Output-1769252629", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-404586280" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-404586280">
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Î¢¹ÙÍø¹ÜÀí</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.BrowserUtils:µÈ´ı1Ãë</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ò½Ôº»ù±¾ĞÅÏ¢</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:Çå¿ÕÒ½ÔºĞÅÏ¢-Ò½ÔºÃû³ÆÊäÈë¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½ÔºĞÅÏ¢-Ò½ÔºÃû³ÆÊäÈë¿òÊäÈë£ºËŞÇ¨ÊĞÈËÃñÒ½Ôº</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:Çå¿ÕÒ½ÔºĞÅÏ¢-È¡ºÅµØµãÊäÈë¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½ÔºĞÅÏ¢-È¡ºÅµØµãÊäÈë¿òÊäÈë£ºÈ¡ºÅµØµã</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:Çå¿ÕÒ½ÔºĞÅÏ¢-È¡¿¨µØµãÊäÈë¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½ÔºĞÅÏ¢-È¡¿¨µØµãÊäÈë¿òÊäÈë£ºÈ¡¿¨µØµã</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:Çå¿ÕÒ½ÔºĞÅÏ¢-Ò½ÔºµÈ¼¶ÊäÈë¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½ÔºĞÅÏ¢-Ò½ÔºµÈ¼¶ÊäÈë¿òÊäÈë£ºÈı¼¶¼×µÈ</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ò½ÔºĞÅÏ¢-ÇëÑ¡ÔñÊ¡ÏÂÀ­¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ò½ÔºĞÅÏ¢-Ñ¡ÔñÊ¡°´Å¥</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ò½ÔºĞÅÏ¢-ÇëÑ¡ÔñÊ¡ÏÂÀ­¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:µã»÷Ò½ÔºĞÅÏ¢-Ñ¡ÔñÊĞ°´Å¥</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:Çå¿ÕÒ½ÔºĞÅÏ¢-Ò½ÔºµØÖ·ÊäÈë¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½ÔºĞÅÏ¢-Ò½ÔºµØÖ·ÊäÈë¿òÊäÈë£ºÒ½ÔºµØÖ·</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:Çå¿ÕÒ½ÔºĞÅÏ¢-¹Ù·½ÍøÕ¾ÊäÈë¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½ÔºĞÅÏ¢-¹Ù·½ÍøÕ¾ÊäÈë¿òÊäÈë£ºhttps://www.baidu/com</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:Çå¿ÕÒ½ÔºĞÅÏ¢-Ò½Ôºµç»°ÊäÈë¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½ÔºĞÅÏ¢-Ò½Ôºµç»°ÊäÈë¿òÊäÈë£º17621851286</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:Çå¿ÕÒ½ÔºĞÅÏ¢-Ò½Ôº½»Í¨ÊäÈë¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½ÔºĞÅÏ¢-Ò½Ôº½»Í¨ÊäÈë¿òÊäÈë£ºÒ½Ôº½»Í¨</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:Çå¿ÕÒ½ÔºĞÅÏ¢-Ò½Ôº½éÉÜÊäÈë¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½ÔºĞÅÏ¢-Ò½Ôº½éÉÜÊäÈë¿òÊäÈë£ºÒ½Ôº¼ò½é</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:Çå¿ÕÒ½ÔºĞÅÏ¢-¾­¶ÈÊäÈë¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½ÔºĞÅÏ¢-¾­¶ÈÊäÈë¿òÊäÈë£º111.111</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:Çå¿ÕÒ½ÔºĞÅÏ¢-Î³¶ÈÊäÈë¿ò</span><br /><br/>
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.WebElementsUtils:ÔÚÒ½ÔºĞÅÏ¢-Î³¶ÈÊäÈë¿òÊäÈë£º111.111</span><br /><br/>
+<a href="#Output-1769252629" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1769252629">
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»å¾®å®˜ç½‘ç®¡ç†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.BrowserUtils:ç­‰å¾…1ç§’</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»åŒ»é™¢åŸºæœ¬ä¿¡æ¯</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:æ¸…ç©ºåŒ»é™¢ä¿¡æ¯-åŒ»é™¢åç§°è¾“å…¥æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»é™¢ä¿¡æ¯-åŒ»é™¢åç§°è¾“å…¥æ¡†è¾“å…¥ï¼šå®¿è¿å¸‚äººæ°‘åŒ»é™¢</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:æ¸…ç©ºåŒ»é™¢ä¿¡æ¯-å–å·åœ°ç‚¹è¾“å…¥æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»é™¢ä¿¡æ¯-å–å·åœ°ç‚¹è¾“å…¥æ¡†è¾“å…¥ï¼šå–å·åœ°ç‚¹</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:æ¸…ç©ºåŒ»é™¢ä¿¡æ¯-å–å¡åœ°ç‚¹è¾“å…¥æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»é™¢ä¿¡æ¯-å–å¡åœ°ç‚¹è¾“å…¥æ¡†è¾“å…¥ï¼šå–å¡åœ°ç‚¹</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:æ¸…ç©ºåŒ»é™¢ä¿¡æ¯-åŒ»é™¢ç­‰çº§è¾“å…¥æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»é™¢ä¿¡æ¯-åŒ»é™¢ç­‰çº§è¾“å…¥æ¡†è¾“å…¥ï¼šä¸‰çº§ç”²ç­‰</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»åŒ»é™¢ä¿¡æ¯-è¯·é€‰æ‹©çœä¸‹æ‹‰æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»åŒ»é™¢ä¿¡æ¯-é€‰æ‹©çœæŒ‰é’®</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»åŒ»é™¢ä¿¡æ¯-è¯·é€‰æ‹©çœä¸‹æ‹‰æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:ç‚¹å‡»åŒ»é™¢ä¿¡æ¯-é€‰æ‹©å¸‚æŒ‰é’®</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:æ¸…ç©ºåŒ»é™¢ä¿¡æ¯-åŒ»é™¢åœ°å€è¾“å…¥æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»é™¢ä¿¡æ¯-åŒ»é™¢åœ°å€è¾“å…¥æ¡†è¾“å…¥ï¼šåŒ»é™¢åœ°å€</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:æ¸…ç©ºåŒ»é™¢ä¿¡æ¯-å®˜æ–¹ç½‘ç«™è¾“å…¥æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»é™¢ä¿¡æ¯-å®˜æ–¹ç½‘ç«™è¾“å…¥æ¡†è¾“å…¥ï¼šhttps://www.baidu/com</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:æ¸…ç©ºåŒ»é™¢ä¿¡æ¯-åŒ»é™¢ç”µè¯è¾“å…¥æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»é™¢ä¿¡æ¯-åŒ»é™¢ç”µè¯è¾“å…¥æ¡†è¾“å…¥ï¼š17621851286</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:æ¸…ç©ºåŒ»é™¢ä¿¡æ¯-åŒ»é™¢äº¤é€šè¾“å…¥æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»é™¢ä¿¡æ¯-åŒ»é™¢äº¤é€šè¾“å…¥æ¡†è¾“å…¥ï¼šåŒ»é™¢äº¤é€š</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:æ¸…ç©ºåŒ»é™¢ä¿¡æ¯-åŒ»é™¢ä»‹ç»è¾“å…¥æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»é™¢ä¿¡æ¯-åŒ»é™¢ä»‹ç»è¾“å…¥æ¡†è¾“å…¥ï¼šåŒ»é™¢ç®€ä»‹</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:æ¸…ç©ºåŒ»é™¢ä¿¡æ¯-ç»åº¦è¾“å…¥æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»é™¢ä¿¡æ¯-ç»åº¦è¾“å…¥æ¡†è¾“å…¥ï¼š111.111</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:æ¸…ç©ºåŒ»é™¢ä¿¡æ¯-çº¬åº¦è¾“å…¥æ¡†</span><br /><br/>
+<span style='color:blue'>ã€infoã€‘com.witontek.ehospital2.base.WebElementsUtils:åœ¨åŒ»é™¢ä¿¡æ¯-çº¬åº¦è¾“å…¥æ¡†è¾“å…¥ï¼š111.111</span><br /><br/>
 </div>
 </td>
 <td></td>
-<td>12</td>
+<td>6</td>
 <td>com.witontek.ehospital2.test.HospitalInformationTest@52af6cff</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.witontek.ehospital2.test.DepartmentManageTest.searchDepManDepartment()'><b>searchDepManDepartment</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br/>
-<a href="#Output-2094115865" onClick='toggleBox("Output-2094115865", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2094115865" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2094115865">
-<span style='color:blue'>¡¾info¡¿com.witontek.ehospital2.base.ExcelUtils:¶ÁÈ¡searchDocManDoctor.xlsxÎÄ¼ş</span><br /><br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: ¹ÊÒâ¶ÏÑÔÊ§°Ü£¬²¢ÖĞ¶ÏÖ´ĞĞ´ËÓÃÀı expected [2] but found [1]
-	at com.witontek.ehospital2.base.Log.errorShot(Log.java:39)
-	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:32)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:58)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:55)
-	at com.witontek.ehospital2.base.WebElementsUtils.input(WebElementsUtils.java:96)
-	at com.witontek.ehospital2.page.LoginPage.login(LoginPage.java:26)
-	at com.witontek.ehospital2.test.DepartmentManageTest.beforeMethod(DepartmentManageTest.java:41)
-... Removed 42 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2094115865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2094115865'><pre>java.lang.AssertionError: ¹ÊÒâ¶ÏÑÔÊ§°Ü£¬²¢ÖĞ¶ÏÖ´ĞĞ´ËÓÃÀı expected [2] but found [1]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:388)
-	at com.witontek.ehospital2.base.Log.errorShot(Log.java:39)
-	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:32)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:58)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:55)
-	at com.witontek.ehospital2.base.WebElementsUtils.input(WebElementsUtils.java:96)
-	at com.witontek.ehospital2.page.LoginPage.login(LoginPage.java:26)
-	at com.witontek.ehospital2.test.DepartmentManageTest.beforeMethod(DepartmentManageTest.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</pre></div></td>
-<td>0</td>
-<td>com.witontek.ehospital2.test.DepartmentManageTest@3551a94</td></tr>
 </table><p>
 </body>
 </html>
