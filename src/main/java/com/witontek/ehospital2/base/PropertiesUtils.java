@@ -15,7 +15,7 @@ public class PropertiesUtils {
 	}
 	
 	public String propertiesValue(String key){
-		InputStream in=PropertiesUtils.class.getClassLoader().getResourceAsStream(propertiesName+".properties");
+		InputStream in=PropertiesUtils.class.getClassLoader().getResourceAsStream("com/witontek/ehospital2/config/"+propertiesName+".properties");
 		
 //		String classpath = Thread.currentThread().getContextClassLoader().getResource("/").getPath();  
 //		String fileName = classpath + "config.properties";
