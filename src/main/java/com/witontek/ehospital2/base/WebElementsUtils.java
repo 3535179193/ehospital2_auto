@@ -122,6 +122,35 @@ public class WebElementsUtils extends BrowserUtils{
 		return text;
 	}
 	
+	//弹框-确认
+	public void alertAccept(){
+		sleep(1);
+		driver.switchTo().alert().accept();
+		log.info("点击弹框的确认按钮");
+	}
+	
+	//弹框-取消
+	public void alertDismiss(){
+		sleep(1);
+		driver.switchTo().alert().dismiss();
+		log.info("点击弹框的取消按钮");
+	}
+	
+	//获取弹框文本
+	public String alertText(){
+		sleep(1);
+		String text=driver.switchTo().alert().getText();
+		log.info("获取弹框文本");
+		return text;
+	}
+	
+	//向弹框输入文本信息
+	public void inputAlertText(String text){
+		sleep(1);
+		driver.switchTo().alert().sendKeys(text);
+		log.info("向弹框输入文本信息:"+text);
+	}
+	
 	//跳转frame
 	public void switchToFrame(Locator locator){
 		try{

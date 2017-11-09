@@ -14,43 +14,47 @@ public class DepartmentManagePage extends MainPage{
 
 	private Log log=new Log(DepartmentManagePage.class);
 	
+	//科室管理-导入科室信息按钮
 	protected Locator depManImportDepartmentInfoButton=XmlUtils.readXml("DepartmentManagePage").get("depManImportDepartmentInfoButton");
 	protected Locator depManDownloadDepartmentExcelButton=XmlUtils.readXml("DepartmentManagePage").get("depManDownloadDepartmentExcelButton");
 	protected Locator depManExportDepartmentInfoButton=XmlUtils.readXml("DepartmentManagePage").get("depManExportDepartmentInfoButton");
 	protected Locator depManSynchronousDepartmentHISButton=XmlUtils.readXml("DepartmentManagePage").get("depManSynchronousDepartmentHISButton");
 	
+	//科室管理-科室名称输入框
 	protected Locator depManDepartmentNameInputBox=XmlUtils.readXml("DepartmentManagePage").get("depManDepartmentNameInputBox");
 	protected Locator depManSearchDepartmentButton=XmlUtils.readXml("DepartmentManagePage").get("depManSearchDepartmentButton");
 	
+	//科室管理-新增一级科室按钮
 	protected Locator depManAddFirstDepartmentButton=XmlUtils.readXml("DepartmentManagePage").get("depManAddFirstDepartmentButton");
-		//新增一级科室页面元素
 		protected Locator addCateDepartmentNameInputBox=XmlUtils.readXml("DepartmentManagePage").get("addCateDepartmentNameInputBox");
 		protected Locator addCateDepartmentCodeInputBox=XmlUtils.readXml("DepartmentManagePage").get("addCateDepartmentCodeInputBox");
 		protected Locator addCateDepartmentLogoButton=XmlUtils.readXml("DepartmentManagePage").get("addCateDepartmentLogoButton");
 		protected Locator addCateSaveButton=XmlUtils.readXml("DepartmentManagePage").get("addCateSaveButton");
 		protected Locator addCateReturnButton=XmlUtils.readXml("DepartmentManagePage").get("addCateReturnButton");
 	
+	//科室管理-序号
 	protected Locator depManNumber=XmlUtils.readXml("DepartmentManagePage").get("depManNumber");
-	protected Locator depManCategory=XmlUtils.readXml("DepartmentManagePage").get("depManCategory");
+	protected Locator depManCategoryName=XmlUtils.readXml("DepartmentManagePage").get("depManCategoryName");
 	protected Locator depManContainDepartments=XmlUtils.readXml("DepartmentManagePage").get("depManContainDepartments");
 	
+	//科室管理-编辑一级科室按钮
 	protected Locator depManEditButton=XmlUtils.readXml("DepartmentManagePage").get("depManEditButton");
-		//编辑一级科室页面元素
 		protected Locator ediCateDepartmentNameInputBox=XmlUtils.readXml("DepartmentManagePage").get("ediCateDepartmentNameInputBox");
 		protected Locator ediCateDepartmentCodeInputBox=XmlUtils.readXml("DepartmentManagePage").get("ediCateDepartmentCodeInputBox");
 		protected Locator ediCateDepartmentLogoButton=XmlUtils.readXml("DepartmentManagePage").get("ediCateDepartmentLogoButton");
 		protected Locator ediCateEditButton=XmlUtils.readXml("DepartmentManagePage").get("ediCateEditButton");
 		protected Locator ediCateReturnButton=XmlUtils.readXml("DepartmentManagePage").get("ediCateReturnButton");
-		
+	
+	//科室管理-删除按钮
 	protected Locator depManDeleteButton=XmlUtils.readXml("DepartmentManagePage").get("depManDeleteButton");
 	protected Locator depManViewDepartmentButton=XmlUtils.readXml("DepartmentManagePage").get("depManViewDepartmentButton");
 	protected Locator depManMoveUpButton=XmlUtils.readXml("DepartmentManagePage").get("depManMoveUpButton");
 	protected Locator depManMoveDownButton=XmlUtils.readXml("DepartmentManagePage").get("depManMoveDownButton");
 	protected Locator depManMoveTopButton=XmlUtils.readXml("DepartmentManagePage").get("depManMoveTopButton");
 
+	//科室管理-每页显示数下拉框
 	protected Locator depManEachPageRecordersDropBox=XmlUtils.readXml("DepartmentManagePage").get("depManEachPageRecordersDropBox");
 	protected Locator depManEachPageTenRecorders=XmlUtils.readXml("DepartmentManagePage").get("depManEachPageTenRecorders");	
-	
 	protected Locator depManTotalRecorders=XmlUtils.readXml("DepartmentManagePage").get("depManTotalRecorders");
 	protected Locator depManTotalPages=XmlUtils.readXml("DepartmentManagePage").get("depManTotalPages");
 	protected Locator depManCurrentPage=XmlUtils.readXml("DepartmentManagePage").get("depManCurrentPage");
@@ -58,6 +62,13 @@ public class DepartmentManagePage extends MainPage{
 	protected Locator depManPreviousPageButton=XmlUtils.readXml("DepartmentManagePage").get("depManPreviousPageButton");
 	protected Locator depManNextPageButton=XmlUtils.readXml("DepartmentManagePage").get("depManNextPageButton");
 	protected Locator depManLastPageButton=XmlUtils.readXml("DepartmentManagePage").get("depManLastPageButton");
+	
+	//弹框
+	protected Locator depManAlertBox=XmlUtils.readXml("DepartmentManagePage").get("depManAlertBox");
+	protected Locator depManCloseButton=XmlUtils.readXml("DepartmentManagePage").get("depManCloseButton");
+	
+	//被验证的数据
+	protected Locator depManAssertAddDepartmentCategory=XmlUtils.readXml("DepartmentManagePage").get("depManAssertAddDepartmentCategory");
 	
 	//点击导入科室信息
 	public void clickDepManImportDepartmentInfoButton(){
@@ -95,13 +106,13 @@ public class DepartmentManagePage extends MainPage{
 	}
 	
 	//新增一级科室-输入科室名称
-	public void inputAddCateDepartmentNameInputBox(String departmentName){
-		input(addCateDepartmentNameInputBox, departmentName);
+	public void inputAddCateDepartmentNameInputBox(String categoryName){
+		input(addCateDepartmentNameInputBox, categoryName);
 	}
 	
 	//新增一级科室-输入科室名称
-	public void inputAddCateDepartmentCodeInputBox(String departmentCode){
-		input(addCateDepartmentCodeInputBox, departmentCode);
+	public void inputAddCateDepartmentCodeInputBox(String categoryCode){
+		input(addCateDepartmentCodeInputBox, categoryCode);
 	}
 	
 	//新增一级科室-点击科室LOGO
@@ -127,8 +138,8 @@ public class DepartmentManagePage extends MainPage{
 	}
 	
 	//获取一级科室名称
-	public String getDepManCategory(){
-		String category=getText(depManCategory);
+	public String getDepManCategoryName(){
+		String category=getText(depManCategoryName);
 		log.info("一级科室名称："+category);
 		return category;
 	}
@@ -145,27 +156,27 @@ public class DepartmentManagePage extends MainPage{
 		click(depManEditButton);
 	}
 	
-	//新增一级科室-输入科室名称
+	//编辑一级科室-输入科室名称
 	public void inputEdiCateDepartmentNameInputBox(String departmentName){
-		input(ediCateDepartmentNameInputBox, departmentName);
+		clearAndInput(ediCateDepartmentNameInputBox, departmentName);
 	}
 	
-	//新增一级科室-输入科室名称
+	//编辑一级科室-输入科室名称
 	public void inputEdiCateDepartmentCodeInputBox(String departmentCode){
-		input(ediCateDepartmentCodeInputBox, departmentCode);
+		clearAndInput(ediCateDepartmentCodeInputBox, departmentCode);
 	}
 	
-	//新增一级科室-点击科室LOGO
+	//编辑一级科室-点击科室LOGO
 	public void clickEdiCateDepartmentLogoButton(){
 		click(ediCateDepartmentLogoButton);
 	}
 	
-	//新增一级科室-点击保存按钮
+	//编辑一级科室-点击保存按钮
 	public void clickEdiCateEditButton(){
 		click(ediCateEditButton);
 	}
 	
-	//新增一级科室-点击返回按钮
+	//编辑一级科室-点击返回按钮
 	public void clickEdiCateReturnButton(){
 		click(ediCateReturnButton);
 	}
@@ -246,4 +257,15 @@ public class DepartmentManagePage extends MainPage{
 		click(depManLastPageButton);
 	}
 	
+	//点击弹框的关闭按钮
+	public void clickDepManCloseButton(){
+		click(depManCloseButton);
+	}
+	
+	//被验证的新增一级科室名称
+	public String assertDepManAssertAddDepartmentCategory(){
+		String departmentCategory=getText(depManAssertAddDepartmentCategory);
+		log.info("被验证的新增一级科室名称："+departmentCategory);
+		return departmentCategory;		
+	}
 }

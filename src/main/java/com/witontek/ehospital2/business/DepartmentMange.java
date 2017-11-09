@@ -13,14 +13,25 @@ public class DepartmentMange extends DepartmentManagePage{
 
 	private Log log=new Log(DepartmentMange.class);
 	
-	//科室管理-搜索科室
-	public String searchDepManDepartment(String searchCondition){
+	//科室管理-搜索一级科室
+	public String searchDepartmentCategoryByName (String categoryName){
 		clickDepartmentManageButton();
-		inputDepManDepartmentName(searchCondition);
+		inputDepManDepartmentName(categoryName);
 		clickDepManSearchDepartmentButton();
 		sleep(1);
-		return getDepManContainDepartments();
+		return getDepManCategoryName();
 	}
 	
+	//新增一级科室
+	public String insertDepartmentsCategory(String categoryName,String categoryCode){
+		clickDepartmentManageButton();
+		clickDepManAddFirstDepartmentButton();
+		inputAddCateDepartmentNameInputBox(categoryName);
+		inputAddCateDepartmentCodeInputBox(categoryCode);
+		clickAddCateSaveButton();
+		alertDismiss();
+		clickDepManLastPageButton();
+		return assertDepManAssertAddDepartmentCategory();
+	}
 	
 }

@@ -22,17 +22,28 @@ public class DepartmentManageTest {
 
 	private WebDriver driver;
 
-	@Test(dataProvider = "searchDepManDepartment")
-	public void searchDepManDepartment(String caseName, String expectedResult,Map<String, String> testData) {
+	//科室管理-搜索一级科室
+	@Test(dataProvider = "searchDepartmentCategoryByName")
+	public void searchDepartmentCategoryByName(String caseName, String expectedResult,Map<String, String> testData) {
 		DepartmentMange departmentMange = new DepartmentMange(driver);
-		AssertUtils.assertActualContainExpect(departmentMange
-				.searchDepManDepartment(testData.get("searchCondition")),
-				expectedResult, caseName);
+		AssertUtils.assertActualContainExpect(departmentMange.searchDepartmentCategoryByName(testData.get("categoryName")),expectedResult, caseName);
 	}
 
-	@DataProvider(name = "searchDepManDepartment")
-	public Iterator<Object[]> searchDepManDepartment() {
-		return ExcelUtils.readExcel("searchDepManDepartment");
+	@DataProvider(name = "searchDepartmentCategoryByName")
+	public Iterator<Object[]> searchDepartmentCategoryByName() {
+		return ExcelUtils.readExcel("searchDepartmentCategoryByName");
+	}
+	
+	//科室管理-新增一级科室
+	@Test(dataProvider = "insertDepartmentsCategory",enabled=false)
+	public void insertDepartmentsCategory(String caseName, String expectedResult,Map<String, String> testData) {
+		DepartmentMange departmentMange = new DepartmentMange(driver);
+		AssertUtils.assertActualEqualExpect(departmentMange.insertDepartmentsCategory(testData.get("categoryName"),testData.get("categoryCode")),expectedResult, caseName);
+	}
+
+	@DataProvider(name = "insertDepartmentsCategory")
+	public Iterator<Object[]> insertDepartmentsCategory() {
+		return ExcelUtils.readExcel("insertDepartmentsCategory");
 	}
 
 	@BeforeMethod

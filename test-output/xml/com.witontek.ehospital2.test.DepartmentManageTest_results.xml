@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.748">
+           time="3.203">
   <properties />
   
   
-            <testcase name="searchDepManDepartment" time="3.748" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
+            <testcase name="searchDepManDepartment" time="3.203" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
       
 </testsuite>
