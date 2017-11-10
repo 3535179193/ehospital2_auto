@@ -44,6 +44,15 @@ public class BrowserUtils {
 		}
 	}
 	
+	public static void wait(int i){
+		try {
+			Thread.sleep(i*100);
+		} catch (Exception e) {
+			log.error("线程休眠出错");
+			e.printStackTrace();
+		}
+	}
+	
 	public String screenShot(){
 		SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH.mm.ss");
 		String time=dateFormat.format(Calendar.getInstance().getTime()).toString();

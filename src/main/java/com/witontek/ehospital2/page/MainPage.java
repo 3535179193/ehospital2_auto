@@ -66,13 +66,11 @@ public class MainPage extends LoginPage{
 	//点击医院配置
 	public void clickHospitalConfigButton(){
 		click(hospitalConfigButton);
-		sleep(1);
 	}
 	
 	//点击微官网管理
 	public void clickMiniWebsiteButton(){
 		click(miniWebsiteButton);
-		sleep(1);
 	}
 	
 	//点击医院基本信息
@@ -96,7 +94,6 @@ public class MainPage extends LoginPage{
 	//点击业务信息管理
 	public void clickBusinessInformationButton(){
 		click(businessInformationButton);
-		sleep(1);
 	}
 	
 	//点击科室管理
@@ -174,7 +171,6 @@ public class MainPage extends LoginPage{
 	//点击统计分析
 	public void clickAnalysisButton(){
 		click(analysisButton);
-		sleep(1);
 	}
 	
 	//点击登录日志

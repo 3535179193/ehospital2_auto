@@ -23,7 +23,7 @@ public class DepartmentManageTest {
 	private WebDriver driver;
 
 	//科室管理-搜索一级科室
-	@Test(dataProvider = "searchDepartmentCategoryByName")
+	@Test(dataProvider = "searchDepartmentCategoryByName",enabled=false)
 	public void searchDepartmentCategoryByName(String caseName, String expectedResult,Map<String, String> testData) {
 		DepartmentMange departmentMange = new DepartmentMange(driver);
 		AssertUtils.assertActualContainExpect(departmentMange.searchDepartmentCategoryByName(testData.get("categoryName")),expectedResult, caseName);
@@ -34,8 +34,22 @@ public class DepartmentManageTest {
 		return ExcelUtils.readExcel("searchDepartmentCategoryByName");
 	}
 	
+	//科室管理-下移一级科室
+	@Test(enabled=false)
+	public void moveDownDepartmentCategory() {
+		DepartmentMange departmentMange = new DepartmentMange(driver);
+		departmentMange.moveDownDepartmentCategory();
+	}
+	
+	//科室管理-上移一级科室
+	@Test(dependsOnMethods={"moveDownDepartmentCategory"},enabled=false)
+	public void moveUpDepartmentCategory() {
+		DepartmentMange departmentMange = new DepartmentMange(driver);
+		departmentMange.moveUpDepartmentCategory();
+	}
+	
 	//科室管理-新增一级科室
-	@Test(dataProvider = "insertDepartmentsCategory",enabled=false)
+	@Test(dataProvider = "insertDepartmentsCategory",enabled=true)
 	public void insertDepartmentsCategory(String caseName, String expectedResult,Map<String, String> testData) {
 		DepartmentMange departmentMange = new DepartmentMange(driver);
 		AssertUtils.assertActualEqualExpect(departmentMange.insertDepartmentsCategory(testData.get("categoryName"),testData.get("categoryCode")),expectedResult, caseName);
@@ -44,6 +58,32 @@ public class DepartmentManageTest {
 	@DataProvider(name = "insertDepartmentsCategory")
 	public Iterator<Object[]> insertDepartmentsCategory() {
 		return ExcelUtils.readExcel("insertDepartmentsCategory");
+	}
+	
+	//科室管理-置顶一级科室
+	@Test(dependsOnMethods={"insertDepartmentsCategory"},enabled=true)
+	public void moveTopDepartmentCategory() {
+		DepartmentMange departmentMange = new DepartmentMange(driver);
+		departmentMange.moveTopDepartmentCategory();
+	}
+	
+	//科室管理-编辑一级科室
+	@Test(dataProvider = "updateDepartmentCategory",dependsOnMethods={"moveTopDepartmentCategory"},enabled=true)
+	public void updateDepartmentCategory(String caseName, String expectedResult,Map<String, String> testData) {
+		DepartmentMange departmentMange = new DepartmentMange(driver);
+		AssertUtils.assertActualEqualExpect(departmentMange.updateDepartmentCategory(testData.get("categoryName"),testData.get("categoryCode")),expectedResult, caseName);
+	}
+
+	@DataProvider(name = "updateDepartmentCategory")
+	public Iterator<Object[]> updateDepartmentCategory() {
+		return ExcelUtils.readExcel("updateDepartmentCategory");
+	}
+	
+	//科室管理-删除一级科室
+	@Test(dependsOnMethods={"updateDepartmentCategory"},enabled=true)
+	public void deleteDepartmentCategory() {
+		DepartmentMange departmentMange = new DepartmentMange(driver);
+		departmentMange.deleteDepartmentCategory();
 	}
 
 	@BeforeMethod

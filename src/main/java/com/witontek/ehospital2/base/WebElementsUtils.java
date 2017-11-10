@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 public class WebElementsUtils extends BrowserUtils{
 	
@@ -60,6 +59,7 @@ public class WebElementsUtils extends BrowserUtils{
 		});}catch(Exception e){
 			log.errorShot("查找"+locator.getName()+"的网页元素时超时显示等待时间", driver);
 		}
+		wait(2);
 		return webElement;
 	}
 

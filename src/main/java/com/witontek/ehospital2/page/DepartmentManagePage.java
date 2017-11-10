@@ -34,7 +34,8 @@ public class DepartmentManagePage extends MainPage{
 	
 	//科室管理-序号
 	protected Locator depManNumber=XmlUtils.readXml("DepartmentManagePage").get("depManNumber");
-	protected Locator depManCategoryName=XmlUtils.readXml("DepartmentManagePage").get("depManCategoryName");
+	protected Locator depManFirstCategoryName=XmlUtils.readXml("DepartmentManagePage").get("depManFirstCategoryName");
+	protected Locator depManSecondCategoryName=XmlUtils.readXml("DepartmentManagePage").get("depManSecondCategoryName");
 	protected Locator depManContainDepartments=XmlUtils.readXml("DepartmentManagePage").get("depManContainDepartments");
 	
 	//科室管理-编辑一级科室按钮
@@ -137,10 +138,17 @@ public class DepartmentManagePage extends MainPage{
 		return number;
 	}
 	
-	//获取一级科室名称
-	public String getDepManCategoryName(){
-		String category=getText(depManCategoryName);
-		log.info("一级科室名称："+category);
+	//获取序号为1的一级科室名称
+	public String getDepManFirstCategoryName(){
+		String category=getText(depManFirstCategoryName);
+		log.info("序号为1的一级科室名称："+category);
+		return category;
+	}
+	
+	//获取序号为2的一级科室名称
+	public String getDepManSecondCategoryName(){
+		String category=getText(depManSecondCategoryName);
+		log.info("序号为2的一级科室名称："+category);
 		return category;
 	}
 	
@@ -156,13 +164,13 @@ public class DepartmentManagePage extends MainPage{
 		click(depManEditButton);
 	}
 	
-	//编辑一级科室-输入科室名称
-	public void inputEdiCateDepartmentNameInputBox(String departmentName){
+	//编辑一级科室-编辑科室名称
+	public void updateEdiCateDepartmentNameInputBox(String departmentName){
 		clearAndInput(ediCateDepartmentNameInputBox, departmentName);
 	}
 	
-	//编辑一级科室-输入科室名称
-	public void inputEdiCateDepartmentCodeInputBox(String departmentCode){
+	//编辑一级科室-编辑科室编码
+	public void updateEdiCateDepartmentCodeInputBox(String departmentCode){
 		clearAndInput(ediCateDepartmentCodeInputBox, departmentCode);
 	}
 	
@@ -260,10 +268,11 @@ public class DepartmentManagePage extends MainPage{
 	//点击弹框的关闭按钮
 	public void clickDepManCloseButton(){
 		click(depManCloseButton);
+		sleep(1);
 	}
 	
 	//被验证的新增一级科室名称
-	public String assertDepManAssertAddDepartmentCategory(){
+	public String assertDepManAddDepartmentCategory(){
 		String departmentCategory=getText(depManAssertAddDepartmentCategory);
 		log.info("被验证的新增一级科室名称："+departmentCategory);
 		return departmentCategory;		

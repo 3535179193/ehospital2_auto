@@ -39,7 +39,7 @@
 		<Locator name="编辑二级科室-返回按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'返回')]"				>ediDepReturnButton</Locator>
 	
 	<Locator name="二级科室管理-上移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="0"			>secLevMoveUpButton</Locator>
-    <Locator name="二级科室管理-下移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"			>secLevMoveDownButton</Locator>
+    <Locator name="二级科室管理-下移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="1"			>secLevMoveDownButton</Locator>
 	<Locator name="二级科室管理-置顶按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="0"			>secLevMoveTopButton</Locator>
 	<Locator name="二级科室管理-隐藏按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-click='$ctrl.changeDepartmentStatus(item)']"		index="0"	>secLevViewDepartmentButton</Locator>
 	
@@ -48,9 +48,11 @@
 	<Locator name="二级科室管理-总记录数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='second-department-list']/page/div/div[2]/span[1]"	>secLevTotalRecorders</Locator>
 	<Locator name="二级科室管理-总页数" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"								>secLevTotalPages</Locator>
 	<Locator name="二级科室管理-当前页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='second-department-list']/page/div/div[2]/span[3]"	>secLevCurrentPage</Locator>
-	<Locator name="二级科室管理-第一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'第一页')]"										>secLevFirstPageButton</Locator>
-	<Locator name="二级科室管理-上一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上一页')]"										>secLevPreviousPageButton</Locator>	
-	<Locator name="二级科室管理-下一页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下一页')]"										>secLevNextPageButton</Locator>
-	<Locator name="二级科室管理-最末页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'最末页')]"										>secLevLastPageButton</Locator>
+	<Locator name="二级科室管理-第一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[1]"		>secLevFirstPageButton</Locator>
+	<Locator name="二级科室管理-上一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[2]"		>secLevPreviousPageButton</Locator>	
+	<Locator name="二级科室管理-下一页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[3]"		>secLevNextPageButton</Locator>
+	<Locator name="二级科室管理-最末页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[4]"		>secLevLastPageButton</Locator>
 
+	<Locator name="科室管理-弹框关闭按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showCloseButton']/button"				>depManCloseButton</Locator>
+	
 </Page>

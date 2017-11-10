@@ -16,7 +16,7 @@ public class DriverUtils {
 		driver=new ChromeDriver();
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		log.info("打开谷歌浏览器");
 		
