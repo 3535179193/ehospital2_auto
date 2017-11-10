@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
   <reporter-output>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
@@ -17,7 +17,7 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取searchDepManDepartment.xlsx文件</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取searchDepartmentCategoryByName.xlsx文件</span><br />]]>
     </line>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -53,10 +53,10 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-包含的二级科室的文本信息</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-一级科室名称的文本信息</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:包含的二级科室：皮肤科</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:一级科室名称：皮肤科</span><br />]]>
     </line>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（皮肤科）包含预期结果（皮肤科），搜索科室成功</span><br />]]>
@@ -311,12 +311,12 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
     </line>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="202478" started-at="2017-11-08T16:51:27Z" finished-at="2017-11-08T16:54:49Z">
+  <suite name="Command line suite" duration-ms="137213" started-at="2017-11-10T01:16:32Z" finished-at="2017-11-10T01:18:49Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="202478" started-at="2017-11-08T16:51:27Z" finished-at="2017-11-08T16:54:49Z">
+    <test name="Command line test" duration-ms="137213" started-at="2017-11-10T01:16:32Z" finished-at="2017-11-10T01:18:49Z">
       <class name="com.witontek.ehospital2.test.HospitalInformationTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@52af6cff]" name="beforeMethod" is-config="true" duration-ms="17237" started-at="2017-11-09T00:53:24Z" finished-at="2017-11-09T00:53:41Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2c9f9fb0]" name="beforeMethod" is-config="true" duration-ms="14357" started-at="2017-11-10T09:17:41Z" finished-at="2017-11-10T09:17:56Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -335,7 +335,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="updateHospitalInformation(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@52af6cff]" name="updateHospitalInformation" duration-ms="6199" started-at="2017-11-09T00:53:41Z" data-provider="updateHospitalInformation" finished-at="2017-11-09T00:53:47Z">
+        <test-method status="PASS" signature="updateHospitalInformation(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2c9f9fb0]" name="updateHospitalInformation" duration-ms="5756" started-at="2017-11-10T09:17:56Z" data-provider="updateHospitalInformation" finished-at="2017-11-10T09:18:01Z">
           <params>
             <param index="0">
               <value>
@@ -445,7 +445,7 @@
         </test-method> <!-- updateHospitalInformation -->
       </class> <!-- com.witontek.ehospital2.test.HospitalInformationTest -->
       <class name="com.witontek.ehospital2.test.LoginTest">
-        <test-method status="PASS" signature="loginSuccess(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.LoginTest@735b478]" name="loginSuccess" duration-ms="18707" started-at="2017-11-09T00:53:47Z" data-provider="loginSuccess" finished-at="2017-11-09T00:54:06Z">
+        <test-method status="PASS" signature="loginSuccess(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.LoginTest@2096442d]" name="loginSuccess" duration-ms="14541" started-at="2017-11-10T09:18:02Z" data-provider="loginSuccess" finished-at="2017-11-10T09:18:16Z">
           <params>
             <param index="0">
               <value>
@@ -489,7 +489,7 @@
         </test-method> <!-- loginSuccess -->
       </class> <!-- com.witontek.ehospital2.test.LoginTest -->
       <class name="com.witontek.ehospital2.test.SubscriptionManageTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@2c9f9fb0]" name="beforeMethod" is-config="true" duration-ms="19053" started-at="2017-11-09T00:54:06Z" finished-at="2017-11-09T00:54:25Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@9f70c54]" name="beforeMethod" is-config="true" duration-ms="13722" started-at="2017-11-10T09:18:16Z" finished-at="2017-11-10T09:18:30Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -508,7 +508,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectSubscriptionDate(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@2c9f9fb0]" name="selectSubscriptionDate" duration-ms="4602" started-at="2017-11-09T00:54:25Z" data-provider="selectSubscriptionDate" finished-at="2017-11-09T00:54:30Z">
+        <test-method status="PASS" signature="selectSubscriptionDate(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@9f70c54]" name="selectSubscriptionDate" duration-ms="3248" started-at="2017-11-10T09:18:30Z" data-provider="selectSubscriptionDate" finished-at="2017-11-10T09:18:33Z">
           <params>
             <param index="0">
               <value>
@@ -558,42 +558,42 @@
         </test-method> <!-- selectSubscriptionDate -->
       </class> <!-- com.witontek.ehospital2.test.SubscriptionManageTest -->
       <class name="com.witontek.ehospital2.test.DepartmentManageTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@3551a94]" name="beforeTest" is-config="true" duration-ms="14206" started-at="2017-11-09T00:51:27Z" finished-at="2017-11-09T00:51:41Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@52af6cff]" name="beforeTest" is-config="true" duration-ms="5961" started-at="2017-11-10T09:16:32Z" finished-at="2017-11-10T09:16:38Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@531be3c5]" name="beforeTest" is-config="true" duration-ms="6082" started-at="2017-11-09T00:51:41Z" finished-at="2017-11-09T00:51:47Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@735b478]" name="beforeTest" is-config="true" duration-ms="5426" started-at="2017-11-10T09:16:38Z" finished-at="2017-11-10T09:16:44Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@52af6cff]" name="beforeTest" is-config="true" duration-ms="7336" started-at="2017-11-09T00:51:47Z" finished-at="2017-11-09T00:51:54Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2c9f9fb0]" name="beforeTest" is-config="true" duration-ms="5527" started-at="2017-11-10T09:16:44Z" finished-at="2017-11-10T09:16:49Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@735b478]" name="beforeTest" is-config="true" duration-ms="8554" started-at="2017-11-09T00:51:54Z" finished-at="2017-11-09T00:52:03Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@2096442d]" name="beforeTest" is-config="true" duration-ms="5843" started-at="2017-11-10T09:16:49Z" finished-at="2017-11-10T09:16:55Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@2c9f9fb0]" name="beforeTest" is-config="true" duration-ms="23791" started-at="2017-11-09T00:52:03Z" finished-at="2017-11-09T00:52:27Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@9f70c54]" name="beforeTest" is-config="true" duration-ms="5936" started-at="2017-11-10T09:16:55Z" finished-at="2017-11-10T09:17:01Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@3551a94]" name="beforeMethod" is-config="true" duration-ms="16884" started-at="2017-11-09T00:52:40Z" finished-at="2017-11-09T00:52:57Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@52af6cff]" name="beforeMethod" is-config="true" duration-ms="15283" started-at="2017-11-10T09:17:02Z" finished-at="2017-11-10T09:17:18Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -612,7 +612,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="searchDepManDepartment(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@3551a94]" name="searchDepManDepartment" duration-ms="5846" started-at="2017-11-09T00:52:57Z" data-provider="searchDepManDepartment" finished-at="2017-11-09T00:53:03Z">
+        <test-method status="PASS" signature="searchDepartmentCategoryByName(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@52af6cff]" name="searchDepartmentCategoryByName" duration-ms="4406" started-at="2017-11-10T09:17:18Z" data-provider="searchDepartmentCategoryByName" finished-at="2017-11-10T09:17:22Z">
           <params>
             <param index="0">
               <value>
@@ -626,7 +626,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[{searchCondition=皮肤科}]]>
+                <![CDATA[{categoryName=皮肤科}]]>
               </value>
             </param>
           </params>
@@ -650,17 +650,17 @@
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-包含的二级科室的文本信息</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-一级科室名称的文本信息</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:包含的二级科室：皮肤科</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:一级科室名称：皮肤科</span><br />]]>
             </line>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（皮肤科）包含预期结果（皮肤科），搜索科室成功</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- searchDepManDepartment -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@3551a94]" name="afterTest" is-config="true" duration-ms="7399" started-at="2017-11-09T00:54:30Z" finished-at="2017-11-09T00:54:37Z">
+        </test-method> <!-- searchDepartmentCategoryByName -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@52af6cff]" name="afterTest" is-config="true" duration-ms="4376" started-at="2017-11-10T09:18:33Z" finished-at="2017-11-10T09:18:37Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -670,7 +670,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@531be3c5]" name="afterTest" is-config="true" duration-ms="3000" started-at="2017-11-09T00:54:37Z" finished-at="2017-11-09T00:54:40Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@735b478]" name="afterTest" is-config="true" duration-ms="3002" started-at="2017-11-10T09:18:37Z" finished-at="2017-11-10T09:18:40Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -680,7 +680,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@52af6cff]" name="afterTest" is-config="true" duration-ms="3002" started-at="2017-11-09T00:54:40Z" finished-at="2017-11-09T00:54:43Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2c9f9fb0]" name="afterTest" is-config="true" duration-ms="3002" started-at="2017-11-10T09:18:40Z" finished-at="2017-11-10T09:18:43Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -690,7 +690,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@735b478]" name="afterTest" is-config="true" duration-ms="3002" started-at="2017-11-09T00:54:43Z" finished-at="2017-11-09T00:54:46Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@2096442d]" name="afterTest" is-config="true" duration-ms="3002" started-at="2017-11-10T09:18:43Z" finished-at="2017-11-10T09:18:46Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -700,7 +700,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@2c9f9fb0]" name="afterTest" is-config="true" duration-ms="3003" started-at="2017-11-09T00:54:46Z" finished-at="2017-11-09T00:54:49Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@9f70c54]" name="afterTest" is-config="true" duration-ms="3001" started-at="2017-11-10T09:18:46Z" finished-at="2017-11-10T09:18:49Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -712,7 +712,7 @@
         </test-method> <!-- afterTest -->
       </class> <!-- com.witontek.ehospital2.test.DepartmentManageTest -->
       <class name="com.witontek.ehospital2.test.DoctorManageTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@531be3c5]" name="beforeMethod" is-config="true" duration-ms="15846" started-at="2017-11-09T00:53:03Z" finished-at="2017-11-09T00:53:19Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@735b478]" name="beforeMethod" is-config="true" duration-ms="15137" started-at="2017-11-10T09:17:22Z" finished-at="2017-11-10T09:17:37Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -731,7 +731,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="searchDocManDoctor(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@531be3c5]" name="searchDocManDoctor" duration-ms="4317" started-at="2017-11-09T00:53:19Z" data-provider="searchDocManDoctor" finished-at="2017-11-09T00:53:23Z">
+        <test-method status="PASS" signature="searchDocManDoctor(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@735b478]" name="searchDocManDoctor" duration-ms="3844" started-at="2017-11-10T09:17:37Z" data-provider="searchDocManDoctor" finished-at="2017-11-10T09:17:41Z">
           <params>
             <param index="0">
               <value>

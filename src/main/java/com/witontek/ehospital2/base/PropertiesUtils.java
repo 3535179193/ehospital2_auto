@@ -1,5 +1,8 @@
 package com.witontek.ehospital2.base;
 
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Properties;
 
@@ -15,15 +18,14 @@ public class PropertiesUtils {
 	}
 	
 	public String propertiesValue(String key){
-		InputStream in=PropertiesUtils.class.getClassLoader().getResourceAsStream("com/witontek/ehospital2/config/"+propertiesName+".properties");
+//		InputStream in=PropertiesUtils.class.getClassLoader().getResourceAsStream("com/witontek/ehospital2/config/"+propertiesName+".properties");
 		
-//		String classpath = Thread.currentThread().getContextClassLoader().getResource("/").getPath();  
-//		String fileName = classpath + "config.properties";
-//		Properties p = new Properties();
-//		FileInputStream fis = new FileInputStream(fileName);
-//		p.load(fis);
-		
-//		InputStream in = lnew BufferedInputStream(new FileInputStream(commConfigFilePath));   
+		InputStream in = null;
+		try {
+			in = new BufferedInputStream(new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/witontek/ehospital2/config/"+propertiesName+".properties"));
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		}   
 
 		properties=new Properties();
 		try {
