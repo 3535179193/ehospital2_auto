@@ -48,6 +48,8 @@ public class WebElementsUtils extends BrowserUtils{
 	
 	//每定位一个元素都加上一个显示等待
 	public WebElement findElement(final Locator locator){
+		//等待0.1秒，防止页面元素加载过慢，定位不到页面元素
+		wait(1);
 		WebElement webElement=null;
 		WebDriverWait wait=new WebDriverWait(driver, locator.getWaitTime());
 		
@@ -59,13 +61,13 @@ public class WebElementsUtils extends BrowserUtils{
 		});}catch(Exception e){
 			log.errorShot("查找"+locator.getName()+"的网页元素时超时显示等待时间", driver);
 		}
-		wait(2);
 		return webElement;
 	}
 
 	//点击
 	public void click(Locator locator){
 		try{
+			
 			findElement(locator).click();
 		}catch(Exception e){
 			log.errorShot("未定位到页面元素，点击"+locator.getName()+"失败", driver);

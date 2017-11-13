@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="11" passed="8">
+<testng-results skipped="3" failed="3" ignored="0" total="12" passed="6">
   <reporter-output>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
@@ -47,16 +47,16 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-最末页按钮</span><br />]]>
+      <![CDATA[<span style='color:red'>【error】com.witontek.ehospital2.base.WebElementsUtils:查找科室管理-最末页按钮的网页元素时出错</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-被验证的新增一级科室名称的文本信息</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:被验证的新增一级科室名称：睿博一级科室</span><br />]]>
+      <![CDATA[<a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.19.52-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.19.52-picture.png' /></a>]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（睿博一级科室）与预期结果（睿博一级科室）相等，新增一级科室成功</span><br />]]>
+      <![CDATA[<span style='color:blue'>【图片地址】D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.19.52-picture.png</span><br />]]>
     </line>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -80,10 +80,7 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：作废科室</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-最末页按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-置顶按钮</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-下移按钮</span><br />]]>
     </line>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br />]]>
@@ -92,22 +89,16 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-第一页按钮</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号2的一级科室名称的文本信息</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为2的一级科室名称：作废科室</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:下移一级科室成功</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：睿博一级科室</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:置顶一级科室成功</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取updateDepartmentCategory.xlsx文件</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取searchDepartmentCategoryByName.xlsx文件</span><br />]]>
     </line>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -125,37 +116,19 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-编辑按钮</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在科室管理-科室名称输入框输入：皮肤科</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空编辑一级科室-科室名称输入框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在编辑一级科室-科室名称输入框输入：睿博一级科室（改）</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空编辑一级科室-科室编码输入框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在编辑一级科室-科室编码输入框输入：111111</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击编辑一级科室-修改按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-搜索科室按钮</span><br />]]>
     </line>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：睿博一级科室（改）</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：皮肤科</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（睿博一级科室（改））与预期结果（睿博一级科室（改））相等，编辑一级科室成功</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（皮肤科）包含预期结果（皮肤科），搜索科室成功</span><br />]]>
     </line>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -173,13 +146,13 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-总记录数的文本信息</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:一级科室总数：16</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：急诊2</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-删除按钮</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-上移按钮</span><br />]]>
     </line>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br />]]>
@@ -188,13 +161,13 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-总记录数的文本信息</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号2的一级科室名称的文本信息</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:一级科室总数：15</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为2的一级科室名称：急诊2</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:删除后一级科室总数与删除前不一致，删除一级科室成功</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:上移一级科室成功</span><br />]]>
     </line>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -227,25 +200,16 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理</span><br />]]>
+      <![CDATA[<span style='color:red'>【error】com.witontek.ehospital2.base.WebElementsUtils:未定位到页面元素，点击医生管理失败</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医生管理-医生名称输入框输入：西</span><br />]]>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理-搜索医生按钮</span><br />]]>
+      <![CDATA[<a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.20.26-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.20.26-picture.png' /></a>]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取医生管理-医生姓名的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DoctorManagePage:医生姓名："贾西贝"</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（贾西贝）包含预期结果（贾西贝），搜索成功</span><br />]]>
+      <![CDATA[<span style='color:blue'>【图片地址】D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.20.26-picture.png</span><br />]]>
     </line>
     <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -401,6 +365,60 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
     </line>
     <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取searchSecondDepartmentsByName.xlsx文件</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-查看二级科室按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在二级科室管理-科室名称输入框输入：科</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击二级科室管理-搜索科室按钮</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:red'>【error】com.witontek.ehospital2.base.WebElementsUtils:查找二级科室管理-序号1的二级科室名称带索引的网页元素时出错</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.21.41-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.21.41-picture.png' /></a>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【图片地址】D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.21.41-picture.png</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+    </line>
+    <line>
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.ExcelUtils:读取selectSubscriptionDate.xlsx文件</span><br />]]>
     </line>
     <line>
@@ -449,19 +467,19 @@
       <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
     </line>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="161161" started-at="2017-11-13T01:37:59Z" finished-at="2017-11-13T01:40:40Z">
+  <suite name="Command line suite" duration-ms="175993" started-at="2017-11-13T03:19:16Z" finished-at="2017-11-13T03:22:12Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="161161" started-at="2017-11-13T01:37:59Z" finished-at="2017-11-13T01:40:40Z">
+    <test name="Command line test" duration-ms="175993" started-at="2017-11-13T03:19:16Z" finished-at="2017-11-13T03:22:12Z">
       <class name="com.witontek.ehospital2.test.HospitalInformationTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@737996a0]" name="beforeTest" is-config="true" duration-ms="3470" started-at="2017-11-13T09:39:15Z" finished-at="2017-11-13T09:39:18Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2cb4c3ab]" name="beforeClass" is-config="true" duration-ms="3409" started-at="2017-11-13T11:20:30Z" finished-at="2017-11-13T11:20:34Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@737996a0]" name="beforeMethod" is-config="true" duration-ms="16400" started-at="2017-11-13T09:39:19Z" finished-at="2017-11-13T09:39:35Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2cb4c3ab]" name="beforeMethod" is-config="true" duration-ms="14743" started-at="2017-11-13T11:20:34Z" finished-at="2017-11-13T11:20:49Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -480,7 +498,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="updateHospitalInformation(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@737996a0]" name="updateHospitalInformation" duration-ms="10138" started-at="2017-11-13T09:39:35Z" data-provider="updateHospitalInformation" finished-at="2017-11-13T09:39:45Z">
+        <test-method status="PASS" signature="updateHospitalInformation(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2cb4c3ab]" name="updateHospitalInformation" duration-ms="4334" started-at="2017-11-13T11:20:49Z" data-provider="updateHospitalInformation" finished-at="2017-11-13T11:20:53Z">
           <params>
             <param index="0">
               <value>
@@ -585,7 +603,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- updateHospitalInformation -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@737996a0]" name="afterTest" is-config="true" duration-ms="3880" started-at="2017-11-13T09:39:45Z" finished-at="2017-11-13T09:39:49Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.witontek.ehospital2.test.HospitalInformationTest@2cb4c3ab]" name="afterClass" is-config="true" duration-ms="3861" started-at="2017-11-13T11:20:53Z" finished-at="2017-11-13T11:20:57Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -594,17 +612,162 @@
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- afterTest -->
+        </test-method> <!-- afterClass -->
       </class> <!-- com.witontek.ehospital2.test.HospitalInformationTest -->
-      <class name="com.witontek.ehospital2.test.LoginTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@61dc03ce]" name="beforeTest" is-config="true" duration-ms="3695" started-at="2017-11-13T09:39:49Z" finished-at="2017-11-13T09:39:53Z">
+      <class name="com.witontek.ehospital2.test.SecondLevelDepartmentTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.witontek.ehospital2.test.SecondLevelDepartmentTest@12843fce]" name="beforeClass" is-config="true" duration-ms="3427" started-at="2017-11-13T11:21:19Z" finished-at="2017-11-13T11:21:23Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="loginSuccess(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.LoginTest@61dc03ce]" name="loginSuccess" duration-ms="15579" started-at="2017-11-13T09:39:53Z" data-provider="loginSuccess" finished-at="2017-11-13T09:40:08Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.SecondLevelDepartmentTest@12843fce]" name="beforeMethod" is-config="true" duration-ms="15468" started-at="2017-11-13T11:21:23Z" finished-at="2017-11-13T11:21:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="searchSecondDepartmentsByName(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.SecondLevelDepartmentTest@12843fce]" name="searchSecondDepartmentsByName" duration-ms="3518" started-at="2017-11-13T11:21:38Z" data-provider="searchSecondDepartmentsByName" finished-at="2017-11-13T11:21:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[搜索二级科室]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[科]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{departmentName=科}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[故意断言失败，并中断执行此用例 expected [2] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
+	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:44)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:57)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:54)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:54)
+	at com.witontek.ehospital2.base.WebElementsUtils.getText(WebElementsUtils.java:118)
+	at com.witontek.ehospital2.page.SecondLevelDepartmentPage.getSecLevFirstDepartmentName(SecondLevelDepartmentPage.java:162)
+	at com.witontek.ehospital2.business.SecondLevelDepartment.searchSecondDepartmentsByName(SecondLevelDepartment.java:23)
+	at com.witontek.ehospital2.test.SecondLevelDepartmentTest.searchSecondDepartmentsByName(SecondLevelDepartmentTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-查看二级科室按钮</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在二级科室管理-科室名称输入框输入：科</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击二级科室管理-搜索科室按钮</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:red'>【error】com.witontek.ehospital2.base.WebElementsUtils:查找二级科室管理-序号1的二级科室名称带索引的网页元素时出错</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.21.41-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.21.41-picture.png' /></a>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【图片地址】D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.21.41-picture.png</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchSecondDepartmentsByName -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.witontek.ehospital2.test.SecondLevelDepartmentTest@12843fce]" name="afterClass" is-config="true" duration-ms="3876" started-at="2017-11-13T11:21:42Z" finished-at="2017-11-13T11:21:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.witontek.ehospital2.test.SecondLevelDepartmentTest -->
+      <class name="com.witontek.ehospital2.test.LoginTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@13c78c0b]" name="beforeClass" is-config="true" duration-ms="3487" started-at="2017-11-13T11:20:57Z" finished-at="2017-11-13T11:21:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="loginSuccess(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.LoginTest@13c78c0b]" name="loginSuccess" duration-ms="14704" started-at="2017-11-13T11:21:01Z" data-provider="loginSuccess" finished-at="2017-11-13T11:21:15Z">
           <params>
             <param index="0">
               <value>
@@ -646,7 +809,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginSuccess -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@61dc03ce]" name="afterTest" is-config="true" duration-ms="3795" started-at="2017-11-13T09:40:08Z" finished-at="2017-11-13T09:40:12Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@13c78c0b]" name="afterClass" is-config="true" duration-ms="3852" started-at="2017-11-13T11:21:15Z" finished-at="2017-11-13T11:21:19Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -655,17 +818,17 @@
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- afterTest -->
+        </test-method> <!-- afterClass -->
       </class> <!-- com.witontek.ehospital2.test.LoginTest -->
       <class name="com.witontek.ehospital2.test.SubscriptionManageTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@50f8360d]" name="beforeTest" is-config="true" duration-ms="3426" started-at="2017-11-13T09:40:12Z" finished-at="2017-11-13T09:40:16Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@3dd3bcd]" name="beforeClass" is-config="true" duration-ms="3964" started-at="2017-11-13T11:21:46Z" finished-at="2017-11-13T11:21:49Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@50f8360d]" name="beforeMethod" is-config="true" duration-ms="15262" started-at="2017-11-13T09:40:16Z" finished-at="2017-11-13T09:40:31Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@3dd3bcd]" name="beforeMethod" is-config="true" duration-ms="14215" started-at="2017-11-13T11:21:50Z" finished-at="2017-11-13T11:22:04Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -684,7 +847,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectSubscriptionDate(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@50f8360d]" name="selectSubscriptionDate" duration-ms="5110" started-at="2017-11-13T09:40:31Z" data-provider="selectSubscriptionDate" finished-at="2017-11-13T09:40:36Z">
+        <test-method status="PASS" signature="selectSubscriptionDate(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@3dd3bcd]" name="selectSubscriptionDate" duration-ms="4717" started-at="2017-11-13T11:22:04Z" data-provider="selectSubscriptionDate" finished-at="2017-11-13T11:22:08Z">
           <params>
             <param index="0">
               <value>
@@ -729,7 +892,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- selectSubscriptionDate -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@50f8360d]" name="afterTest" is-config="true" duration-ms="3831" started-at="2017-11-13T09:40:36Z" finished-at="2017-11-13T09:40:40Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.witontek.ehospital2.test.SubscriptionManageTest@3dd3bcd]" name="afterClass" is-config="true" duration-ms="3804" started-at="2017-11-13T11:22:08Z" finished-at="2017-11-13T11:22:12Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -738,17 +901,17 @@
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- afterTest -->
+        </test-method> <!-- afterClass -->
       </class> <!-- com.witontek.ehospital2.test.SubscriptionManageTest -->
       <class name="com.witontek.ehospital2.test.DepartmentManageTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0]" name="beforeTest" is-config="true" duration-ms="5211" started-at="2017-11-13T09:37:59Z" finished-at="2017-11-13T09:38:04Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="beforeClass" is-config="true" duration-ms="5805" started-at="2017-11-13T11:19:16Z" finished-at="2017-11-13T11:19:22Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0]" name="beforeMethod" is-config="true" duration-ms="15873" started-at="2017-11-13T09:38:05Z" finished-at="2017-11-13T09:38:21Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="beforeMethod" is-config="true" duration-ms="14257" started-at="2017-11-13T11:19:23Z" finished-at="2017-11-13T11:19:37Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -767,7 +930,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="insertDepartmentsCategory(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0]" name="insertDepartmentsCategory" duration-ms="6755" started-at="2017-11-13T09:38:21Z" data-provider="insertDepartmentsCategory" finished-at="2017-11-13T09:38:28Z">
+        <test-method status="FAIL" signature="insertDepartmentsCategory(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="insertDepartmentsCategory" duration-ms="15439" started-at="2017-11-13T11:19:37Z" data-provider="insertDepartmentsCategory" finished-at="2017-11-13T11:19:53Z">
           <params>
             <param index="0">
               <value>
@@ -785,6 +948,65 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[故意断言失败，并中断执行此用例 expected [2] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
+	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:31)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:57)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:54)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:54)
+	at com.witontek.ehospital2.base.WebElementsUtils.click(WebElementsUtils.java:69)
+	at com.witontek.ehospital2.page.DepartmentManagePage.clickDepManLastPageButton(DepartmentManagePage.java:265)
+	at com.witontek.ehospital2.business.DepartmentMange.insertDepartmentsCategory(DepartmentMange.java:59)
+	at com.witontek.ehospital2.test.DepartmentManageTest.insertDepartmentsCategory(DepartmentManageTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
@@ -811,20 +1033,20 @@
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-最末页按钮</span><br />]]>
+              <![CDATA[<span style='color:red'>【error】com.witontek.ehospital2.base.WebElementsUtils:查找科室管理-最末页按钮的网页元素时出错</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-被验证的新增一级科室名称的文本信息</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:被验证的新增一级科室名称：睿博一级科室</span><br />]]>
+              <![CDATA[<a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.19.52-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.19.52-picture.png' /></a>]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（睿博一级科室）与预期结果（睿博一级科室）相等，新增一级科室成功</span><br />]]>
+              <![CDATA[<span style='color:blue'>【图片地址】D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.19.52-picture.png</span><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- insertDepartmentsCategory -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0]" name="beforeMethod" is-config="true" duration-ms="1425" started-at="2017-11-13T09:38:28Z" finished-at="2017-11-13T09:38:29Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="beforeMethod" is-config="true" duration-ms="672" started-at="2017-11-13T11:19:53Z" finished-at="2017-11-13T11:19:53Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -843,7 +1065,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="moveTopDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0]" name="moveTopDepartmentCategory" duration-ms="4294" started-at="2017-11-13T09:38:29Z" depends-on-methods="com.witontek.ehospital2.test.DepartmentManageTest.insertDepartmentsCategory" finished-at="2017-11-13T09:38:34Z">
+        <test-method status="PASS" signature="moveDownDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="moveDownDepartmentCategory" duration-ms="2120" started-at="2017-11-13T11:19:53Z" finished-at="2017-11-13T11:19:56Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br />]]>
@@ -852,10 +1074,7 @@
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：作废科室</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-最末页按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-置顶按钮</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-下移按钮</span><br />]]>
             </line>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br />]]>
@@ -864,23 +1083,17 @@
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-第一页按钮</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号2的一级科室名称的文本信息</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为2的一级科室名称：作废科室</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：睿博一级科室</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:置顶一级科室成功</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:下移一级科室成功</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- moveTopDepartmentCategory -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0]" name="beforeMethod" is-config="true" duration-ms="1450" started-at="2017-11-13T09:38:34Z" finished-at="2017-11-13T09:38:35Z">
+        </test-method> <!-- moveDownDepartmentCategory -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="beforeMethod" is-config="true" duration-ms="641" started-at="2017-11-13T11:19:56Z" finished-at="2017-11-13T11:19:56Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -899,61 +1112,84 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="updateDepartmentCategory(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0]" name="updateDepartmentCategory" duration-ms="4081" started-at="2017-11-13T09:38:35Z" data-provider="updateDepartmentCategory" depends-on-methods="com.witontek.ehospital2.test.DepartmentManageTest.moveTopDepartmentCategory" finished-at="2017-11-13T09:38:39Z">
+        <test-method status="PASS" signature="searchDepartmentCategoryByName(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="searchDepartmentCategoryByName" duration-ms="929" started-at="2017-11-13T11:19:56Z" data-provider="searchDepartmentCategoryByName" finished-at="2017-11-13T11:19:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[编辑一级科室成功]]>
+                <![CDATA[搜索科室成功]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[睿博一级科室（改）]]>
+                <![CDATA[皮肤科]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{categoryName=睿博一级科室（改）, categoryCode=111111}]]>
+                <![CDATA[{categoryName=皮肤科}]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-编辑按钮</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在科室管理-科室名称输入框输入：皮肤科</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空编辑一级科室-科室名称输入框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在编辑一级科室-科室名称输入框输入：睿博一级科室（改）</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空编辑一级科室-科室编码输入框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在编辑一级科室-科室编码输入框输入：111111</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击编辑一级科室-修改按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-搜索科室按钮</span><br />]]>
             </line>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：睿博一级科室（改）</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：皮肤科</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（睿博一级科室（改））与预期结果（睿博一级科室（改））相等，编辑一级科室成功</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（皮肤科）包含预期结果（皮肤科），搜索科室成功</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- updateDepartmentCategory -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0]" name="beforeMethod" is-config="true" duration-ms="1406" started-at="2017-11-13T09:38:39Z" finished-at="2017-11-13T09:38:41Z">
+        </test-method> <!-- searchDepartmentCategoryByName -->
+        <test-method status="SKIP" signature="moveTopDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="moveTopDepartmentCategory" duration-ms="0" started-at="2017-11-13T11:19:57Z" depends-on-methods="com.witontek.ehospital2.test.DepartmentManageTest.insertDepartmentsCategory" finished-at="2017-11-13T11:19:57Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DepartmentManageTest.moveTopDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DepartmentManageTest.moveTopDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- moveTopDepartmentCategory -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="beforeMethod" is-config="true" duration-ms="717" started-at="2017-11-13T11:19:57Z" finished-at="2017-11-13T11:19:58Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -972,16 +1208,16 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="deleteDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0]" name="deleteDepartmentCategory" duration-ms="2526" started-at="2017-11-13T09:38:41Z" depends-on-methods="com.witontek.ehospital2.test.DepartmentManageTest.updateDepartmentCategory" finished-at="2017-11-13T09:38:43Z">
+        <test-method status="PASS" signature="moveUpDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="moveUpDepartmentCategory" duration-ms="2120" started-at="2017-11-13T11:19:58Z" depends-on-methods="com.witontek.ehospital2.test.DepartmentManageTest.moveDownDepartmentCategory" finished-at="2017-11-13T11:20:00Z">
           <reporter-output>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-总记录数的文本信息</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:一级科室总数：16</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：急诊2</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-删除按钮</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-上移按钮</span><br />]]>
             </line>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br />]]>
@@ -990,17 +1226,99 @@
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-总记录数的文本信息</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号2的一级科室名称的文本信息</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:一级科室总数：15</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为2的一级科室名称：急诊2</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:删除后一级科室总数与删除前不一致，删除一级科室成功</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:上移一级科室成功</span><br />]]>
             </line>
           </reporter-output>
+        </test-method> <!-- moveUpDepartmentCategory -->
+        <test-method status="SKIP" signature="updateDepartmentCategory(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="updateDepartmentCategory" duration-ms="0" started-at="2017-11-13T11:20:00Z" data-provider="updateDepartmentCategory" depends-on-methods="com.witontek.ehospital2.test.DepartmentManageTest.moveTopDepartmentCategory" finished-at="2017-11-13T11:20:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DepartmentManageTest.updateDepartmentCategory(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DepartmentManageTest.updateDepartmentCategory(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDepartmentCategory -->
+        <test-method status="SKIP" signature="deleteDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="deleteDepartmentCategory" duration-ms="0" started-at="2017-11-13T11:20:00Z" depends-on-methods="com.witontek.ehospital2.test.DepartmentManageTest.updateDepartmentCategory" finished-at="2017-11-13T11:20:00Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DepartmentManageTest.deleteDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DepartmentManageTest.deleteDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- deleteDepartmentCategory -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0]" name="afterTest" is-config="true" duration-ms="4014" started-at="2017-11-13T09:38:43Z" finished-at="2017-11-13T09:38:47Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54]" name="afterClass" is-config="true" duration-ms="3977" started-at="2017-11-13T11:20:00Z" finished-at="2017-11-13T11:20:04Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -1009,17 +1327,17 @@
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- afterTest -->
+        </test-method> <!-- afterClass -->
       </class> <!-- com.witontek.ehospital2.test.DepartmentManageTest -->
       <class name="com.witontek.ehospital2.test.DoctorManageTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@234bef66]" name="beforeTest" is-config="true" duration-ms="4083" started-at="2017-11-13T09:38:47Z" finished-at="2017-11-13T09:38:51Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@50f8360d]" name="beforeClass" is-config="true" duration-ms="4634" started-at="2017-11-13T11:20:04Z" finished-at="2017-11-13T11:20:09Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@234bef66]" name="beforeMethod" is-config="true" duration-ms="16251" started-at="2017-11-13T09:38:52Z" finished-at="2017-11-13T09:39:08Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@50f8360d]" name="beforeMethod" is-config="true" duration-ms="16124" started-at="2017-11-13T11:20:09Z" finished-at="2017-11-13T11:20:25Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
@@ -1038,7 +1356,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="searchDocManDoctor(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@234bef66]" name="searchDocManDoctor" duration-ms="3218" started-at="2017-11-13T09:39:08Z" data-provider="searchDocManDoctor" finished-at="2017-11-13T09:39:11Z">
+        <test-method status="FAIL" signature="searchDocManDoctor(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@50f8360d]" name="searchDocManDoctor" duration-ms="1202" started-at="2017-11-13T11:20:25Z" data-provider="searchDocManDoctor" finished-at="2017-11-13T11:20:26Z">
           <params>
             <param index="0">
               <value>
@@ -1056,34 +1374,79 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[故意断言失败，并中断执行此用例 expected [2] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
+	at com.witontek.ehospital2.base.WebElementsUtils.click(WebElementsUtils.java:71)
+	at com.witontek.ehospital2.page.MainPage.clickDoctorManageButton(MainPage.java:114)
+	at com.witontek.ehospital2.business.DoctorManage.searchDocManDoctor(DoctorManage.java:17)
+	at com.witontek.ehospital2.test.DoctorManageTest.searchDocManDoctor(DoctorManageTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理</span><br />]]>
+              <![CDATA[<span style='color:red'>【error】com.witontek.ehospital2.base.WebElementsUtils:未定位到页面元素，点击医生管理失败</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医生管理-医生名称输入框输入：西</span><br />]]>
+              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理-搜索医生按钮</span><br />]]>
+              <![CDATA[<a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.20.26-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.20.26-picture.png' /></a>]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取医生管理-医生姓名的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.page.DoctorManagePage:医生姓名："贾西贝"</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（贾西贝）包含预期结果（贾西贝），搜索成功</span><br />]]>
+              <![CDATA[<span style='color:blue'>【图片地址】D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.20.26-picture.png</span><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- searchDocManDoctor -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@234bef66]" name="afterTest" is-config="true" duration-ms="3875" started-at="2017-11-13T09:39:11Z" finished-at="2017-11-13T09:39:15Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.witontek.ehospital2.test.DoctorManageTest@50f8360d]" name="afterClass" is-config="true" duration-ms="3983" started-at="2017-11-13T11:20:26Z" finished-at="2017-11-13T11:20:30Z">
           <reporter-output>
             <line>
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
@@ -1092,7 +1455,7 @@
               <![CDATA[<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- afterTest -->
+        </test-method> <!-- afterClass -->
       </class> <!-- com.witontek.ehospital2.test.DoctorManageTest -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->

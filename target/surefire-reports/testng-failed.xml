@@ -3,14 +3,33 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test name="Command line test(failed)">
     <classes>
-      <class name="com.witontek.ehospital2.test.SubscriptionManageTest">
+      <class name="com.witontek.ehospital2.test.DoctorManageTest">
         <methods>
-          <include name="selectSubscriptionDate" invocation-numbers="0"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="searchDocManDoctor" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.witontek.ehospital2.test.DoctorManageTest -->
+      <class name="com.witontek.ehospital2.test.SecondLevelDepartmentTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="searchSecondDepartmentsByName" invocation-numbers="0"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.witontek.ehospital2.test.SecondLevelDepartmentTest -->
+      <class name="com.witontek.ehospital2.test.DepartmentManageTest">
+        <methods>
+          <include name="insertDepartmentsCategory" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="moveTopDepartmentCategory"/>
+          <include name="updateDepartmentCategory"/>
+          <include name="deleteDepartmentCategory"/>
+          <include name="beforeClass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.witontek.ehospital2.test.SubscriptionManageTest -->
+      </class> <!-- com.witontek.ehospital2.test.DepartmentManageTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

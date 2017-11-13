@@ -23,7 +23,7 @@ public class DepartmentMange extends DepartmentManagePage{
 	
 	//下移一级科室
 	public void moveDownDepartmentCategory(){
-		clickDepartmentManageButton();
+//		clickDepartmentManageButton();
 		String beforeMoveDownCategoryName=getDepManFirstCategoryName();
 		clickDepManMoveDownButton();
 		clickDepManCloseButton();

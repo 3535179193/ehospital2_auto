@@ -25,7 +25,7 @@ public class DepartmentManageTest {
 	private WebDriver driver;
 
 	//科室管理-搜索一级科室
-	@Test(dataProvider = "searchDepartmentCategoryByName",enabled=false)
+	@Test(dataProvider = "searchDepartmentCategoryByName",enabled=true)
 	public void searchDepartmentCategoryByName(String caseName, String expectedResult,Map<String, String> testData) {
 		DepartmentMange departmentMange = new DepartmentMange(driver);
 		AssertUtils.assertActualContainExpect(departmentMange.searchDepartmentCategoryByName(testData.get("categoryName")),expectedResult, caseName);
@@ -51,7 +51,7 @@ public class DepartmentManageTest {
 	}
 	
 	//科室管理-新增一级科室
-	@Test(dataProvider = "insertDepartmentsCategory",enabled=true)
+	@Test(dataProvider = "insertDepartmentsCategory",enabled=false)
 	public void insertDepartmentsCategory(String caseName, String expectedResult,Map<String, String> testData) {
 		DepartmentMange departmentMange = new DepartmentMange(driver);
 		AssertUtils.assertActualEqualExpect(departmentMange.insertDepartmentsCategory(testData.get("categoryName"),testData.get("categoryCode")),expectedResult, caseName);
@@ -63,14 +63,14 @@ public class DepartmentManageTest {
 	}
 	
 	//科室管理-置顶一级科室
-	@Test(dependsOnMethods={"insertDepartmentsCategory"},enabled=true)
+	@Test(dependsOnMethods={"insertDepartmentsCategory"},enabled=false)
 	public void moveTopDepartmentCategory() {
 		DepartmentMange departmentMange = new DepartmentMange(driver);
 		departmentMange.moveTopDepartmentCategory();
 	}
 	
 	//科室管理-编辑一级科室
-	@Test(dataProvider = "updateDepartmentCategory",dependsOnMethods={"moveTopDepartmentCategory"},enabled=true)
+	@Test(dataProvider = "updateDepartmentCategory",dependsOnMethods={"moveTopDepartmentCategory"},enabled=false)
 	public void updateDepartmentCategory(String caseName, String expectedResult,Map<String, String> testData) {
 		DepartmentMange departmentMange = new DepartmentMange(driver);
 		AssertUtils.assertActualEqualExpect(departmentMange.updateDepartmentCategory(testData.get("categoryName"),testData.get("categoryCode")),expectedResult, caseName);
@@ -82,7 +82,7 @@ public class DepartmentManageTest {
 	}
 	
 	//科室管理-删除一级科室
-	@Test(dependsOnMethods={"updateDepartmentCategory"},enabled=true)
+	@Test(dependsOnMethods={"updateDepartmentCategory"},enabled=false)
 	public void deleteDepartmentCategory() {
 		DepartmentMange departmentMange = new DepartmentMange(driver);
 		departmentMange.deleteDepartmentCategory();

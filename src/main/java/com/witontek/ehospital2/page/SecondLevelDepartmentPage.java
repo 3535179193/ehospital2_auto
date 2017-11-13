@@ -6,7 +6,7 @@ import com.witontek.ehospital2.base.Locator;
 import com.witontek.ehospital2.base.Log;
 import com.witontek.ehospital2.base.XmlUtils;
 
-public class SecondLevelDepartmentPage extends MainPage{
+public class SecondLevelDepartmentPage extends DepartmentManagePage{
 
 	public SecondLevelDepartmentPage(WebDriver driver) {
 		super(driver);
@@ -19,7 +19,7 @@ public class SecondLevelDepartmentPage extends MainPage{
 	protected Locator secLevSearchDepartmentButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevSearchDepartmentButton");
 	
 	//二级科室管理-新增一级科室按钮
-	protected Locator secLevAddFirstDepartmentButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevAddFirstDepartmentButton");
+	protected Locator secLevAddDepartmentButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevAddDepartmentButton");
 		protected Locator addDepDepartmentNameInputBox=XmlUtils.readXml("SecondLevelDepartmentPage").get("addDepDepartmentNameInputBox");
 		protected Locator addDepDepartmentCodeInputBox=XmlUtils.readXml("SecondLevelDepartmentPage").get("addDepDepartmentCodeInputBox");
 		protected Locator addDepSelectBelongDepartmentDropBox=XmlUtils.readXml("SecondLevelDepartmentPage").get("addDepSelectBelongDepartmentDropBox");
@@ -35,7 +35,8 @@ public class SecondLevelDepartmentPage extends MainPage{
 	
 	//二级科室管理-序号
 	protected Locator secLevNumber=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevNumber");
-	protected Locator secLevDepartmentName=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevDepartmentName");
+	protected Locator secLevFirstDepartmentName=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevFirstDepartmentName");
+	protected Locator secLevSecondDepartmentName=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevSecondDepartmentName");
 	protected Locator secLevDepartmentAddress=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevDepartmentAddress");
 	protected Locator secLevDepartmentFeature=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevDepartmentFeature");
 	protected Locator secLevDepartmentSummary=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevDepartmentSummary");
@@ -59,7 +60,7 @@ public class SecondLevelDepartmentPage extends MainPage{
 	protected Locator secLevMoveUpButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevMoveUpButton");
 	protected Locator secLevMoveDownButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevMoveDownButton");
 	protected Locator secLevMoveTopButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevMoveTopButton");
-	protected Locator secLevViewDepartmentButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevViewDepartmentButton");
+	protected Locator secLevHideButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevHideButton");
 		
 	//二级科室管理-每页显示数下拉框
 	protected Locator secLevEachPageRecordersDropBox=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevEachPageRecordersDropBox");
@@ -71,12 +72,15 @@ public class SecondLevelDepartmentPage extends MainPage{
 	protected Locator secLevPreviousPageButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevPreviousPageButton");
 	protected Locator secLevNextPageButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevNextPageButton");
 	protected Locator secLevLastPageButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevLastPageButton");
+	
+	//
+	protected Locator secLevCloseButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevCloseButton");
 
 	
 	
 	//输入二级科室名称
-	public void inputSecLevDepartmentNameInputBox(String secLevDepartmentName){
-		input(secLevDepartmentNameInputBox, secLevDepartmentName);
+	public void inputSecLevDepartmentNameInputBox(String departmentName){
+		input(secLevDepartmentNameInputBox, departmentName);
 	}
 	
 	//点击搜索科室
@@ -85,8 +89,8 @@ public class SecondLevelDepartmentPage extends MainPage{
 	}
 	
 	//点击新增二级科室
-	public void clickSecLevAddFirstDepartmentButton(){
-		click(secLevAddFirstDepartmentButton);
+	public void clickSecLevAddDepartmentButton(){
+		click(secLevAddDepartmentButton);
 	}
 	
 	//新增二级科室-输入科室名称
@@ -156,11 +160,18 @@ public class SecondLevelDepartmentPage extends MainPage{
 		return number;
 	}
 	
-	//获取二级科室名称
-	public String getSecLevDepartmentName(){
-		String departmentName=getText(secLevDepartmentName);
-		log.info("二级科室名称："+departmentName);
-		return departmentName;
+	//获取序号1的二级科室名称
+	public String getSecLevFirstDepartmentName(){
+		String firstDepartmentName=getText(secLevFirstDepartmentName);
+		log.info("序号1的二级科室名称："+firstDepartmentName);
+		return firstDepartmentName;
+	}
+	
+	//获取序号2的二级科室名称
+	public String getSecLevSecondDepartmentName(){
+		String secondDepartmentName=getText(secLevSecondDepartmentName);
+		log.info("序号2的二级科室名称："+secondDepartmentName);
+		return secondDepartmentName;
 	}
 	
 	//获取二级科室地址
@@ -190,12 +201,12 @@ public class SecondLevelDepartmentPage extends MainPage{
 	}
 	
 	//编辑二级科室-编辑科室名称
-	public void inputEdiDepDepartmentNameInputBox(String departmentName){
+	public void updateEdiDepDepartmentNameInputBox(String departmentName){
 		clearAndInput(ediDepDepartmentNameInputBox, departmentName);
 	}
 	
 	//编辑二级科室-编辑科室编码
-	public void inputEdiDepDepartmentCodeInputBox(String departmentCode){
+	public void updateEdiDepDepartmentCodeInputBox(String departmentCode){
 		clearAndInput(ediDepDepartmentCodeInputBox, departmentCode);
 	}
 	
@@ -215,27 +226,27 @@ public class SecondLevelDepartmentPage extends MainPage{
 	}
 	
 	//新增二级科室-编辑科室电话
-	public void inputEdiDepDepartmentPhoneInputBox(String departmentPhone){
+	public void updateEdiDepDepartmentPhoneInputBox(String departmentPhone){
 		clearAndInput(ediDepDepartmentPhoneInputBox, departmentPhone);
 	}
 	
 	//新增二级科室-编辑科室地址
-	public void inputEdiDepDepartmentAddressInputBox(String departmentAddress){
+	public void updateEdiDepDepartmentAddressInputBox(String departmentAddress){
 		clearAndInput(ediDepDepartmentAddressInputBox, departmentAddress);
 	}
 	
 	//新增二级科室-编辑科室特色
-	public void inputEdiDepDepartmentFeatureInputBox(String departmentFeature){
+	public void updateEdiDepDepartmentFeatureInputBox(String departmentFeature){
 		clearAndInput(ediDepDepartmentFeatureInputBox, departmentFeature);
 	}
 	
 	//新增二级科室-编辑科室简介
-	public void inputEdiDepDepartmentSummaryInputBox(String departmentSummary){
+	public void updateEdiDepDepartmentSummaryInputBox(String departmentSummary){
 		clearAndInput(ediDepDepartmentSummaryInputBox, departmentSummary);
 	}
 	
 	//新增二级科室-编辑注意事项
-	public void inputEdiDepAttentionInputBox(String Attention){
+	public void updateEdiDepAttentionInputBox(String Attention){
 		clearAndInput(ediDepAttentionInputBox, Attention);
 	}
 	
@@ -270,8 +281,8 @@ public class SecondLevelDepartmentPage extends MainPage{
 	}
 	
 	//点击隐藏按钮
-	public void clickSecLevViewDepartmentButton(){
-		click(secLevViewDepartmentButton);
+	public void clickSecLevHideButton(){
+		click(secLevHideButton);
 	}
 	
 	//选中每页显示10条
@@ -321,4 +332,9 @@ public class SecondLevelDepartmentPage extends MainPage{
 		click(secLevLastPageButton);
 	}
 	
+	//点击弹框的关闭按钮
+	public void clickSecLevCloseButton(){
+		click(secLevCloseButton);
+		sleep(1);
+	}
 }

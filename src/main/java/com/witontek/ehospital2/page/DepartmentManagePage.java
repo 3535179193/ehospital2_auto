@@ -140,16 +140,16 @@ public class DepartmentManagePage extends MainPage{
 	
 	//获取序号为1的一级科室名称
 	public String getDepManFirstCategoryName(){
-		String category=getText(depManFirstCategoryName);
-		log.info("序号为1的一级科室名称："+category);
-		return category;
+		String category1=getText(depManFirstCategoryName);
+		log.info("序号为1的一级科室名称："+category1);
+		return category1;
 	}
 	
 	//获取序号为2的一级科室名称
 	public String getDepManSecondCategoryName(){
-		String category=getText(depManSecondCategoryName);
-		log.info("序号为2的一级科室名称："+category);
-		return category;
+		String category2=getText(depManSecondCategoryName);
+		log.info("序号为2的一级科室名称："+category2);
+		return category2;
 	}
 	
 	//获取包含的二级科室

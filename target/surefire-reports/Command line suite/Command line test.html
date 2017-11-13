@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/3/3</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 13 09:37:59 CST 2017</td>
+<td>Started on:</td><td>Mon Nov 13 11:19:16 CST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>161 seconds (161161 ms)</td>
+<tr><td>Total time:</td><td>175 seconds (175993 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,38 +67,19 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.witontek.ehospital2.test.DepartmentManageTest.deleteDepartmentCategory()'><b>deleteDepartmentCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br/>
-<a href="#Output-62739928" onClick='toggleBox("Output-62739928", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-62739928" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-62739928">
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-总记录数的文本信息</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:一级科室总数：16</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-删除按钮</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-总记录数的文本信息</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:一级科室总数：15</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:删除后一级科室总数与删除前不一致，删除一级科室成功</span><br /><br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0</td></tr>
-<tr>
 <td title='com.witontek.ehospital2.test.DepartmentManageTest.insertDepartmentsCategory()'><b>insertDepartmentsCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br>Parameters: 新增一级科室成功, 睿博一级科室, {categoryName=睿博一级科室, categoryCode=123456}<br/>
-<a href="#Output-1266093632" onClick='toggleBox("Output-1266093632", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1780399359" onClick='toggleBox("Output-1780399359", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1266093632" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1266093632">
+<a href="#Output-1780399359" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1780399359">
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-新增一级科室按钮</span><br /><br/>
@@ -107,21 +88,244 @@ function toggleAllBoxes() {
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击新增一级科室-保存按钮</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-最末页按钮</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-被验证的新增一级科室名称的文本信息</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:被验证的新增一级科室名称：睿博一级科室</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（睿博一级科室）与预期结果（睿博一级科室）相等，新增一级科室成功</span><br /><br/>
+<span style='color:red'>【error】com.witontek.ehospital2.base.WebElementsUtils:查找科室管理-最末页按钮的网页元素时出错</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br /><br/>
+<a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.19.52-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.19.52-picture.png' /></a><br/>
+<span style='color:blue'>【图片地址】D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.19.52-picture.png</span><br /><br/>
 </div>
 </td>
-<td></td>
-<td>6</td>
-<td>com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0</td></tr>
+<td><div><pre>java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]
+	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
+	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:31)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:57)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:54)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:54)
+	at com.witontek.ehospital2.base.WebElementsUtils.click(WebElementsUtils.java:69)
+	at com.witontek.ehospital2.page.DepartmentManagePage.clickDepManLastPageButton(DepartmentManagePage.java:265)
+	at com.witontek.ehospital2.business.DepartmentMange.insertDepartmentsCategory(DepartmentMange.java:59)
+	at com.witontek.ehospital2.test.DepartmentManageTest.insertDepartmentsCategory(DepartmentManageTest.java:57)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1780399359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1780399359'><pre>java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
+	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:31)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:57)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:54)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:54)
+	at com.witontek.ehospital2.base.WebElementsUtils.click(WebElementsUtils.java:69)
+	at com.witontek.ehospital2.page.DepartmentManagePage.clickDepManLastPageButton(DepartmentManagePage.java:265)
+	at com.witontek.ehospital2.business.DepartmentMange.insertDepartmentsCategory(DepartmentMange.java:59)
+	at com.witontek.ehospital2.test.DepartmentManageTest.insertDepartmentsCategory(DepartmentManageTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>15</td>
+<td>com.witontek.ehospital2.test.DepartmentManageTest@9f70c54</td></tr>
+<tr>
+<td title='com.witontek.ehospital2.test.DoctorManageTest.searchDocManDoctor()'><b>searchDocManDoctor</b><br>Test class: com.witontek.ehospital2.test.DoctorManageTest<br>Parameters: 搜索成功, 贾西贝, {searchCondition=西}<br/>
+<a href="#Output-1566099239" onClick='toggleBox("Output-1566099239", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1566099239" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1566099239">
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /><br/>
+<span style='color:red'>【error】com.witontek.ehospital2.base.WebElementsUtils:未定位到页面元素，点击医生管理失败</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br /><br/>
+<a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.20.26-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.20.26-picture.png' /></a><br/>
+<span style='color:blue'>【图片地址】D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.20.26-picture.png</span><br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]
+	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
+	at com.witontek.ehospital2.base.WebElementsUtils.click(WebElementsUtils.java:71)
+	at com.witontek.ehospital2.page.MainPage.clickDoctorManageButton(MainPage.java:114)
+	at com.witontek.ehospital2.business.DoctorManage.searchDocManDoctor(DoctorManage.java:17)
+	at com.witontek.ehospital2.test.DoctorManageTest.searchDocManDoctor(DoctorManageTest.java:31)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1566099239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1566099239'><pre>java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
+	at com.witontek.ehospital2.base.WebElementsUtils.click(WebElementsUtils.java:71)
+	at com.witontek.ehospital2.page.MainPage.clickDoctorManageButton(MainPage.java:114)
+	at com.witontek.ehospital2.business.DoctorManage.searchDocManDoctor(DoctorManage.java:17)
+	at com.witontek.ehospital2.test.DoctorManageTest.searchDocManDoctor(DoctorManageTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>1</td>
+<td>com.witontek.ehospital2.test.DoctorManageTest@50f8360d</td></tr>
+<tr>
+<td title='com.witontek.ehospital2.test.SecondLevelDepartmentTest.searchSecondDepartmentsByName()'><b>searchSecondDepartmentsByName</b><br>Test class: com.witontek.ehospital2.test.SecondLevelDepartmentTest<br>Parameters: 搜索二级科室, 科, {departmentName=科}<br/>
+<a href="#Output-630122462" onClick='toggleBox("Output-630122462", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-630122462" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-630122462">
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-查看二级科室按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在二级科室管理-科室名称输入框输入：科</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击二级科室管理-搜索科室按钮</span><br /><br/>
+<span style='color:red'>【error】com.witontek.ehospital2.base.WebElementsUtils:查找二级科室管理-序号1的二级科室名称带索引的网页元素时出错</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br /><br/>
+<a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.21.41-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.21.41-picture.png' /></a><br/>
+<span style='color:blue'>【图片地址】D:\java\workspace\ehospital2_auto\screenShot\2017-11-13 11.21.41-picture.png</span><br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]
+	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
+	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:44)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:57)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:54)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:54)
+	at com.witontek.ehospital2.base.WebElementsUtils.getText(WebElementsUtils.java:118)
+	at com.witontek.ehospital2.page.SecondLevelDepartmentPage.getSecLevFirstDepartmentName(SecondLevelDepartmentPage.java:162)
+	at com.witontek.ehospital2.business.SecondLevelDepartment.searchSecondDepartmentsByName(SecondLevelDepartment.java:23)
+	at com.witontek.ehospital2.test.SecondLevelDepartmentTest.searchSecondDepartmentsByName(SecondLevelDepartmentTest.java:32)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace630122462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace630122462'><pre>java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
+	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:44)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:57)
+	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:54)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:54)
+	at com.witontek.ehospital2.base.WebElementsUtils.getText(WebElementsUtils.java:118)
+	at com.witontek.ehospital2.page.SecondLevelDepartmentPage.getSecLevFirstDepartmentName(SecondLevelDepartmentPage.java:162)
+	at com.witontek.ehospital2.business.SecondLevelDepartment.searchSecondDepartmentsByName(SecondLevelDepartment.java:23)
+	at com.witontek.ehospital2.test.SecondLevelDepartmentTest.searchSecondDepartmentsByName(SecondLevelDepartmentTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>3</td>
+<td>com.witontek.ehospital2.test.SecondLevelDepartmentTest@12843fce</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='com.witontek.ehospital2.test.LoginTest.loginSuccess()'><b>loginSuccess</b><br>Test class: com.witontek.ehospital2.test.LoginTest<br>Parameters: 登录成功, undefined, {password=admin, userName=sqsrmyyadmin, validation=1111}<br/>
-<a href="#Output-1277678493" onClick='toggleBox("Output-1277678493", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1386020581" onClick='toggleBox("Output-1386020581", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1277678493" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1277678493">
+<a href="#Output-1386020581" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1386020581">
 <span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br /><br/>
@@ -132,55 +336,68 @@ function toggleAllBoxes() {
 </div>
 </td>
 <td></td>
-<td>15</td>
-<td>com.witontek.ehospital2.test.LoginTest@61dc03ce</td></tr>
+<td>14</td>
+<td>com.witontek.ehospital2.test.LoginTest@13c78c0b</td></tr>
 <tr>
-<td title='com.witontek.ehospital2.test.DepartmentManageTest.moveTopDepartmentCategory()'><b>moveTopDepartmentCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br/>
-<a href="#Output-1437129801" onClick='toggleBox("Output-1437129801", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.witontek.ehospital2.test.DepartmentManageTest.moveDownDepartmentCategory()'><b>moveDownDepartmentCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br/>
+<a href="#Output-1599556802" onClick='toggleBox("Output-1599556802", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1437129801" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1437129801">
+<a href="#Output-1599556802" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1599556802">
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：作废科室</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-最末页按钮</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-置顶按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-下移按钮</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-第一页按钮</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：睿博一级科室</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:置顶一级科室成功</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号2的一级科室名称的文本信息</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为2的一级科室名称：作废科室</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:下移一级科室成功</span><br /><br/>
 </div>
 </td>
 <td></td>
-<td>4</td>
-<td>com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0</td></tr>
+<td>2</td>
+<td>com.witontek.ehospital2.test.DepartmentManageTest@9f70c54</td></tr>
 <tr>
-<td title='com.witontek.ehospital2.test.DoctorManageTest.searchDocManDoctor()'><b>searchDocManDoctor</b><br>Test class: com.witontek.ehospital2.test.DoctorManageTest<br>Parameters: 搜索成功, 贾西贝, {searchCondition=西}<br/>
-<a href="#Output-731610911" onClick='toggleBox("Output-731610911", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.witontek.ehospital2.test.DepartmentManageTest.moveUpDepartmentCategory()'><b>moveUpDepartmentCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br/>
+<a href="#Output-1856589162" onClick='toggleBox("Output-1856589162", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-731610911" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-731610911">
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医生管理-医生名称输入框输入：西</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理-搜索医生按钮</span><br /><br/>
+<a href="#Output-1856589162" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1856589162">
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：急诊2</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-上移按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取医生管理-医生姓名的文本信息</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.page.DoctorManagePage:医生姓名："贾西贝"</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（贾西贝）包含预期结果（贾西贝），搜索成功</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号2的一级科室名称的文本信息</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为2的一级科室名称：急诊2</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:上移一级科室成功</span><br /><br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>com.witontek.ehospital2.test.DoctorManageTest@234bef66</td></tr>
+<td>2</td>
+<td>com.witontek.ehospital2.test.DepartmentManageTest@9f70c54</td></tr>
+<tr>
+<td title='com.witontek.ehospital2.test.DepartmentManageTest.searchDepartmentCategoryByName()'><b>searchDepartmentCategoryByName</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br>Parameters: 搜索科室成功, 皮肤科, {categoryName=皮肤科}<br/>
+<a href="#Output-738111983" onClick='toggleBox("Output-738111983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-738111983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-738111983">
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在科室管理-科室名称输入框输入：皮肤科</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-搜索科室按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：皮肤科</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（皮肤科）包含预期结果（皮肤科），搜索科室成功</span><br /><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.witontek.ehospital2.test.DepartmentManageTest@9f70c54</td></tr>
 <tr>
 <td title='com.witontek.ehospital2.test.SubscriptionManageTest.selectSubscriptionDate()'><b>selectSubscriptionDate</b><br>Test class: com.witontek.ehospital2.test.SubscriptionManageTest<br>Parameters: 点击预约日期, 不知道啊, {}<br/>
-<a href="#Output-663277822" onClick='toggleBox("Output-663277822", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1955502880" onClick='toggleBox("Output-1955502880", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-663277822" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-663277822">
+<a href="#Output-1955502880" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1955502880">
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-预约日期-起始日期选择器</span><br /><br/>
@@ -192,36 +409,14 @@ function toggleAllBoxes() {
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>com.witontek.ehospital2.test.SubscriptionManageTest@50f8360d</td></tr>
-<tr>
-<td title='com.witontek.ehospital2.test.DepartmentManageTest.updateDepartmentCategory()'><b>updateDepartmentCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br>Parameters: 编辑一级科室成功, 睿博一级科室（改）, {categoryName=睿博一级科室（改）, categoryCode=111111}<br/>
-<a href="#Output-1315795813" onClick='toggleBox("Output-1315795813", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1315795813" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1315795813">
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-编辑按钮</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空编辑一级科室-科室名称输入框</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在编辑一级科室-科室名称输入框输入：睿博一级科室（改）</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空编辑一级科室-科室编码输入框</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在编辑一级科室-科室编码输入框输入：111111</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击编辑一级科室-修改按钮</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：睿博一级科室（改）</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（睿博一级科室（改））与预期结果（睿博一级科室（改））相等，编辑一级科室成功</span><br /><br/>
-</div>
-</td>
-<td></td>
 <td>4</td>
-<td>com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0</td></tr>
+<td>com.witontek.ehospital2.test.SubscriptionManageTest@3dd3bcd</td></tr>
 <tr>
 <td title='com.witontek.ehospital2.test.HospitalInformationTest.updateHospitalInformation()'><b>updateHospitalInformation</b><br>Test class: com.witontek.ehospital2.test.HospitalInformationTest<br>Parameters: 更新医院信息成功, 贾西贝, {cardAddress=取卡地点, website=https://www.baidu/com, hospitalLevel=三级甲等, latitude=111.111, hospitalAddress=医院地址, hospitalName=宿迁市人民医院, numberAddress=取号地点, hospitalPhone=17621851286, hospitalTraffic=医院交通, hospitalSummary=医院简介, longitude=111.111}<br/>
-<a href="#Output-2118571592" onClick='toggleBox("Output-2118571592", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1217741734" onClick='toggleBox("Output-1217741734", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2118571592" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2118571592">
+<a href="#Output-1217741734" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1217741734">
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击微官网管理</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院基本信息</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院名称输入框</span><br /><br/>
@@ -253,8 +448,124 @@ function toggleAllBoxes() {
 </div>
 </td>
 <td></td>
-<td>10</td>
-<td>com.witontek.ehospital2.test.HospitalInformationTest@737996a0</td></tr>
+<td>4</td>
+<td>com.witontek.ehospital2.test.HospitalInformationTest@2cb4c3ab</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.witontek.ehospital2.test.DepartmentManageTest.deleteDepartmentCategory()'><b>deleteDepartmentCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest</td>
+<td><div><pre>java.lang.Throwable: Method DepartmentManageTest.deleteDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace692838068", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace692838068'><pre>java.lang.Throwable: Method DepartmentManageTest.deleteDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.witontek.ehospital2.test.DepartmentManageTest.moveTopDepartmentCategory()'><b>moveTopDepartmentCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest</td>
+<td><div><pre>java.lang.Throwable: Method DepartmentManageTest.moveTopDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1400582895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1400582895'><pre>java.lang.Throwable: Method DepartmentManageTest.moveTopDepartmentCategory()[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.witontek.ehospital2.test.DepartmentManageTest.updateDepartmentCategory()'><b>updateDepartmentCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest</td>
+<td><div><pre>java.lang.Throwable: Method DepartmentManageTest.updateDepartmentCategory(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8197402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8197402'><pre>java.lang.Throwable: Method DepartmentManageTest.updateDepartmentCategory(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.DepartmentManageTest@9f70c54] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1084)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
 </table><p>
 </body>
 </html>
