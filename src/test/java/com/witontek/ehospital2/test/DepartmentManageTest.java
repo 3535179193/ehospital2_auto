@@ -4,6 +4,8 @@ import java.util.Iterator;
 import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -92,13 +94,13 @@ public class DepartmentManageTest {
 		login.login(Global.USER_NAME, "admin", "1111");
 	}
 
-	@BeforeTest
-	public void beforeTest() {
+	@BeforeClass
+	public void beforeClass() {
 		driver = DriverUtils.getChromeDriver();
 	}
 
-	@AfterTest
-	public void afterTest() {
+	@AfterClass
+	public void afterClass() {
 		BrowserUtils.sleep(3);
 		BrowserUtils.quit();
 	}

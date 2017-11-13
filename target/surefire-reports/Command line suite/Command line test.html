@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 10 09:16:32 CST 2017</td>
+<td>Started on:</td><td>Mon Nov 13 09:37:59 CST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>137 seconds (137213 ms)</td>
+<tr><td>Total time:</td><td>161 seconds (161161 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,53 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.witontek.ehospital2.test.LoginTest.loginSuccess()'><b>loginSuccess</b><br>Test class: com.witontek.ehospital2.test.LoginTest<br>Parameters: 登录成功, undefined, {password=admin, userName=sqsrmyyadmin, validation=1111}<br/>
-<a href="#Output-1991094835" onClick='toggleBox("Output-1991094835", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.witontek.ehospital2.test.DepartmentManageTest.deleteDepartmentCategory()'><b>deleteDepartmentCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br/>
+<a href="#Output-62739928" onClick='toggleBox("Output-62739928", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1991094835" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1991094835">
+<a href="#Output-62739928" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-62739928">
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-总记录数的文本信息</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:一级科室总数：16</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-删除按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-总记录数的文本信息</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:一级科室总数：15</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:删除后一级科室总数与删除前不一致，删除一级科室成功</span><br /><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0</td></tr>
+<tr>
+<td title='com.witontek.ehospital2.test.DepartmentManageTest.insertDepartmentsCategory()'><b>insertDepartmentsCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br>Parameters: 新增一级科室成功, 睿博一级科室, {categoryName=睿博一级科室, categoryCode=123456}<br/>
+<a href="#Output-1266093632" onClick='toggleBox("Output-1266093632", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1266093632" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1266093632">
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-新增一级科室按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在新增一级科室-科室名称输入框输入：睿博一级科室</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在新增一级科室-科室编码输入框输入：123456</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击新增一级科室-保存按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-最末页按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-被验证的新增一级科室名称的文本信息</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:被验证的新增一级科室名称：睿博一级科室</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（睿博一级科室）与预期结果（睿博一级科室）相等，新增一级科室成功</span><br /><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0</td></tr>
+<tr>
+<td title='com.witontek.ehospital2.test.LoginTest.loginSuccess()'><b>loginSuccess</b><br>Test class: com.witontek.ehospital2.test.LoginTest<br>Parameters: 登录成功, undefined, {password=admin, userName=sqsrmyyadmin, validation=1111}<br/>
+<a href="#Output-1277678493" onClick='toggleBox("Output-1277678493", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1277678493" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1277678493">
 <span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqsrmyyadmin</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br /><br/>
@@ -90,36 +132,37 @@ function toggleAllBoxes() {
 </div>
 </td>
 <td></td>
-<td>14</td>
-<td>com.witontek.ehospital2.test.LoginTest@2096442d</td></tr>
+<td>15</td>
+<td>com.witontek.ehospital2.test.LoginTest@61dc03ce</td></tr>
 <tr>
-<td title='com.witontek.ehospital2.test.DepartmentManageTest.searchDepartmentCategoryByName()'><b>searchDepartmentCategoryByName</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br>Parameters: 搜索科室成功, 皮肤科, {categoryName=皮肤科}<br/>
-<a href="#Output-2080125222" onClick='toggleBox("Output-2080125222", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.witontek.ehospital2.test.DepartmentManageTest.moveTopDepartmentCategory()'><b>moveTopDepartmentCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br/>
+<a href="#Output-1437129801" onClick='toggleBox("Output-1437129801", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2080125222" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2080125222">
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /><br/>
+<a href="#Output-1437129801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1437129801">
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：作废科室</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-最末页按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-置顶按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在科室管理-科室名称输入框输入：皮肤科</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-搜索科室按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-第一页按钮</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-一级科室名称的文本信息</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:一级科室名称：皮肤科</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（皮肤科）包含预期结果（皮肤科），搜索科室成功</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：睿博一级科室</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.business.DepartmentMange:置顶一级科室成功</span><br /><br/>
 </div>
 </td>
 <td></td>
 <td>4</td>
-<td>com.witontek.ehospital2.test.DepartmentManageTest@52af6cff</td></tr>
+<td>com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0</td></tr>
 <tr>
 <td title='com.witontek.ehospital2.test.DoctorManageTest.searchDocManDoctor()'><b>searchDocManDoctor</b><br>Test class: com.witontek.ehospital2.test.DoctorManageTest<br>Parameters: 搜索成功, 贾西贝, {searchCondition=西}<br/>
-<a href="#Output-1911168986" onClick='toggleBox("Output-1911168986", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-731610911" onClick='toggleBox("Output-731610911", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1911168986" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1911168986">
+<a href="#Output-731610911" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-731610911">
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医生管理-医生名称输入框输入：西</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医生管理-搜索医生按钮</span><br /><br/>
@@ -131,15 +174,14 @@ function toggleAllBoxes() {
 </td>
 <td></td>
 <td>3</td>
-<td>com.witontek.ehospital2.test.DoctorManageTest@735b478</td></tr>
+<td>com.witontek.ehospital2.test.DoctorManageTest@234bef66</td></tr>
 <tr>
 <td title='com.witontek.ehospital2.test.SubscriptionManageTest.selectSubscriptionDate()'><b>selectSubscriptionDate</b><br>Test class: com.witontek.ehospital2.test.SubscriptionManageTest<br>Parameters: 点击预约日期, 不知道啊, {}<br/>
-<a href="#Output-1973256691" onClick='toggleBox("Output-1973256691", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-663277822" onClick='toggleBox("Output-663277822", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1973256691" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1973256691">
+<a href="#Output-663277822" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-663277822">
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-预约日期-起始日期选择器</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击预约管理-切换年/月份按钮</span><br /><br/>
@@ -150,16 +192,37 @@ function toggleAllBoxes() {
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>com.witontek.ehospital2.test.SubscriptionManageTest@9f70c54</td></tr>
+<td>5</td>
+<td>com.witontek.ehospital2.test.SubscriptionManageTest@50f8360d</td></tr>
+<tr>
+<td title='com.witontek.ehospital2.test.DepartmentManageTest.updateDepartmentCategory()'><b>updateDepartmentCategory</b><br>Test class: com.witontek.ehospital2.test.DepartmentManageTest<br>Parameters: 编辑一级科室成功, 睿博一级科室（改）, {categoryName=睿博一级科室（改）, categoryCode=111111}<br/>
+<a href="#Output-1315795813" onClick='toggleBox("Output-1315795813", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1315795813" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1315795813">
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-编辑按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空编辑一级科室-科室名称输入框</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在编辑一级科室-科室名称输入框输入：睿博一级科室（改）</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空编辑一级科室-科室编码输入框</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在编辑一级科室-科室编码输入框输入：111111</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击编辑一级科室-修改按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-弹框关闭按钮</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:获取科室管理-序号1的一级科室名称的文本信息</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.page.DepartmentManagePage:序号为1的一级科室名称：睿博一级科室（改）</span><br /><br/>
+<span style='color:blue'>【info】com.witontek.ehospital2.base.AssertUtils:实际结果（睿博一级科室（改））与预期结果（睿博一级科室（改））相等，编辑一级科室成功</span><br /><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.witontek.ehospital2.test.DepartmentManageTest@2c9f9fb0</td></tr>
 <tr>
 <td title='com.witontek.ehospital2.test.HospitalInformationTest.updateHospitalInformation()'><b>updateHospitalInformation</b><br>Test class: com.witontek.ehospital2.test.HospitalInformationTest<br>Parameters: 更新医院信息成功, 贾西贝, {cardAddress=取卡地点, website=https://www.baidu/com, hospitalLevel=三级甲等, latitude=111.111, hospitalAddress=医院地址, hospitalName=宿迁市人民医院, numberAddress=取号地点, hospitalPhone=17621851286, hospitalTraffic=医院交通, hospitalSummary=医院简介, longitude=111.111}<br/>
-<a href="#Output-75356024" onClick='toggleBox("Output-75356024", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2118571592" onClick='toggleBox("Output-2118571592", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-75356024" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-75356024">
+<a href="#Output-2118571592" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2118571592">
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击微官网管理</span><br /><br/>
-<span style='color:blue'>【info】com.witontek.ehospital2.base.BrowserUtils:等待1秒</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:点击医院基本信息</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:清空医院信息-医院名称输入框</span><br /><br/>
 <span style='color:blue'>【info】com.witontek.ehospital2.base.WebElementsUtils:在医院信息-医院名称输入框输入：宿迁市人民医院</span><br /><br/>
@@ -190,8 +253,8 @@ function toggleAllBoxes() {
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>com.witontek.ehospital2.test.HospitalInformationTest@2c9f9fb0</td></tr>
+<td>10</td>
+<td>com.witontek.ehospital2.test.HospitalInformationTest@737996a0</td></tr>
 </table><p>
 </body>
 </html>

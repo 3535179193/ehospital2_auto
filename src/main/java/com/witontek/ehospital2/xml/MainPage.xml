@@ -16,13 +16,13 @@
 		<Locator name="医院基本信息" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'医院基本信息')]"		>hospitalInformationButton</Locator>
 		<Locator name="内容管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'内容管理')]"			>contentManagementButton</Locator>
 		<Locator name="分类管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'分类管理')]"			>categoryButton</Locator>
-    /html/body/ui-view/frame-main/div/section/div[1]/menu-main/aside/ul[3]/li[2]
+
 	<Locator name="业务信息管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'业务信息管理')]"		>businessInformationButton</Locator>
 		<Locator name="科室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[1]/span"	>departmentManageButton</Locator>
 		<Locator name="值班室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'值班室管理')]"		>dutyRoomManageButton</Locator>
 		<Locator name="医生管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'医生管理')]"			>doctorManageButton</Locator>
 		<Locator name="排班管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'排班管理')]"			>scheduleManageButton</Locator>
-		<Locator name="预约管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'预约管理')]"			>subscriptionManageButton</Locator>
+		<Locator name="预约管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[5]/span"			>subscriptionManageButton</Locator>
 		<Locator name="排队管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'排队管理')]"			>lineUpManageButton</Locator>
 		<Locator name="就医咨询管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'就医咨询管理')]"		>consultManageButton</Locator>
 		<Locator name="就医评价管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'就医评价管理')]"		>appraiseManageButton</Locator>

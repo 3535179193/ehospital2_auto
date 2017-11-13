@@ -4,6 +4,8 @@ import java.util.Iterator;
 import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.BeforeTest;
@@ -33,14 +35,14 @@ public class LoginTest {
 		return ExcelUtils.readExcel("loginSuccess");
 	  }
 
-	@BeforeTest
-	public void beforeTest() {
+	@BeforeClass
+	public void beforeClass() {
 		driver=DriverUtils.getChromeDriver();
 		
 	}
 
-	@AfterTest
-	public void afterTest() {
+	@AfterClass
+	public void afterClass() {
 		BrowserUtils.sleep(3);
 		BrowserUtils.quit();
 	}
