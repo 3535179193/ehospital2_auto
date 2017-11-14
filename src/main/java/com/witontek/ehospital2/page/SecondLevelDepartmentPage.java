@@ -73,7 +73,7 @@ public class SecondLevelDepartmentPage extends DepartmentManagePage{
 	protected Locator secLevNextPageButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevNextPageButton");
 	protected Locator secLevLastPageButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevLastPageButton");
 	
-	//
+	//点击弹框的关闭按钮
 	protected Locator secLevCloseButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevCloseButton");
 
 	

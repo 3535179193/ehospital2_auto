@@ -32,7 +32,7 @@ public class LoginTest {
 
 	@DataProvider(name="loginSuccess")
 	  public Iterator<Object[]> loginSuccess(){
-		return ExcelUtils.readExcel("loginSuccess");
+		return ExcelUtils.readExcel("login/loginSuccess");
 	  }
 
 	@BeforeClass

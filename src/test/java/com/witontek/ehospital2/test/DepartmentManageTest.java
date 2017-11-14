@@ -33,7 +33,7 @@ public class DepartmentManageTest {
 
 	@DataProvider(name = "searchDepartmentCategoryByName")
 	public Iterator<Object[]> searchDepartmentCategoryByName() {
-		return ExcelUtils.readExcel("searchDepartmentCategoryByName");
+		return ExcelUtils.readExcel("departmentManager/searchDepartmentCategoryByName");
 	}
 	
 	//科室管理-下移一级科室
@@ -59,7 +59,7 @@ public class DepartmentManageTest {
 
 	@DataProvider(name = "insertDepartmentsCategory")
 	public Iterator<Object[]> insertDepartmentsCategory() {
-		return ExcelUtils.readExcel("insertDepartmentsCategory");
+		return ExcelUtils.readExcel("departmentManager/insertDepartmentsCategory");
 	}
 	
 	//科室管理-置顶一级科室
@@ -78,7 +78,7 @@ public class DepartmentManageTest {
 
 	@DataProvider(name = "updateDepartmentCategory")
 	public Iterator<Object[]> updateDepartmentCategory() {
-		return ExcelUtils.readExcel("updateDepartmentCategory");
+		return ExcelUtils.readExcel("departmentManager/updateDepartmentCategory");
 	}
 	
 	//科室管理-删除一级科室

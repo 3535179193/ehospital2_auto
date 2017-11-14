@@ -27,7 +27,7 @@
 		<Locator name="编辑一级科室-科室LOGO按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-click='$ctrl.selectFileHandle()']"						>ediCateDepartmentLogoButton</Locator>
 		<Locator name="编辑一级科室-修改按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='!$ctrl.isAdd']"										>ediCateEditButton</Locator>
 		<Locator name="编辑一级科室-返回按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'返回')]"										>ediCateReturnButton</Locator>
-	/html/body/ui-view/frame-main/div/section/div[3]/ui-view/department-management/div/div[4]/ul[4]/
+
     <Locator name="科室管理-删除按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室（改）')]/parent::ul/li[4]/div/div[1]/a[2]"		>depManDeleteButton</Locator>
 	<Locator name="科室管理-查看二级科室按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]/parent::ul/li[4]/div/div[1]/a[3]"			>depManViewDepartmentButton</Locator>
 	<Locator name="科室管理-上移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="1"	>depManMoveUpButton</Locator>
@@ -35,7 +35,7 @@
 	<Locator name="科室管理-置顶按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]/parent::ul/li[4]/div/div[2]/a[3]"		>depManMoveTopButton</Locator>
 
 	<Locator name="科室管理-每页显示数下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"							>depManEachPageRecordersDropBox</Locator>
-	<Locator name="科室管理-选中每页显示10条" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']/option"	index="0"		>depManEachPageTenRecorders</Locator>
+	<Locator name="科室管理-选中每页显示10条" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']/option[1]"				>depManEachPageTenRecorders</Locator>
 	<Locator name="科室管理-总记录数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/span[1]"	>depManTotalRecorders</Locator>
 	<Locator name="科室管理-总页数" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"								>depManTotalPages</Locator>
 	<Locator name="科室管理-当前页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/span[3]"	>depManCurrentPage</Locator>

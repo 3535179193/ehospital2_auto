@@ -20,7 +20,7 @@
 	<Locator name="业务信息管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'业务信息管理')]"		>businessInformationButton</Locator>
 		<Locator name="科室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[1]/span"	>departmentManageButton</Locator>
 		<Locator name="值班室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'值班室管理')]"		>dutyRoomManageButton</Locator>
-		<Locator name="医生管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'医生管理')]"			>doctorManageButton</Locator>
+		<Locator name="医生管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[3]/span"			>doctorManageButton</Locator>
 		<Locator name="排班管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'排班管理')]"			>scheduleManageButton</Locator>
 		<Locator name="预约管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[5]/span"			>subscriptionManageButton</Locator>
 		<Locator name="排队管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'排队管理')]"			>lineUpManageButton</Locator>

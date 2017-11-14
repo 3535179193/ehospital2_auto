@@ -37,7 +37,7 @@ public class SubscriptionManageTest {
 
 	@DataProvider(name="selectSubscriptionDate")
 	  public Iterator<Object[]> selectSubscriptionDate(){
-		return ExcelUtils.readExcel("selectSubscriptionDate");
+		return ExcelUtils.readExcel("subscriptionManage/selectSubscriptionDate");
 	  }
 
 	@BeforeMethod

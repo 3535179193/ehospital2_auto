@@ -23,18 +23,31 @@ import com.witontek.ehospital2.page.LoginPage;
 public class DoctorManageTest {
 
 	private WebDriver driver;
-
-	@Test(dataProvider = "searchDocManDoctor")
-	public void searchDocManDoctor(String caseName, String expectedResult,Map<String, String> testData) {
+	
+	@Test(dataProvider = "addDoctor")
+	public void addDoctor(String caseName, String expectedResult,Map<String, String> testData) {
 		DoctorManage doctorManage = new DoctorManage(driver);
 		AssertUtils.assertActualContainExpect(doctorManage
-				.searchDocManDoctor(testData.get("searchCondition")),
+				.addDoctor(testData.get("doctorName"), testData.get("doctorCode"), testData.get("phone"), testData.get("shortNumber"), testData.get("schoolName"), testData.get("doctorSummary"), testData.get("doctorSpecialty"), testData.get("email"), testData.get("medicalLicense"))
+				, expectedResult, caseName);
+	}
+
+	@DataProvider(name = "addDoctor")
+	public Iterator<Object[]> addDoctor() {
+		return ExcelUtils.readExcel("doctorManage/addDoctor");
+	}
+
+	@Test(dataProvider = "searchDoctor")
+	public void searchDoctor(String caseName, String expectedResult,Map<String, String> testData) {
+		DoctorManage doctorManage = new DoctorManage(driver);
+		AssertUtils.assertActualContainExpect(doctorManage
+				.searchDoctor(testData.get("searchCondition")),
 				expectedResult, caseName);
 	}
 
-	@DataProvider(name = "searchDocManDoctor")
-	public Iterator<Object[]> searchDocManDoctor() {
-		return ExcelUtils.readExcel("searchDocManDoctor");
+	@DataProvider(name = "searchDoctor")
+	public Iterator<Object[]> searchDoctor() {
+		return ExcelUtils.readExcel("doctorManage/searchDoctor");
 	}
 
 	@BeforeMethod

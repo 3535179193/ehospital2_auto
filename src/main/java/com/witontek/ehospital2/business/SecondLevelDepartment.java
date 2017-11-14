@@ -13,44 +13,6 @@ public class SecondLevelDepartment extends SecondLevelDepartmentPage{
 	}
 
 	private Log log=new Log(SecondLevelDepartment.class);
-		
-	//科室管理-搜索二级科室
-	public String searchDepartmentsByName (String departmentName){
-//		clickDepartmentManageButton();
-		clickDepManViewDepartmentButton();
-		inputSecLevDepartmentNameInputBox(departmentName);
-		clickSecLevSearchDepartmentButton();
-		return getSecLevFirstDepartmentName();
-	}
-	
-	//下移二级科室
-	public void moveDownDepartment(){
-		clickDepartmentManageButton();
-		clickDepManViewDepartmentButton();
-		String beforeMoveDownDepartmentName=getSecLevFirstDepartmentName();
-		clickSecLevMoveDownButton();
-		clickSecLevCloseButton();
-		String afterMoveDownDepartmentName=getSecLevSecondDepartmentName();
-		if(beforeMoveDownDepartmentName.equals(afterMoveDownDepartmentName)){
-			log.info("指定前后一级科室名称相同，下移二级科室成功");
-		}else {
-			log.errorShot("指定前后一级科室名称不相同，下移二级科室失败",driver);
-		}
-	}
-	
-	//上移二级科室
-	public void moveUpDepartment(){
-		clickDepManViewDepartmentButton();
-		String beforeMoveUpDepartmentName=getSecLevFirstDepartmentName();
-		clickSecLevMoveUpButton();
-		clickSecLevCloseButton();
-		String afterMoveUpDepartmentName=getSecLevSecondDepartmentName();
-		if(beforeMoveUpDepartmentName.equals(afterMoveUpDepartmentName)){
-			log.info("指定前后一级科室名称相同，上移二级科室成功");
-		}else {
-			log.errorShot("指定前后一级科室名称不相同，上移二级科室失败",driver);
-		}
-	}
 	
 	//新增二级科室
 	public String insertDepartment(String categoryName,String categoryCode,String departmentName,String departmentCode,String departmentPhone,String departmentAddress,String departmentFeature,String departmentSummary,String Attention){
@@ -92,7 +54,7 @@ public class SecondLevelDepartment extends SecondLevelDepartmentPage{
 	
 	//置顶二级科室
 	public void moveTopDepartment(){
-		clickDepartmentManageButton();
+//		clickDepartmentManageButton();
 		clickDepManLastPageButton();
 		clickDepManViewDepartmentButton();
 		String beforeMoveTopDepartmentName=getSecLevSecondDepartmentName();
@@ -124,6 +86,44 @@ public class SecondLevelDepartment extends SecondLevelDepartmentPage{
 		clickEdiDepSaveButton();
 		clickSecLevCloseButton();
 
+		return getSecLevFirstDepartmentName();
+	}
+	
+	//下移二级科室
+	public void moveDownDepartment(){
+//		clickDepartmentManageButton();
+		clickDepManViewDepartmentButton();
+		String beforeMoveDownDepartmentName=getSecLevFirstDepartmentName();
+		clickSecLevMoveDownButton();
+		clickSecLevCloseButton();
+		String afterMoveDownDepartmentName=getSecLevSecondDepartmentName();
+		if(beforeMoveDownDepartmentName.equals(afterMoveDownDepartmentName)){
+			log.info("指定前后一级科室名称相同，下移二级科室成功");
+		}else {
+			log.errorShot("指定前后一级科室名称不相同，下移二级科室失败",driver);
+		}
+	}
+	
+	//上移二级科室
+	public void moveUpDepartment(){
+		clickDepManViewDepartmentButton();
+		String beforeMoveUpDepartmentName=getSecLevFirstDepartmentName();
+		clickSecLevMoveUpButton();
+		clickSecLevCloseButton();
+		String afterMoveUpDepartmentName=getSecLevSecondDepartmentName();
+		if(beforeMoveUpDepartmentName.equals(afterMoveUpDepartmentName)){
+			log.info("指定前后一级科室名称相同，上移二级科室成功");
+		}else {
+			log.errorShot("指定前后一级科室名称不相同，上移二级科室失败",driver);
+		}
+	}
+	
+	//科室管理-搜索二级科室
+	public String searchDepartmentsByName (String departmentName){
+//		clickDepartmentManageButton();
+		clickDepManViewDepartmentButton();
+		inputSecLevDepartmentNameInputBox(departmentName);
+		clickSecLevSearchDepartmentButton();
 		return getSecLevFirstDepartmentName();
 	}
 	

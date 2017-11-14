@@ -1,32 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Page name="医生管理">
 
-	<Locator name="医生管理-导入医生信息按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入医生信息')]"						>docManImportDoctorInfoButton</Locator>
-	<Locator name="医生管理-新增医生信息按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'新增医生信息')]"						>docManAddDoctorInfoButton</Locator>
-	<Locator name="医生管理-下载医生表Excel模板按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'下载医生表Excel模板')]"					>docManDownloadDoctorExcelButton</Locator>
-	<Locator name="医生管理-导出医生信息按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导出医生信息')]"						>docManExportDoctorInfoButton</Locator>
-	<Locator name="医生管理-同步医生HIS数据按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'同步HIS数据')]"							>docManSynchronousDoctorHISButton</Locator>
+	<Locator name="医生管理-导入医生信息按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入医生信息')]"			>docManImportDoctorInfoButton</Locator>
+	<Locator name="医生管理-下载医生表Excel模板按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'下载医生表Excel模板')]"		>docManDownloadDoctorExcelButton</Locator>
+	<Locator name="医生管理-导出医生信息按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导出医生信息')]"			>docManExportDoctorInfoButton</Locator>
+	<Locator name="医生管理-同步医生HIS数据按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'同步HIS数据')]"				>docManSynchronousDoctorHISButton</Locator>
     
-	<Locator name="医生管理-医生名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchDoctorStr']"					>docManDoctorNameInputBox</Locator>
-	<Locator name="医生管理-搜索医生按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.searchDoctorName()']"				>docManSearchDoctorNameButton</Locator>
+	<Locator name="医生管理-医生名称输入框" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchDoctorStr']"		>docManDoctorNameInputBox</Locator>
+	<Locator name="医生管理-搜索医生按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.searchDoctorName()']"	>docManSearchDoctorNameButton</Locator>
+
+	<Locator name="医生管理-新增医生信息按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.goToAddDoctorInfo()']">docManAddDoctorButton</Locator>
+		<Locator name="新增医生-工号输入框" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='doctor_code']"					>addDocDoctorCodeInputBox</Locator>
+	    <Locator name="新增医生-医生姓名输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='doctor_name']"					>addDocDoctorNameInputBox</Locator>
+		<Locator name="新增医生-选择人员类别下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='work_job']"						>addDocSelectWorkJobDropBox</Locator>
+		<Locator name="新增医生-选择人员类别按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='work_job']/option[2]"			>addDocSelectWorkJobButton</Locator>
+		<Locator name="新增医生-手机号码输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='phone']"							>addDocPhoneInputBox</Locator>
+
+	    <Locator name="新增医生-选定右移所属科室" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[contains(.,'睿博二级科室')]"				>addDocSelectRightBelongDepartment</Locator>
+		<Locator name="新增医生-所属科室右移按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.selectShift($ctrl.departmentsList,$ctrl.selectDepartmentList)']"	>addDocBelongDepartmentRightButton</Locator>
+		<Locator name="新增医生-选定右移所属科室" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[contains(.,'睿博二级科室')]"				>addDocSelectLeftBelongDepartment</Locator>
+		<Locator name="新增医生-所属科室左移按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.selectShift($ctrl.selectDepartmentList,$ctrl.departmentsList)']"	>addDocBelongDepartmentLeftButton</Locator>
+
+		<Locator name="新增医生-短号输入框" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='short_num']"						>addDocShortNumInputBox</Locator>
+		<Locator name="新增医生-选择头像按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'请选择...')]"					>addDocSelectHeadPhotoButton</Locator>
+		<Locator name="新增医生-选择性别下拉框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='gender']"						>addDocSelectGenderDropBox</Locator>
+		<Locator name="新增医生-选择性别按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='gender']/option[2]"				>addDocSelectGenderButton</Locator>
+
+		<Locator name="新增医生-出生年月选择器" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-click='$ctrl.dateSelectOpen()']"	index='0'			>addDocBirthSelector</Locator>
+				<Locator name="出生年月-月份切换按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"				>addDocBirthMonthToggleButton</Locator>
+				<Locator name="出生年月-年份切换按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"				>addDocBirthYearToggleButton</Locator>
+				<Locator name="出生年月-年份左移按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='move(-1)']"					>addDocBirthYearLeftButton</Locator>
+				<Locator name="出生年月-选定年份按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'93')]"						>addDocSelectBirthYearButton</Locator>
+				<Locator name="出生年月-选定月份按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'十二月')]"					>addDocSelectBirthMonthButton</Locator>
+				<Locator name="出生年月-选定日期按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'08')]"						>addDocSelectBirthDateButton</Locator>
+												
+		<Locator name="新增医生-选择职称下拉框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.doctorInfoData.technical_title']"			>addDocSelectTechnicalTitleDropBox</Locator>
+		<Locator name="新增医生-选择职称按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.doctorInfoData.technical_title']/option[2]"	>addDocSelectTechnicalTitleBUTTON</Locator>
+		<Locator name="新增医生-选择职位下拉框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.doctorInfoData.job_postion']"				>addDocSelectPositionDropBox</Locator>
+	    <Locator name="新增医生-选择职位按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.doctorInfoData.job_postion']/option[2]"		>addDocSelectPositionButton</Locator>
+		<Locator name="新增医生-毕业院校输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='school_name']"										>addDocSchoolNameInputBox</Locator>
+
+		<Locator name="新增医生-进入本院时间选择器" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-click='$ctrl.dateSelectOpen()']"	index='1'			>addDocEnterHospitalTimeSelector</Locator>
+				<Locator name="进院时间-月份切换按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"				>addDocEnterHospitalMonthToggleButton</Locator>
+				<Locator name="进院时间-年份切换按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"				>addDocEnterHospitalYearToggleButton</Locator>
+				<Locator name="进院时间-选定年份按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'16')]"						>addDocSelectEnterHospitalYearButton</Locator>
+				<Locator name="进院时间-选定月份按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'六月')]"					>addDocSelectEnterHospitalMonthButton</Locator>
+				<Locator name="进院时间-选定日期按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'07')]"						>addDocSelectEnterHospitalDateButton</Locator>
+					
+		<Locator name="新增医生-医生简介输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//textarea[@name='doctor_summary']"				>addDocDoctorSummaryInputBox</Locator>
+	    <Locator name="新增医生-擅长疾病输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//textarea[@name='doctor_specialty']"			>addDocDoctorSpecialtyInputBox</Locator>
+		<Locator name="新增医生-学术职称下拉框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.doctorInfoData.job_title_id']"			>addDocAcademicTitleDropBox</Locator>
+		<Locator name="新增医生-学术职称按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.doctorInfoData.job_title_id']/option[2]"	>addDocAcademicTitleButton</Locator>
+	    <Locator name="新增医生-医生邮箱输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='email']"							>addDocEmailInputBox</Locator>
+		<Locator name="新增医生-行医执照号输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='medical_license']"				>addDocMedicalLicenseInputBox</Locator>
+		<Locator name="新增医生-医院职称下拉框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='cli_job_id']"					>addDocHospitalTitleDropBox</Locator>
+		<Locator name="新增医生-医院职称按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='cli_job_id']/option[3]"			>addDocHospitalTitleButton</Locator>
+		<Locator name="新增医生-保存按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='$ctrl.isAdd']"					>addDocSaveButton</Locator>
+		<Locator name="新增医生-返回按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.goBack()']"			>addDocRetuenButton</Locator>			
 	
-	<Locator name="医生管理-工号" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_code']"			index="0"		>docManDoctorCode</Locator>
-    <Locator name="医生管理-医生姓名" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_name']"			index="0"		>docManDoctorName</Locator>
-	<Locator name="医生管理-所属科室" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.departmentNameStr']"	index="0"		>docManBelongToDepartment</Locator>
-	<Locator name="医生管理-人员类别" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.work_job']"				index="0"		>docManPersonalType</Locator>
-    <Locator name="医生管理-医院职称" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.cli_job_title']"		index="0"		>docManHospitalTitle</Locator>
-	<Locator name="医生管理-职位" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.job_postion']"			index="0"		>docManPostion</Locator>
-	<Locator name="医生管理-学术职称" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.edu_job_title']"		index="0"		>docManAcademicTitle</Locator>
+	<Locator name="医生管理-序号" 			locatorWay="XPATH"	waitTime="10"	attributeValue=""			index="0"	>docManNumber</Locator>
+	<Locator name="医生管理-工号" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_code']"			index="0"	>docManDoctorCode</Locator>
+    <Locator name="医生管理-医生姓名" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_name']"			index="0"	>docManDoctorName</Locator>
+	<Locator name="医生管理-所属科室" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.departmentNameStr']"	index="0"	>docManBelongToDepartment</Locator>
+	<Locator name="医生管理-人员类别" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.work_job']"				index="0"	>docManPersonalType</Locator>
+    <Locator name="医生管理-医院职称" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.cli_job_title']"		index="0"	>docManHospitalTitle</Locator>
+	<Locator name="医生管理-职位" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.job_postion']"			index="0"	>docManPostion</Locator>
+	<Locator name="医生管理-学术职称" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.edu_job_title']"		index="0"	>docManAcademicTitle</Locator>
 	
-	<Locator name="医生管理-编辑按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'编辑')]"						index="0"		>docManEditButton</Locator>
-    <Locator name="医生管理-删除按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'删除')]"						index="0"		>docManDeleteButton</Locator>
-	<Locator name="医生管理-重置密码按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'重置密码')]"					index="0"		>docManResetPasswordButton</Locator>
-	<Locator name="医生管理-上移按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="0"		>docManMoveUpButton</Locator>
-    <Locator name="医生管理-下移按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"		>docManMoveDownButton</Locator>
-	<Locator name="医生管理-置顶按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="0"		>docManMoveTopButton</Locator>
+	<Locator name="医生管理-编辑按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'编辑')]"						index="0"	>docManEditButton</Locator>
+    <Locator name="医生管理-删除按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'删除')]"						index="0"	>docManDeleteButton</Locator>
+	<Locator name="医生管理-重置密码按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'重置密码')]"					index="0"	>docManResetPasswordButton</Locator>
+	<Locator name="医生管理-上移按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="0"	>docManMoveUpButton</Locator>
+    <Locator name="医生管理-下移按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"	>docManMoveDownButton</Locator>
+	<Locator name="医生管理-置顶按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="0"	>docManMoveTopButton</Locator>
 		
-	
-	<Locator name="医生管理-每页显示数下拉框" locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"						>docManEachPageRecordersDropBox</Locator>
+	<Locator name="医生管理-每页显示数下拉框" locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"								>docManEachPageRecordersDropBox</Locator>
     <Locator name="医生管理-总记录数" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='doctor-management-page']/page/div[1]/div[2]/span[1]"	>docManTotalRecorders</Locator>
 	<Locator name="医生管理-总页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"									>docManTotalPages</Locator>
 	<Locator name="医生管理-当前页数" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='doctor-management-page']/page/div[1]/div[2]/span[3]"	>docManCurrentPages</Locator>

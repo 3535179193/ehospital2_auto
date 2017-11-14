@@ -65,7 +65,6 @@ public class DepartmentManagePage extends MainPage{
 	protected Locator depManLastPageButton=XmlUtils.readXml("DepartmentManagePage").get("depManLastPageButton");
 	
 	//弹框
-	protected Locator depManAlertBox=XmlUtils.readXml("DepartmentManagePage").get("depManAlertBox");
 	protected Locator depManCloseButton=XmlUtils.readXml("DepartmentManagePage").get("depManCloseButton");
 	
 	//被验证的数据

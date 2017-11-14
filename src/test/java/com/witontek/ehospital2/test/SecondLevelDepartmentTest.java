@@ -24,19 +24,38 @@ import com.witontek.ehospital2.page.LoginPage;
 public class SecondLevelDepartmentTest {
 
 	private WebDriver driver;
-
-	//二级科室管理-搜索二级科室
-	@Test(dataProvider = "searchDepartmentsByName",enabled=false)
-	public void searchDepartmentsByName(String caseName, String expectedResult,Map<String, String> testData) {
+	
+	//二级科室管理-新增二级科室
+	@Test(dataProvider = "insertDepartment",enabled=false)
+	public void insertDepartment(String caseName, String expectedResult,Map<String, String> testData) {
 		SecondLevelDepartment secondLevelDepartment = new SecondLevelDepartment(driver);
-		AssertUtils.assertActualContainExpect(secondLevelDepartment.searchDepartmentsByName(testData.get("departmentName")),expectedResult, caseName);
+		AssertUtils.assertActualEqualExpect(secondLevelDepartment.insertDepartment(testData.get("categoryName"), testData.get("categoryCode"), testData.get("departmentName"), testData.get("departmentCode"), testData.get("departmentPhone"), testData.get("departmentAddress"), testData.get("departmentFeature"), testData.get("departmentSummary"), testData.get("Attention")),expectedResult, caseName);
 	}
 
-	@DataProvider(name = "searchDepartmentsByName")
-	public Iterator<Object[]> searchDepartmentsByName() {
-		return ExcelUtils.readExcel("searchDepartmentsByName");
+	@DataProvider(name = "insertDepartment")
+	public Iterator<Object[]> insertDepartment() {
+		return ExcelUtils.readExcel("secondLevelDepartment/insertDepartment");
 	}
 	
+	//二级科室管理-置顶二级科室
+	@Test(enabled=false)
+	public void moveTopDepartment() {
+		SecondLevelDepartment secondLevelDepartment = new SecondLevelDepartment(driver);
+		secondLevelDepartment.moveTopDepartment();
+	}
+	
+	//二级科室管理-编辑二级科室
+	@Test(dataProvider = "updateDepartment",dependsOnMethods={"insertDepartment"},enabled=false)
+	public void updateDepartment(String caseName, String expectedResult,Map<String, String> testData) {
+		SecondLevelDepartment secondLevelDepartment = new SecondLevelDepartment(driver);
+		AssertUtils.assertActualEqualExpect(secondLevelDepartment.updateDepartment(testData.get("departmentName"), testData.get("departmentCode"), testData.get("departmentPhone"), testData.get("departmentAddress"), testData.get("departmentFeature"), testData.get("departmentSummary"), testData.get("Attention")),expectedResult, caseName);
+	}
+
+	@DataProvider(name = "updateDepartment")
+	public Iterator<Object[]> updateDepartment() {
+		return ExcelUtils.readExcel("secondLevelDepartment/updateDepartment");
+	}
+
 	//二级科室管理-下移二级科室
 	@Test(enabled=false)
 	public void moveDownDepartment() {
@@ -51,35 +70,16 @@ public class SecondLevelDepartmentTest {
 		secondLevelDepartment.moveUpDepartment();
 	}
 	
-	//二级科室管理-新增二级科室
-	@Test(dataProvider = "insertDepartment",enabled=false)
-	public void insertDepartment(String caseName, String expectedResult,Map<String, String> testData) {
+	//二级科室管理-搜索二级科室
+	@Test(dataProvider = "searchDepartmentsByName",enabled=true)
+	public void searchDepartmentsByName(String caseName, String expectedResult,Map<String, String> testData) {
 		SecondLevelDepartment secondLevelDepartment = new SecondLevelDepartment(driver);
-		AssertUtils.assertActualEqualExpect(secondLevelDepartment.insertDepartment(testData.get("categoryName"), testData.get("categoryCode"), testData.get("departmentName"), testData.get("departmentCode"), testData.get("departmentPhone"), testData.get("departmentAddress"), testData.get("departmentFeature"), testData.get("departmentSummary"), testData.get("Attention")),expectedResult, caseName);
+		AssertUtils.assertActualContainExpect(secondLevelDepartment.searchDepartmentsByName(testData.get("departmentName")),expectedResult, caseName);
 	}
 
-	@DataProvider(name = "insertDepartment")
-	public Iterator<Object[]> insertDepartment() {
-		return ExcelUtils.readExcel("insertDepartment");
-	}
-	
-	//二级科室管理-置顶二级科室
-	@Test(enabled=true)
-	public void moveTopDepartment() {
-		SecondLevelDepartment secondLevelDepartment = new SecondLevelDepartment(driver);
-		secondLevelDepartment.moveTopDepartment();
-	}
-	
-	//二级科室管理-编辑二级科室
-	@Test(dataProvider = "updateDepartment",enabled=true)
-	public void updateDepartment(String caseName, String expectedResult,Map<String, String> testData) {
-		SecondLevelDepartment secondLevelDepartment = new SecondLevelDepartment(driver);
-		AssertUtils.assertActualEqualExpect(secondLevelDepartment.updateDepartment(testData.get("departmentName"), testData.get("departmentCode"), testData.get("departmentPhone"), testData.get("departmentAddress"), testData.get("departmentFeature"), testData.get("departmentSummary"), testData.get("Attention")),expectedResult, caseName);
-	}
-
-	@DataProvider(name = "updateDepartment")
-	public Iterator<Object[]> updateDepartment() {
-		return ExcelUtils.readExcel("updateDepartment");
+	@DataProvider(name = "searchDepartmentsByName")
+	public Iterator<Object[]> searchDepartmentsByName() {
+		return ExcelUtils.readExcel("secondLevelDepartment/searchDepartmentsByName");
 	}
 	
 //	//科室管理-删除一级科室
