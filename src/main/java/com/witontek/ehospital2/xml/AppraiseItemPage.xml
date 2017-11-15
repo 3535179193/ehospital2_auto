@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="评价项">
+
+	<Locator name="新增评价项-评价项名称输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='item_name']"							>appIteAppraiseItemNameInputBox</Locator>
+	<Locator name="新增评价项-评价项类型下拉框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='item_type']"						>appIteAppraiseItemTypeDropBox</Locator>
+	<Locator name="新增评价项-选择文本类型按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='item_type']/option[1]"				>appIteSelectTextTypeButton</Locator>
+	<Locator name="新增评价项-选择星级类型按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='item_type']/option[2]"				>appIteSelectStarTypeButton</Locator>
+	<Locator name="新增评价项-保存按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@type='submit']"							>appIteSaveButton</Locator>
+	<Locator name="新增评价项-取消按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'取消')]"						>appIteCancleButton</Locator>
+			
+	<Locator name="新增评价项-从现有评价项添加按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'从现有评价添加')]"							>appIteFromAppraiseAddButton</Locator>
+		<Locator name="现有评价项-评价项名称输入框"	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchStr']"							>froAppAppraiseNameInputBox</Locator>
+		<Locator name="现有评价项-搜索按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.searchExistingItemName()']"			>froAppSearchInputButton</Locator>
+		<Locator name="现有评价项-序号为1的多选按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='item.selected']"					index="0"	>froAppFirstMoreButton</Locator>
+		<Locator name="现有评价项-序号为1的评价项名称" locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.item_name']"					index="0"	>froAppFirstAppraiseItemName</Locator>
+		<Locator name="现有评价项-序号为1的评价项类型" locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.item_type=='0'?'星级':'文本'']"	index="0"	>froAppFirstAppraiseItemType</Locator>
+		<Locator name="现有评价项-添加按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.addEvaluationItemFormExisting()']"	>froAppAddButton</Locator>
+		<Locator name="现有评价项-关闭按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.goToEvaluationQuestionnaire()']"		>froAppCloseButton</Locator>
+	
+		<Locator name="现有评价项-每页显示数下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"				>froAppEachPageRecordersDropBox</Locator>
+		<Locator name="现有评价项-选中每页显示10条" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']/option[1]"	>froAppEachPageTenRecorders</Locator>
+		<Locator name="现有评价项-总记录数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/span[1]"		>froAppTotalRecorders</Locator>
+		<Locator name="现有评价项-总页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"					>froAppTotalPages</Locator>
+		<Locator name="现有评价项-当前页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/span[3]"		>froAppCurrentPage</Locator>
+		<Locator name="现有评价项-第一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[1]"			>froAppFirstPageButton</Locator>
+		<Locator name="现有评价项-上一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[2]"			>froAppPreviousPageButton</Locator>	
+		<Locator name="现有评价项-下一页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[3]"			>froAppNextPageButton</Locator>
+		<Locator name="现有评价项-最末页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[4]"			>froAppLastPageButton</Locator>
+								
+	<Locator name="已添加星级评价项-序号" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博星级评价项')]/parent::ul/li[1]"		index="0"	>appIteStarNumber</Locator>
+	<Locator name="已添加星级评价项-名称" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博星级评价项')]"						index="0"	>appIteStarName</Locator>
+	<Locator name="已添加星级评价项-类型" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博星级评价项')]/li[3]"				index="0"	>appIteStarType</Locator>
+	<Locator name="已添加星级评价项-移除按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博星级评价项')]/li[4]/div/a[1]"		index="0"	>appIteStarDeleteButton</Locator>
+	
+	<!--  
+	<Locator name="已添加星级评价项-上移按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='stars in $ctrl.evaluationItemListData | filter:{'item_type':'0'}']/li[4]/div/a[2]"		index="0"	>appIteCreateDate</Locator>
+	<Locator name="已添加星级评价项-下移按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='stars in $ctrl.evaluationItemListData | filter:{'item_type':'0'}']/li[4]/div/a[3]"		index="0"	>appIteUpdateDate</Locator>
+	<Locator name="已添加星级评价项-置顶按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='stars in $ctrl.evaluationItemListData | filter:{'item_type':'0'}']/li[4]/div/a[4]"		index="0"	>appIteStatus</Locator>	
+	-->
+													
+	<Locator name="已添加文本评价项-序号" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博文本评价项')]/parent::ul/li[1]"				index="0"	>appIteTextNumber</Locator>
+	<Locator name="已添加文本评价项-名称" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博文本评价项')]"								index="0"	>appIteTextName</Locator>
+	<Locator name="已添加文本评价项-类型" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博文本评价项')]/parent::ul/li[3]"				index="0"	>appIteTextType</Locator>
+	<Locator name="已添加文本评价项-移除按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博文本评价项')]/parent::ul/li[4]/div/a[1]"	index="0"	>appIteTextDeleteButton</Locator>
+	
+	<!--  
+	<Locator name="已添加文本评价项-上移按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='text in $ctrl.evaluationItemListData | filter:{'item_type':'1'}']/li[4]/div/a[2]"		index="0"	>appIteCreateDate</Locator>
+	<Locator name="已添加文本评价项-下移按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='text in $ctrl.evaluationItemListData | filter:{'item_type':'1'}']/li[4]/div/a[3]"		index="0"	>appIteUpdateDate</Locator>
+	<Locator name="已添加文本评价项-置顶按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='text in $ctrl.evaluationItemListData | filter:{'item_type':'1'}']/li[4]/div/a[4]"		index="0"	>appIteStatus</Locator>	
+	-->
+	
+	<Locator name="已添加评价项-弹框关闭按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showCloseButton']/button"			>appIteAlertCloseButton</Locator>
+	<Locator name="已添加评价项-弹框确认删除按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showOkCancelButton']/button[1]"	>appIteAlertDeleteButton</Locator>
+	<Locator name="已添加评价项-弹框取消按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showOkCancelButton']/button[2]"	>appIteAlertCancleButton</Locator>
+		
+	<!--  
+	<Locator name="就医评价管理-被验证的评价问卷名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]"				>appIteAssertAddConsultDepartmentName</Locator>
+	<Locator name="就医评价管理-被验证的评价问卷名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室(改)')]"			>appIteAssertEditConsultDepartmentName</Locator>
+	-->
+</Page>
