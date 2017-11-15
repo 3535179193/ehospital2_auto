@@ -334,7 +334,8 @@ public class SecondLevelDepartmentPage extends DepartmentManagePage{
 	
 	//点击弹框的关闭按钮
 	public void clickSecLevCloseButton(){
+		wait(5);
 		click(secLevCloseButton);
-		sleep(1);
+		wait(5);
 	}
 }

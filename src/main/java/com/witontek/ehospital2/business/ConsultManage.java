@@ -48,9 +48,9 @@ public class ConsultManage extends ConsultManagePage{
 		clickConManCloseButton();
 		String afterDeleteReconds=getConManTotalRecorders();
 		if(!beforeDeleteReconds.equals(afterDeleteReconds)){
-			log.info("删除后科室咨询总数与删除前不一致，删除科室咨询成功");
+			log.info("删除前咨询科室总数:"+beforeDeleteReconds+"，比删除后咨询科室总数:"+afterDeleteReconds+"多1，删除咨询科室成功");
 		}else {
-			log.errorShot("删除前后科室咨询总数仍然一致，删除一级科室失败", driver);
+			log.errorShot("删除前咨询科室总数:"+beforeDeleteReconds+"，遇删除后咨询科室总数:"+afterDeleteReconds+"相同，删除咨询科室失败", driver);
 		}
 	}
 	

@@ -21,14 +21,14 @@
 		<Locator name="科室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[1]/span"	>departmentManageButton</Locator>
 		<Locator name="值班室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'值班室管理')]"		>dutyRoomManageButton</Locator>
 		<Locator name="医生管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[3]/span"			>doctorManageButton</Locator>
-		<Locator name="排班管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'排班管理')]"			>scheduleManageButton</Locator>
+		<Locator name="排班管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[4]/span"			>scheduleManageButton</Locator>
 		<Locator name="预约管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[5]/span"			>subscriptionManageButton</Locator>
 		<Locator name="排队管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'排队管理')]"			>lineUpManageButton</Locator>
-		<Locator name="就医咨询管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'就医咨询管理')]"		>consultManageButton</Locator>
-		<Locator name="就医评价管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'就医评价管理')]"		>appraiseManageButton</Locator>
-		<Locator name="挂号管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'挂号管理')]"			>registerManageButton</Locator>
-		<Locator name="智能导诊" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'智能导诊')]"			>smartGuideButton</Locator>
-		<Locator name="科室繁忙度" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'科室繁忙度')]"		>departmentBusynessButton</Locator>
+		<Locator name="就医咨询管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[7]/span"		>consultManageButton</Locator>
+		<Locator name="就医评价管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[8]/span"		>appraiseManageButton</Locator>
+		<Locator name="挂号管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[9]/span"			>registerManageButton</Locator>
+		<Locator name="智能导诊" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[10]/span"			>smartGuideButton</Locator>
+		<Locator name="科室繁忙度" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[11]/span"		>departmentBusynessButton</Locator>
 		<Locator name="收费项目" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'收费项目')]"			>payItemButton</Locator>
 				
 	<Locator name="统计分析" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'统计分析')]"			>analysisButton</Locator>

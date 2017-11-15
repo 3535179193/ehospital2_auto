@@ -29,9 +29,9 @@ public class DepartmentMange extends DepartmentManagePage{
 		clickDepManCloseButton();
 		String afterMoveDownCategoryName=getDepManSecondCategoryName();
 		if(beforeMoveDownCategoryName.equals(afterMoveDownCategoryName)){
-			log.info("下移一级科室成功");
+			log.info("下移前一级科室名称:"+beforeMoveDownCategoryName+"，与下移后一级科室名称:"+afterMoveDownCategoryName+"相同，下移一级科室成功");
 		}else {
-			log.errorShot("下移一级科室失败",driver);
+			log.errorShot("下移前一级科室名称:"+beforeMoveDownCategoryName+"，与下移后一级科室名称:"+afterMoveDownCategoryName+"不相同，下移一级科室失败",driver);
 		}
 	}
 	
@@ -42,9 +42,9 @@ public class DepartmentMange extends DepartmentManagePage{
 		clickDepManCloseButton();
 		String afterMoveUpCategoryName=getDepManSecondCategoryName();
 		if(beforeMoveUpCategoryName.equals(afterMoveUpCategoryName)){
-			log.info("上移一级科室成功");
+			log.info("上移前一级科室名称:"+beforeMoveUpCategoryName+"，与上移后一级科室名称:"+afterMoveUpCategoryName+"相同，上移一级科室成功");
 		}else {
-			log.errorShot("上移一级科室失败",driver);
+			log.errorShot("上移前一级科室名称:"+beforeMoveUpCategoryName+"，与上移后一级科室名称:"+afterMoveUpCategoryName+"不相同，上移一级科室失败",driver);
 		}
 	}
 	
@@ -70,9 +70,9 @@ public class DepartmentMange extends DepartmentManagePage{
 		sleep(1);
 		String afterMoveTopCategoryName=getDepManFirstCategoryName();
 		if(!afterMoveTopCategoryName.equals(beforeMoveTopCategoryName)){
-			log.info("置顶一级科室成功");
+			log.info("置顶前一级科室名称:"+beforeMoveTopCategoryName+"，与置顶后一级科室名称:"+afterMoveTopCategoryName+"相同，置顶一级科室成功");
 		}else {
-			log.errorShot("置顶一级科室失败",driver);
+			log.errorShot("置顶前一级科室名称:"+beforeMoveTopCategoryName+"，与置顶后一级科室名称:"+afterMoveTopCategoryName+"不相同，置顶一级科室失败",driver);
 		}
 	}
 	
@@ -93,9 +93,9 @@ public class DepartmentMange extends DepartmentManagePage{
 		clickDepManCloseButton();
 		String afterDeleteReconds=getDepManTotalRecorders();
 		if(!beforeDeleteReconds.equals(afterDeleteReconds)){
-			log.info("删除后一级科室总数与删除前不一致，删除一级科室成功");
+			log.info("删除前一级科室总数:"+beforeDeleteReconds+"，比删除后一级科室总数:"+afterDeleteReconds+"多1，删除一级科室成功");
 		}else {
-			log.errorShot("删除前后科室总数仍然一致，删除一级科室失败", driver);
+			log.errorShot("删除前一级科室总数:"+beforeDeleteReconds+"，与删除后一级科室总数:"+afterDeleteReconds+"相同，删除一级科室失败", driver);
 		}
 	}
 	

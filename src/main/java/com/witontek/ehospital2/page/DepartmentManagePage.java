@@ -266,8 +266,9 @@ public class DepartmentManagePage extends MainPage{
 	
 	//点击弹框的关闭按钮
 	public void clickDepManCloseButton(){
+		wait(5);
 		click(depManCloseButton);
-		sleep(1);
+		wait(5);
 	}
 	
 	//被验证的新增一级科室名称

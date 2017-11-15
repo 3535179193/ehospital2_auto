@@ -222,8 +222,9 @@ public class ConsultManagePage extends MainPage{
 	
 	//点击弹框的关闭按钮
 	public void clickConManCloseButton(){
+		wait(5);
 		click(conManCloseButton);
-		sleep(1);
+		wait(5);
 	}
 	
 	//就医咨询管理-被验证的新增咨询科室名称

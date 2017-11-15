@@ -62,9 +62,9 @@ public class SecondLevelDepartment extends SecondLevelDepartmentPage{
 		clickSecLevCloseButton();
 		String afterMoveTopDepartmentName=getSecLevFirstDepartmentName();
 		if(beforeMoveTopDepartmentName.equals(afterMoveTopDepartmentName)){
-			log.info("置顶前后二级科室名称相同，置顶二级科室成功");
+			log.info("置顶前二级科室名称:"+beforeMoveTopDepartmentName+"，与置顶后二级科室名称:"+afterMoveTopDepartmentName+"相同，置顶二级科室成功");
 		}else {
-			log.errorShot("置顶前后二级科室名称不相同，置顶二级科室失败",driver);
+			log.errorShot("置顶前二级科室名称:"+beforeMoveTopDepartmentName+"，与置顶后二级科室名称:"+afterMoveTopDepartmentName+"不相同，置顶二级科室失败",driver);
 		}
 	}
 	
@@ -98,9 +98,9 @@ public class SecondLevelDepartment extends SecondLevelDepartmentPage{
 		clickSecLevCloseButton();
 		String afterMoveDownDepartmentName=getSecLevSecondDepartmentName();
 		if(beforeMoveDownDepartmentName.equals(afterMoveDownDepartmentName)){
-			log.info("指定前后一级科室名称相同，下移二级科室成功");
+			log.info("下移前二级科室名称:"+beforeMoveDownDepartmentName+"，与下移后二级科室名称:"+afterMoveDownDepartmentName+"相同，下移二级科室成功");
 		}else {
-			log.errorShot("指定前后一级科室名称不相同，下移二级科室失败",driver);
+			log.errorShot("下移前二级科室名称:"+beforeMoveDownDepartmentName+"，与下移后二级科室名称:"+afterMoveDownDepartmentName+"不相同，下移二级科室失败",driver);
 		}
 	}
 	
@@ -112,9 +112,9 @@ public class SecondLevelDepartment extends SecondLevelDepartmentPage{
 		clickSecLevCloseButton();
 		String afterMoveUpDepartmentName=getSecLevSecondDepartmentName();
 		if(beforeMoveUpDepartmentName.equals(afterMoveUpDepartmentName)){
-			log.info("指定前后一级科室名称相同，上移二级科室成功");
+			log.info("上移前二级科室名称:"+beforeMoveUpDepartmentName+"，与上移后二级科室名称:"+afterMoveUpDepartmentName+"相同，上移二级科室成功");
 		}else {
-			log.errorShot("指定前后一级科室名称不相同，上移二级科室失败",driver);
+			log.errorShot("上移前二级科室名称:"+beforeMoveUpDepartmentName+"，与上移后二级科室名称:"+afterMoveUpDepartmentName+"不相同，上移二级科室失败",driver);
 		}
 	}
 	
