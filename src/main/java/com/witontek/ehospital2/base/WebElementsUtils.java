@@ -49,7 +49,7 @@ public class WebElementsUtils extends BrowserUtils{
 	//每定位一个元素都加上一个显示等待
 	public WebElement findElement(final Locator locator){
 		//等待0.1秒，防止页面元素加载过慢，定位不到页面元素
-		wait(3);
+		wait(4);
 		WebElement webElement=null;
 		WebDriverWait wait=new WebDriverWait(driver, locator.getWaitTime());
 		

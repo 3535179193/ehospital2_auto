@@ -74,7 +74,7 @@ public class SecondLevelDepartmentTest {
 	@Test(dataProvider = "searchDepartmentsByName",enabled=true)
 	public void searchDepartmentsByName(String caseName, String expectedResult,Map<String, String> testData) {
 		SecondLevelDepartment secondLevelDepartment = new SecondLevelDepartment(driver);
-		AssertUtils.assertActualContainExpect(secondLevelDepartment.searchDepartmentsByName(testData.get("departmentName")),expectedResult, caseName);
+		AssertUtils.assertActualEqualExpect(secondLevelDepartment.searchDepartmentsByName(testData.get("departmentName")),expectedResult, caseName);
 	}
 
 	@DataProvider(name = "searchDepartmentsByName")

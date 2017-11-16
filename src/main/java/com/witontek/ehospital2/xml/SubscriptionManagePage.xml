@@ -57,13 +57,5 @@
 	<Locator name="医生管理-置顶" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="0"				>docManageMoveTop</Locator>
 		-->
 	
-	<Locator name="预约管理-每页显示条数"	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"								>subManEachPageRecorders</Locator>
-    <Locator name="预约管理-总记录数" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']div[2]/span[1]"						>subManTotalRecorders</Locator>
-	<Locator name="预约管理-总页数" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"									>subManTotalPages</Locator>
-	<Locator name="预约管理-当前页数" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']div[2]/span[3]"						>subManCurrentPages</Locator>
-	<Locator name="预约管理-第一页"	 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'第一页')]"											>subManPreviousPage</Locator>
-	<Locator name="预约管理-上一页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上一页')]"											>subManLongitude</Locator>	
-	<Locator name="预约管理-下一页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下一页')]"											>subManNextPage</Locator>
-	<Locator name="预约管理-最末页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'最末页')]"											>subManLastPage</Locator>
 
 </Page>

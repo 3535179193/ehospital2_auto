@@ -23,7 +23,7 @@ public class AppraiseManage extends AppraiseManagePage{
 		clickAddAppAppraiseTypeButton();
 		clickAddAppDraftStatusButton();
 		clickAddAppSaveButton();
-		clickAppManAlertCloseButton();
+		clickAlertCloseButton();
 		return getAppManAppraiseName();
 	}
 	
@@ -43,17 +43,17 @@ public class AppraiseManage extends AppraiseManagePage{
 		clickEdiAppAppraiseTypeButton();
 		clickEdiAppPostedStatusButton();
 		clickEdiAppSaveButton();
-		clickAppManAlertCloseButton();
+		clickAlertCloseButton();
 		return getAppManAppraiseName();
 	}
 	
 	//就医评价管理-删除评价问卷
 	public void deleteAppraise(){
-		String beforeDeleteReconds=getAppManTotalRecorders();
+		String beforeDeleteReconds=getTotalRecorders();
 		clickAppManDeleteButton();
-		clickAppManAlertDeleteButton();
-		clickAppManAlertCloseButton();
-		String afterDeleteReconds=getAppManTotalRecorders();
+		clickAlertDeleteButton();
+		clickAlertCloseButton();
+		String afterDeleteReconds=getTotalRecorders();
 		if(!beforeDeleteReconds.equals(afterDeleteReconds)){
 			log.info("删除前评价问卷总数:"+beforeDeleteReconds+"，比删除后评价问卷总数:"+afterDeleteReconds+"多1，删除评价问卷成功");
 		}else {

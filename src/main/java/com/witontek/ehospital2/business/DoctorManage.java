@@ -13,6 +13,7 @@ public class DoctorManage extends DoctorManagePage{
 
 	private Log log=new Log(DoctorManage.class);
 	
+	//新增医生
 	public String addDoctor(String doctorName,String doctorCode,String phone,String shortNumber,String schoolName,String doctorSummary,String doctorSpecialty,String email,String medicalLicense){
 		clickDoctorManageButton();
 		clickDocManAddDoctorButton();
@@ -27,9 +28,9 @@ public class DoctorManage extends DoctorManagePage{
 		clickAddDocSelectGenderDropBox();
 		clickAddDocSelectGenderButton();
 		clickAddDocBirthSelector();
-		clickAddDocBirthMonthToggleButton();
-		clickAddDocBirthYearToggleButton();
-		clickAddDocBirthYearLeftButton();
+		clickMonthToggleButton();
+		clickYearToggleButton();
+		clickLeftButton();
 		clickAddDocSelectBirthYearButton();
 		clickAddDocSelectBirthMonthButton();
 		clickAddDocSelectBirthDateButton();
@@ -39,8 +40,8 @@ public class DoctorManage extends DoctorManagePage{
 		clickAddDocSelectPositionButton();
 		inputAddDocSchoolNameInputBox(schoolName);
 		clickAddDocEnterHospitalTimeSelector();
-		clickAddDocEnterHospitalMonthToggleButton();
-		clickAddDocEnterHospitalYearToggleButton();
+		clickMonthToggleButton();
+		clickYearToggleButton();
 		clickAddDocSelectEnterHospitalYearButton();
 		clickAddDocSelectEnterHospitalMonthButton();
 		clickAddDocSelectEnterHospitalDateButton();
@@ -52,14 +53,51 @@ public class DoctorManage extends DoctorManagePage{
 		inputAddDocMedicalLicenseInputBox(medicalLicense);
 		clickAddDocHospitalTitleDropBox();
 		clickAddDocHospitalTitleButton();
-		return null;
+		clickAddDocSaveButton();
+		clickAlertCloseButton();
+		clickLastPageButton();
+		return getDocManDoctorName();
 	}
-
+	
+	//置顶医生
+	public String moveTopDoctor(){
+		clickLastPageButton();
+		clickDocManMoveTopButton();
+		clickAlertCloseButton();
+		clickFirstPageButton();
+		return getDocManFirstDoctorName();
+	}
+	
+	//下移医生
+	public String moveDownDoctor(){
+		clickDocManMoveTopButton();
+		clickAlertCloseButton();
+		return getDocManSecondDoctorName();
+	}
+	
+	//上移医生
+	public String moveUpDoctor(){
+		clickDocManMoveUpButton();
+		clickAlertCloseButton();
+		return getDocManFirstDoctorName();
+	}
+	
+	//搜索医生
 	public String searchDoctor(String doctorName){
 		inputDocManDoctorNameInputBox(doctorName);
 		clickDocManSearchDoctorNameButton();
+		return getDocManFirstDoctorName();
+	}
+	
+	//编辑医生
+	public String editDoctor(){
+		clickDocManEditButton();
+		clickAddDocSaveButton();
+		clickAlertCloseButton();
 		return getDocManDoctorName();
 	}
+	
+
 	
 	
 	

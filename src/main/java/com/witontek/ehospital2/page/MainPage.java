@@ -57,6 +57,27 @@ public class MainPage extends LoginPage{
 	protected Locator payRecordManageButton=XmlUtils.readXml("MainPage").get("payRecordManageButton");
 	protected Locator automaticCheckAccountButton=XmlUtils.readXml("MainPage").get("automaticCheckAccountButton");
 	
+	//公共元素-每页显示数下拉框
+	protected Locator eachPageRecordersDropBox=XmlUtils.readXml("MainPage").get("eachPageRecordersDropBox");
+	protected Locator eachPageTenRecorders=XmlUtils.readXml("MainPage").get("eachPageTenRecorders");
+	protected Locator totalRecorders=XmlUtils.readXml("MainPage").get("totalRecorders");
+	protected Locator totalPages=XmlUtils.readXml("MainPage").get("totalPages");
+	protected Locator currentPage=XmlUtils.readXml("MainPage").get("currentPage");
+	protected Locator firstPageButton=XmlUtils.readXml("MainPage").get("firstPageButton");
+	protected Locator upPageButton=XmlUtils.readXml("MainPage").get("upPageButton");
+	protected Locator nextPageButton=XmlUtils.readXml("MainPage").get("nextPageButton");
+	protected Locator lastPageButton=XmlUtils.readXml("MainPage").get("lastPageButton");
+	
+	//公共元素-弹框关闭按钮
+	protected Locator alertCloseButton=XmlUtils.readXml("MainPage").get("alertCloseButton");
+	protected Locator alertDeleteButton=XmlUtils.readXml("MainPage").get("alertDeleteButton");
+	protected Locator alertCancleButton=XmlUtils.readXml("MainPage").get("alertCancleButton");
+	
+	//日期选择器-月份切换按钮
+	protected Locator monthToggleButton=XmlUtils.readXml("MainPage").get("monthToggleButton");
+	protected Locator yearToggleButton=XmlUtils.readXml("MainPage").get("yearToggleButton");
+	protected Locator leftButton=XmlUtils.readXml("MainPage").get("leftButton");
+	protected Locator rightButton=XmlUtils.readXml("MainPage").get("rightButton");
 
 	//得到用户名
 	public String getUserName(){
@@ -207,5 +228,97 @@ public class MainPage extends LoginPage{
 	public void clickAutomaticCheckAccountButton(){
 		clickAnalysisButton();
 		click(automaticCheckAccountButton);
+	}
+	
+	//点击每页显示数下拉框
+	public void clickEachPageRecordersDropBox(){
+		click(eachPageRecordersDropBox);
+	}
+	
+	//选中每页显示10条
+	public void clickEachPageTenRecorders(){
+		click(eachPageTenRecorders);
+	}
+	
+	//获取总记录数
+	public String getTotalRecorders(){
+			String recorders=getText(totalRecorders);
+			log.info("总记录数："+recorders);
+			return recorders;
+	}
+	
+	//获取总页数
+	public String getTotalPages(){
+		String pages=getText(totalPages);
+		log.info("总页数："+pages);
+		return pages;
+	}
+	
+	//获取当前页数
+	public String getCurrentPage(){
+		String page=getText(currentPage);
+		log.info("当前页数："+page);
+		return page;
+	}
+	
+	//点击第一页按钮
+	public void clickFirstPageButton(){
+		click(firstPageButton);
+	}
+	
+	//点击上一页按钮
+	public void clickUpPageButton(){
+		click(upPageButton);
+	}
+	
+	//点击下一页按钮
+	public void clickNextPageButton(){
+		click(nextPageButton);
+	}
+	
+	//点击最末页按钮
+	public void clickLastPageButton(){
+		click(lastPageButton);
+	}
+	
+	//点击弹框关闭按钮
+	public void clickAlertCloseButton(){
+		wait(5);
+		click(alertCloseButton);
+		wait(5);
+	}
+	
+	//点击弹框确认删除按钮
+	public void clickAlertDeleteButton(){
+		wait(5);
+		click(alertDeleteButton);
+		wait(5);
+	}
+	
+	//点击弹框确认删除按钮
+	public void clickAlertCancleButton(){
+		wait(5);
+		click(alertCancleButton);
+		wait(5);
+	}
+	
+	//点击最末页按钮
+	public void clickMonthToggleButton(){
+		click(monthToggleButton);
+	}
+	
+	//点击弹框关闭按钮
+	public void clickYearToggleButton(){
+		click(yearToggleButton);
+	}
+	
+	//点击弹框确认删除按钮
+	public void clickLeftButton(){
+		click(leftButton);
+	}
+	
+	//点击弹框确认删除按钮
+	public void clickRightButton(){
+		click(rightButton);
 	}
 }

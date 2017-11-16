@@ -26,22 +26,11 @@ public class AppraiseItemPage extends AppraiseManagePage{
 	protected Locator appIteFromAppraiseAddButton=XmlUtils.readXml("AppraiseItemPage").get("appIteFromAppraiseAddButton");
 		protected Locator froAppAppraiseNameInputBox=XmlUtils.readXml("AppraiseItemPage").get("froAppAppraiseNameInputBox");
 		protected Locator froAppSearchInputButton=XmlUtils.readXml("AppraiseItemPage").get("froAppSearchInputButton");
-		protected Locator froAppFirstMoreButton=XmlUtils.readXml("AppraiseItemPage").get("froAppFirstMoreButton");
-		protected Locator froAppFirstAppraiseItemName=XmlUtils.readXml("AppraiseItemPage").get("froAppFirstAppraiseItemName");
-		protected Locator froAppFirstAppraiseItemType=XmlUtils.readXml("AppraiseItemPage").get("froAppFirstAppraiseItemType");
+		protected Locator froAppMoreButton=XmlUtils.readXml("AppraiseItemPage").get("froAppMoreButton");
+		protected Locator froAppAppraiseItemName=XmlUtils.readXml("AppraiseItemPage").get("froAppAppraiseItemName");
+		protected Locator froAppAppraiseItemType=XmlUtils.readXml("AppraiseItemPage").get("froAppAppraiseItemType");
 		protected Locator froAppAddButton=XmlUtils.readXml("AppraiseItemPage").get("froAppAddButton");
 		protected Locator froAppCloseButton=XmlUtils.readXml("AppraiseItemPage").get("addAppStopStatusButton");
-		
-		//现有评价项-每页显示数下拉框
-		protected Locator froAppEachPageRecordersDropBox=XmlUtils.readXml("AppraiseItemPage").get("froAppEachPageRecordersDropBox");
-		protected Locator froAppEachPageTenRecorders=XmlUtils.readXml("AppraiseItemPage").get("froAppEachPageTenRecorders");
-		protected Locator froAppTotalRecorders=XmlUtils.readXml("AppraiseItemPage").get("froAppTotalRecorders");
-		protected Locator froAppTotalPages=XmlUtils.readXml("AppraiseItemPage").get("froAppTotalPages");
-		protected Locator froAppCurrentPage=XmlUtils.readXml("AppraiseItemPage").get("froAppCurrentPage");
-		protected Locator froAppFirstPageButton=XmlUtils.readXml("AppraiseItemPage").get("froAppFirstPageButton");
-		protected Locator froAppPreviousPageButton=XmlUtils.readXml("AppraiseItemPage").get("froAppPreviousPageButton");
-		protected Locator froAppNextPageButton=XmlUtils.readXml("AppraiseItemPage").get("froAppNextPageButton");
-		protected Locator froAppLastPageButton=XmlUtils.readXml("AppraiseItemPage").get("froAppLastPageButton");
 		
 	//已添加星级评价项-序号
 	protected Locator appIteStarNumber=XmlUtils.readXml("AppraiseItemPage").get("appIteStarNumber");
@@ -55,10 +44,6 @@ public class AppraiseItemPage extends AppraiseManagePage{
 	protected Locator appIteTextType=XmlUtils.readXml("AppraiseItemPage").get("appIteTextType");
 	protected Locator appIteTextDeleteButton=XmlUtils.readXml("AppraiseItemPage").get("appIteTextDeleteButton");
 
-	//已添加评价项-弹框关闭按钮
-	protected Locator appIteAlertCloseButton=XmlUtils.readXml("AppraiseItemPage").get("appIteAlertCloseButton");
-	protected Locator appIteAlertDeleteButton=XmlUtils.readXml("AppraiseItemPage").get("appIteAlertDeleteButton");
-	protected Locator appIteAlertCancleButton=XmlUtils.readXml("AppraiseItemPage").get("appIteAlertCancleButton");
 
 	//新增评价项-输入评价项名称
 	public void inputAppIteAppraiseItemNameInputBox(String appraiseItemName){
@@ -106,20 +91,20 @@ public class AppraiseItemPage extends AppraiseManagePage{
 	}
 	
 	//现有评价项-点击序号为1的多选按钮
-	public void clickFroAppFirstMoreButton(){
-		click(froAppFirstMoreButton);
+	public void clickFroAppMoreButton(){
+		click(froAppMoreButton);
 	}
 	
 	//现有评价项-获取序号为1的评价项名称
-	public String getFroAppFirstAppraiseItemName(){
-		String appraiseItemName=getText(froAppFirstAppraiseItemName);
+	public String getFroAppAppraiseItemName(){
+		String appraiseItemName=getText(froAppAppraiseItemName);
 		log.info("现有评价项-序号为1的评价项名称："+appraiseItemName);
 		return appraiseItemName;
 	}
 	
 	//现有评价项-获取序号为1的评价项类型
-	public String getFroAppFirstAppraiseItemType(){
-		String appraiseItemType=getText(froAppFirstAppraiseItemType);
+	public String getFroAppAppraiseItemType(){
+		String appraiseItemType=getText(froAppAppraiseItemType);
 		log.info("现有评价项-序号为1的评价项类型："+appraiseItemType);
 		return appraiseItemType;
 	}
@@ -132,57 +117,6 @@ public class AppraiseItemPage extends AppraiseManagePage{
 	//现有评价项-点击关闭按钮
 	public void clickFroAppCloseButton(){
 		click(froAppCloseButton);
-	}
-	
-	//现有评价项-点击每页显示数下拉框
-	public void clickFroAppEachPageRecordersDropBox(){
-		click(froAppEachPageRecordersDropBox);
-	}
-	
-	//现有评价项-选中每页显示10条
-	public void clickFroAppEachPageTenRecorders(){
-		click(froAppEachPageTenRecorders);
-	}
-	
-	//现有评价项-获取总记录数
-	public String getFroAppTotalRecorders(){
-			String recorders=getText(froAppTotalRecorders);
-			log.info("现有评价项-总记录数："+recorders);
-			return recorders;
-	}
-	
-	//现有评价项-获取总页数
-	public String getFroAppTotalPages(){
-		String pages=getText(froAppTotalPages);
-		log.info("现有评价项-总页数："+pages);
-		return pages;
-	}
-	
-	//现有评价项-获取当前页数
-	public String getFroAppCurrentPage(){
-		String page=getText(froAppCurrentPage);
-		log.info("现有评价项-当前页数："+page);
-		return page;
-	}
-	
-	//现有评价项-点击第一页按钮
-	public void clickFroAppFirstPageButton(){
-		click(froAppFirstPageButton);
-	}
-	
-	//现有评价项-点击上一页按钮
-	public void clickFroAppPreviousPageButton(){
-		click(froAppPreviousPageButton);
-	}
-	
-	//现有评价项-点击下一页按钮
-	public void clickFroAppNextPageButton(){
-		click(froAppNextPageButton);
-	}
-	
-	//现有评价项-点击最末页按钮
-	public void clickFroAppLastPageButton(){
-		click(froAppLastPageButton);
 	}
 	
 	//已添加星级评价项-获取序号
@@ -237,26 +171,6 @@ public class AppraiseItemPage extends AppraiseManagePage{
 		click(appIteTextDeleteButton);
 	}
 	
-	//已添加评价项-点击弹框关闭按钮
-	public void clickAppIteAlertCloseButton(){
-		wait(5);
-		click(appIteAlertCloseButton);
-		wait(5);
-	}
-	
-	//已添加评价项-点击弹框确认删除按钮
-	public void clickAppIteAlertDeleteButton(){
-		wait(5);
-		click(appIteAlertDeleteButton);
-		wait(5);
-	}
-	
-	//已添加评价项-点击弹框确认删除按钮
-	public void clickAppIteAlertCancleButton(){
-		wait(5);
-		click(appIteAlertCancleButton);
-		wait(5);
-	}
 	
 //	//就医咨询管理-被验证的新增咨询科室名称
 //	public String getConManAssertAddConsultDepartmentName(){

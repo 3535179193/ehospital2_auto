@@ -15,17 +15,17 @@ public class DoctorManagePage extends MainPage{
 	
 	private Log log=new Log(DoctorManagePage.class);
 
-	/** 医生管理-导入医生信息按钮 */
+	/*** 医生管理-导入医生信息按钮 */
 	protected Locator docManImportDoctorInfoButton=XmlUtils.readXml("DoctorManagePage").get("docManImportDoctorInfoButton");
 	protected Locator docManDownloadDoctorExcelButton=XmlUtils.readXml("DoctorManagePage").get("docManDownloadDoctorExcelButton");
 	protected Locator docManExportDoctorInfoButton=XmlUtils.readXml("DoctorManagePage").get("docManExportDoctorInfoButton");
 	protected Locator docManSynchronousDoctorHISButton=XmlUtils.readXml("DoctorManagePage").get("docManSynchronousDoctorHISButton");
 	
-	/** 医生管理-医生名称输入框 */
+	/*** 医生管理-医生名称输入框 */
 	protected Locator docManDoctorNameInputBox=XmlUtils.readXml("DoctorManagePage").get("docManDoctorNameInputBox");
 	protected Locator docManSearchDoctorNameButton=XmlUtils.readXml("DoctorManagePage").get("docManSearchDoctorNameButton");
 
-	/** 医生管理-新增医生信息按钮 */
+	/*** 医生管理-新增医生信息按钮 */
 	protected Locator docManAddDoctorButton=XmlUtils.readXml("DoctorManagePage").get("docManAddDoctorButton");
 		protected Locator addDocDoctorCodeInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocDoctorCodeInputBox");	
 		protected Locator addDocDoctorNameInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocDoctorNameInputBox");
@@ -33,37 +33,38 @@ public class DoctorManagePage extends MainPage{
 		protected Locator addDocSelectWorkJobButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectWorkJobButton");
 		protected Locator addDocPhoneInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocPhoneInputBox");
 		
+		/*** 新增医生-选定右移所属科室 */
 		protected Locator addDocSelectRightBelongDepartment=XmlUtils.readXml("DoctorManagePage").get("addDocSelectRightBelongDepartment");
 		protected Locator addDocBelongDepartmentRightButton=XmlUtils.readXml("DoctorManagePage").get("addDocBelongDepartmentRightButton");
 		protected Locator addDocSelectLeftBelongDepartment=XmlUtils.readXml("DoctorManagePage").get("addDocSelectLeftBelongDepartment");
 		protected Locator addDocBelongDepartmentLeftButton=XmlUtils.readXml("DoctorManagePage").get("addDocBelongDepartmentLeftButton");	
 		
+		/*** 新增医生-短号输入框 */
 		protected Locator addDocShortNumInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocShortNumInputBox");
 		protected Locator addDocSelectHeadPhotoButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectHeadPhotoButton");
 		protected Locator addDocSelectGenderDropBox=XmlUtils.readXml("DoctorManagePage").get("addDocSelectGenderDropBox");
 		protected Locator addDocSelectGenderButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectGenderButton");	
 		
+		/*** 新增医生-出生年月选择器 */
 		protected Locator addDocBirthSelector=XmlUtils.readXml("DoctorManagePage").get("addDocBirthSelector");
-		protected Locator addDocBirthMonthToggleButton=XmlUtils.readXml("DoctorManagePage").get("addDocBirthMonthToggleButton");
-		protected Locator addDocBirthYearToggleButton=XmlUtils.readXml("DoctorManagePage").get("addDocBirthYearToggleButton");
-		protected Locator addDocBirthYearLeftButton=XmlUtils.readXml("DoctorManagePage").get("addDocBirthYearLeftButton");	
 		protected Locator addDocSelectBirthYearButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectBirthYearButton");
 		protected Locator addDocSelectBirthMonthButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectBirthMonthButton");
 		protected Locator addDocSelectBirthDateButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectBirthDateButton");
 		
+		/*** 新增医生-选择职称下拉框 */
 		protected Locator addDocSelectTechnicalTitleDropBox=XmlUtils.readXml("DoctorManagePage").get("addDocSelectTechnicalTitleDropBox");		
 		protected Locator addDocSelectTechnicalTitleBUTTON=XmlUtils.readXml("DoctorManagePage").get("addDocSelectTechnicalTitleBUTTON");
 		protected Locator addDocSelectPositionDropBox=XmlUtils.readXml("DoctorManagePage").get("addDocSelectPositionDropBox");
 		protected Locator addDocSelectPositionButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectPositionButton");
 		protected Locator addDocSchoolNameInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocSchoolNameInputBox");	
 		
+		/*** 新增医生-进入本院时间选择器 */
 		protected Locator addDocEnterHospitalTimeSelector=XmlUtils.readXml("DoctorManagePage").get("addDocEnterHospitalTimeSelector");
-		protected Locator addDocEnterHospitalMonthToggleButton=XmlUtils.readXml("DoctorManagePage").get("addDocEnterHospitalMonthToggleButton");
-		protected Locator addDocEnterHospitalYearToggleButton=XmlUtils.readXml("DoctorManagePage").get("addDocEnterHospitalYearToggleButton");
 		protected Locator addDocSelectEnterHospitalYearButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectEnterHospitalYearButton");	
 		protected Locator addDocSelectEnterHospitalMonthButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectEnterHospitalMonthButton");
 		protected Locator addDocSelectEnterHospitalDateButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectEnterHospitalDateButton");
 		
+		/*** 新增医生-医生简介输入框 */
 		protected Locator addDocDoctorSummaryInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocDoctorSummaryInputBox");
 		protected Locator addDocDoctorSpecialtyInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocDoctorSpecialtyInputBox");		
 		protected Locator addDocAcademicTitleDropBox=XmlUtils.readXml("DoctorManagePage").get("addDocAcademicTitleDropBox");
@@ -75,32 +76,24 @@ public class DoctorManagePage extends MainPage{
 		protected Locator addDocSaveButton=XmlUtils.readXml("DoctorManagePage").get("addDocSaveButton");
 		protected Locator addDocRetuenButton=XmlUtils.readXml("DoctorManagePage").get("addDocRetuenButton");
 	
-	/** 医生管理-工号 */
+	/*** 医生管理-序号 */
+	protected Locator docManNumber=XmlUtils.readXml("DoctorManagePage").get("docManNumber");
 	protected Locator docManDoctorCode=XmlUtils.readXml("DoctorManagePage").get("docManDoctorCode");	
 	protected Locator docManDoctorName=XmlUtils.readXml("DoctorManagePage").get("docManDoctorName");
+	protected Locator docManFirstDoctorName=XmlUtils.readXml("DoctorManagePage").get("docManFirstDoctorName");
+	protected Locator docManSecondDoctorName=XmlUtils.readXml("DoctorManagePage").get("docManSecondDoctorName");
 	protected Locator docManBelongToDepartment=XmlUtils.readXml("DoctorManagePage").get("docManBelongToDepartment");
 	protected Locator docManPersonalType=XmlUtils.readXml("DoctorManagePage").get("docManPersonalType");
 	protected Locator docManHospitalTitle=XmlUtils.readXml("DoctorManagePage").get("docManHospitalTitle");
 	protected Locator docManPostion=XmlUtils.readXml("DoctorManagePage").get("docManPostion");
 	protected Locator docManAcademicTitle=XmlUtils.readXml("DoctorManagePage").get("docManAcademicTitle");
 	
-	/** 医生管理-编辑按钮 */
+	/*** 医生管理-编辑按钮 */
 	protected Locator docManEditButton=XmlUtils.readXml("DoctorManagePage").get("docManEditButton");
-	protected Locator docManDeleteButton=XmlUtils.readXml("DoctorManagePage").get("docManDeleteButton");	
-	protected Locator docManResetPasswordButton=XmlUtils.readXml("DoctorManagePage").get("docManResetPasswordButton");
 	protected Locator docManMoveUpButton=XmlUtils.readXml("DoctorManagePage").get("docManMoveUpButton");
 	protected Locator docManMoveDownButton=XmlUtils.readXml("DoctorManagePage").get("docManMoveDownButton");
 	protected Locator docManMoveTopButton=XmlUtils.readXml("DoctorManagePage").get("docManMoveTopButton");	
-	
-	/** 医生管理-每页显示数下拉框 */
-	protected Locator docManEachPageRecordersDropBox=XmlUtils.readXml("DoctorManagePage").get("docManEachPageRecordersDropBox");
-	protected Locator docManTotalRecorders=XmlUtils.readXml("DoctorManagePage").get("docManTotalRecorders");
-	protected Locator docManTotalPages=XmlUtils.readXml("DoctorManagePage").get("docManTotalPages");
-	protected Locator docManCurrentPages=XmlUtils.readXml("DoctorManagePage").get("docManCurrentPages");	
-	protected Locator docManFirstPageButton=XmlUtils.readXml("DoctorManagePage").get("docManFirstPageButton");
-	protected Locator docManPreviousPageButton=XmlUtils.readXml("DoctorManagePage").get("docManPreviousPageButton");
-	protected Locator docManNextPageButton=XmlUtils.readXml("DoctorManagePage").get("docManNextPageButton");
-	protected Locator docManLastPageButton=XmlUtils.readXml("DoctorManagePage").get("docManLastPageButton");		
+	protected Locator docManHideButton=XmlUtils.readXml("DoctorManagePage").get("docManHideButton");	
 	
 	//点击导入医生信息
 	public void cliclDocManImportDoctorInfoButton(){
@@ -207,21 +200,6 @@ public class DoctorManagePage extends MainPage{
 		click(addDocBirthSelector);
 	}
 	
-	//点击出生年月-月份切换按钮
-	public void clickAddDocBirthMonthToggleButton(){
-		click(addDocBirthMonthToggleButton);
-	}
-	
-	//点击出生年月-年份切换按钮
-	public void clickAddDocBirthYearToggleButton(){
-		click(addDocBirthYearToggleButton);
-	}
-	
-	//点击出生年月-年份左移按钮
-	public void clickAddDocBirthYearLeftButton(){
-		click(addDocBirthYearLeftButton);
-	}
-	
 	//点击出生年月-选定年份按钮
 	public void clickAddDocSelectBirthYearButton(){
 		click(addDocSelectBirthYearButton);
@@ -265,16 +243,6 @@ public class DoctorManagePage extends MainPage{
 	//新增医生-点击进院时间选择器
 	public void clickAddDocEnterHospitalTimeSelector(){
 		click(addDocEnterHospitalTimeSelector);
-	}
-	
-	//点击进院时间-月份切换按钮
-	public void clickAddDocEnterHospitalMonthToggleButton(){
-		click(addDocEnterHospitalMonthToggleButton);
-	}
-	
-	//点击进院时间-年份切换按钮
-	public void clickAddDocEnterHospitalYearToggleButton(){
-		click(addDocEnterHospitalYearToggleButton);
 	}
 	
 	//点击进院时间-选定年份按钮
@@ -342,32 +310,99 @@ public class DoctorManagePage extends MainPage{
 		click(addDocRetuenButton);
 	}
 	
+	//医生管理-获取序号
+	public String getDocManNumber(){
+		String number=getText(docManNumber);
+		log.info("医生管理-序号："+number);
+		return number;
+	}
 	
-	
-	
-	//获取工号（医生编号）
+	//医生管理-获取工号
 	public String getDocManDoctorCode(){
-		String code=getText(docManDoctorCode);
-		log.info("医生编号：\""+code+"\"");
-		return code;
+		String doctorCode=getText(docManDoctorCode);
+		log.info("医生管理-工号："+doctorCode);
+		return doctorCode;
 	}
 	
-	//获取医生姓名
+	//医生管理-获取医生姓名
 	public String getDocManDoctorName(){
-		String name=getText(docManDoctorName);
-		log.info("医生姓名：\""+name+"\"");
-		return name;
+		String doctorName=getText(docManDoctorName);
+		log.info("医生管理-医生姓名："+doctorName);
+		return doctorName;
 	}
 	
-	//点击置顶
-	public void clickDocManageMoveTopButton(){
+	//医生管理-获取序号为1的医生姓名
+	public String getDocManFirstDoctorName(){
+		String doctorName=getText(docManFirstDoctorName);
+		log.info("医生管理-序号为1的医生姓名："+doctorName);
+		return doctorName;
+	}
+	
+	//医生管理-获取序号为1的医生姓名
+	public String getDocManSecondDoctorName(){
+		String doctorName=getText(docManSecondDoctorName);
+		log.info("医生管理-序号为2的医生姓名："+doctorName);
+		return doctorName;
+	}
+	
+	//医生管理-获取所属科室
+	public String getDocManBelongToDepartment(){
+		String belongToDepartment=getText(docManBelongToDepartment);
+		log.info("医生管理-所属科室："+belongToDepartment);
+		return belongToDepartment;
+	}
+	
+	//医生管理-获取人员类别
+	public String getDocManPersonalType(){
+		String personalType=getText(docManPersonalType);
+		log.info("医生管理-人员类别："+personalType);
+		return personalType;
+	}
+	
+	//医生管理-获取医院职称
+	public String getDocManHospitalTitle(){
+		String hospitalTitle=getText(docManHospitalTitle);
+		log.info("医生管理-医院职称："+hospitalTitle);
+		return hospitalTitle;
+	}
+	
+	//医生管理-获取职位
+	public String getDocManPostion(){
+		String postion=getText(docManPostion);
+		log.info("医生管理-职位："+postion);
+		return postion;
+	}
+	
+	//医生管理-获取学术职称
+	public String getDocManAcademicTitle(){
+		String academicTitle=getText(docManAcademicTitle);
+		log.info("医生管理-学术职称："+academicTitle);
+		return academicTitle;
+	}
+	
+	//医生管理-点击编辑按钮
+	public void clickDocManEditButton(){
+		click(docManEditButton);
+	}
+	
+	//医生管理-点击上移按钮
+	public void clickDocManMoveUpButton(){
+		click(docManMoveUpButton);
+	}
+	
+	//医生管理-点击下移按钮
+	public void clickDocManMoveDownButton(){
+		click(docManMoveDownButton);
+	}
+	
+	//医生管理-点击置顶按钮
+	public void clickDocManMoveTopButton(){
 		click(docManMoveTopButton);
 	}
 	
-	//获取总医生数
-	public String getDocManTotalRecorders(){
-		String recorders=getText(docManTotalRecorders);
-		log.info("总医生数："+recorders);
-		return recorders;
+	//医生管理-点击隐藏按钮
+	public void clickDocManHideButton(){
+		click(docManHideButton);
 	}
+
 }

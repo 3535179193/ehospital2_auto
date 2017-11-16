@@ -42,7 +42,7 @@ public class ConsultManageTest {
 	@Test(dataProvider = "searchConsultDepartment",dependsOnMethods={"insertConsultDepartment"},enabled=false)
 	public void searchConsultDepartment(String caseName, String expectedResult,Map<String, String> testData) {
 		ConsultManage consultManage = new ConsultManage(driver);
-		AssertUtils.assertActualContainExpect(consultManage.searchConsultDepartment(testData.get("departmentName")),expectedResult, caseName);
+		AssertUtils.assertActualEqualExpect(consultManage.searchConsultDepartment(testData.get("departmentName")),expectedResult, caseName);
 	}
 
 	@DataProvider(name = "searchConsultDepartment")

@@ -39,11 +39,24 @@
 		<Locator name="缴费记录管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'缴费记录管理')]"		>payRecordManageButton</Locator>
 		<Locator name="自动对账管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'自动对账管理')]"		>automaticCheckAccountButton</Locator>	
 	
+	<!-- 公共元素 -->>
+	<Locator name="每页显示数下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"					>eachPageRecordersDropBox</Locator>
+	<Locator name="选中每页显示10条" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']/option[1]"		>eachPageTenRecorders</Locator>
+	<Locator name="总记录数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/span[1]"			>totalRecorders</Locator>
+	<Locator name="总页数" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/span[2]"			>totalPages</Locator>
+	<Locator name="当前页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/span[3]"			>currentPage</Locator>
+	<Locator name="第一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[1]"				>firstPageButton</Locator>
+	<Locator name="上一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[2]"				>upPageButton</Locator>	
+	<Locator name="下一页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[3]"				>nextPageButton</Locator>
+	<Locator name="最末页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[4]"				>lastPageButton</Locator>
 	
+	<Locator name="弹框关闭按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showCloseButton']/button"			>alertCloseButton</Locator>
+	<Locator name="弹框确认删除按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showOkCancelButton']/button[1]"	>alertDeleteButton</Locator>
+	<Locator name="弹框取消按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showOkCancelButton']/button[2]"	>alertCancleButton</Locator>
 	
-	
-	<!--	<Locator name="线下缴费管理" locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'线下缴费管理')]" >manFace</Locator>
-	<Locator name="DEV-MENU" locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'DEV-MENU')]" ></Locator>	-->
-	
-
+	<Locator name="日期选择器-月份切换按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"				>monthToggleButton</Locator>
+	<Locator name="日期选择器-年份切换按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"				>yearToggleButton</Locator>
+	<Locator name="日期选择器-左移按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='move(-1)']"					>leftButton</Locator>
+	<Locator name="日期选择器-右移按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='move(1)']"					>rightButton</Locator>
+		
 </Page>

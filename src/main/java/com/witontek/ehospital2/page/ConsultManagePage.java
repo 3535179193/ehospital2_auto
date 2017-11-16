@@ -42,20 +42,6 @@ public class ConsultManagePage extends MainPage{
 		protected Locator ediConSaveButton=XmlUtils.readXml("ConsultManagePage").get("ediConSaveButton");
 		protected Locator ediConCancleButton=XmlUtils.readXml("ConsultManagePage").get("ediConCancleButton");
 	
-	//就医咨询管理-每页显示数下拉框
-	protected Locator conManEachPageRecordersDropBox=XmlUtils.readXml("ConsultManagePage").get("conManEachPageRecordersDropBox");
-	protected Locator conManEachPageTenRecorders=XmlUtils.readXml("ConsultManagePage").get("conManEachPageTenRecorders");	
-	protected Locator conManTotalRecorders=XmlUtils.readXml("ConsultManagePage").get("conManTotalRecorders");
-	protected Locator conManTotalPages=XmlUtils.readXml("ConsultManagePage").get("conManTotalPages");
-	protected Locator conManCurrentPage=XmlUtils.readXml("ConsultManagePage").get("conManCurrentPage");
-	protected Locator conManFirstPageButton=XmlUtils.readXml("ConsultManagePage").get("conManFirstPageButton");
-	protected Locator conManPreviousPageButton=XmlUtils.readXml("ConsultManagePage").get("conManPreviousPageButton");
-	protected Locator conManNextPageButton=XmlUtils.readXml("ConsultManagePage").get("conManNextPageButton");
-	protected Locator conManLastPageButton=XmlUtils.readXml("ConsultManagePage").get("conManLastPageButton");
-	
-	//就医咨询管理-关闭弹窗
-	protected Locator conManCloseButton=XmlUtils.readXml("ConsultManagePage").get("conManCloseButton");
-	
 	//被验证的数据
 	protected Locator conManAssertAddConsultDepartmentName=XmlUtils.readXml("ConsultManagePage").get("conManAssertAddConsultDepartmentName");
 	protected Locator conManAssertEditConsultDepartmentName=XmlUtils.readXml("ConsultManagePage").get("conManAssertEditConsultDepartmentName");
@@ -167,64 +153,6 @@ public class ConsultManagePage extends MainPage{
 	//编辑科室咨询-点击取消按钮
 	public void clickEdiConCancleButton(){
 		click(ediConCancleButton);
-	}
-	
-	//就医咨询管理-点击每页显示数下拉框
-	public void clickConManEachPageRecordersDropBox(){
-		click(conManEachPageRecordersDropBox);
-	}
-	
-	//就医咨询管理-选中每页显示10条
-	public void clickConManEachPageTenRecorders(){
-		click(conManEachPageTenRecorders);
-	}
-	
-	//就医咨询管理-获取总记录数
-	public String getConManTotalRecorders(){
-			String recorders=getText(conManTotalRecorders);
-			log.info("就医咨询管理-总记录数："+recorders);
-			return recorders;
-	}
-	
-	//就医咨询管理-获取总页数
-	public String getConManTotalPages(){
-		String pages=getText(conManTotalPages);
-		log.info("就医咨询管理-总记录数："+pages);
-		return pages;
-	}
-	
-	//就医咨询管理-获取当前页数
-	public String getConManCurrentPage(){
-		String page=getText(conManCurrentPage);
-		log.info("就医咨询管理-当前页数："+page);
-		return page;
-	}
-	
-	//点击第一页
-	public void clickConManFirstPageButton(){
-		click(conManFirstPageButton);
-	}
-	
-	//点击上一页
-	public void clickConManPreviousPageButton(){
-		click(conManPreviousPageButton);
-	}
-	
-	//点击下一页
-	public void clickConManNextPageButton(){
-		click(conManNextPageButton);
-	}
-	
-	//点击最末页
-	public void clickConManLastPageButton(){
-		click(conManLastPageButton);
-	}
-	
-	//点击弹框的关闭按钮
-	public void clickConManCloseButton(){
-		wait(5);
-		click(conManCloseButton);
-		wait(5);
 	}
 	
 	//就医咨询管理-被验证的新增咨询科室名称

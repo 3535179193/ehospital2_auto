@@ -38,20 +38,6 @@
 		<Locator name="编辑评价问卷-编辑评价项按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='!$ctrl.isAdd']"					>ediAppEditAppraiseItemButton</Locator>
 		<Locator name="编辑评价问卷-取消按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.cancelHandle()']"			>ediAppCancleButton</Locator>
 		
-	<Locator name="就医评价管理-每页显示数下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"				>appManEachPageRecordersDropBox</Locator>
-	<Locator name="就医评价管理-选中每页显示10条" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']/option[1]"	>appManEachPageTenRecorders</Locator>
-	<Locator name="就医评价管理-总记录数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/span[1]"		>appManTotalRecorders</Locator>
-	<Locator name="就医评价管理-总页数" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"					>appManTotalPages</Locator>
-	<Locator name="就医评价管理-当前页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/span[3]"		>appManCurrentPage</Locator>
-	<Locator name="就医评价管理-第一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[1]"			>appManFirstPageButton</Locator>
-	<Locator name="就医评价管理-上一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[2]"			>appManPreviousPageButton</Locator>	
-	<Locator name="就医评价管理-下一页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[3]"			>appManNextPageButton</Locator>
-	<Locator name="就医评价管理-最末页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[4]"			>appManLastPageButton</Locator>
-
-	<Locator name="就医评价管理-弹框关闭按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showCloseButton']/button"		>appManAlertCloseButton</Locator>
-	<Locator name="就医评价管理-弹框确认删除按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showOkCancelButton']/button[1]">appManAlertDeleteButton</Locator>
-	<Locator name="就医评价管理-弹框取消按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showOkCancelButton']/button[2]">appManAlertCancleButton</Locator>
-		
 	<!--  <Locator name="就医评价管理-被验证的评价问卷名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]"				>appManAssertAddConsultDepartmentName</Locator>
 	<Locator name="就医评价管理-被验证的评价问卷名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室(改)')]"			>appManAssertEditConsultDepartmentName</Locator>
 	-->

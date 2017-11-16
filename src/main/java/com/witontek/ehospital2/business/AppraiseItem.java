@@ -22,36 +22,40 @@ public class AppraiseItem extends AppraiseItemPage{
 		clickAppIteAppraiseItemTypeDropBox();
 		clickAppIteSelectTextTypeButton();
 		clickAppIteSaveButton();
-		clickAppManAlertCloseButton();
+		clickAlertCloseButton();
 		return getAppIteTextName();
 	}
 	
-//	//就医评价管理-搜索评价问卷
-//	public String searchAppraise (String appraiseName){
-//		inputAppManAppraiseNameInputBox(appraiseName);
-//		clickAppManSearchButton();
-//		return getAppManAppraiseName();
-//	}
-//	
-//	//就医咨询管理-编辑评价问卷
-//	public String updateAppraise(String appraiseName,String appraiseDesc){
-//		clickAppManEditButton();
-//		inputEdiAppAppraiseNameInputBox(appraiseName);
-//		inputEdiAppAppraiseDescInputBox(appraiseDesc);
-//		clickEdiAppAppraiseTypeDropBox();
-//		clickEdiAppAppraiseTypeButton();
-//		clickEdiAppPostedStatusButton();
-//		clickEdiAppSaveButton();
-//		clickAppManAlertCloseButton();
-//		return getAppManAppraiseName();
-//	}
-	
 	//删除文本评价项
-	public void deleteAppraiseItem(){
+	public void deleteTextAppraiseItem(){
 		clickAppManEditButton();
 		clickEdiAppEditAppraiseItemButton();
 		clickAppIteTextDeleteButton();
-		clickAppManAlertDeleteButton();
+		clickAlertDeleteButton();
+		clickAlertCloseButton();
+	}
+	
+	//从现有评价项中添加文本评价项
+	public String insertFromAppraiseItem(){
+		clickAppManEditButton();
+		clickEdiAppEditAppraiseItemButton();
+		clickAppIteFromAppraiseAddButton();
+		clickLastPageButton();
+		clickFroAppMoreButton();
+		clickFroAppAddButton();
+		clickAlertCloseButton();
+		goBack();
+		return getAppIteTextName();
+	}
+	
+	//搜索现有文本评价项
+	public String searchFromAppraiseItem (String appraiseItemName){
+		clickAppManEditButton();
+		clickEdiAppEditAppraiseItemButton();
+		clickAppIteFromAppraiseAddButton();
+		inputFroAppAppraiseNameInputBox(appraiseItemName);
+		clickFroAppSearchInputButton();
+		return getFroAppAppraiseItemName();
 	}
 	
 }

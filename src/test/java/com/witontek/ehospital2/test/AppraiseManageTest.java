@@ -39,7 +39,7 @@ public class AppraiseManageTest {
 	@Test(dataProvider = "searchAppraise",dependsOnMethods={"insertAppraise"},enabled=true)
 	public void searchAppraise(String caseName, String expectedResult,Map<String, String> testData) {
 		AppraiseManage appraiseManage = new AppraiseManage(driver);
-		AssertUtils.assertActualContainExpect(appraiseManage.searchAppraise(testData.get("appraiseName")),expectedResult, caseName);
+		AssertUtils.assertActualEqualExpect(appraiseManage.searchAppraise(testData.get("appraiseName")),expectedResult, caseName);
 	}
 
 	@DataProvider(name = "searchAppraise")

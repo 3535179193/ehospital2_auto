@@ -43,10 +43,10 @@ public class ConsultManage extends ConsultManagePage{
 	
 	//就医咨询管理-删除咨询科室
 	public void deleteConsultDepartment(){
-		String beforeDeleteReconds=getConManTotalRecorders();
+		String beforeDeleteReconds=getTotalRecorders();
 		clickConManDeleteButton();
-		clickConManCloseButton();
-		String afterDeleteReconds=getConManTotalRecorders();
+		clickAlertCloseButton();
+		String afterDeleteReconds=getTotalRecorders();
 		if(!beforeDeleteReconds.equals(afterDeleteReconds)){
 			log.info("删除前咨询科室总数:"+beforeDeleteReconds+"，比删除后咨询科室总数:"+afterDeleteReconds+"多1，删除咨询科室成功");
 		}else {

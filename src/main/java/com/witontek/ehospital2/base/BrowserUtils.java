@@ -72,6 +72,18 @@ public class BrowserUtils {
 		
 	}
 	
+	public void goBack(){
+		driver.navigate().back();
+		log.info("回退");
+	}
+	
+	public void refresh(){
+		driver.navigate().refresh();
+		log.info("刷新");
+	}
 
-
+	public void forward(){
+		driver.navigate().forward();
+		log.info("前进");
+	}
 }

@@ -55,22 +55,6 @@ public class AppraiseManagePage extends MainPage{
 		protected Locator ediAppEditAppraiseItemButton=XmlUtils.readXml("AppraiseManagePage").get("ediAppEditAppraiseItemButton");
 		protected Locator ediAppCancleButton=XmlUtils.readXml("AppraiseManagePage").get("ediAppCancleButton");
 	
-	//就医咨询管理-每页显示数下拉框
-	protected Locator appManEachPageRecordersDropBox=XmlUtils.readXml("AppraiseManagePage").get("appManEachPageRecordersDropBox");
-	protected Locator appManEachPageTenRecorders=XmlUtils.readXml("AppraiseManagePage").get("appManEachPageTenRecorders");	
-	protected Locator appManTotalRecorders=XmlUtils.readXml("AppraiseManagePage").get("appManTotalRecorders");
-	protected Locator appManTotalPages=XmlUtils.readXml("AppraiseManagePage").get("appManTotalPages");
-	protected Locator appManCurrentPage=XmlUtils.readXml("AppraiseManagePage").get("appManCurrentPage");
-	protected Locator appManFirstPageButton=XmlUtils.readXml("AppraiseManagePage").get("appManFirstPageButton");
-	protected Locator appManPreviousPageButton=XmlUtils.readXml("AppraiseManagePage").get("appManPreviousPageButton");
-	protected Locator appManNextPageButton=XmlUtils.readXml("AppraiseManagePage").get("appManNextPageButton");
-	protected Locator appManLastPageButton=XmlUtils.readXml("AppraiseManagePage").get("appManLastPageButton");
-	
-	//就医咨询管理-关闭弹窗
-	protected Locator appManAlertCloseButton=XmlUtils.readXml("AppraiseManagePage").get("appManAlertCloseButton");
-	protected Locator appManAlertDeleteButton=XmlUtils.readXml("AppraiseManagePage").get("appManAlertDeleteButton");
-	protected Locator appManAlertCancleButton=XmlUtils.readXml("AppraiseManagePage").get("appManAlertCancleButton");
-	
 	//被验证的数据
 	protected Locator conManAssertAddConsultDepartmentName=XmlUtils.readXml("AppraiseManagePage").get("conManAssertAddConsultDepartmentName");
 	protected Locator conManAssertEditConsultDepartmentName=XmlUtils.readXml("AppraiseManagePage").get("conManAssertEditConsultDepartmentName");
@@ -255,78 +239,6 @@ public class AppraiseManagePage extends MainPage{
 	//编辑评价问卷-点击取消按钮
 	public void clickEdiAppCancleButton(){
 		click(ediAppCancleButton);
-	}
-	
-	//就医评价管理-点击每页显示数下拉框
-	public void clickAppManEachPageRecordersDropBox(){
-		click(appManEachPageRecordersDropBox);
-	}
-	
-	//就医评价管理-选中每页显示10条
-	public void clickAppManEachPageTenRecorders(){
-		click(appManEachPageTenRecorders);
-	}
-	
-	//就医评价管理-获取总记录数
-	public String getAppManTotalRecorders(){
-			String recorders=getText(appManTotalRecorders);
-			log.info("就医评价管理-总记录数："+recorders);
-			return recorders;
-	}
-	
-	//就医评价管理-获取总页数
-	public String getAppManTotalPages(){
-		String pages=getText(appManTotalPages);
-		log.info("就医评价管理-总页数："+pages);
-		return pages;
-	}
-	
-	//就医评价管理-获取当前页数
-	public String getAppManCurrentPage(){
-		String page=getText(appManCurrentPage);
-		log.info("就医评价管理-当前页数："+page);
-		return page;
-	}
-	
-	//就医评价管理-点击第一页按钮
-	public void clickAppManFirstPageButton(){
-		click(appManFirstPageButton);
-	}
-	
-	//就医评价管理-点击上一页按钮
-	public void clickAppManPreviousPageButton(){
-		click(appManPreviousPageButton);
-	}
-	
-	//就医评价管理-点击下一页按钮
-	public void clickAppManNextPageButton(){
-		click(appManNextPageButton);
-	}
-	
-	//就医评价管理-点击最末页按钮
-	public void clickAppManLastPageButton(){
-		click(appManLastPageButton);
-	}
-	
-	//就医评价管理-点击弹框关闭按钮
-	public void clickAppManAlertCloseButton(){
-		wait(5);
-		click(appManAlertCloseButton);
-		wait(5);
-	}
-	
-	//就医评价管理-点击弹框确认删除按钮
-	public void clickAppManAlertDeleteButton(){
-		wait(5);
-		click(appManAlertDeleteButton);
-		wait(5);
-	}
-	
-	//就医评价管理-点击弹框取消按钮
-	public void clickAppManAlertCancleButton(){
-		wait(5);
-		click(appManAlertCancleButton);
-		wait(5);
 	}
 	
 //	//就医咨询管理-被验证的新增咨询科室名称

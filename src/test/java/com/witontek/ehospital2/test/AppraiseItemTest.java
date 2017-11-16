@@ -33,39 +33,41 @@ public class AppraiseItemTest {
 
 	@DataProvider(name = "insertAppraiseItem")
 	public Iterator<Object[]> insertAppraiseItem() {
-		return ExcelUtils.readExcel("AppraiseItem/insertAppraiseItem");
+		return ExcelUtils.readExcel("appraiseItem/insertAppraiseItem");
 	}
 	
-//	//就医评价管理-搜索评价问卷
-//	@Test(dataProvider = "searchAppraise",dependsOnMethods={"insertAppraise"},enabled=true)
-//	public void searchAppraise(String caseName, String expectedResult,Map<String, String> testData) {
-//		AppraiseManage appraiseManage = new AppraiseManage(driver);
-//		AssertUtils.assertActualContainExpect(appraiseManage.searchAppraise(testData.get("appraiseName")),expectedResult, caseName);
-//	}
-//
-//	@DataProvider(name = "searchAppraise")
-//	public Iterator<Object[]> searchAppraise() {
-//		return ExcelUtils.readExcel("appraiseManage/searchAppraise");
-//	}
-//
-//	//就医评价管理-编辑评价问卷
-//	@Test(dataProvider = "updateAppraise",dependsOnMethods={"searchAppraise"},enabled=false)
-//	public void updateAppraise(String caseName, String expectedResult,Map<String, String> testData) {
-//		AppraiseManage appraiseManage = new AppraiseManage(driver);
-//		AssertUtils.assertActualEqualExpect(appraiseManage.updateAppraise(testData.get("appraiseName"),testData.get("appraiseDesc")),expectedResult, caseName);
-//	}
-//
-//	@DataProvider(name = "updateAppraise")
-//	public Iterator<Object[]> updateAppraise() {
-//		return ExcelUtils.readExcel("appraiseManage/updateAppraise");
-//	}
-	
-	//就医评价管理-删除评价问卷
+	//删除文本评价项
 	@Test(dependsOnMethods={"insertAppraiseItem"},enabled=true)
-	public void deleteAppraiseItem() {
+	public void deleteTextAppraiseItem() {
 		AppraiseItem appraiseItem = new AppraiseItem(driver);
-		appraiseItem.deleteAppraiseItem();
+		appraiseItem.deleteTextAppraiseItem();
 	}
+	
+	//从现有评价项中添加文本评价项
+	@Test(dataProvider = "insertFromAppraiseItem",dependsOnMethods={"insertAppraiseItem"},enabled=true)
+	public void insertFromAppraiseItem(String caseName, String expectedResult,Map<String, String> testData) {
+		AppraiseItem appraiseItem = new AppraiseItem(driver);
+		AssertUtils.assertActualEqualExpect(appraiseItem.insertFromAppraiseItem(),expectedResult, caseName);
+	}
+
+	@DataProvider(name = "insertFromAppraiseItem")
+	public Iterator<Object[]> insertFromAppraiseItem() {
+		return ExcelUtils.readExcel("appraiseItem/insertFromAppraiseItem");
+	}
+
+	//搜索现有文本评价项
+	@Test(dataProvider = "searchFromAppraiseItem",dependsOnMethods={"insertFromAppraiseItem"},enabled=true)
+	public void searchFromAppraiseItem(String caseName, String expectedResult,Map<String, String> testData) {
+		AppraiseItem appraiseItem = new AppraiseItem(driver);
+		AssertUtils.assertActualEqualExpect(appraiseItem.searchFromAppraiseItem(testData.get("appraiseItemName")),expectedResult, caseName);
+	}
+
+	@DataProvider(name = "searchFromAppraiseItem")
+	public Iterator<Object[]> searchFromAppraiseItem() {
+		return ExcelUtils.readExcel("appraiseItem/searchFromAppraiseItem");
+	}
+	
+
 
 	@BeforeMethod
 	public void beforeMethod() {
