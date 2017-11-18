@@ -44,16 +44,4 @@
 	<Locator name="二级科室管理-置顶按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="1"			>secLevMoveTopButton</Locator>
 	<Locator name="二级科室管理-隐藏按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-click='$ctrl.changeDepartmentStatus(item)']"		index="0"	>secLevHideButton</Locator>
 	
-	<Locator name="二级科室管理-每页显示数下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"							>secLevEachPageRecordersDropBox</Locator>
-	<Locator name="二级科室管理-选中每页显示10条" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']/option[1]"				>secLevEachPageTenRecorders</Locator>
-	<Locator name="二级科室管理-总记录数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='second-department-list']/page/div/div[2]/span[1]"	>secLevTotalRecorders</Locator>
-	<Locator name="二级科室管理-总页数" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"								>secLevTotalPages</Locator>
-	<Locator name="二级科室管理-当前页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='second-department-list']/page/div/div[2]/span[3]"	>secLevCurrentPage</Locator>
-	<Locator name="二级科室管理-第一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[1]"		>secLevFirstPageButton</Locator>
-	<Locator name="二级科室管理-上一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[2]"		>secLevPreviousPageButton</Locator>	
-	<Locator name="二级科室管理-下一页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[3]"		>secLevNextPageButton</Locator>
-	<Locator name="二级科室管理-最末页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[4]"		>secLevLastPageButton</Locator>
-
-	<Locator name="二级科室管理-弹框关闭按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showCloseButton']/button"				>secLevCloseButton</Locator>
-	
 </Page>

@@ -61,21 +61,6 @@ public class SecondLevelDepartmentPage extends DepartmentManagePage{
 	protected Locator secLevMoveDownButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevMoveDownButton");
 	protected Locator secLevMoveTopButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevMoveTopButton");
 	protected Locator secLevHideButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevHideButton");
-		
-	//二级科室管理-每页显示数下拉框
-	protected Locator secLevEachPageRecordersDropBox=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevEachPageRecordersDropBox");
-	protected Locator secLevEachPageTenRecorders=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevEachPageTenRecorders");
-	protected Locator secLevTotalRecorders=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevTotalRecorders");
-	protected Locator secLevTotalPages=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevTotalPages");
-	protected Locator secLevCurrentPage=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevCurrentPage");
-	protected Locator secLevFirstPageButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevFirstPageButton");
-	protected Locator secLevPreviousPageButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevPreviousPageButton");
-	protected Locator secLevNextPageButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevNextPageButton");
-	protected Locator secLevLastPageButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevLastPageButton");
-	
-	//点击弹框的关闭按钮
-	protected Locator secLevCloseButton=XmlUtils.readXml("SecondLevelDepartmentPage").get("secLevCloseButton");
-
 	
 	
 	//输入二级科室名称
@@ -274,68 +259,12 @@ public class SecondLevelDepartmentPage extends DepartmentManagePage{
 	public void clickSecLevMoveTopButton(){
 		click(secLevMoveTopButton);
 	}
-	
-	//点击每页显示条数下拉框
-	public void clickDepManEachPageRecordersDropBox(){
-		click(secLevMoveTopButton);
-	}
+
 	
 	//点击隐藏按钮
 	public void clickSecLevHideButton(){
 		click(secLevHideButton);
 	}
 	
-	//选中每页显示10条
-	public void clickSecLevEachPageTenRecorders(){
-		click(secLevEachPageRecordersDropBox);
-		click(secLevEachPageTenRecorders);
-	}
-	
-	//总记录数
-	public String getSecLevTotalRecorders(){
-		String recorders=getText(secLevTotalRecorders);
-		log.info("二级科室总数："+recorders);
-		return recorders;
-	}
-	
-	//总页数
-	public String getSecLevTotalPages(){
-		String pages=getText(secLevTotalPages);
-		log.info("二级科室列表总页数："+pages);
-		return pages;
-	}
-	
-	//当前页数
-	public String getSecLevCurrentPage(){
-		String page=getText(secLevCurrentPage);
-		log.info("二级科室列表当前页数："+page);
-		return page;
-	}
-	
-	//点击第一页
-	public void clickSecLevFirstPageButton(){
-		click(secLevFirstPageButton);
-	}
-	
-	//点击上一页
-	public void clickSecLevPreviousPageButton(){
-		click(secLevPreviousPageButton);
-	}
-	
-	//点击下一页
-	public void clickSecLevNextPageButton(){
-		click(secLevNextPageButton);
-	}
-	
-	//点击最末页
-	public void clickSecLevLastPageButton(){
-		click(secLevLastPageButton);
-	}
-	
-	//点击弹框的关闭按钮
-	public void clickSecLevCloseButton(){
-		wait(5);
-		click(secLevCloseButton);
-		wait(5);
-	}
+
 }

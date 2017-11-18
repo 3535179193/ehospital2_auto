@@ -52,20 +52,6 @@ public class DepartmentManagePage extends MainPage{
 	protected Locator depManMoveUpButton=XmlUtils.readXml("DepartmentManagePage").get("depManMoveUpButton");
 	protected Locator depManMoveDownButton=XmlUtils.readXml("DepartmentManagePage").get("depManMoveDownButton");
 	protected Locator depManMoveTopButton=XmlUtils.readXml("DepartmentManagePage").get("depManMoveTopButton");
-
-	//科室管理-每页显示数下拉框
-	protected Locator depManEachPageRecordersDropBox=XmlUtils.readXml("DepartmentManagePage").get("depManEachPageRecordersDropBox");
-	protected Locator depManEachPageTenRecorders=XmlUtils.readXml("DepartmentManagePage").get("depManEachPageTenRecorders");	
-	protected Locator depManTotalRecorders=XmlUtils.readXml("DepartmentManagePage").get("depManTotalRecorders");
-	protected Locator depManTotalPages=XmlUtils.readXml("DepartmentManagePage").get("depManTotalPages");
-	protected Locator depManCurrentPage=XmlUtils.readXml("DepartmentManagePage").get("depManCurrentPage");
-	protected Locator depManFirstPageButton=XmlUtils.readXml("DepartmentManagePage").get("depManFirstPageButton");
-	protected Locator depManPreviousPageButton=XmlUtils.readXml("DepartmentManagePage").get("depManPreviousPageButton");
-	protected Locator depManNextPageButton=XmlUtils.readXml("DepartmentManagePage").get("depManNextPageButton");
-	protected Locator depManLastPageButton=XmlUtils.readXml("DepartmentManagePage").get("depManLastPageButton");
-	
-	//弹框
-	protected Locator depManCloseButton=XmlUtils.readXml("DepartmentManagePage").get("depManCloseButton");
 	
 	//被验证的数据
 	protected Locator depManAssertAddDepartmentCategory=XmlUtils.readXml("DepartmentManagePage").get("depManAssertAddDepartmentCategory");
@@ -211,64 +197,6 @@ public class DepartmentManagePage extends MainPage{
 	//点击置顶
 	public void clickDepManMoveTopButton(){
 		click(depManMoveTopButton);
-	}
-	
-	//点击每页显示条数下拉框
-	public void clickDepManEachPageRecordersDropBox(){
-		click(depManEachPageRecordersDropBox);
-	}
-	
-	//选中每页显示10条
-	public void clickDepManEachPageTenRecorders(){
-		click(depManEachPageTenRecorders);
-	}
-	
-	//总记录数
-	public String getDepManTotalRecorders(){
-		String recorders=getText(depManTotalRecorders);
-		log.info("一级科室总数："+recorders);
-		return recorders;
-	}
-	
-	//总页数
-	public String getDepManTotalPages(){
-		String pages=getText(depManTotalPages);
-		log.info("一级科室列表总页数："+pages);
-		return pages;
-	}
-	
-	//当前页数
-	public String getDepManCurrentPage(){
-		String page=getText(depManCurrentPage);
-		log.info("一级科室列表当前页数："+page);
-		return page;
-	}
-	
-	//点击第一页
-	public void clickDepManFirstPageButton(){
-		click(depManFirstPageButton);
-	}
-	
-	//点击上一页
-	public void clickDepManPreviousPageButton(){
-		click(depManPreviousPageButton);
-	}
-	
-	//点击下一页
-	public void clickDepManNextPageButton(){
-		click(depManNextPageButton);
-	}
-	
-	//点击最末页
-	public void clickDepManLastPageButton(){
-		click(depManLastPageButton);
-	}
-	
-	//点击弹框的关闭按钮
-	public void clickDepManCloseButton(){
-		wait(5);
-		click(depManCloseButton);
-		wait(5);
 	}
 	
 	//被验证的新增一级科室名称

@@ -26,7 +26,7 @@ public class DepartmentMange extends DepartmentManagePage{
 //		clickDepartmentManageButton();
 		String beforeMoveDownCategoryName=getDepManFirstCategoryName();
 		clickDepManMoveDownButton();
-		clickDepManCloseButton();
+		clickAlertCloseButton();
 		String afterMoveDownCategoryName=getDepManSecondCategoryName();
 		if(beforeMoveDownCategoryName.equals(afterMoveDownCategoryName)){
 			log.info("下移前一级科室名称:"+beforeMoveDownCategoryName+"，与下移后一级科室名称:"+afterMoveDownCategoryName+"相同，下移一级科室成功");
@@ -39,7 +39,7 @@ public class DepartmentMange extends DepartmentManagePage{
 	public void moveUpDepartmentCategory(){
 		String beforeMoveUpCategoryName=getDepManFirstCategoryName();
 		clickDepManMoveUpButton();
-		clickDepManCloseButton();
+		clickAlertCloseButton();
 		String afterMoveUpCategoryName=getDepManSecondCategoryName();
 		if(beforeMoveUpCategoryName.equals(afterMoveUpCategoryName)){
 			log.info("上移前一级科室名称:"+beforeMoveUpCategoryName+"，与上移后一级科室名称:"+afterMoveUpCategoryName+"相同，上移一级科室成功");
@@ -55,18 +55,18 @@ public class DepartmentMange extends DepartmentManagePage{
 		inputAddCateDepartmentNameInputBox(categoryName);
 		inputAddCateDepartmentCodeInputBox(categoryCode);
 		clickAddCateSaveButton();
-		clickDepManCloseButton();
-		clickDepManLastPageButton();
+		clickAlertCloseButton();
+		clickLastPageButton();
 		return assertDepManAddDepartmentCategory();
 	}
 	
 	//置顶一级科室
 	public void moveTopDepartmentCategory(){
 		String beforeMoveTopCategoryName=getDepManFirstCategoryName();
-		clickDepManLastPageButton();
+		clickLastPageButton();
 		clickDepManMoveTopButton();
-		clickDepManCloseButton();
-		clickDepManFirstPageButton();
+		clickAlertCloseButton();
+		clickFirstPageButton();
 		sleep(1);
 		String afterMoveTopCategoryName=getDepManFirstCategoryName();
 		if(!afterMoveTopCategoryName.equals(beforeMoveTopCategoryName)){
@@ -82,16 +82,16 @@ public class DepartmentMange extends DepartmentManagePage{
 		updateEdiCateDepartmentNameInputBox(categoryName);
 		updateEdiCateDepartmentCodeInputBox(categoryCode);
 		clickEdiCateEditButton();
-		clickDepManCloseButton();
+		clickAlertCloseButton();
 		return getDepManFirstCategoryName();
 	}
 	
 	//删除一级科室
 	public void deleteDepartmentCategory(){
-		String beforeDeleteReconds=getDepManTotalRecorders();
+		String beforeDeleteReconds=getTotalRecorders();
 		clickDepManDeleteButton();
-		clickDepManCloseButton();
-		String afterDeleteReconds=getDepManTotalRecorders();
+		clickAlertCloseButton();
+		String afterDeleteReconds=getTotalRecorders();
 		if(!beforeDeleteReconds.equals(afterDeleteReconds)){
 			log.info("删除前一级科室总数:"+beforeDeleteReconds+"，比删除后一级科室总数:"+afterDeleteReconds+"多1，删除一级科室成功");
 		}else {

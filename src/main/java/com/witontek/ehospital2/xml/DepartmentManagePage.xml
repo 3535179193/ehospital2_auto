@@ -34,18 +34,6 @@
     <Locator name="科室管理-下移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"	>depManMoveDownButton</Locator>
 	<Locator name="科室管理-置顶按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]/parent::ul/li[4]/div/div[2]/a[3]"		>depManMoveTopButton</Locator>
 
-	<Locator name="科室管理-每页显示数下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"							>depManEachPageRecordersDropBox</Locator>
-	<Locator name="科室管理-选中每页显示10条" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']/option[1]"				>depManEachPageTenRecorders</Locator>
-	<Locator name="科室管理-总记录数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/span[1]"	>depManTotalRecorders</Locator>
-	<Locator name="科室管理-总页数" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"								>depManTotalPages</Locator>
-	<Locator name="科室管理-当前页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/span[3]"	>depManCurrentPage</Locator>
-	<Locator name="科室管理-第一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[1]"		>depManFirstPageButton</Locator>
-	<Locator name="科室管理-上一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[2]"		>depManPreviousPageButton</Locator>	
-	<Locator name="科室管理-下一页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[3]"		>depManNextPageButton</Locator>
-	<Locator name="科室管理-最末页按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='department-management']/page/div/div[2]/a[4]"		>depManLastPageButton</Locator>
-
-	<Locator name="科室管理-弹框关闭按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showCloseButton']/button"				>depManCloseButton</Locator>
-	
 	<Locator name="科室管理-被验证的新增一级科室名称"			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]"						>depManAssertAddDepartmentCategory</Locator>
 	
 </Page>
