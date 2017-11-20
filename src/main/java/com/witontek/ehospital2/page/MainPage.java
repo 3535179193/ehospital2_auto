@@ -76,8 +76,8 @@ public class MainPage extends LoginPage{
 	//选择起始日期按钮
 	protected Locator selectStartDateButton=XmlUtils.readXml("MainPage").get("selectStartDateButton");
 	protected Locator selectEndDateButton=XmlUtils.readXml("MainPage").get("selectEndDateButton");
-	protected Locator defaultStartDateButton=XmlUtils.readXml("MainPage").get("defaultStartDateButton");
-	protected Locator defaultEndDateButton=XmlUtils.readXml("MainPage").get("defaultEndDateButton");
+	protected Locator defaultDateButton=XmlUtils.readXml("MainPage").get("defaultDateButton");
+	protected Locator defaultMonthButton=XmlUtils.readXml("MainPage").get("defaultMonthButton");
 	protected Locator monthToggleButton=XmlUtils.readXml("MainPage").get("monthToggleButton");
 	protected Locator yearToggleButton=XmlUtils.readXml("MainPage").get("yearToggleButton");
 	protected Locator leftButton=XmlUtils.readXml("MainPage").get("leftButton");
@@ -311,7 +311,7 @@ public class MainPage extends LoginPage{
 		click(selectStartDateButton);
 	}
 	
-	//获取默认起始日期
+	//获取起始日期
 	public String getStartDate(){
 		String startDate=getText(selectStartDateButton);
 		log.info("起始日期："+startDate);
@@ -323,21 +323,21 @@ public class MainPage extends LoginPage{
 		click(selectEndDateButton);
 	}
 	
-	//获取默认结束日期
+	//获取结束日期
 	public String getEndDate(){
 		String endDate=getText(selectEndDateButton);
 		log.info("结束日期："+endDate);
 		return endDate;
 	}
 	
-	//点击日期选择器-默认起始日期按钮
-	public void clickDefaultStartDateButton(){
-		click(defaultStartDateButton);
+	//点击日期选择器-默认日期按钮
+	public void clickDefaultDateButton(){
+		click(defaultDateButton);
 	}
 	
-	//点击日期选择器-默认结束月份按钮
-	public void clickDefaultEndDateButton(){
-		click(defaultEndDateButton);
+	//点击日期选择器-默认月份按钮
+	public void clickDefaultMonthButton(){
+		click(defaultMonthButton);
 	}
 	
 	//点击日期选择器-月份切换按钮

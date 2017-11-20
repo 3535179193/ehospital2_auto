@@ -2,6 +2,7 @@ package com.witontek.ehospital2.business;
 
 import org.openqa.selenium.WebDriver;
 
+import com.witontek.ehospital2.base.DateUtils;
 import com.witontek.ehospital2.base.Log;
 import com.witontek.ehospital2.page.DepartmentManagePage;
 import com.witontek.ehospital2.page.ScheduleManagePage;
@@ -62,9 +63,24 @@ public class ScheduleManage extends ScheduleManagePage{
 	}
 	
 //	排班管理-查询默认日期的排班
-	public String searchScheduleByDefaultDate (){
-		
-		return getSchManResourseType();
+	public void searchScheduleByDefaultDate (){
+		clickScheduleManageButton();
+		clickSelectStartDateButton();
+		clickMonthToggleButton();
+		clickDefaultMonthButton();
+		clickDefaultDateButton();
+		clickSelectEndDateButton();
+		clickMonthToggleButton();
+		clickDefaultMonthButton();
+		clickDefaultDateButton();
+		clickSchManSearchButton();
+		String clinicTimeString=getSchManClinicTime();
+		if(clinicTimeString.equals(DateUtils.getDates(9))){
+			log.info("查询接下来一周的排班成功");
+		}
+		else {
+			log.errorShot("查询接下来一周的排班失败，或者一周内无排班", driver);
+		}
 	}
 
 	

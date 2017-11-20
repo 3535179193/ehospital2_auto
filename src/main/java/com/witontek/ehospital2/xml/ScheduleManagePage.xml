@@ -22,17 +22,17 @@
 	
 	<Locator name="排班管理-全选按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.selectedAllStatus']"							>schManSelectAllButton</Locator>
 	<Locator name="排班管理-序号为1的复选框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='item['selected']']"						index="0"	>schManSelectFirstCheckBox</Locator>
-	<Locator name="排班管理-序号" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[1]"	index="0"	>schManNumber</Locator>
-	<Locator name="排班管理-科室名称"		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[2]"	index="0"	>schManDepartmentName</Locator>
-	<Locator name="排班管理-地点" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[3]"	index="0"	>schManAddress</Locator>
-	<Locator name="排班管理-就诊类型" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[4]"	index="0"	>schManClinicType</Locator>
-	<Locator name="排班管理-医生" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[5]"	index="0"	>schManDoctor</Locator>
-	<Locator name="排班管理-就诊时间" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[6]"	index="0"	>schManClinicTime</Locator>
-	<Locator name="排班管理-时间段" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[7]"	index="0"	>schManClinicTimePeriod</Locator>
-	<Locator name="排班管理-号源" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[8]"	index="0"	>schManResourse</Locator>
-	<Locator name="排班管理-号源类型" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[9]"	index="0"	>schManResourseType</Locator>
+	<Locator name="排班管理-序号" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[1]"	index="0"	>schManNumber</Locator>
+	<Locator name="排班管理-科室名称"		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[2]"	index="0"	>schManDepartmentName</Locator>
+	<Locator name="排班管理-地点" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[3]"	index="0"	>schManAddress</Locator>
+	<Locator name="排班管理-就诊类型" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[4]"	index="0"	>schManClinicType</Locator>
+	<Locator name="排班管理-医生" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[5]"	index="0"	>schManDoctor</Locator>
+	<Locator name="排班管理-就诊时间" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[6]"	index="0"	>schManClinicTime</Locator>
+	<Locator name="排班管理-时间段" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[7]"	index="0"	>schManClinicTimePeriod</Locator>
+	<Locator name="排班管理-号源" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[8]"	index="0"	>schManResourse</Locator>
+	<Locator name="排班管理-号源类型" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[9]"	index="0"	>schManResourseType</Locator>
 
-	<Locator name="排班管理-查看"			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[10]/div/a[1]"	index="0"	>schManViewButton</Locator>
+	<Locator name="排班管理-查看"			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[10]/div/a[1]"	index="0"	>schManViewButton</Locator>
 		<Locator name="排班信息-排班ID" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.scheduleDetail['schedule_id']']"							>schInfDepartmentID</Locator>
 		<Locator name="排班信息-科室" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.scheduleDetail['department_name']']"						>schInfDepartmentName</Locator>
 		<Locator name="排班信息-就诊类型" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.scheduleDetail['clinic_type']']"							>schInfClinicType</Locator>
@@ -42,7 +42,7 @@
 		<Locator name="排班信息-保存按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@type='submit']"															>schInfSaveButton</Locator>
 		<Locator name="排班信息-取消按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.cancelHandle()']"											>schInfCancelButton</Locator>
 	
-	<Locator name="排班管理-停诊" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[10]/div/a[2]"	index="0"	>schManStopMedicalButton</Locator>
-	<Locator name="排班管理-日志" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[10]/div/a[3]"	index="0"	>schManViewLogButton</Locator>
+	<Locator name="排班管理-停诊" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[10]/div/a[2]"	index="0"	>schManStopMedicalButton</Locator>
+	<Locator name="排班管理-日志" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.scheduleListData']/li[10]/div/a[3]"	index="0"	>schManViewLogButton</Locator>
 	
 </Page>

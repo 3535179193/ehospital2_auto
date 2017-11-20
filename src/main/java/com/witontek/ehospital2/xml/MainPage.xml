@@ -53,11 +53,11 @@
 	<Locator name="弹框关闭按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showCloseButton']/button"			>alertCloseButton</Locator>
 	<Locator name="弹框确认删除按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showOkCancelButton']/button[1]"	>alertDeleteButton</Locator>
 	<Locator name="弹框取消按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showOkCancelButton']/button[2]"	>alertCancleButton</Locator>
-	
+	                                                                                                               
 	<Locator name="选择起始日期按钮"				locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@placeholder='起始日期']"					>selectStartDateButton</Locator>
 	<Locator name="选择结束日期按钮"				locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@placeholder='结束日期']"					>selectEndDateButton</Locator>
-	<Locator name="日期选择器-默认起始日期按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-sm btn-info']"	>defaultStartDateButton</Locator>
-	<Locator name="日期选择器-默认结束月份按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-info active']"	>defaultEndDateButton</Locator>
+	<Locator name="日期选择器-默认日期按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-sm btn-info']"	>defaultDateButton</Locator>
+	<Locator name="日期选择器-默认月份按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-info active']"	>defaultMonthButton</Locator>
 	<Locator name="日期选择器-月份切换按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"					>monthToggleButton</Locator>
 	<Locator name="日期选择器-年份切换按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"					>yearToggleButton</Locator>
 	<Locator name="日期选择器-左移按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='move(-1)']"						>leftButton</Locator>
