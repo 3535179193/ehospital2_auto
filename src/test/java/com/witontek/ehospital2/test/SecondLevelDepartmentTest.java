@@ -26,7 +26,7 @@ public class SecondLevelDepartmentTest {
 	private WebDriver driver;
 	
 	//二级科室管理-新增二级科室
-	@Test(dataProvider = "insertDepartment",enabled=false)
+	@Test(dataProvider = "insertDepartment",enabled=true)
 	public void insertDepartment(String caseName, String expectedResult,Map<String, String> testData) {
 		SecondLevelDepartment secondLevelDepartment = new SecondLevelDepartment(driver);
 		AssertUtils.assertActualEqualExpect(secondLevelDepartment.insertDepartment(testData.get("categoryName"), testData.get("categoryCode"), testData.get("departmentName"), testData.get("departmentCode"), testData.get("departmentPhone"), testData.get("departmentAddress"), testData.get("departmentFeature"), testData.get("departmentSummary"), testData.get("Attention")),expectedResult, caseName);
@@ -71,7 +71,7 @@ public class SecondLevelDepartmentTest {
 	}
 	
 	//二级科室管理-搜索二级科室
-	@Test(dataProvider = "searchDepartmentsByName",enabled=true)
+	@Test(dataProvider = "searchDepartmentsByName",enabled=false)
 	public void searchDepartmentsByName(String caseName, String expectedResult,Map<String, String> testData) {
 		SecondLevelDepartment secondLevelDepartment = new SecondLevelDepartment(driver);
 		AssertUtils.assertActualEqualExpect(secondLevelDepartment.searchDepartmentsByName(testData.get("departmentName")),expectedResult, caseName);
@@ -82,12 +82,17 @@ public class SecondLevelDepartmentTest {
 		return ExcelUtils.readExcel("secondLevelDepartment/searchDepartmentsByName");
 	}
 	
-//	//科室管理-删除一级科室
-//	@Test(dependsOnMethods={"updateDepartmentCategory"},enabled=true)
-//	public void deleteDepartmentCategory() {
-//		DepartmentMange departmentMange = new DepartmentMange(driver);
-//		departmentMange.deleteDepartmentCategory();
-//	}
+	//科室管理-从数据库删除新增的二级科室
+	@Test(dataProvider = "deleteDepartment",dependsOnMethods={"insertDepartment"},enabled=true)
+	public void deleteDepartment(String caseName, String expectedResult,Map<String, String> testData) {
+		SecondLevelDepartment secondLevelDepartment = new SecondLevelDepartment(driver);
+		AssertUtils.assertActualEqualExpect(secondLevelDepartment.deleteDepartment(testData.get("sql")),expectedResult, caseName);
+	}
+	
+	@DataProvider(name = "deleteDepartment")
+	public Iterator<Object[]> deleteDepartment() {
+		return ExcelUtils.readExcel("secondLevelDepartment/deleteDepartment");
+	}
 
 	@BeforeMethod
 	public void beforeMethod() {

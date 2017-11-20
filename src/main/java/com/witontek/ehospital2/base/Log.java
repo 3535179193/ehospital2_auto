@@ -21,7 +21,7 @@ public class Log {
 			Configurator.initialize(null,new ConfigurationSource(new FileInputStream(System.getProperty("user.dir")+
 					"/src/main/java/com/witontek/ehospital2/config/log4j2.xml")));
 		} catch (Exception e) {
-			e.printStackTrace();
+			log.error("读取配置文件log4j2.xml失败,报错信息："+e.getMessage());
 		}
 		this.log=LogManager.getLogger();
 		System.setProperty("org.uncommons.reportng.escape-output","false");

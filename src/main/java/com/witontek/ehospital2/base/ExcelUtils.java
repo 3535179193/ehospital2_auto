@@ -35,7 +35,7 @@ public class ExcelUtils extends BasePage{
 		try {
 			workbook=new XSSFWorkbook(new File(System.getProperty("user.dir")+"/testCase/"+Global.USER_NAME+"/"+excelFileName+".xlsx"));
 		} catch (Exception e) {
-			log.error("读取"+excelFileName+".xlsx文件失败");
+			log.error("读取"+excelFileName+".xlsx文件失败,报错信息："+e.getMessage());
 		}
 		
 		Sheet firstSheet=workbook.getSheetAt(0);
@@ -71,7 +71,7 @@ public class ExcelUtils extends BasePage{
 		}
 		log.info("读取"+excelFileName+".xlsx文件");
 		}catch(Exception e){
-			log.error("读取"+excelFileName+".xlsx文件失败");
+			log.error("读取"+excelFileName+".xlsx文件内部信息失败,报错信息："+e.getMessage());
 		}
 		return testCase.iterator();
 		
@@ -106,7 +106,7 @@ public class ExcelUtils extends BasePage{
 				cellValue=cell.getStringCellValue();
 			}
 		}catch(Exception e){
-			log.error("excel转换数据类型出错");
+			log.error("excel转换数据类型出错,报错信息："+e.getMessage());
 		}
 		
 		return cellValue;

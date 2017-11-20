@@ -2,6 +2,7 @@ package com.witontek.ehospital2.business;
 
 import org.openqa.selenium.WebDriver;
 
+import com.witontek.ehospital2.base.DatebaseUtils;
 import com.witontek.ehospital2.base.Log;
 import com.witontek.ehospital2.page.DepartmentManagePage;
 import com.witontek.ehospital2.page.SecondLevelDepartmentPage;
@@ -128,7 +129,7 @@ public class SecondLevelDepartment extends SecondLevelDepartmentPage{
 	}
 	
 	//隐藏二级科室
-//	public void clickSecLevHideButton(){
+//	public void hideDepartment(){
 //		String beforeDeleteReconds=getDepManTotalRecorders();
 //		clickDepManDeleteButton();
 //		clickDepManCloseButton();
@@ -140,4 +141,14 @@ public class SecondLevelDepartment extends SecondLevelDepartmentPage{
 //		}
 //	}
 	
+//	从数据库删除新增的二级科室
+	public String deleteDepartment(String sql){
+		DatebaseUtils.deleteDate(sql);
+		clickBusinessInformationButton();
+		clickDepartmentManageButton();
+		clickLastPageButton();
+		clickDepManViewDepartmentButton();
+		return getTotalRecorders();
+		
+	}
 }

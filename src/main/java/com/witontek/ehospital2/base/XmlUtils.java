@@ -25,7 +25,7 @@ public class XmlUtils extends BasePage{
 		try {
 			document=reader.read(new File(System.getProperty("user.dir")+"/src/main/java/com/witontek/ehospital2/xml/"+pageName+".xml"));
 		} catch (Exception e) {
-			log.error("将"+pageName+".xml文件转换为Document类型失败");
+			log.error("将"+pageName+".xml文件转换为Document类型失败,报错信息："+e.getMessage());
 			e.printStackTrace();
 		}
 		Element rootElement=document.getRootElement();
@@ -51,7 +51,7 @@ public class XmlUtils extends BasePage{
 			map.put(text, locator);
 		}
 		}catch(Exception e){
-			log.error("读取"+pageName+".xml文件失败");
+			log.error("读取"+pageName+".xml文件失败,报错信息："+e.getMessage());
 		}
 		return map;
 		
@@ -65,8 +65,8 @@ public class XmlUtils extends BasePage{
 		case "ID":locatorWay=LocatorWays.ID;break;
 		case "NAME":locatorWay=LocatorWays.NAME;break;
 		}
-		
 		return locatorWay;
 		
 	}
+	
 }

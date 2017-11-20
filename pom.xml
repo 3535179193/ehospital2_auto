@@ -81,6 +81,7 @@
             </exclusion>
         </exclusions>
     </dependency>
+    
 
 	
 	<dependency>
@@ -94,8 +95,20 @@
 	    <artifactId>guice</artifactId>
 	    <version>4.1.0</version>
 	</dependency>
+	
+	<dependency>
+		<groupId>org.postgresql</groupId>
+		<artifactId>postgresql</artifactId>
+		<version>9.4-1201-jdbc41</version>
+	</dependency>
+		
+		
+		
+		
+		
   </dependencies>
   
+
 
   
 </project>

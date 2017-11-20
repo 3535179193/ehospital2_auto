@@ -4,7 +4,7 @@
 	<Locator name="二级科室管理-科室名称输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchStr']"		>secLevDepartmentNameInputBox</Locator>
 	<Locator name="二级科室管理-搜索科室按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'搜索')]"				>secLevSearchDepartmentButton</Locator>
 	
-	<Locator name="二级科室管理-新增一级科室按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'新增二级科室')]"		>secLevAddDepartmentButton</Locator>
+	<Locator name="二级科室管理-新增二级科室按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'新增二级科室')]"		>secLevAddDepartmentButton</Locator>
 		<Locator name="新增二级科室-科室名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='department_name']"			>addDepDepartmentNameInputBox</Locator>
 		<Locator name="新增二级科室-科室编码输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='department_code']"			>addDepDepartmentCodeInputBox</Locator>
 		<Locator name="新增二级科室-选择所属一级科室下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='departments_category_id']"				>addDepSelectBelongDepartmentDropBox</Locator>		

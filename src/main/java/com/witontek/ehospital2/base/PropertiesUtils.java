@@ -23,8 +23,8 @@ public class PropertiesUtils {
 		InputStream in = null;
 		try {
 			in = new BufferedInputStream(new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/witontek/ehospital2/config/"+propertiesName+".properties"));
-		} catch (FileNotFoundException e1) {
-			e1.printStackTrace();
+		} catch (Exception e) {
+			log.error("读取配置文件"+propertiesName+".properties失败,报错信息："+e.getMessage());
 		}   
 
 		properties=new Properties();
@@ -37,7 +37,7 @@ public class PropertiesUtils {
 		try{
 		value=properties.getProperty(key);
 		}catch(Exception e){
-			log.error("读取"+propertiesName+".properties文件中的"+key+"失败");
+			log.error("读取"+propertiesName+".properties文件中的"+key+"失败,报错信息："+e.getMessage());
 		}
 		try {
 			in.close();

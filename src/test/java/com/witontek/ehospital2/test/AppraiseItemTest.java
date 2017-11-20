@@ -23,7 +23,6 @@ public class AppraiseItemTest {
 
 	private WebDriver driver;
 
-
 	//新增文本评价项
 	@Test(dataProvider = "insertAppraiseItem",enabled=true)
 	public void insertAppraiseItem(String caseName, String expectedResult,Map<String, String> testData) {

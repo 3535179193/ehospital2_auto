@@ -39,8 +39,7 @@ public class BrowserUtils {
 			Thread.sleep(i*1000);
 			log.info("等待"+i+"秒");
 		} catch (Exception e) {
-			log.error("线程休眠出错");
-			e.printStackTrace();
+			log.error("线程休眠出错,报错信息："+e.getMessage());
 		}
 	}
 	
@@ -48,8 +47,7 @@ public class BrowserUtils {
 		try {
 			Thread.sleep(i*100);
 		} catch (Exception e) {
-			log.error("线程休眠出错");
-			e.printStackTrace();
+			log.error("线程休眠出错,报错信息："+e.getMessage());
 		}
 	}
 	
@@ -65,8 +63,7 @@ public class BrowserUtils {
 			FileUtils.copyFile(screenShotFile, img);
 			log.info("截图成功");
 		} catch (Exception e) {
-			log.error("截图失败");
-			e.printStackTrace();
+			log.error("截图失败,报错信息："+e.getMessage());
 		}
 		return img.getAbsolutePath();
 		
