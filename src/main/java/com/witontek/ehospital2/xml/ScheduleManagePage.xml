@@ -1,52 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--  <Page name="排班管理">
+<Page name="排班管理">
 
-	<Locator name="导入专家排班" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入专家排班')]"								>importSpecialSchedule</Locator>
-	<Locator name="导入专家排班号源与挂号费用"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入专家排班号源与挂号费用')]"			>importNumberAndFee</Locator>
-	<Locator name="导入普通排班" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入普通排班')]"								>importGeneralSchedule</Locator>
-	<Locator name="下载所有EXCEL模板"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'下载所有EXCEL模板')]"							>downloadAllExcel</Locator>
-	<Locator name="获取排班" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'获取排班')]"									>getSchedule</Locator>
-	<Locator name="批量停诊" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'批量停诊')]"									>batchStopMedical</Locator>
-	<Locator name="批量开诊" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'批量开诊')]"									>batchStartMedical</Locator>
+	<Locator name="排班管理-导入专家排班按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入专家排班')]"					>schManImportSpecialistScheduleButton</Locator>
+	<Locator name="排班管理-导入专家排班号源与挂号费用按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入专家排班号源与挂号费用')]"		>schManImportNumberAndFeeButton</Locator>
+	<Locator name="排班管理-导入普通排班按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入普通排班')]"							>schManImportGeneralScheduleButton</Locator>
+	<Locator name="排班管理-下载所有EXCEL模板按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'下载所有EXCEL模板')]"						>schManDownloadAllExcelButton</Locator>
+	<Locator name="排班管理-获取排班按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'获取排班')]"								>schManGetScheduleButton</Locator>
+	<Locator name="排班管理-批量停诊按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'批量停诊')]"								>schManBatchStopMedicalButton</Locator>
+	<Locator name="排班管理-批量开诊按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'批量开诊')]"								>schManBatchStartMedicalButton</Locator>
 
-	<Locator name="选择起始日期" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.start_time']"								>selectStartDate</Locator>
-	<Locator name="选择结束日期"			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.end_time ']"								>selectEndDate</Locator>
+	<Locator name="排班管理-科室名称输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.param['department_name']']"				>schManDepartmentInputBox</Locator>
+	<Locator name="排班管理-医生姓名输入框"		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.param['doctor_name']']"					>schManDoctorInputBox</Locator>
+	<Locator name="排班管理-门诊类型下拉框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.param['clinic_type']']"					>schManClinicTypeDropBox</Locator>
+	<Locator name="排班管理-选择专家门诊" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.param['clinic_type']']/option[2]"			>schManSelectSpecialistClinic</Locator>
+	<Locator name="排班管理-选择普通门诊" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.param['clinic_type']']/option[3]"			>schManSelectGeneralClinic</Locator>
+	<Locator name="排班管理-号源类型下拉框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.param['resource_type']']"					>schManResourceTypeDropBox</Locator>
+	<Locator name="排班管理-选择挂号号源" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.param['resource_type']']/option[2]"		>schManSelectRegisterResource</Locator>
+	<Locator name="排班管理-选择预约号源" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.param['resource_type']']/option[3]"		>schManSelectSubscriptionResource</Locator>
+	<Locator name="排班管理-搜索按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.searchScheduleData()']"					>schManSearchButton</Locator>
+	<Locator name="排班管理-导出排班信息按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.exportScheduleInfo()']"					>schManExportScheduleInfoButton</Locator>
 	
-	<Locator name="导入普通排班" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入普通排班')]"							>downloadDoctorExcel</Locator>
-	<Locator name="下载所有EXCEL模板"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'下载所有EXCEL模板')]"								>exportDoctorInfo</Locator>
-	<Locator name="获取排班" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'获取排班')]"									>synchronousDoctorHIS</Locator>
-	<Locator name="医生名称输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchDoctorStr']"							>doctorNameInputBox</Locator>
-	<Locator name="搜索医生按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.searchDoctorName()']"						>searchDoctorNameButton</Locator>
-	
-	
-	
-	
-	
-	
-	
-	<Locator name="工号" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_code']"			index="0"				>doctorCode</Locator>
-    <Locator name="医生姓名" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_name']"			index="0"				>doctorName</Locator>
-	<Locator name="所属科室" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.departmentNameStr']"	index="0"				>belongToDepartment</Locator>
-	<Locator name="人员类别" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.work_job']"				index="0"				>personalType</Locator>
-    <Locator name="医院职称" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.cli_job_title']"		index="0"				>hospitalTitle</Locator>
-	<Locator name="职位" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.job_postion']"			index="0"				>postion</Locator>
-	<Locator name="学术职称" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.edu_job_title']"		index="0"				>academicTitle</Locator>
-	
-	<Locator name="医生管理-编辑" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'编辑')]"						index="0"				>docManageEdit</Locator>
-    <Locator name="医生管理-删除" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'删除')]"						index="0"				>docManageDelete</Locator>
-	<Locator name="医生管理-重置密码" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'重置密码')]"					index="0"				>docManageResetPassword</Locator>
-	<Locator name="医生管理-上移" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="0"				>docManageMoveUp</Locator>
-    <Locator name="医生管理-下移" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"				>docManageMoveDown</Locator>
-	<Locator name="医生管理-置顶" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="0"				>docManageMoveTop</Locator>
-		
-	
-	<Locator name="医生管理-每页记录数" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"								>docManageEachPageRecorders</Locator>
-    <Locator name="医生管理-总记录数" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='doctor-management-page']/page/div[1]/div[2]/span[1]"	>docManageTotalRecorders</Locator>
-	<Locator name="医生管理-总页数" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-bind='$ctrl.pageTotal']"									>docManageTotalPages</Locator>
-	<Locator name="医生管理-当前页数" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='doctor-management-page']/page/div[1]/div[2]/span[3]"	>docManageCurrentPages</Locator>
-	<Locator name="医生管理-第一页"	 	locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'第一页')]"											>docManagePreviousPage</Locator>
-	<Locator name="医生管理-上一页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上一页')]"											>docManageLongitude</Locator>	
-	<Locator name="医生管理-下一页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下一页')]"											>docManageNextPage</Locator>
-	<Locator name="医生管理-最末页"		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'最末页')]"											>docManageLastPage</Locator>
+	<Locator name="排班管理-全选按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.selectedAllStatus']"							>schManSelectAllButton</Locator>
+	<Locator name="排班管理-序号为1的复选框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='item['selected']']"						index="0"	>schManSelectFirstCheckBox</Locator>
+	<Locator name="排班管理-序号" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[1]"	index="0"	>schManNumber</Locator>
+	<Locator name="排班管理-科室名称"		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[2]"	index="0"	>schManDepartmentName</Locator>
+	<Locator name="排班管理-地点" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[3]"	index="0"	>schManAddress</Locator>
+	<Locator name="排班管理-就诊类型" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[4]"	index="0"	>schManClinicType</Locator>
+	<Locator name="排班管理-医生" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[5]"	index="0"	>schManDoctor</Locator>
+	<Locator name="排班管理-就诊时间" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[6]"	index="0"	>schManClinicTime</Locator>
+	<Locator name="排班管理-时间段" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[7]"	index="0"	>schManClinicTimePeriod</Locator>
+	<Locator name="排班管理-号源" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[8]"	index="0"	>schManResourse</Locator>
+	<Locator name="排班管理-号源类型" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[9]"	index="0"	>schManResourseType</Locator>
 
-</Page>--> 
+	<Locator name="排班管理-查看"			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[10]/div/a[1]"	index="0"	>schManViewButton</Locator>
+		<Locator name="排班信息-排班ID" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.scheduleDetail['schedule_id']']"							>schInfDepartmentID</Locator>
+		<Locator name="排班信息-科室" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.scheduleDetail['department_name']']"						>schInfDepartmentName</Locator>
+		<Locator name="排班信息-就诊类型" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.scheduleDetail['clinic_type']']"							>schInfClinicType</Locator>
+		<Locator name="排班信息-医生" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.scheduleDetail['doctor_name']']"							>schInfDoctor</Locator>
+		<Locator name="排班信息-号源" 		locatorWay="XPATH"	waitTime="10"	attributeValue=""															>schInfResource</Locator>
+		<Locator name="排班信息-就诊时间" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchDoctorStr']"											>schInfClinicTime</Locator>
+		<Locator name="排班信息-保存按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@type='submit']"															>schInfSaveButton</Locator>
+		<Locator name="排班信息-取消按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.cancelHandle()']"											>schInfCancelButton</Locator>
+	
+	<Locator name="排班管理-停诊" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[10]/div/a[2]"	index="0"	>schManStopMedicalButton</Locator>
+	<Locator name="排班管理-日志" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-repeat='item in $ctrl.scheduleListData']/li[10]/div/a[3]"	index="0"	>schManViewLogButton</Locator>
+	
+</Page>

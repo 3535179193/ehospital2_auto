@@ -6,12 +6,8 @@ import java.sql.Statement;
 
 import org.openqa.selenium.WebDriver;
 
-public class DatebaseUtils extends BasePage{
+public class DatebaseUtils{
 
-	public DatebaseUtils(WebDriver driver) {
-		super(driver);
-	}
-	
 	private static Log log=new Log(DatebaseUtils.class);
 	
 	public static void deleteDate(String sql){
