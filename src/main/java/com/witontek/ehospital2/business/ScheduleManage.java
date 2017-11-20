@@ -14,31 +14,31 @@ public class ScheduleManage extends ScheduleManagePage{
 
 	private Log log=new Log(ScheduleManage.class);
 	
-	//排班管理-查询排班科室
-	public String searchDepartment (String departmentName){
+	//排班管理-查询科室名称查询排班
+	public String searchScheduleByDepartment (String departmentName){
 		clickScheduleManageButton();
 		inputSchManDepartmentInputBox(departmentName);
 		clickSchManSearchButton();
 		return getSchManDepartmentName();
 	}
 	
-	//排班管理-查询排班科室
-	public String searchDoctor (String doctorName){
+	//排班管理-通过医生姓名查询排班
+	public String searchScheduleByDoctor (String doctorName){
 		inputSchManDoctorInputBox(doctorName);
 		clickSchManSearchButton();
 		return getSchManDoctor();
 	}
 	
-	//排班管理-查询专家门诊
-	public String selectSpecialistClinic (){
+	//排班管理-查询专家门诊的排班
+	public String searchScheduleBySpecialistClinic (){
 		clickSchManClinicTypeDropBox();
 		clickSchManSelectSpecialistClinic();
 		clickSchManSearchButton();
 		return getSchManClinicType();
 	}
 	
-	//排班管理-查询普通门诊
-	public String selectGeneralClinic (){
+	//排班管理-查询普通门诊的排班
+	public String searchScheduleByGeneralClinic (){
 		clickSchManClinicTypeDropBox();
 		clickSchManSelectGeneralClinic();
 		clickSchManSearchButton();
@@ -46,28 +46,26 @@ public class ScheduleManage extends ScheduleManagePage{
 	}
 
 	//排班管理-查询挂号号源
-	public String selectRegisterResource (){
+	public String searchScheduleByRegisterResource (){
 		clickSchManResourceTypeDropBox();
 		clickSchManSelectRegisterResource();
 		clickSchManSearchButton();
 		return getSchManResourseType();
 	}
 	
-	//排班管理-查询预约号源
-	public String selectSubscriptionResource (){
+	//排班管理-查询预约号源的排班
+	public String searchScheduleBySubscriptionResource (){
 		clickSchManResourceTypeDropBox();
 		clickSchManSelectSubscriptionResource();
 		clickSchManSearchButton();
 		return getSchManResourseType();
 	}
 	
-	//排班管理-查询默认时间
-//	public String selectSubscriptionResource (){
-//		clickSchManResourceTypeDropBox();
-//		clickSchManSelectSubscriptionResource();
-//		clickSchManSearchButton();
-//		return getSchManResourseType();
-//	}
+//	排班管理-查询默认日期的排班
+	public String searchScheduleByDefaultDate (){
+		
+		return getSchManResourseType();
+	}
 
 	
 }
