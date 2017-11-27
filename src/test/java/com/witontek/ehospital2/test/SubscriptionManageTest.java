@@ -26,26 +26,50 @@ public class SubscriptionManageTest {
 
 	private WebDriver driver;
 
-	@Test(dataProvider = "selectSubscriptionDate")
-	public void selectSubscriptionDate(String caseName,String expectedResult,Map<String,String> testData) {
-		SubscriptionManage subscriptionManage=new SubscriptionManage(driver);
-//		AssertUtils.assertStringContains(subscriptionManage.selectSubscriptionDate(Global.USER_NAME, testData.get("password"), testData.get("validation"));
-		
-		subscriptionManage.selectSubscriptionDate();
-
+	// 预约管理-查询科室成功
+	@Test(dataProvider = "seacheDepartment")
+	public void seacheDepartment(String caseName, String expectedResult,Map<String, String> testData) {
+		SubscriptionManage subscriptionManage = new SubscriptionManage(driver);
+		AssertUtils.assertActualContainExpect(subscriptionManage.seacheDepartment(testData.get("departmentName")),expectedResult, caseName);
 	}
 
-	@DataProvider(name="selectSubscriptionDate")
-	  public Iterator<Object[]> selectSubscriptionDate(){
-		return ExcelUtils.readExcel("subscriptionManage/selectSubscriptionDate");
-	  }
+	@DataProvider(name = "seacheDepartment")
+	public Iterator<Object[]> seacheDepartment() {
+		return ExcelUtils.readExcel("subscriptionManage/seacheDepartment");
+	}
+
+	// 预约管理-查询医生成功
+	@Test(dataProvider = "seacheDoctor")
+	public void seacheDoctor(String caseName, String expectedResult,Map<String, String> testData) {
+		SubscriptionManage subscriptionManage = new SubscriptionManage(driver);
+		AssertUtils.assertActualContainExpect(subscriptionManage.seacheDoctor(testData.get("doctorName")),expectedResult, caseName);
+	}
+
+	@DataProvider(name = "seacheDoctor")
+	public Iterator<Object[]> seacheDoctor() {
+		return ExcelUtils.readExcel("subscriptionManage/seacheDoctor");
+	}
+	
+	// 预约管理-查询病人成功
+	@Test(dataProvider = "seachePatient")
+	public void seachePatient(String caseName, String expectedResult,Map<String, String> testData) {
+		SubscriptionManage subscriptionManage = new SubscriptionManage(driver);
+		AssertUtils.assertActualContainExpect(subscriptionManage.seachePatient(testData.get("patientName")),expectedResult, caseName);
+	}
+
+	@DataProvider(name = "seachePatient")
+	public Iterator<Object[]> seachePatient() {
+		return ExcelUtils.readExcel("subscriptionManage/seachePatient");
+	}
+
+
 
 	@BeforeMethod
 	public void beforeMethod() {
-		LoginPage login=new LoginPage(driver);
+		LoginPage login = new LoginPage(driver);
 		login.login(Global.USER_NAME, "admin", "1111");
 	}
-	  
+
 	@BeforeClass
 	public void beforeClass() {
 		driver = DriverUtils.getChromeDriver();

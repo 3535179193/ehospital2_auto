@@ -1,7 +1,6 @@
 package com.witontek.ehospital2.base;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
 public class AssertUtils extends BasePage {
 
@@ -14,8 +13,10 @@ public class AssertUtils extends BasePage {
 	public static void assertActualEqualExpect(String actual,String expectedResult, String caseName) {
 		if (actual.equals(expectedResult)) {
 			log.info("实际结果（" + actual + "）与预期结果（" + expectedResult + "）相等，"+ caseName);
+		} else if (actual.equals(null)) {
+			log.error("查询后总记录数为0，未查询到相应信息");
 		} else {
-			log.errorShot("实际结果（" + actual + "）与预期结果（" + expectedResult+ "）不相等，" + caseName, driver);
+			log.errorShot("实际结果（" + actual + "）与预期结果（" + expectedResult + "）不相等，" + caseName, driver);
 		}
 	}
 
@@ -23,12 +24,10 @@ public class AssertUtils extends BasePage {
 		if (actual.contains(expectedResult)) {
 			log.info("实际结果（" + actual + "）包含预期结果（" + expectedResult + "），"+ caseName);
 		} else {
-			log.errorShot("实际结果（" + actual + "）不包含预期结果（" + expectedResult+ "），" + caseName, driver);
-			
-
+			log.errorShot("实际结果（" + actual + "）不包含预期结果（" + expectedResult + "），" + caseName, driver);
 		}
 	}
-	
+
 	public static void assertExpectContainActual(String actual,String expectedResult, String caseName) {
 		if (expectedResult.contains(actual)) {
 			log.info("预期结果（" + actual + "）包好实际结果（" + expectedResult + "），"+ caseName);

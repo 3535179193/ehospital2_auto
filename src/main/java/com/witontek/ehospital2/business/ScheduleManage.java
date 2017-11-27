@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.witontek.ehospital2.base.DateUtils;
 import com.witontek.ehospital2.base.Log;
-import com.witontek.ehospital2.page.DepartmentManagePage;
+import com.witontek.ehospital2.page.DepartmentCategoryManagePage;
 import com.witontek.ehospital2.page.ScheduleManagePage;
 
 public class ScheduleManage extends ScheduleManagePage{

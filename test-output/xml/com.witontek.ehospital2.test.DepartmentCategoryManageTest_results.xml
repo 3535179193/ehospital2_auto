@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test99"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.574">
+  <properties />
+  
+  
+            <testcase name="deleteCategory" time="10.574" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
+      
+</testsuite>

@@ -11,16 +11,33 @@ public class SubscriptionManage extends SubscriptionManagePage{
 		super(driver);
 	}
 	
-	private Log log=new Log(Login.class);
+	private Log log=new Log(SubscriptionManage.class);
 	
-	public void selectSubscriptionDate(){
+	//预约管理-查询科室成功
+	public String seacheDepartment(String departmentName){
 		clickSubscriptionManageButton();
-		clickSubManSubscriptionStartDateSelector();
-		clickSubManYearMonthSelector();
-		clickSubManYearMonthSelector();
-		clickSubManDefaultYearButton();
-		clickSubManDefaultMonthButton();
-		clickSubManDefaultDayButton();
+		inputSubManDepartmentNameInputBox(departmentName);
+		clickSubManSearchButton();
+		return getSubManDepartmentName();
 	}
 
+	//预约管理-查询医生成功
+	public String seacheDoctor(String doctorName){
+		inputSubManDoctorNameInputBox(doctorName);
+		clickSubManSearchButton();
+		return getSubManDoctorName();
+	}
+	
+	//预约管理-查询病人成功
+	public String seachePatient(String patientName){
+		clickSubscriptionManageButton();
+		inputSubManPatientNameInputBox(patientName);
+		clickSubManSearchButton();
+		return getSubManPatientName();
+	}
+	
+	
+	
+	
+	
 }

@@ -35,7 +35,7 @@ public class MainPage extends LoginPage{
 	
 	//业务信息管理
 	protected Locator businessInformationButton=XmlUtils.readXml("MainPage").get("businessInformationButton");
-	protected Locator departmentManageButton=XmlUtils.readXml("MainPage").get("departmentManageButton");
+	protected Locator departmentCategoryManageButton=XmlUtils.readXml("MainPage").get("departmentCategoryManageButton");
 	protected Locator dutyRoomManageButton=XmlUtils.readXml("MainPage").get("dutyRoomManageButton");
 	protected Locator doctorManageButton=XmlUtils.readXml("MainPage").get("doctorManageButton");
 	protected Locator scheduleManageButton=XmlUtils.readXml("MainPage").get("scheduleManageButton");
@@ -72,10 +72,15 @@ public class MainPage extends LoginPage{
 	protected Locator alertCloseButton=XmlUtils.readXml("MainPage").get("alertCloseButton");
 	protected Locator alertDeleteButton=XmlUtils.readXml("MainPage").get("alertDeleteButton");
 	protected Locator alertCancleButton=XmlUtils.readXml("MainPage").get("alertCancleButton");
+	protected Locator alertAcceptButton=XmlUtils.readXml("MainPage").get("alertAcceptButton");
 	
 	//选择起始日期按钮
 	protected Locator selectStartDateButton=XmlUtils.readXml("MainPage").get("selectStartDateButton");
 	protected Locator selectEndDateButton=XmlUtils.readXml("MainPage").get("selectEndDateButton");
+	protected Locator dateSelTodayButton=XmlUtils.readXml("MainPage").get("dateSelTodayButton");
+	protected Locator dateSelDeleteButton=XmlUtils.readXml("MainPage").get("dateSelDeleteButton");
+	protected Locator dateSelGiveUpButton=XmlUtils.readXml("MainPage").get("dateSelGiveUpButton");
+	protected Locator dateSelDefaultTodayButton=XmlUtils.readXml("MainPage").get("dateSelDefaultTodayButton");
 	protected Locator defaultDateButton=XmlUtils.readXml("MainPage").get("defaultDateButton");
 	protected Locator defaultMonthButton=XmlUtils.readXml("MainPage").get("defaultMonthButton");
 	protected Locator monthToggleButton=XmlUtils.readXml("MainPage").get("monthToggleButton");
@@ -122,9 +127,9 @@ public class MainPage extends LoginPage{
 	}
 	
 	//点击科室管理
-	public void clickDepartmentManageButton(){
+	public void clickDepartmentCategoryManageButton(){
 		clickBusinessInformationButton();
-		click(departmentManageButton);
+		click(departmentCategoryManageButton);
 	}
 	
 	//点击值班室管理
@@ -306,6 +311,13 @@ public class MainPage extends LoginPage{
 		wait(5);
 	}
 	
+	//点击弹框确认删除按钮
+	public void clickAlertAcceptButton(){
+		wait(5);
+		click(alertAcceptButton);
+		wait(5);
+	}
+	
 	//点击选择起始日期按钮
 	public void clickSelectStartDateButton(){
 		click(selectStartDateButton);
@@ -328,6 +340,26 @@ public class MainPage extends LoginPage{
 		String endDate=getText(selectEndDateButton);
 		log.info("结束日期："+endDate);
 		return endDate;
+	}
+	
+	//点击日期选择器-今天按钮
+	public void clickDateSelTodayButton(){
+		click(dateSelTodayButton);
+	}
+	
+	//点击日期选择器-删除按钮
+	public void clickDateSelDeleteButton(){
+		click(dateSelDeleteButton);
+	}
+	
+	//点击日期选择器-放弃按钮
+	public void clickDateSelGiveUpButton(){
+		click(dateSelGiveUpButton);
+	}
+	
+	//点击日期选择器-默认当天按钮
+	public void clickDateSelDefaultTodayButton(){
+		click(dateSelDefaultTodayButton);
 	}
 	
 	//点击日期选择器-默认日期按钮

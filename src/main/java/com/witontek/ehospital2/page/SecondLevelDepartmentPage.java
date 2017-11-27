@@ -6,7 +6,7 @@ import com.witontek.ehospital2.base.Locator;
 import com.witontek.ehospital2.base.Log;
 import com.witontek.ehospital2.base.XmlUtils;
 
-public class SecondLevelDepartmentPage extends DepartmentManagePage{
+public class SecondLevelDepartmentPage extends DepartmentCategoryManagePage{
 
 	public SecondLevelDepartmentPage(WebDriver driver) {
 		super(driver);

@@ -18,18 +18,18 @@
 		<Locator name="分类管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'分类管理')]"			>categoryButton</Locator>
 
 	<Locator name="业务信息管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'业务信息管理')]"		>businessInformationButton</Locator>
-		<Locator name="科室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[1]/span"	>departmentManageButton</Locator>
-		<Locator name="值班室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'值班室管理')]"		>dutyRoomManageButton</Locator>
-		<Locator name="医生管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[3]/span"			>doctorManageButton</Locator>
-		<Locator name="排班管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[4]/span"			>scheduleManageButton</Locator>
-		<Locator name="预约管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[5]/span"			>subscriptionManageButton</Locator>
-		<Locator name="排队管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'排队管理')]"			>lineUpManageButton</Locator>
-		<Locator name="就医咨询管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[7]/span"		>consultManageButton</Locator>
-		<Locator name="就医评价管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[8]/span"		>appraiseManageButton</Locator>
-		<Locator name="挂号管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[9]/span"			>registerManageButton</Locator>
-		<Locator name="智能导诊" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[10]/span"			>smartGuideButton</Locator>
-		<Locator name="科室繁忙度" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[11]/span"		>departmentBusynessButton</Locator>
-		<Locator name="收费项目" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'收费项目')]"			>payItemButton</Locator>
+		<Locator name="科室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[1]/span"	>departmentCategoryManageButton</Locator>
+		<Locator name="值班室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'值班室管理')]"				>dutyRoomManageButton</Locator>
+		<Locator name="医生管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[3]/span"	>doctorManageButton</Locator>
+		<Locator name="排班管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[4]/span"	>scheduleManageButton</Locator>
+		<Locator name="预约管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[5]/span"	>subscriptionManageButton</Locator>
+		<Locator name="排队管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'排队管理')]"					>lineUpManageButton</Locator>
+		<Locator name="就医咨询管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[7]/span"	>consultManageButton</Locator>
+		<Locator name="就医评价管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[8]/span"	>appraiseManageButton</Locator>
+		<Locator name="挂号管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[9]/span"	>registerManageButton</Locator>
+		<Locator name="智能导诊" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[10]/span"	>smartGuideButton</Locator>
+		<Locator name="科室繁忙度" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[11]/span"	>departmentBusynessButton</Locator>
+		<Locator name="收费项目" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'收费项目')]"					>payItemButton</Locator>
 				
 	<Locator name="统计分析" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'统计分析')]"			>analysisButton</Locator>
 		<Locator name="登录日志" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'登录日志')]"			>loginLogButton</Locator>
@@ -53,14 +53,19 @@
 	<Locator name="弹框关闭按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showCloseButton']/button"			>alertCloseButton</Locator>
 	<Locator name="弹框确认删除按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showOkCancelButton']/button[1]"	>alertDeleteButton</Locator>
 	<Locator name="弹框取消按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-show='$ctrl.showOkCancelButton']/button[2]"	>alertCancleButton</Locator>
-	                                                                                                               
+	<Locator name="弹框确认按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'确认')]"							>alertAcceptButton</Locator>
+		                                                                                                               
 	<Locator name="选择起始日期按钮"				locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@placeholder='起始日期']"					>selectStartDateButton</Locator>
 	<Locator name="选择结束日期按钮"				locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@placeholder='结束日期']"					>selectEndDateButton</Locator>
-	<Locator name="日期选择器-默认日期按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-sm btn-info']"	>defaultDateButton</Locator>
-	<Locator name="日期选择器-默认月份按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-info active']"	>defaultMonthButton</Locator>
-	<Locator name="日期选择器-月份切换按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"					>monthToggleButton</Locator>
-	<Locator name="日期选择器-年份切换按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"					>yearToggleButton</Locator>
-	<Locator name="日期选择器-左移按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='move(-1)']"						>leftButton</Locator>
-	<Locator name="日期选择器-右移按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='move(1)']"						>rightButton</Locator>
+	<Locator name="日期选择器-今天按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='select('today', $event)']"		>dateSelTodayButton</Locator>
+	<Locator name="日期选择器-删除按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='select(null, $event))']"		>dateSelDeleteButton</Locator>
+	<Locator name="日期选择器-放弃按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='close($event)']"				>dateSelGiveUpButton</Locator>
+	<Locator name="日期选择器-默认当天按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-sm active']"	>dateSelDefaultTodayButton</Locator>
+	<Locator name="日期选择器-默认日期按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-sm btn-info']"	>dateSelDefaultDateButton</Locator>
+	<Locator name="日期选择器-默认月份按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@class='btn btn-default btn-info active']"	>dateSelDefaultMonthButton</Locator>
+	<Locator name="日期选择器-月份切换按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"					>dateSelMonthToggleButton</Locator>
+	<Locator name="日期选择器-年份切换按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='toggleMode()']"					>dateSelYearToggleButton</Locator>
+	<Locator name="日期选择器-左移按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='move(-1)']"						>dateSelLeftButton</Locator>
+	<Locator name="日期选择器-右移按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='move(1)']"						>dateSelRightButton</Locator>
 		
 </Page>

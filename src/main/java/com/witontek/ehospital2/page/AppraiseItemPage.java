@@ -80,7 +80,7 @@ public class AppraiseItemPage extends AppraiseManagePage{
 		click(appIteFromAppraiseAddButton);
 	}
 	
-	//现有评价项-评价项名称输入框
+	//现有评价项-输入评价项名称
 	public void inputFroAppAppraiseNameInputBox(String appraiseItemName){
 		input(froAppAppraiseNameInputBox, appraiseItemName);
 	}

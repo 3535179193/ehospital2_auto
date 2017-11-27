@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="科室管理">
+
+	<Locator name="科室管理-导入科室信息按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导入科室信息')]"				>cateManImportDepartmentInfoButton</Locator>
+	<Locator name="科室管理-下载科室表Excel模板按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'下载科室表Excel模板']"			>cateManDownloadDepartmentExcelButton</Locator>
+	<Locator name="科室管理-导出科室信息按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导出科室信息')]"				>cateManExportDepartmentInfoButton</Locator>
+	<Locator name="科室管理-同步科室HIS数据按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'同步HIS数据')]"					>cateManSynchronousDepartmentHISButton</Locator>
+    
+	<Locator name="科室管理-科室名称输入框" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchDepartmentStr']"		>cateManCategoryNameInputBox</Locator>
+	<Locator name="科室管理-搜索按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'搜索')]"						>cateManSearchButton</Locator>
+	
+	<Locator name="科室管理-新增一级科室按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'新增一级科室')]"								>cateManAddCategoryButton</Locator>
+		<Locator name="新增一级科室-科室名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.firstDepartmentData.category_name']"		>addCateCategoryNameInputBox</Locator>
+		<Locator name="新增一级科室-科室编码输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.firstDepartmentData.category_code']"		>addCateCategoryCodeInputBox</Locator>
+		<Locator name="新增一级科室-科室LOGO按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-click='$ctrl.selectFileHandle()']"						>addCateCategoryLogoButton</Locator>
+		<Locator name="新增一级科室-保存按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='$ctrl.isAdd']"										>addCateSaveButton</Locator>
+		<Locator name="新增一级科室-返回按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'返回')]"										>addCateReturnButton</Locator>
+	
+	<Locator name="科室管理-序号" 					locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='$index+1']"					index="0"	>cateManNumber</Locator>
+	<Locator name="科室管理-序号1的一级科室名称" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.category_name']"		index="0"	>cateManFirstCategoryName</Locator>
+	<Locator name="科室管理-序号2的一级科室名称" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.category_name']"		index="1"	>cateManSecondCategoryName</Locator>
+	<Locator name="科室管理-包含的二级科室" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.department_name']"		index="0"	>cateManContainDepartments</Locator>
+
+	<Locator name="科室管理-编辑按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]/parent::ul/li[4]/div/div[1]/a[1]"	>cateManEditButton</Locator>
+  		<Locator name="编辑一级科室-科室名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.firstDepartmentData.category_name']"		>ediCateCategoryNameInputBox</Locator>
+		<Locator name="编辑一级科室-科室编码输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.firstDepartmentData.category_code']"		>ediCateCategoryCodeInputBox</Locator>
+		<Locator name="编辑一级科室-科室LOGO按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-click='$ctrl.selectFileHandle()']"						>ediCateCategoryLogoButton</Locator>
+		<Locator name="编辑一级科室-修改按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='!$ctrl.isAdd']"									>ediCateEditButton</Locator>
+		<Locator name="编辑一级科室-返回按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'返回')]"										>ediCateReturnButton</Locator>
+
+    <Locator name="科室管理-删除按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]/parent::ul/li[4]/div/div[1]/a[2]"	index="0"	>cateManDeleteButton</Locator>
+	<Locator name="科室管理-查看二级科室按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]/parent::ul/li[4]/div/div[1]/a[3]"			>cateManViewDepartmentButton</Locator>
+	<Locator name="科室管理-上移按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="1"	>cateManMoveUpButton</Locator>
+    <Locator name="科室管理-下移按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"	>cateManMoveDownButton</Locator>
+	<Locator name="科室管理-置顶按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]/parent::ul/li[4]/div/div[2]/a[3]"		>cateManMoveTopButton</Locator>
+
+	<Locator name="科室管理-新增的一级科室名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]"	index="0" 								>cateManAddedCategoryName</Locator>
+	
+</Page>

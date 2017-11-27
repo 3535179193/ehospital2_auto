@@ -18,7 +18,7 @@ import com.witontek.ehospital2.base.DriverUtils;
 import com.witontek.ehospital2.base.ExcelUtils;
 import com.witontek.ehospital2.base.Global;
 import com.witontek.ehospital2.business.ConsultManage;
-import com.witontek.ehospital2.business.DepartmentMange;
+import com.witontek.ehospital2.business.DepartmentCategoryManage;
 import com.witontek.ehospital2.page.LoginPage;
 
 public class ConsultManageTest {

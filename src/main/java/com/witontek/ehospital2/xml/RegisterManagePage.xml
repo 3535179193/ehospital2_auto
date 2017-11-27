@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="挂号管理">
+
+	<Locator name="挂号管理-起始预约日期选择器" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.dateData.create_start_date']"	>subManSubscriptionStartDateSelector</Locator>
+	
+	<Locator name="挂号管理-结束预约日期选择器"		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.dateData.create_end_date']"	>subManSubscriptionEndDateSelector</Locator>
+	
+	<Locator name="挂号管理-起始就诊日期选择器"		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.dateData.clinic_start_date']"	>subManClinicStartDateSelector</Locator>
+	
+	<Locator name="挂号管理-结束就诊日期选择器"		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.dateData.clinic_end_date']"	>subManClinicEndDateSelector</Locator>
+	
+	<Locator name="挂号管理-科室名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.requestData.department_name']"		>subManDepartmentNameInputBox</Locator>
+	<Locator name="挂号管理-医生姓名输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.requestData.doctor_name']"			>subManDoctorNameInputBox</Locator>
+	<Locator name="挂号管理-病人姓名输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.requestData.real_name']"			>subManPatientNameInputBox</Locator>
+
+	<Locator name="挂号管理-预约状态下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.requestData.status']"				>subManSelectStateDropBox</Locator>
+	<Locator name="挂号管理-选择待挂号状态"	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.requestData.status']/option[2]"	>subManWaitRegisterButton</Locator>
+	<Locator name="挂号管理-选择待就诊状态"	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.requestData.status']/option[3]"	>subManWaitClinicButton</Locator>
+	<Locator name="挂号管理-选择已就诊状态"	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.requestData.status']/option[4]"	>subManAlreadyClinicButton</Locator>
+	<Locator name="挂号管理-选择已取消状态"	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.requestData.status']/option[5]"	>subManAlreadyCancleButton</Locator>
+	<Locator name="挂号管理-选择已爽约状态"	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.requestData.status']/option[6]"	>subManAlreadyDefaultButton</Locator>
+	<Locator name="挂号管理-选择已挂号状态"	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.requestData.status']/option[7]"	>subManAlreadyRegisterButton</Locator>
+	<Locator name="挂号管理-选择待支付状态"	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.requestData.status']/option[8]"	>subManWaitPayButton</Locator>
+	<Locator name="挂号管理-选择已支付状态"	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.requestData.status']/option[9]"	>subManAlreadyPayButton</Locator>
+									
+	<Locator name="挂号管理-搜索按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'搜索')]"						>subManSearchButton</Locator>
+	<Locator name="挂号管理-导出搜索结果按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'导出搜索结果')]"				>subManExportSearchResultButton</Locator>
+	<Locator name="挂号管理-导出后一工作日预约按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.exportSubscription()']"	>subManExportWorkDaySubscriptionButton</Locator>
+	
+	<Locator name="挂号管理-序号" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='$index+1']"					index="0"		>subManNumber</Locator>
+    <Locator name="挂号管理-科室名称" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.department_name']"		index="0"		>subManDepartmentName</Locator>
+	<Locator name="挂号管理-医生姓名" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.doctor_name']"			index="0"		>subManDoctorName</Locator>
+	<Locator name="挂号管理-预约类型" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.registration_type']"	index="0"		>subManSubscriptionType</Locator>
+    <Locator name="挂号管理-病人姓名" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.real_name']"			index="0"		>subManPatientName</Locator>
+	<Locator name="挂号管理-就诊时间" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.registration_date+' '+item.clinic_week']"	index="0"	>subManClinicTime</Locator>
+	<Locator name="挂号管理-预约日期" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item.create_date']"			index="0"		>subManSubscriptionDate</Locator>
+	<Locator name="挂号管理-预约状态" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-if='item.status=='3'']"			index="0"		>subManSubscriptionState</Locator>
+		
+	<Locator name="挂号管理-查看按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//a[@ng-click='$ctrl.openModal(item)']"		index="0"		>subManView</Locator>
+ 		<Locator name="挂号管理-科室名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-bind='$ctrl.responseData.department_name']"		>subInfDepartmentName</Locator>
+		<Locator name="挂号管理-预约类型"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-bind='$ctrl.responseData.registration_type']"		>subInfSubscriptionType</Locator>
+		<Locator name="挂号管理-医生姓名"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-bind='$ctrl.responseData.doctor_name']"			>subInfDoctorName</Locator>
+		<Locator name="挂号管理-病人姓名"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-bind='$ctrl.responseData.real_name']"				>subInfPatientName</Locator>
+		<Locator name="挂号管理-身份证号"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-bind='subManSelectStateButton</Locator>$ctrl.responseData.id_card.slice(0, 4) + '**********' + $ctrl.responseData.id_card.slice(-4)']"	>subInfIdCard</Locator>
+		<Locator name="挂号管理-病历卡号"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-bind='$ctrl.responseData.patient_card.slice(0, 3) + '******' + $ctrl.responseData.patient_card.slice(-3)']"								>subInfPatientCard</Locator>
+		<Locator name="挂号管理-就诊日期"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-bind='$ctrl.responseData.registration_date+' '+$ctrl.responseData.clinic_week+' '+$ctrl.responseData.registration_time"					>subInfClinicDate</Locator>
+		<Locator name="挂号管理-预约号码"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-bind='$ctrl.responseData.subscription_id']"		>subInfSubscriptionID</Locator>
+		<Locator name="挂号管理-预约时间段"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-bind='$ctrl.responseData.sub_time_quantum']"		>subInfSubscriptionTimePeriod</Locator>
+		<Locator name="挂号管理-预约时间"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-bind='$ctrl.responseData.create_date']"			>subInfSubscriptionTime</Locator>
+		<Locator name="挂号管理-预约状态"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-if='$ctrl.responseData.status=='3'']"				>subInfSubscriptionState</Locator>
+		<Locator name="挂号管理-手机号码"	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@ng-bind='$ctrl.responseData.patient_phone']"			>subInfPhone</Locator>
+		<Locator name="挂号管理-关闭按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.close()']"						>subInfCloseButton</Locator>
+
+</Page>
