@@ -11,28 +11,53 @@
 			</class>
 		</classes>
 	</test>
--->
+
 	<test name="test02" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentCategoryManageTest">
 				<methods>
 					<include name="insertCategory"></include>
 					<include name="searchCategory"></include>
+					<include name="moveTopCategory"></include>
+					<include name="updateCategory"></include>
+					<include name="moveDownCategory"></include>
+					<include name="moveUpCategory"></include>
 				</methods>
 			</class>
 		</classes>
 	</test>
-<!--  
+-->
+	<test name="test03" preserve-order="true">
+		<classes>
+			<class name="com.witontek.ehospital2.test.DepartmentManageTest">
+				<methods>
+					<include name="insertDepartment"></include>
+					<include name="moveTopDoctor"></include>
+					<include name="editDoctor"></include>
+					<include name="moveDownDoctor"></include>
+					<include name="moveUpDoctor"></include>
+					<include name="searchDoctor"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+  
 	<test name="test3" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DoctorManageTest">
 				<methods>
-					<include name="searchDocManDoctor"></include>
+					<include name="insertDoctor"></include>
+					<include name="moveTopDoctor"></include>
+					<include name="editDoctor"></include>
+					<include name="moveDownDoctor"></include>
+					<include name="moveUpDoctor"></include>
+					<include name="searchDoctor"></include>
 				</methods>
 			</class>
 		</classes>
 	</test>
-
+	
+<!--
 	<test name="test4" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.SubscriptionManageTest">
@@ -53,7 +78,26 @@
 		</classes>
 	</test>
 -->
-
+	<test name="test97" preserve-order="true">
+		<classes>
+			<class name="com.witontek.ehospital2.test.DoctorManageTest">
+				<methods>
+					<include name="deleteDoctor"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="test98" preserve-order="true">
+		<classes>
+			<class name="com.witontek.ehospital2.test.DepartmentManageTest">
+				<methods>
+					<include name="deleteDepartment"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+<!-- 
 	<test name="test99" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentCategoryManageTest">
@@ -63,6 +107,7 @@
 			</class>
 		</classes>
 	</test>
+-->
 	
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />

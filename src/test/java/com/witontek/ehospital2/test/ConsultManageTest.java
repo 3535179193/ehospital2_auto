@@ -35,7 +35,7 @@ public class ConsultManageTest {
 
 	@DataProvider(name = "insertConsultDepartment")
 	public Iterator<Object[]> insertConsultDepartment() {
-		return ExcelUtils.readExcel("consultManage/insertConsultDepartment");
+		return ExcelUtils.readExcel("consultManage","insertConsultDepartment");
 	}
 	
 	//就医咨询管理-搜索咨询科室
@@ -47,7 +47,7 @@ public class ConsultManageTest {
 
 	@DataProvider(name = "searchConsultDepartment")
 	public Iterator<Object[]> searchConsultDepartment() {
-		return ExcelUtils.readExcel("consultManage/searchConsultDepartment");
+		return ExcelUtils.readExcel("consultManage","searchConsultDepartment");
 	}
 
 	//就医咨询管理-编辑咨询科室
@@ -59,10 +59,10 @@ public class ConsultManageTest {
 
 	@DataProvider(name = "updateConsultDepartment")
 	public Iterator<Object[]> updateConsultDepartment() {
-		return ExcelUtils.readExcel("consultManage/updateConsultDepartment");
+		return ExcelUtils.readExcel("consultManage","updateConsultDepartment");
 	}
 	
-	//科室管理-删除一级科室
+	//就医咨询管理-删除咨询科室
 	@Test(dependsOnMethods={"updateConsultDepartment"},enabled=false)
 	public void deleteConsultDepartment() {
 		ConsultManage consultManage = new ConsultManage(driver);

@@ -18,108 +18,100 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 
-public class ExcelUtils extends BasePage{
-	
+public class ExcelUtils extends BasePage {
+
 	public ExcelUtils(WebDriver driver) {
 		super(driver);
 	}
 
 	private static List<Object[]> testCase;
-	
-	private static Map<String,String> testData;
-	
-	private static Log log=new Log(ExcelUtils.class);
 
-	public static Iterator<Object[]> readExcel(String excelFileName){
+	private static Map<String, String> testData;
+
+	private static Log log = new Log(ExcelUtils.class);
+
+	public static Iterator<Object[]> readExcel(String excelFileName,String sheetName) {
 		Workbook workbook = null;
 		try {
-			workbook=new XSSFWorkbook(new File(System.getProperty("user.dir")+"/testCase/"+Global.USER_NAME+"/"+excelFileName+".xlsx"));
+			workbook = new XSSFWorkbook(new File(System.getProperty("user.dir") + "/testCase/" + Global.USER_NAME + "/" + excelFileName + ".xlsx"));
 		} catch (Exception e) {
-			log.error("读取"+excelFileName+".xlsx文件失败,报错信息："+e.getMessage());
+			log.error("读取" + excelFileName + ".xlsx文件中"+sheetName+"表单失败,报错信息：" + e.getMessage());
 		}
-		
-		Sheet firstSheet=workbook.getSheetAt(0);
+		Sheet sheet=workbook.getSheet(sheetName);
 		try {
 			workbook.close();
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
-		Row firstRow=firstSheet.getRow(0);
-		testCase=new ArrayList<Object[]>();
-		
-		try{
-		for(int i=0;i<=firstSheet.getLastRowNum();i++){
-			Row row=firstSheet.getRow(i);
-			if(i==0||row.getCell(1)==null){
-				continue;
-			}
-			
-			String caseName=switchCellType(row.getCell(0));
-			String expectedResult=switchCellType(row.getCell(2));
-			testData=new HashMap<String,String>();
-			for(int j=0;j<firstRow.getLastCellNum();j++){
-				if(j<3){
+		Row firstRow = sheet.getRow(0);
+		testCase = new ArrayList<Object[]>();
+
+		try {
+			for (int i = 0; i <= sheet.getLastRowNum(); i++) {
+				Row row = sheet.getRow(i);
+				if (i == 0 || row.getCell(1) == null) {
 					continue;
 				}
-				if(row.getCell(j)==null){
-					testData.put(switchCellType(firstRow.getCell(j)), "");
+
+				String caseName = switchCellType(row.getCell(0));
+				String expectedResult = switchCellType(row.getCell(2));
+				testData = new HashMap<String, String>();
+				for (int j = 0; j < firstRow.getLastCellNum(); j++) {
+					if (j < 3) {
+						continue;
+					}
+					if (row.getCell(j) == null) {
+						testData.put(switchCellType(firstRow.getCell(j)), "");
+					} else
+						testData.put(switchCellType(firstRow.getCell(j)), switchCellType(row.getCell(j)));
 				}
-				else
-					testData.put(switchCellType(firstRow.getCell(j)), switchCellType(row.getCell(j)));
+				testCase.add(new Object[]{caseName, expectedResult, testData});
 			}
-			testCase.add(new Object[]{caseName, expectedResult, testData});
-		}
-		log.info("读取"+excelFileName+".xlsx文件");
-		}catch(Exception e){
-			log.error("读取"+excelFileName+".xlsx文件内部信息失败,报错信息："+e.getMessage());
+			log.info("读取" + excelFileName + ".xlsx文件中"+sheetName+"表单");
+		} catch (Exception e) {
+			log.error("读取" + excelFileName + ".xlsx文件中"+sheetName+"表单失败,报错信息：" + e.getMessage());
 		}
 		return testCase.iterator();
-		
+
 	}
-	
+
 	public static String switchCellType(Cell cell) {
-		
-		String cellValue=null;
-		
-		SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy/MM/dd");
-		
-		try{
-			switch(cell.getCellTypeEnum()){
-			case STRING:
-					cellValue=cell.getStringCellValue();break;
-					
-			case NUMERIC:
-				if(DateUtil.isCellDateFormatted(cell)){
-					cellValue=(dateFormat.format(cell.getDateCellValue())).toString();break;
+
+		String cellValue = null;
+
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+
+		try {
+			switch (cell.getCellTypeEnum()) {
+				case STRING :
+					cellValue = cell.getStringCellValue();
+					break;
+
+				case NUMERIC :
+					if (DateUtil.isCellDateFormatted(cell)) {
+						cellValue = (dateFormat.format(cell.getDateCellValue())).toString();
+						break;
+					} else {
+						cell.setCellType(CellType.STRING);
+						cellValue = String.valueOf(cell.getRichStringCellValue());
+						break;
 					}
-				else{
-					cell.setCellType(CellType.STRING);
-					cellValue=String.valueOf(cell.getRichStringCellValue());break;
-					}
-			case BOOLEAN:
-				cellValue=String.valueOf(cell.getBooleanCellValue());break;
-			case ERROR:
-				cellValue=String.valueOf(cell.getErrorCellValue());break;
-			case BLANK:
-				cellValue=cell.getStringCellValue();break;
-			default:
-				cellValue=cell.getStringCellValue();
+				case BOOLEAN :
+					cellValue = String.valueOf(cell.getBooleanCellValue());
+					break;
+				case ERROR :
+					cellValue = String.valueOf(cell.getErrorCellValue());
+					break;
+				case BLANK :
+					cellValue = cell.getStringCellValue();
+					break;
+				default :
+					cellValue = cell.getStringCellValue();
 			}
-		}catch(Exception e){
-			log.error("excel转换数据类型出错,报错信息："+e.getMessage());
+		} catch (Exception e) {
+			log.error("excel转换数据类型出错,报错信息：" + e.getMessage());
 		}
-		
+
 		return cellValue;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-

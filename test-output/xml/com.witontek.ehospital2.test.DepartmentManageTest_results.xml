@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test2"
-           tests="1"
+<testsuite name="test03"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="4.333">
+           time="14.413">
   <properties />
   
   
-            <testcase name="searchDepartmentCategoryByName" time="4.333" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
+            <testcase name="searchDepartment" time="2.521" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
+                <testcase name="insertDepartment" time="11.892" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
       
 </testsuite>

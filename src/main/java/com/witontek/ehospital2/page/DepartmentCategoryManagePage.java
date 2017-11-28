@@ -26,25 +26,19 @@ public class DepartmentCategoryManagePage extends MainPage{
 	
 	//科室管理-新增一级科室按钮
 	protected Locator cateManAddCategoryButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManAddCategoryButton");
-		protected Locator addCateCategoryNameInputBox=XmlUtils.readXml("DepartmentCategoryManagePage").get("addCateCategoryNameInputBox");
-		protected Locator addCateCategoryCodeInputBox=XmlUtils.readXml("DepartmentCategoryManagePage").get("addCateCategoryCodeInputBox");
-		protected Locator addCateCategoryLogoButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("addCateCategoryLogoButton");
-		protected Locator addCateSaveButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("addCateSaveButton");
-		protected Locator addCateReturnButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("addCateReturnButton");
+	protected Locator cateManEditButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManEditButton");
+		protected Locator catePageCategoryNameInputBox=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageCategoryNameInputBox");
+		protected Locator catePageCategoryCodeInputBox=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageCategoryCodeInputBox");
+		protected Locator catePageCategoryLogoButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageCategoryLogoButton");
+		protected Locator catePageSaveButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageSaveButton");
+		protected Locator catePageUpdateButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageUpdateButton");
+		protected Locator catePageReturnButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageReturnButton");
 	
 	//科室管理-序号
 	protected Locator cateManNumber=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManNumber");
 	protected Locator cateManFirstCategoryName=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManFirstCategoryName");
 	protected Locator cateManSecondCategoryName=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManSecondCategoryName");
 	protected Locator cateManContainDepartments=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManContainDepartments");
-	
-	//科室管理-编辑一级科室按钮
-	protected Locator cateManEditButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManEditButton");
-		protected Locator ediCateCategoryNameInputBox=XmlUtils.readXml("DepartmentCategoryManagePage").get("ediCateCategoryNameInputBox");
-		protected Locator ediCateCategoryCodeInputBox=XmlUtils.readXml("DepartmentCategoryManagePage").get("ediCateCategoryCodeInputBox");
-		protected Locator ediCateCategoryLogoButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("ediCateCategoryLogoButton");
-		protected Locator ediCateEditButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("ediCateEditButton");
-		protected Locator ediCateReturnButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("ediCateReturnButton");
 	
 	//科室管理-删除按钮
 	protected Locator cateManDeleteButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManDeleteButton");
@@ -91,29 +85,29 @@ public class DepartmentCategoryManagePage extends MainPage{
 		click(cateManAddCategoryButton);
 	}
 	
-	//新增一级科室-输入科室名称
-	public void inputAddCateCategoryNameInputBox(String categoryName){
-		input(addCateCategoryNameInputBox, categoryName);
+	//一级科室页面-输入科室名称
+	public void inputCatePageCategoryNameInputBox(String categoryName){
+		input(catePageCategoryNameInputBox, categoryName);
 	}
 	
-	//新增一级科室-输入科室编码
-	public void inputAddCateCategoryCodeInputBox(String categoryCode){
-		input(addCateCategoryCodeInputBox, categoryCode);
+	//一级科室页面-输入科室编码
+	public void inputCatePageCategoryCodeInputBox(String categoryCode){
+		input(catePageCategoryCodeInputBox, categoryCode);
 	}
 	
-	//点击新增一级科室-科室LOGO按钮
-	public void clickAddCateCategoryLogoButton(){
-		click(addCateCategoryLogoButton);
+	//点击一级科室页面-科室LOGO按钮
+	public void clickCatePageCategoryLogoButton(){
+		click(catePageCategoryLogoButton);
 	}
 	
-	//点击保新增一级科室-保存按钮
-	public void clickAddCateSaveButton(){
-		click(addCateSaveButton);
+	//点击一级科室页面-保存按钮
+	public void clickCatePageSaveButton(){
+		click(catePageSaveButton);
 	}
 	
-	//点击新增一级科室-返回按钮
-	public void clickAddCateReturnButton(){
-		click(addCateReturnButton);
+	//点击一级科室页面-返回按钮
+	public void clickCatePageReturnButton(){
+		click(catePageReturnButton);
 	}
 	
 	//获取科室管理-序号
@@ -150,28 +144,18 @@ public class DepartmentCategoryManagePage extends MainPage{
 	}
 	
 	//编辑一级科室-编辑科室名称
-	public void updateEdiCateCategoryNameInputBox(String categoryName){
-		clearAndInput(ediCateCategoryNameInputBox, categoryName);
+	public void editCatePageCategoryNameInputBox(String categoryName){
+		clearAndInput(catePageCategoryNameInputBox, categoryName);
 	}
 	
 	//编辑一级科室-编辑科室编码
-	public void updateEdiCateCategoryCodeInputBox(String categoryCode){
-		clearAndInput(ediCateCategoryCodeInputBox, categoryCode);
+	public void editCatePageCategoryCodeInputBox(String categoryCode){
+		clearAndInput(catePageCategoryCodeInputBox, categoryCode);
 	}
 	
-	//点击编辑一级科室-科室LOGO按钮
-	public void clickEdiCateCategoryLogoButton(){
-		click(ediCateCategoryLogoButton);
-	}
-	
-	//点击编辑一级科室-修改按钮
-	public void clickEdiCateEditButton(){
-		click(ediCateEditButton);
-	}
-	
-	//点击编辑一级科室-返回按钮
-	public void clickEdiCateReturnButton(){
-		click(ediCateReturnButton);
+	//点击一级科室页面-保存按钮
+	public void clickCatePageUpdateButton(){
+		click(catePageUpdateButton);
 	}
 	
 	//点击科室管理-删除按钮

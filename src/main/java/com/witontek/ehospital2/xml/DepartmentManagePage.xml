@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="二级科室管理">
+   
+	<Locator name="二级科室管理-科室名称输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.searchStr']"		>depManDepartmentNameInputBox</Locator>
+	<Locator name="二级科室管理-搜索科室按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'搜索')]"				>depManSearchButton</Locator>
+	
+	<Locator name="二级科室管理-新增二级科室按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'新增二级科室')]"		>depManAddDepartmentButton</Locator>
+	<Locator name="二级科室管理-编辑按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'编辑')]"						index="0"	>depManEditButton</Locator>
+		<Locator name="二级科室页面-科室名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='department_name']"			>depPageDepartmentNameInputBox</Locator>
+		<Locator name="二级科室页面-科室编码输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='department_code']"			>depPageDepartmentCodeInputBox</Locator>
+		<Locator name="二级科室页面-选择所属一级科室下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='departments_category_id']"				>depPageSelectBelongCategoryDropBox</Locator>		
+		<Locator name="二级科室页面-选择所属一级科室按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//option[@label='睿博一级科室']"		>depPageSelectBelongCategoryButton</Locator>			
+		<Locator name="二级科室页面-科室LOGO按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'请选择')]"				>depPageDepartmentLogoButton</Locator>		
+		<Locator name="二级科室页面-科室电话输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='dep_phone']"					>depPageDepartmentPhoneInputBox</Locator>
+		<Locator name="二级科室页面-科室地址输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='department_address']"		>depPageDepartmentAddressInputBox</Locator>
+		<Locator name="二级科室页面-科室特色输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//textarea[@name='department_feature']"		>depPageDepartmentFeatureInputBox</Locator>
+		<Locator name="二级科室页面-科室简介输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//textarea[@name='department_summary']"		>depPageDepartmentSummaryInputBox</Locator>
+		<Locator name="二级科室页面-注意事项输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//textarea[@name='secondDepartmentData']"	>depPageAttentionInputBox</Locator>
+		<Locator name="二级科室页面-保存按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='$ctrl.isAdd']"				>depPageSaveButton</Locator>
+		<Locator name="二级科室页面-修改按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='!$ctrl.isAdd']"			>depPageUpdateButton</Locator>
+		<Locator name="二级科室页面-返回按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'返回')]"				>depPageReturnButton</Locator>
+
+	<Locator name="二级科室管理-序号" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='$index+1']"					index="0"	>depManNumber</Locator>
+	<Locator name="二级科室管理-序号1的二级科室名称" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='second-department-list']/div[4]/ul[2]/li[2]"	>depManFirstDepartmentName</Locator>
+	<Locator name="二级科室管理-序号2的二级科室名称" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='second-department-list']/div[4]/ul[3]/li[2]"	>depManSecondDepartmentName</Locator>
+	<Locator name="二级科室管理-科室地址" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['department_address']"	index="0"	>depManDepartmentAddress</Locator>
+	<Locator name="二级科室管理-科室特色" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['department_feature']"	index="0"	>depManDepartmentFeature</Locator>
+	<Locator name="二级科室管理-科室简介" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['department_summary']"	index="0"	>depManDepartmentSummary</Locator>
+	
+	<Locator name="二级科室管理-上移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="1"			>depManMoveUpButton</Locator>
+    <Locator name="二级科室管理-下移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"			>depManMoveDownButton</Locator>
+	<Locator name="二级科室管理-置顶按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="1"			>depManMoveTopButton</Locator>
+	<Locator name="二级科室管理-隐藏按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-click='$ctrl.changeDepartmentStatus(item)']"		index="0"	>depManHideButton</Locator>
+	
+</Page>

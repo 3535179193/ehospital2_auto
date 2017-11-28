@@ -338,7 +338,7 @@ public class DoctorManagePage extends MainPage{
 		return doctorName;
 	}
 	
-	//医生管理-获取序号为1的医生姓名
+	//医生管理-获取序号为2的医生姓名
 	public String getDocManSecondDoctorName(){
 		String doctorName=getText(docManSecondDoctorName);
 		log.info("医生管理-序号为2的医生姓名："+doctorName);
