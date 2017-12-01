@@ -17,7 +17,7 @@ public class AppraiseItem extends AppraiseItemPage{
 	public String insertAppraiseItem(String appraiseItemName){
 		clickAppraiseManageButton();
 		clickAppManEditButton();
-		clickEdiAppEditAppraiseItemButton();
+		clickAppBoxEditAppraiseItemButton();
 		inputAppIteAppraiseItemNameInputBox(appraiseItemName);
 		clickAppIteAppraiseItemTypeDropBox();
 		clickAppIteSelectTextTypeButton();
@@ -29,7 +29,7 @@ public class AppraiseItem extends AppraiseItemPage{
 	//删除文本评价项
 	public void deleteTextAppraiseItem(){
 		clickAppManEditButton();
-		clickEdiAppEditAppraiseItemButton();
+		clickAppBoxEditAppraiseItemButton();
 		clickAppIteTextDeleteButton();
 		clickAlertDeleteButton();
 		clickAlertCloseButton();
@@ -38,7 +38,7 @@ public class AppraiseItem extends AppraiseItemPage{
 	//从现有评价项中添加文本评价项
 	public String insertFromAppraiseItem(){
 		clickAppManEditButton();
-		clickEdiAppEditAppraiseItemButton();
+		clickAppBoxEditAppraiseItemButton();
 		clickAppIteFromAppraiseAddButton();
 		clickLastPageButton();
 		clickFroAppMoreButton();
@@ -51,7 +51,7 @@ public class AppraiseItem extends AppraiseItemPage{
 	//搜索现有文本评价项
 	public String searchFromAppraiseItem (String appraiseItemName){
 		clickAppManEditButton();
-		clickEdiAppEditAppraiseItemButton();
+		clickAppBoxEditAppraiseItemButton();
 		clickAppIteFromAppraiseAddButton();
 		inputFroAppAppraiseNameInputBox(appraiseItemName);
 		clickFroAppSearchInputButton();

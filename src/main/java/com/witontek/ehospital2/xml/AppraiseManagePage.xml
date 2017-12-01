@@ -5,16 +5,16 @@
 	<Locator name="就医评价管理-搜索按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.searchEvaluation()']"					>appManSearchButton</Locator>
 
 	<Locator name="就医评价管理-新增评价问卷按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.openEvaluationModal(true)']"			>appManAddAppraiseButton</Locator>
-		<Locator name="新增评价问卷-问卷名称输入框"	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='appraise_name']"									>addAppAppraiseNameInputBox</Locator>
-		<Locator name="新增评价问卷-问卷说明输入框"	locatorWay="XPATH"	waitTime="10"	attributeValue="//textarea[@name='appraise_desc']"								>addAppAppraiseDescInputBox</Locator>
-		<Locator name="新增评价问卷-问卷类型下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='appraise_type']"								>addAppAppraiseTypeDropBox</Locator>
-		<Locator name="新增评价问卷-选择问卷类型按钮" locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='appraise_type']/option[2]"						>addAppAppraiseTypeButton</Locator>
-		<Locator name="新增评价问卷-草稿问卷状态按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//label[contains(.,'草稿')]"										>addAppDraftStatusButton</Locator>
-		<Locator name="新增评价问卷-发布问卷状态按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//label[contains(.,'发布')]"										>addAppPostedStatusButton</Locator>
-		<Locator name="新增评价问卷-暂停问卷状态按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//label[contains(.,'暂停')]"										>addAppStopStatusButton</Locator>
-		<Locator name="新增评价问卷-保存按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'保存')]"									>addAppSaveButton</Locator>
-		<Locator name="新增评价问卷-保存后继续添加按钮" locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='$ctrl.isAdd']"								>addAppSaveAndAddButton</Locator>
-		<Locator name="新增评价问卷-取消按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.cancelHandle()']"						>addAppCancleButton</Locator>
+		<Locator name="评价问卷框-问卷名称输入框"	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='appraise_name']"									>appBoxAppraiseNameInputBox</Locator>
+		<Locator name="评价问卷框-问卷说明输入框"	locatorWay="XPATH"	waitTime="10"	attributeValue="//textarea[@name='appraise_desc']"								>appBoxAppraiseDescInputBox</Locator>
+		<Locator name="评价问卷框-问卷类型下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='appraise_type']"								>appBoxAppraiseTypeDropBox</Locator>																																									 
+		<Locator name="评价问卷框-选择问卷类型按钮" locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='appraise_type']/option[2]"						>appBoxAppraiseTypeButton</Locator>
+		<Locator name="评价问卷框-草稿问卷状态按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//label[contains(.,'草稿')]"										>appBoxDraftStatusButton</Locator>
+		<Locator name="评价问卷框-发布问卷状态按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//label[contains(.,'发布')]"										>appBoxPostedStatusButton</Locator>
+		<Locator name="评价问卷框-暂停问卷状态按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//label[contains(.,'暂停')]"										>appBoxStopStatusButton</Locator>
+		<Locator name="评价问卷框-保存按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'保存')]"									>appBoxSaveButton</Locator>
+		<Locator name="评价问卷框-保存后继续添加按钮" locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='$ctrl.isAdd']"								>appBoxSaveAndAddButton</Locator>
+		<Locator name="评价问卷框-取消按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.cancelHandle()']"						>appBoxCancleButton</Locator>
 							
 	<Locator name="就医评价管理-序号" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.evaluationListData']/li[1]"		index="0"	>appManNumber</Locator>
 	<Locator name="就医评价管理-评价问卷名称" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.evaluationListData']/li[2]"		index="0"	>appManAppraiseName</Locator>
@@ -27,18 +27,10 @@
 	<Locator name="就医评价管理-删除按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博医院评价')]/parent::ul/li[9]/div/a[2]"		index="0"	>appManDeleteButton</Locator>
 
 	<Locator name="就医咨询管理-编辑按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博医院评价')]/parent::ul/li[9]/div/a[1]"		index="0"	>appManEditButton</Locator>
-		<Locator name="编辑评价问卷-问卷名称输入框"	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='appraise_name']"						>ediAppAppraiseNameInputBox</Locator>
-		<Locator name="编辑评价问卷-问卷说明输入框"	locatorWay="XPATH"	waitTime="10"	attributeValue="//textarea[@name='appraise_desc']"					>ediAppAppraiseDescInputBox</Locator>
-		<Locator name="编辑评价问卷-问卷类型下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='appraise_type']"					>ediAppAppraiseTypeDropBox</Locator>
-		<Locator name="编辑评价问卷-选择问卷类型按钮" locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='appraise_type']/option[3]"			>ediAppAppraiseTypeButton</Locator>
-		<Locator name="编辑评价问卷-草稿问卷状态按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//label[contains(.,'草稿')]"							>ediAppDraftStatusButton</Locator>
-		<Locator name="编辑评价问卷-发布问卷状态按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//label[contains(.,'发布')]"							>ediAppPostedStatusButton</Locator>
-		<Locator name="编辑评价问卷-暂停问卷状态按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//label[contains(.,'暂停')]"							>ediAppStopStatusButton</Locator>
-		<Locator name="编辑评价问卷-保存按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[contains(.,'保存')]"						>ediAppSaveButton</Locator>
-		<Locator name="编辑评价问卷-编辑评价项按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='!$ctrl.isAdd']"					>ediAppEditAppraiseItemButton</Locator>
-		<Locator name="编辑评价问卷-取消按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.cancelHandle()']"			>ediAppCancleButton</Locator>
-		
-	<!--  <Locator name="就医评价管理-被验证的评价问卷名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]"				>appManAssertAddConsultDepartmentName</Locator>
+		<Locator name="评价问卷框-编辑评价项按钮"	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='!$ctrl.isAdd']"											>appBoxEditAppraiseItemButton</Locator>
+
+<!--		
+	<Locator name="就医评价管理-被验证的评价问卷名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]"				>appManAssertAddConsultDepartmentName</Locator>
 	<Locator name="就医评价管理-被验证的评价问卷名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室(改)')]"			>appManAssertEditConsultDepartmentName</Locator>
-	-->
+-->
 </Page>

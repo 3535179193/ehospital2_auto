@@ -17,12 +17,12 @@ public class AppraiseManage extends AppraiseManagePage{
 	public String insertAppraise(String appraiseName,String appraiseDesc){
 		clickAppraiseManageButton();
 		clickAppManAddAppraiseButton();
-		inputAddAppAppraiseNameInputBox(appraiseName);
-		inputAddAppAppraiseDescInputBox(appraiseDesc);
-		clickAddAppAppraiseTypeDropBox();
-		clickAddAppAppraiseTypeButton();
-		clickAddAppDraftStatusButton();
-		clickAddAppSaveButton();
+		inputAppBoxAppraiseNameInputBox(appraiseName);
+		inputAppBoxAppraiseDescInputBox(appraiseDesc);
+		clickAppBoxAppraiseTypeDropBox();
+		clickAppBoxAppraiseTypeButton();
+		clickAppBoxPostedStatusButton();
+		clickAppBoxSaveButton();
 		clickAlertCloseButton();
 		return getAppManAppraiseName();
 	}
@@ -37,12 +37,12 @@ public class AppraiseManage extends AppraiseManagePage{
 	//就医评价管理-编辑评价问卷
 	public String updateAppraise(String appraiseName,String appraiseDesc){
 		clickAppManEditButton();
-		inputEdiAppAppraiseNameInputBox(appraiseName);
-		inputEdiAppAppraiseDescInputBox(appraiseDesc);
-		clickEdiAppAppraiseTypeDropBox();
-		clickEdiAppAppraiseTypeButton();
-		clickEdiAppPostedStatusButton();
-		clickEdiAppSaveButton();
+		editAppBoxAppraiseNameInputBox(appraiseName);
+		editAppBoxAppraiseDescInputBox(appraiseDesc);
+		clickAppBoxAppraiseTypeDropBox();
+		clickAppBoxAppraiseTypeButton();
+		clickAppBoxPostedStatusButton();
+		clickAppBoxEditAppraiseItemButton();
 		clickAlertCloseButton();
 		return getAppManAppraiseName();
 	}

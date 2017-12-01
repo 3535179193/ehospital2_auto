@@ -20,16 +20,16 @@ public class AppraiseManagePage extends MainPage{
 	
 	//就医评价管理-新增评价问卷按钮
 	protected Locator appManAddAppraiseButton=XmlUtils.readXml("AppraiseManagePage").get("appManAddAppraiseButton");
-		protected Locator addAppAppraiseNameInputBox=XmlUtils.readXml("AppraiseManagePage").get("addAppAppraiseNameInputBox");
-		protected Locator addAppAppraiseDescInputBox=XmlUtils.readXml("AppraiseManagePage").get("addAppAppraiseDescInputBox");
-		protected Locator addAppAppraiseTypeDropBox=XmlUtils.readXml("AppraiseManagePage").get("addAppAppraiseTypeDropBox");
-		protected Locator addAppAppraiseTypeButton=XmlUtils.readXml("AppraiseManagePage").get("addAppAppraiseTypeButton");
-		protected Locator addAppDraftStatusButton=XmlUtils.readXml("AppraiseManagePage").get("addAppDraftStatusButton");
-		protected Locator addAppPostedStatusButton=XmlUtils.readXml("AppraiseManagePage").get("addAppPostedStatusButton");
-		protected Locator addAppStopStatusButton=XmlUtils.readXml("AppraiseManagePage").get("addAppStopStatusButton");
-		protected Locator addAppSaveButton=XmlUtils.readXml("AppraiseManagePage").get("addAppSaveButton");
-		protected Locator addAppSaveAndAddButton=XmlUtils.readXml("AppraiseManagePage").get("addAppSaveAndAddButton");
-		protected Locator addAppCancleButton=XmlUtils.readXml("AppraiseManagePage").get("addAppCancleButton");
+		protected Locator appBoxAppraiseNameInputBox=XmlUtils.readXml("AppraiseManagePage").get("appBoxAppraiseNameInputBox");
+		protected Locator appBoxAppraiseDescInputBox=XmlUtils.readXml("AppraiseManagePage").get("appBoxAppraiseDescInputBox");
+		protected Locator appBoxAppraiseTypeDropBox=XmlUtils.readXml("AppraiseManagePage").get("appBoxAppraiseTypeDropBox");
+		protected Locator appBoxAppraiseTypeButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxAppraiseTypeButton");
+		protected Locator appBoxDraftStatusButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxDraftStatusButton");
+		protected Locator appBoxPostedStatusButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxPostedStatusButton");
+		protected Locator appBoxStopStatusButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxStopStatusButton");
+		protected Locator appBoxSaveButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxSaveButton");
+		protected Locator appBoxSaveAndAddButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxSaveAndAddButton");
+		protected Locator appBoxCancleButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxCancleButton");
 		
 	//就医评价管理-序号
 	protected Locator appManNumber=XmlUtils.readXml("AppraiseManagePage").get("appManNumber");
@@ -44,16 +44,7 @@ public class AppraiseManagePage extends MainPage{
 	
 	//就医咨询管理-编辑按钮
 	protected Locator appManEditButton=XmlUtils.readXml("AppraiseManagePage").get("appManEditButton");
-		protected Locator ediAppAppraiseNameInputBox=XmlUtils.readXml("AppraiseManagePage").get("ediAppAppraiseNameInputBox");	
-		protected Locator ediAppAppraiseDescInputBox=XmlUtils.readXml("AppraiseManagePage").get("ediAppAppraiseDescInputBox");
-		protected Locator ediAppAppraiseTypeDropBox=XmlUtils.readXml("AppraiseManagePage").get("ediAppAppraiseTypeDropBox");
-		protected Locator ediAppAppraiseTypeButton=XmlUtils.readXml("AppraiseManagePage").get("ediAppAppraiseTypeButton");
-		protected Locator ediAppDraftStatusButton=XmlUtils.readXml("AppraiseManagePage").get("ediAppDraftStatusButton");
-		protected Locator ediAppPostedStatusButton=XmlUtils.readXml("AppraiseManagePage").get("ediAppPostedStatusButton");
-		protected Locator ediAppStopStatusButton=XmlUtils.readXml("AppraiseManagePage").get("ediAppStopStatusButton");
-		protected Locator ediAppSaveButton=XmlUtils.readXml("AppraiseManagePage").get("ediAppSaveButton");
-		protected Locator ediAppEditAppraiseItemButton=XmlUtils.readXml("AppraiseManagePage").get("ediAppEditAppraiseItemButton");
-		protected Locator ediAppCancleButton=XmlUtils.readXml("AppraiseManagePage").get("ediAppCancleButton");
+		protected Locator appBoxEditAppraiseItemButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxEditAppraiseItemButton");
 	
 	//被验证的数据
 	protected Locator conManAssertAddConsultDepartmentName=XmlUtils.readXml("AppraiseManagePage").get("conManAssertAddConsultDepartmentName");
@@ -75,54 +66,54 @@ public class AppraiseManagePage extends MainPage{
 		click(appManAddAppraiseButton);
 	}
 	
-	//新增评价问卷-输入问卷名称
-	public void inputAddAppAppraiseNameInputBox(String appraiseName){
-		input(addAppAppraiseNameInputBox, appraiseName);
+	//评价问卷框-输入问卷名称
+	public void inputAppBoxAppraiseNameInputBox(String appraiseName){
+		input(appBoxAppraiseNameInputBox, appraiseName);
 	}
 	
-	//新增评价问卷-输入问卷说明
-	public void inputAddAppAppraiseDescInputBox(String appraiseDesc){
-		input(addAppAppraiseDescInputBox, appraiseDesc);
+	//评价问卷框-输入问卷说明
+	public void inputAppBoxAppraiseDescInputBox(String appraiseDesc){
+		input(appBoxAppraiseDescInputBox, appraiseDesc);
 	}
 	
-	//新增评价问卷-点击问卷类型下拉框
-	public void clickAddAppAppraiseTypeDropBox(){
-		click(addAppAppraiseTypeDropBox);
+	//点击评价问卷框-问卷类型下拉框
+	public void clickAppBoxAppraiseTypeDropBox(){
+		click(appBoxAppraiseTypeDropBox);
 	}
 	
-	//新增评价问卷-选择问卷类型按钮
-	public void clickAddAppAppraiseTypeButton(){
-		click(addAppAppraiseTypeButton);
+	//评价问卷框-选择问卷类型按钮
+	public void clickAppBoxAppraiseTypeButton(){
+		click(appBoxAppraiseTypeButton);
 	}
 	
-	//新增评价问卷-点击问卷状态单选按钮
-	public void clickAddAppDraftStatusButton(){
-		click(addAppDraftStatusButton);
+	//点击评价问卷框-草稿问卷状态按钮
+	public void clickAppBoxDraftStatusButton(){
+		click(appBoxDraftStatusButton);
 	}
 	
-	//新增评价问卷-点击问卷状态单选按钮
-	public void clickAddAppPostedStatusButton(){
-		click(addAppPostedStatusButton);
+	//点击评价问卷框-发布问卷状态按钮
+	public void clickAppBoxPostedStatusButton(){
+		click(appBoxPostedStatusButton);
 	}
 	
-	//新增评价问卷-点击问卷状态单选按钮
-	public void clickAddAppStopStatusButton(){
-		click(addAppStopStatusButton);
+	//点击评价问卷框-暂停问卷状态按钮
+	public void clickAppBoxStopStatusButton(){
+		click(appBoxStopStatusButton);
 	}
 	
-	//新增评价问卷-点击保存按钮
-	public void clickAddAppSaveButton(){
-		click(addAppSaveButton);
+	//点击评价问卷框-保存按钮
+	public void clickAppBoxSaveButton(){
+		click(appBoxSaveButton);
 	}
 	
-	//新增评价问卷-点击保存后继续添加按钮
-	public void clickAddAppSaveAndAddButton(){
-		click(addAppSaveAndAddButton);
+	//点击评价问卷框-保存后继续添加按钮
+	public void clickAppBoxSaveAndAddButton(){
+		click(appBoxSaveAndAddButton);
 	}
 	
-	//新增评价问卷-点击取消按钮
-	public void clickAddAppCancleButton(){
-		click(addAppCancleButton);
+	//点击评价问卷框-取消按钮
+	public void clickAppBoxCancleButton(){
+		click(appBoxCancleButton);
 	}
 	
 	//就医评价管理-获取序号
@@ -191,55 +182,21 @@ public class AppraiseManagePage extends MainPage{
 		click(appManEditButton);
 	}
 	
-	//编辑评价问卷-输入问卷名称
-	public void inputEdiAppAppraiseNameInputBox(String appraiseName){
-		clearAndInput(ediAppAppraiseNameInputBox, appraiseName);
+	//编辑评价问卷框-问卷名称输入框
+	public void editAppBoxAppraiseNameInputBox(String appraiseName){
+		clearAndInput(appBoxAppraiseNameInputBox, appraiseName);
 	}
 	
-	//编辑评价问卷-输入问卷说明
-	public void inputEdiAppAppraiseDescInputBox(String appraiseDesc){
-		clearAndInput(ediAppAppraiseDescInputBox, appraiseDesc);
+	//编辑评价问卷框-问卷说明输入框
+	public void editAppBoxAppraiseDescInputBox(String appraiseDesc){
+		clearAndInput(appBoxAppraiseDescInputBox, appraiseDesc);
 	}
-	
-	//编辑评价问卷-点击问卷类型下拉框
-	public void clickEdiAppAppraiseTypeDropBox(){
-		click(ediAppAppraiseTypeDropBox);
+
+	//点击评价问卷框-编辑评价项按钮
+	public void clickAppBoxEditAppraiseItemButton(){
+		click(appBoxEditAppraiseItemButton);
 	}
-	
-	//编辑评价问卷-选择问卷类型按钮
-	public void clickEdiAppAppraiseTypeButton(){
-		click(ediAppAppraiseTypeButton);
-	}
-	
-	//编辑评价问卷-点击草稿问卷状态按钮
-	public void clickEdiAppDraftStatusButton(){
-		click(ediAppDraftStatusButton);
-	}
-	
-	//编辑评价问卷-点击发布问卷状态按钮
-	public void clickEdiAppPostedStatusButton(){
-		click(ediAppPostedStatusButton);
-	}
-	
-	//编辑评价问卷-点击暂停问卷状态按钮
-	public void clickEdiAppStopStatusButton(){
-		click(ediAppStopStatusButton);
-	}
-	
-	//编辑评价问卷-点击保存按钮
-	public void clickEdiAppSaveButton(){
-		click(ediAppSaveButton);
-	}
-	
-	//编辑评价问卷-点击编辑评价项按钮
-	public void clickEdiAppEditAppraiseItemButton(){
-		click(ediAppEditAppraiseItemButton);
-	}
-	
-	//编辑评价问卷-点击取消按钮
-	public void clickEdiAppCancleButton(){
-		click(ediAppCancleButton);
-	}
+
 	
 //	//就医咨询管理-被验证的新增咨询科室名称
 //	public String getConManAssertAddConsultDepartmentName(){

@@ -20,12 +20,12 @@ public class ConsultManagePage extends MainPage{
 	
 	//就医咨询管理-新增科室咨询按钮
 	protected Locator conManAddDepartmentConsultButton=XmlUtils.readXml("ConsultManagePage").get("conManAddDepartmentConsultButton");
-		protected Locator addConDepartmentNameInputBox=XmlUtils.readXml("ConsultManagePage").get("addConDepartmentNameInputBox");
-		protected Locator addConDepartmentIDInputBox=XmlUtils.readXml("ConsultManagePage").get("addConDepartmentIDInputBox");
-		protected Locator addConPasswordInputBox=XmlUtils.readXml("ConsultManagePage").get("addConPasswordInputBox");
-		protected Locator addConSaveButton=XmlUtils.readXml("ConsultManagePage").get("addConSaveButton");
-		protected Locator addConSaveAndAddButton=XmlUtils.readXml("ConsultManagePage").get("addConSaveAndAddButton");
-		protected Locator addConCancleButton=XmlUtils.readXml("ConsultManagePage").get("addConCancleButton");
+		protected Locator conBoxDepartmentNameInputBox=XmlUtils.readXml("ConsultManagePage").get("conBoxDepartmentNameInputBox");
+		protected Locator conBoxDepartmentIDInputBox=XmlUtils.readXml("ConsultManagePage").get("conBoxDepartmentIDInputBox");
+		protected Locator conBoxPasswordInputBox=XmlUtils.readXml("ConsultManagePage").get("conBoxPasswordInputBox");
+		protected Locator conBoxSaveButton=XmlUtils.readXml("ConsultManagePage").get("conBoxSaveButton");
+		protected Locator conBoxSaveAndAddButton=XmlUtils.readXml("ConsultManagePage").get("conBoxSaveAndAddButton");
+		protected Locator conBoxCancleButton=XmlUtils.readXml("ConsultManagePage").get("conBoxCancleButton");
 		
 	//就医咨询管理-序号
 	protected Locator conManNumber=XmlUtils.readXml("ConsultManagePage").get("conManNumber");
@@ -36,11 +36,6 @@ public class ConsultManagePage extends MainPage{
 	
 	//就医咨询管理-编辑按钮
 	protected Locator conManEditButton=XmlUtils.readXml("ConsultManagePage").get("conManEditButton");
-		protected Locator ediConDepartmentNameInputBox=XmlUtils.readXml("ConsultManagePage").get("ediConDepartmentNameInputBox");
-		protected Locator ediConDepartmentIDInputBox=XmlUtils.readXml("ConsultManagePage").get("ediConDepartmentIDInputBox");
-		protected Locator ediConPasswordInputBox=XmlUtils.readXml("ConsultManagePage").get("ediConPasswordInputBox");
-		protected Locator ediConSaveButton=XmlUtils.readXml("ConsultManagePage").get("ediConSaveButton");
-		protected Locator ediConCancleButton=XmlUtils.readXml("ConsultManagePage").get("ediConCancleButton");
 	
 	//被验证的数据
 	protected Locator conManAssertAddConsultDepartmentName=XmlUtils.readXml("ConsultManagePage").get("conManAssertAddConsultDepartmentName");
@@ -63,33 +58,33 @@ public class ConsultManagePage extends MainPage{
 	}
 	
 	//新增科室咨询-输入科室名称
-	public void inputAddConDepartmentNameInputBox(String departmentName){
-		input(addConDepartmentNameInputBox, departmentName);
+	public void inputConBoxDepartmentNameInputBox(String departmentName){
+		input(conBoxDepartmentNameInputBox, departmentName);
 	}
 	
 	//新增科室咨询-输入医生ID
-	public void inputAddConDepartmentIDInputBox(String departmentID){
-		input(addConDepartmentIDInputBox, departmentID);
+	public void inputConBoxDepartmentIDInputBox(String departmentID){
+		input(conBoxDepartmentIDInputBox, departmentID);
 	}
 	
 	//新增科室咨询-输入咨询密码
-	public void inputAddConPasswordInputBox(String password){
-		input(addConPasswordInputBox, password);
+	public void inputConBoxPasswordInputBox(String password){
+		input(conBoxPasswordInputBox, password);
 	}
 	
 	//新增科室咨询-点击保存按钮
-	public void clickAddConSaveButton(){
-		click(addConSaveButton);
+	public void clickConBoxSaveButton(){
+		click(conBoxSaveButton);
 	}
 	
 	//新增科室咨询-点击保存并继续添加按钮
-	public void clickAddConSaveAndAddButton(){
-		click(addConSaveAndAddButton);
+	public void clickConBoxSaveAndAddButton(){
+		click(conBoxSaveAndAddButton);
 	}
 	
 	//新增科室咨询-点击取消按钮
-	public void clickAddConCancleButton(){
-		click(addConCancleButton);
+	public void clickConBoxCancleButton(){
+		click(conBoxCancleButton);
 	}
 	
 	//就医咨询管理-获取序号
@@ -130,29 +125,19 @@ public class ConsultManagePage extends MainPage{
 		click(conManEditButton);
 	}
 	
-	//编辑科室咨询-输入科室名称
-	public void inputEdiConDepartmentNameInputBox(String departmentName){
-		clearAndInput(ediConDepartmentNameInputBox, departmentName);
+	//科室咨询框-编辑科室名称
+	public void editConBoxDepartmentNameInputBox(String departmentName){
+		clearAndInput(conBoxDepartmentNameInputBox, departmentName);
 	}
 	
-	//编辑科室咨询-输入咨询医生ID
-	public void inputEdiConDepartmentIDInputBox(String departmentID){
-		clearAndInput(ediConDepartmentIDInputBox, departmentID);
+	//编辑科室咨询-编辑咨询医生ID
+	public void editConBoxDepartmentIDInputBox(String departmentID){
+		clearAndInput(conBoxDepartmentIDInputBox, departmentID);
 	}
 	
-	//编辑科室咨询-输入咨询密码
-	public void inputEdiConPasswordInputBox(String password){
-		clearAndInput(ediConPasswordInputBox,password);
-	}
-	
-	//编辑科室咨询-点击保存按钮
-	public void clickEdiConSaveButton(){
-		click(ediConSaveButton);
-	}
-	
-	//编辑科室咨询-点击取消按钮
-	public void clickEdiConCancleButton(){
-		click(ediConCancleButton);
+	//编辑科室咨询-编辑咨询密码
+	public void editConBoxPasswordInputBox(String password){
+		clearAndInput(conBoxPasswordInputBox,password);
 	}
 	
 	//就医咨询管理-被验证的新增咨询科室名称

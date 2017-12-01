@@ -17,10 +17,10 @@ public class ConsultManage extends ConsultManagePage{
 	public String insertConsultDepartment(String departmentName,String departmentID,String password){
 		clickConsultManageButton();
 		clickConManAddDepartmentConsultButton();
-		inputAddConDepartmentNameInputBox(departmentName);
-		inputAddConDepartmentIDInputBox(departmentID);
-		inputAddConPasswordInputBox(password);
-		clickAddConSaveButton();
+		inputConBoxDepartmentNameInputBox(departmentName);
+		inputConBoxDepartmentIDInputBox(departmentID);
+		inputConBoxPasswordInputBox(password);
+		clickConBoxSaveButton();
 		return getConManAssertAddConsultDepartmentName();
 	}
 	
@@ -34,10 +34,10 @@ public class ConsultManage extends ConsultManagePage{
 	//就医咨询管理-编辑咨询科室
 	public String updateConsultDepartment(String departmentName,String departmentID,String password){
 		clickConManEditButton();
-		inputEdiConDepartmentNameInputBox(departmentName);
-		inputEdiConDepartmentIDInputBox(departmentID);
-		inputEdiConPasswordInputBox(password);
-		clickEdiConSaveButton();
+		editConBoxDepartmentNameInputBox(departmentName);
+		editConBoxDepartmentIDInputBox(departmentID);
+		editConBoxPasswordInputBox(password);
+		clickConBoxSaveButton();
 		return getConManAssertEditConsultDepartmentName();
 	}
 	
@@ -53,5 +53,4 @@ public class ConsultManage extends ConsultManagePage{
 			log.errorShot("删除前咨询科室总数:"+beforeDeleteReconds+"，遇删除后咨询科室总数:"+afterDeleteReconds+"相同，删除咨询科室失败", driver);
 		}
 	}
-	
 }

@@ -28,19 +28,19 @@ public class Log {
 	}
 	
 	public void fatal(String content){
-		log.fatal("【fatal】"+clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:#ff0000'>"+"【fatal】"+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.fatal(clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:#ff0000'>"+clazz.getCanonicalName()+":"+content+"</span><br />");
 	}
 	
 	public void error(String content){
-		log.error("【error】"+clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:red'>"+"【error】"+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.error(clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:red'>"+clazz.getCanonicalName()+":"+content+"</span><br />");
 
 	}
 	
 	public void errorShot(String content,WebDriver driver){
-		log.error("【error】"+clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:red'>"+"【error】"+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.error(clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:red'>"+clazz.getCanonicalName()+":"+content+"</span><br />");
 		BrowserUtils browser=new BrowserUtils(driver);
 		String path=browser.screenShot();
 		int width=500;
@@ -50,23 +50,23 @@ public class Log {
 	}
 	
 	public void warn(String content){
-		log.warn("【warn】"+clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:orange'>"+"【warn】"+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.warn(clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:orange'>"+clazz.getCanonicalName()+":"+content+"</span><br />");
 	}
 	
 	public void info(String content){
-		log.info("【info】"+clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:blue'>"+"【info】"+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.info(clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:blue'>"+clazz.getCanonicalName()+":"+content+"</span><br />");
 	}
 	
 	public void debug(String content){
-		log.debug("【debug】"+clazz.getCanonicalName()+":"+content);
-		Reporter.log("【debug】"+clazz.getCanonicalName()+":"+content+"<br />");
+		log.debug(clazz.getCanonicalName()+":"+content);
+		Reporter.log(clazz.getCanonicalName()+":"+content+"<br />");
 	}
 	
 	public void trace(String content){
-		log.trace("【trace】"+clazz.getCanonicalName()+":"+content);
-		Reporter.log("【trace】"+clazz.getCanonicalName()+":"+content+"<br />");
+		log.trace(clazz.getCanonicalName()+":"+content);
+		Reporter.log(clazz.getCanonicalName()+":"+content+"<br />");
 	}
 	
 }
