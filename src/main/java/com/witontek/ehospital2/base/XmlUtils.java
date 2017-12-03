@@ -94,7 +94,7 @@ public class XmlUtils extends BasePage {
 	 * @param DataBaseName
 	 * @return
 	 */
-	public Map<String,Locator> getDataBaseXml(String DataBaseName) {
+	public Map<String,Locator> getDataBaseXml() {
 		SAXReader reader = new SAXReader();
 		Document document = null;
 		try {

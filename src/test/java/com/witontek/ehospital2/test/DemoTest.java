@@ -28,7 +28,7 @@ public class DemoTest {
 	public static void main(String[] args){
 		WebDriver driver = null;
 		XmlUtils xml=new XmlUtils(driver);
-		Locator locator=xml.getDataBaseXml("ali3").get("ehospiatl_test");
+		Locator locator=xml.getDataBaseXml().get("jnyxyfsyyadmin");
 		System.out.println(locator.getDriver());
 		System.out.println(locator.getName());
 		System.out.println(locator.getUrl());
@@ -36,26 +36,25 @@ public class DemoTest {
 		System.out.println(locator.getPassword());
 		
 		
-//	    Connection c = null;
-//	    Statement stmt = null;
-//	    try {
-//				Class.forName(locator.getDriver());
-//				c = DriverManager.getConnection(
-//						locator.getUrl(),locator.getName(), locator.getPassword());
-//				c.setAutoCommit(false);
-//				stmt = c.createStatement();
-//				ResultSet rs = stmt.executeQuery("SELECT *FROM doctors WHERE hospital_id = 'sqsfcyyadmin' and doctor_name='宁璟';");
-//				while (rs.next()) {
-//					String doctor_name = rs.getString("doctor_code");
-//					System.out.println(doctor_name);
-//				}
-//				rs.close();
-//				stmt.close();
-//				c.close();
-//	    } catch ( Exception e ) {
-//	      System.err.println( e.getClass().getName()+": "+ e.getMessage() );
-//	      System.exit(0);
-//	    }
+	    Connection c = null;
+	    Statement stmt = null;
+	    try {
+				Class.forName(locator.getDriver());
+				c = DriverManager.getConnection(locator.getUrl(),locator.getUsername(), locator.getPassword());
+				c.setAutoCommit(false);
+				stmt = c.createStatement();
+				ResultSet rs = stmt.executeQuery("SELECT *FROM doctors WHERE hospital_id = 'sqsfcyyadmin' and doctor_name like '李%';");
+				while (rs.next()) {
+					String doctor_name = rs.getString("doctor_code");
+					System.out.println(doctor_name);
+				}
+				rs.close();
+				stmt.close();
+				c.close();
+	    } catch ( Exception e ) {
+	      System.err.println( e.getClass().getName()+": "+ e.getMessage() );
+	      System.exit(0);
+	    }
 		
 		
 	}
