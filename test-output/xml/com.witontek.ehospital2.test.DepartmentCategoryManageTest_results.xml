@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="22.239">
+           time="10.810">
   <properties />
   
   
-            <testcase name="deleteCategory" time="22.239" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
+            <testcase name="deleteCategory" time="10.810" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
       
 </testsuite>
