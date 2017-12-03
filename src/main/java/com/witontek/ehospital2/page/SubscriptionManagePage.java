@@ -16,60 +16,60 @@ public class SubscriptionManagePage extends MainPage{
 	private Log log=new Log(SubscriptionManagePage.class);
 
 	//预约管理-起始预约日期选择器
-	protected Locator subManSubscriptionStartDateSelector=XmlUtils.readXml("SubscriptionManagePage").get("subManSubscriptionStartDateSelector");
+	protected Locator subManSubscriptionStartDateSelector=XmlUtils.getElementXml("SubscriptionManagePage").get("subManSubscriptionStartDateSelector");
 	
-	protected Locator subManSubscriptionEndDateSelector=XmlUtils.readXml("SubscriptionManagePage").get("subManSubscriptionEndDateSelector");
+	protected Locator subManSubscriptionEndDateSelector=XmlUtils.getElementXml("SubscriptionManagePage").get("subManSubscriptionEndDateSelector");
 	
-	protected Locator subManClinicStartDateSelector=XmlUtils.readXml("SubscriptionManagePage").get("subManClinicStartDateSelector");
+	protected Locator subManClinicStartDateSelector=XmlUtils.getElementXml("SubscriptionManagePage").get("subManClinicStartDateSelector");
 	
-	protected Locator subManClinicEndDateSelector=XmlUtils.readXml("SubscriptionManagePage").get("subManClinicEndDateSelector");
+	protected Locator subManClinicEndDateSelector=XmlUtils.getElementXml("SubscriptionManagePage").get("subManClinicEndDateSelector");
 	
 	//预约管理-科室名称输入框
-	protected Locator subManDepartmentNameInputBox=XmlUtils.readXml("SubscriptionManagePage").get("subManDepartmentNameInputBox");
-	protected Locator subManDoctorNameInputBox=XmlUtils.readXml("SubscriptionManagePage").get("subManDoctorNameInputBox");
-	protected Locator subManPatientNameInputBox=XmlUtils.readXml("SubscriptionManagePage").get("subManPatientNameInputBox");
+	protected Locator subManDepartmentNameInputBox=XmlUtils.getElementXml("SubscriptionManagePage").get("subManDepartmentNameInputBox");
+	protected Locator subManDoctorNameInputBox=XmlUtils.getElementXml("SubscriptionManagePage").get("subManDoctorNameInputBox");
+	protected Locator subManPatientNameInputBox=XmlUtils.getElementXml("SubscriptionManagePage").get("subManPatientNameInputBox");
 	
 	//预约管理-预约状态下拉框
-	protected Locator subManSelectStateDropBox=XmlUtils.readXml("SubscriptionManagePage").get("subManSelectStateDropBox");
-	protected Locator subManWaitRegisterButton=XmlUtils.readXml("SubscriptionManagePage").get("subManWaitRegisterButton");	
-	protected Locator subManWaitClinicButton=XmlUtils.readXml("SubscriptionManagePage").get("subManWaitClinicButton");
-	protected Locator subManAlreadyClinicButton=XmlUtils.readXml("SubscriptionManagePage").get("subManAlreadyClinicButton");
-	protected Locator subManAlreadyCancleButton=XmlUtils.readXml("SubscriptionManagePage").get("subManAlreadyCancleButton");
-	protected Locator subManAlreadyDefaultButton=XmlUtils.readXml("SubscriptionManagePage").get("subManAlreadyDefaultButton");
-	protected Locator subManAlreadyRegisterButton=XmlUtils.readXml("SubscriptionManagePage").get("subManAlreadyRegisterButton");
-	protected Locator subManWaitPayButton=XmlUtils.readXml("SubscriptionManagePage").get("subManWaitPayButton");
-	protected Locator subManAlreadyPayButton=XmlUtils.readXml("SubscriptionManagePage").get("subManAlreadyPayButton");
+	protected Locator subManSelectStateDropBox=XmlUtils.getElementXml("SubscriptionManagePage").get("subManSelectStateDropBox");
+	protected Locator subManWaitRegisterButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subManWaitRegisterButton");	
+	protected Locator subManWaitClinicButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subManWaitClinicButton");
+	protected Locator subManAlreadyClinicButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subManAlreadyClinicButton");
+	protected Locator subManAlreadyCancleButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subManAlreadyCancleButton");
+	protected Locator subManAlreadyDefaultButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subManAlreadyDefaultButton");
+	protected Locator subManAlreadyRegisterButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subManAlreadyRegisterButton");
+	protected Locator subManWaitPayButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subManWaitPayButton");
+	protected Locator subManAlreadyPayButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subManAlreadyPayButton");
 	
 	//预约管理-搜索按钮
-	protected Locator subManSearchButton=XmlUtils.readXml("SubscriptionManagePage").get("subManSearchButton");
-	protected Locator subManExportSearchResultButton=XmlUtils.readXml("SubscriptionManagePage").get("subManExportSearchResultButton");	
-	protected Locator subManExportWorkDaySubscriptionButton=XmlUtils.readXml("SubscriptionManagePage").get("subManExportWorkDaySubscriptionButton");
+	protected Locator subManSearchButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subManSearchButton");
+	protected Locator subManExportSearchResultButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subManExportSearchResultButton");	
+	protected Locator subManExportWorkDaySubscriptionButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subManExportWorkDaySubscriptionButton");
 	
 	//预约管理-序号
-	protected Locator subManNumber=XmlUtils.readXml("SubscriptionManagePage").get("subManNumber");
-	protected Locator subManDepartmentName=XmlUtils.readXml("SubscriptionManagePage").get("subManDepartmentName");
-	protected Locator subManDoctorName=XmlUtils.readXml("SubscriptionManagePage").get("subManDoctorName");	
-	protected Locator subManSubscriptionType=XmlUtils.readXml("SubscriptionManagePage").get("subManSubscriptionType");
-	protected Locator subManPatientName=XmlUtils.readXml("SubscriptionManagePage").get("subManPatientName");
-	protected Locator subManClinicTime=XmlUtils.readXml("SubscriptionManagePage").get("subManClinicTime");
-	protected Locator subManSubscriptionDate=XmlUtils.readXml("SubscriptionManagePage").get("subManSubscriptionDate");	
-	protected Locator subManSubscriptionState=XmlUtils.readXml("SubscriptionManagePage").get("subManSubscriptionState");
+	protected Locator subManNumber=XmlUtils.getElementXml("SubscriptionManagePage").get("subManNumber");
+	protected Locator subManDepartmentName=XmlUtils.getElementXml("SubscriptionManagePage").get("subManDepartmentName");
+	protected Locator subManDoctorName=XmlUtils.getElementXml("SubscriptionManagePage").get("subManDoctorName");	
+	protected Locator subManSubscriptionType=XmlUtils.getElementXml("SubscriptionManagePage").get("subManSubscriptionType");
+	protected Locator subManPatientName=XmlUtils.getElementXml("SubscriptionManagePage").get("subManPatientName");
+	protected Locator subManClinicTime=XmlUtils.getElementXml("SubscriptionManagePage").get("subManClinicTime");
+	protected Locator subManSubscriptionDate=XmlUtils.getElementXml("SubscriptionManagePage").get("subManSubscriptionDate");	
+	protected Locator subManSubscriptionState=XmlUtils.getElementXml("SubscriptionManagePage").get("subManSubscriptionState");
 	
 	//预约管理-查看按钮
-	protected Locator subManView=XmlUtils.readXml("SubscriptionManagePage").get("subManView");
-		protected Locator subInfDepartmentName=XmlUtils.readXml("SubscriptionManagePage").get("subInfDepartmentName");
-		protected Locator subInfSubscriptionType=XmlUtils.readXml("SubscriptionManagePage").get("subInfSubscriptionType");		
-		protected Locator subInfDoctorName=XmlUtils.readXml("SubscriptionManagePage").get("subInfDoctorName");
-		protected Locator subInfPatientName=XmlUtils.readXml("SubscriptionManagePage").get("subInfPatientName");	
-		protected Locator subInfIdCard=XmlUtils.readXml("SubscriptionManagePage").get("subInfIdCard");
-		protected Locator subInfPatientCard=XmlUtils.readXml("SubscriptionManagePage").get("subInfPatientCard");	
-		protected Locator subInfClinicDate=XmlUtils.readXml("SubscriptionManagePage").get("subInfClinicDate");
-		protected Locator subInfSubscriptionID=XmlUtils.readXml("SubscriptionManagePage").get("subInfSubscriptionID");	
-		protected Locator subInfSubscriptionTimePeriod=XmlUtils.readXml("SubscriptionManagePage").get("subInfSubscriptionTimePeriod");
-		protected Locator subInfSubscriptionTime=XmlUtils.readXml("SubscriptionManagePage").get("subInfSubscriptionTime");	
-		protected Locator subInfSubscriptionState=XmlUtils.readXml("SubscriptionManagePage").get("subInfSubscriptionState");
-		protected Locator subInfPhone=XmlUtils.readXml("SubscriptionManagePage").get("subInfPhone");	
-		protected Locator subInfCloseButton=XmlUtils.readXml("SubscriptionManagePage").get("subInfCloseButton");	
+	protected Locator subManView=XmlUtils.getElementXml("SubscriptionManagePage").get("subManView");
+		protected Locator subInfDepartmentName=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfDepartmentName");
+		protected Locator subInfSubscriptionType=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfSubscriptionType");		
+		protected Locator subInfDoctorName=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfDoctorName");
+		protected Locator subInfPatientName=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfPatientName");	
+		protected Locator subInfIdCard=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfIdCard");
+		protected Locator subInfPatientCard=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfPatientCard");	
+		protected Locator subInfClinicDate=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfClinicDate");
+		protected Locator subInfSubscriptionID=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfSubscriptionID");	
+		protected Locator subInfSubscriptionTimePeriod=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfSubscriptionTimePeriod");
+		protected Locator subInfSubscriptionTime=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfSubscriptionTime");	
+		protected Locator subInfSubscriptionState=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfSubscriptionState");
+		protected Locator subInfPhone=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfPhone");	
+		protected Locator subInfCloseButton=XmlUtils.getElementXml("SubscriptionManagePage").get("subInfCloseButton");	
 
 	//点击预约管理-起始预约日期选择器
 	public void clickSubManSubscriptionStartDateSelector(){

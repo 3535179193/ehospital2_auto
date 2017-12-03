@@ -15,31 +15,31 @@ public class ConsultManagePage extends MainPage{
 	private Log log=new Log(ConsultManagePage.class);
 	
 	//就医咨询管理-科室名称输入框
-	protected Locator conManDepartmentNameInputBox=XmlUtils.readXml("ConsultManagePage").get("conManDepartmentNameInputBox");
-	protected Locator conManSearchButton=XmlUtils.readXml("ConsultManagePage").get("conManSearchButton");
+	protected Locator conManDepartmentNameInputBox=XmlUtils.getElementXml("ConsultManagePage").get("conManDepartmentNameInputBox");
+	protected Locator conManSearchButton=XmlUtils.getElementXml("ConsultManagePage").get("conManSearchButton");
 	
 	//就医咨询管理-新增科室咨询按钮
-	protected Locator conManAddDepartmentConsultButton=XmlUtils.readXml("ConsultManagePage").get("conManAddDepartmentConsultButton");
-		protected Locator conBoxDepartmentNameInputBox=XmlUtils.readXml("ConsultManagePage").get("conBoxDepartmentNameInputBox");
-		protected Locator conBoxDepartmentIDInputBox=XmlUtils.readXml("ConsultManagePage").get("conBoxDepartmentIDInputBox");
-		protected Locator conBoxPasswordInputBox=XmlUtils.readXml("ConsultManagePage").get("conBoxPasswordInputBox");
-		protected Locator conBoxSaveButton=XmlUtils.readXml("ConsultManagePage").get("conBoxSaveButton");
-		protected Locator conBoxSaveAndAddButton=XmlUtils.readXml("ConsultManagePage").get("conBoxSaveAndAddButton");
-		protected Locator conBoxCancleButton=XmlUtils.readXml("ConsultManagePage").get("conBoxCancleButton");
+	protected Locator conManAddDepartmentConsultButton=XmlUtils.getElementXml("ConsultManagePage").get("conManAddDepartmentConsultButton");
+		protected Locator conBoxDepartmentNameInputBox=XmlUtils.getElementXml("ConsultManagePage").get("conBoxDepartmentNameInputBox");
+		protected Locator conBoxDepartmentIDInputBox=XmlUtils.getElementXml("ConsultManagePage").get("conBoxDepartmentIDInputBox");
+		protected Locator conBoxPasswordInputBox=XmlUtils.getElementXml("ConsultManagePage").get("conBoxPasswordInputBox");
+		protected Locator conBoxSaveButton=XmlUtils.getElementXml("ConsultManagePage").get("conBoxSaveButton");
+		protected Locator conBoxSaveAndAddButton=XmlUtils.getElementXml("ConsultManagePage").get("conBoxSaveAndAddButton");
+		protected Locator conBoxCancleButton=XmlUtils.getElementXml("ConsultManagePage").get("conBoxCancleButton");
 		
 	//就医咨询管理-序号
-	protected Locator conManNumber=XmlUtils.readXml("ConsultManagePage").get("conManNumber");
-	protected Locator conManDepartmentName=XmlUtils.readXml("ConsultManagePage").get("conManDepartmentName");
-	protected Locator conManDepartmentID=XmlUtils.readXml("ConsultManagePage").get("conManDepartmentID");
-	protected Locator conManPassword=XmlUtils.readXml("ConsultManagePage").get("conManPassword");
-	protected Locator conManDeleteButton=XmlUtils.readXml("ConsultManagePage").get("conManDeleteButton");
+	protected Locator conManNumber=XmlUtils.getElementXml("ConsultManagePage").get("conManNumber");
+	protected Locator conManDepartmentName=XmlUtils.getElementXml("ConsultManagePage").get("conManDepartmentName");
+	protected Locator conManDepartmentID=XmlUtils.getElementXml("ConsultManagePage").get("conManDepartmentID");
+	protected Locator conManPassword=XmlUtils.getElementXml("ConsultManagePage").get("conManPassword");
+	protected Locator conManDeleteButton=XmlUtils.getElementXml("ConsultManagePage").get("conManDeleteButton");
 	
 	//就医咨询管理-编辑按钮
-	protected Locator conManEditButton=XmlUtils.readXml("ConsultManagePage").get("conManEditButton");
+	protected Locator conManEditButton=XmlUtils.getElementXml("ConsultManagePage").get("conManEditButton");
 	
 	//被验证的数据
-	protected Locator conManAssertAddConsultDepartmentName=XmlUtils.readXml("ConsultManagePage").get("conManAssertAddConsultDepartmentName");
-	protected Locator conManAssertEditConsultDepartmentName=XmlUtils.readXml("ConsultManagePage").get("conManAssertEditConsultDepartmentName");
+	protected Locator conManAssertAddConsultDepartmentName=XmlUtils.getElementXml("ConsultManagePage").get("conManAssertAddConsultDepartmentName");
+	protected Locator conManAssertEditConsultDepartmentName=XmlUtils.getElementXml("ConsultManagePage").get("conManAssertEditConsultDepartmentName");
 	
 	
 	//就医咨询管理-输入科室名称

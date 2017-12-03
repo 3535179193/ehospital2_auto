@@ -1,33 +1,67 @@
-//package com.witontek.ehospital2.test;
-//
-//
-//import org.openqa.selenium.By;
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.support.ui.Sleeper;
-//import org.testng.annotations.AfterTest;
-//import org.testng.annotations.BeforeTest;
-//import org.testng.annotations.Test;
-//
-//import com.witontek.ehospital2.base.BrowserUtils;
-//import com.witontek.ehospital2.base.DateUtils;
-//import com.witontek.ehospital2.base.DriverUtils;
-//import com.witontek.ehospital2.base.Global;
-//import com.witontek.ehospital2.base.Log;
-//import com.witontek.ehospital2.page.LoginPage;
-//
-//public class DemoTest {
-//	
-////	public static void main(String[] args){
-////		
-////		Log log=new Log(DemoTest.class);
-////		log.fatal("0");
-////		log.error("1");
-////		log.info("2");
-////		log.warn("3");
-////		log.debug("4");
-////		log.trace("5");
-////	}
-//	
+package com.witontek.ehospital2.test;
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Sleeper;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import org.testng.reporters.XMLUtils;
+
+import com.witontek.ehospital2.base.BrowserUtils;
+import com.witontek.ehospital2.base.DateUtils;
+import com.witontek.ehospital2.base.DriverUtils;
+import com.witontek.ehospital2.base.Global;
+import com.witontek.ehospital2.base.Locator;
+import com.witontek.ehospital2.base.Log;
+import com.witontek.ehospital2.base.XmlUtils;
+import com.witontek.ehospital2.page.LoginPage;
+
+public class DemoTest {
+	
+	public static void main(String[] args){
+		WebDriver driver = null;
+		XmlUtils xml=new XmlUtils(driver);
+		Locator locator=xml.getDataBaseXml("ali3").get("ehospiatl_test");
+		System.out.println(locator.getDriver());
+		System.out.println(locator.getName());
+		System.out.println(locator.getUrl());
+		System.out.println(locator.getUsername());
+		System.out.println(locator.getPassword());
+		
+		
+//	    Connection c = null;
+//	    Statement stmt = null;
+//	    try {
+//				Class.forName(locator.getDriver());
+//				c = DriverManager.getConnection(
+//						locator.getUrl(),locator.getName(), locator.getPassword());
+//				c.setAutoCommit(false);
+//				stmt = c.createStatement();
+//				ResultSet rs = stmt.executeQuery("SELECT *FROM doctors WHERE hospital_id = 'sqsfcyyadmin' and doctor_name='宁璟';");
+//				while (rs.next()) {
+//					String doctor_name = rs.getString("doctor_code");
+//					System.out.println(doctor_name);
+//				}
+//				rs.close();
+//				stmt.close();
+//				c.close();
+//	    } catch ( Exception e ) {
+//	      System.err.println( e.getClass().getName()+": "+ e.getMessage() );
+//	      System.exit(0);
+//	    }
+		
+		
+	}
+	
+	
+	
 //	private WebDriver driver;
 //
 //	@Test
@@ -37,7 +71,7 @@
 //		driver.findElement(By.xpath("//span[contains(.,'业务信息管理')]")).click();
 //		BrowserUtils.sleep(1);
 //		driver.findElement(By.xpath("//li[@class='submenu slide-show']/div[1]/span")).click();
-//		BrowserUtils.sleep(3);
+//		BrowserUtils.sleep(1);
 //		driver.findElement(By.xpath("//div[@class='department-management']/page/div/div[2]/a[4]/parent::div/a[4]")).click();
 //		
 //	
@@ -50,8 +84,8 @@
 //
 //	@AfterTest
 //	public void afterTest() {
-//		BrowserUtils.sleep(5);
+//		BrowserUtils.sleep(3);
 //		BrowserUtils.quit();
 //	}
-//
-//}
+
+}

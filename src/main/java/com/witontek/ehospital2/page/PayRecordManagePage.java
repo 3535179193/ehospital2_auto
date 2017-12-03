@@ -16,51 +16,51 @@ public class PayRecordManagePage extends MainPage{
 	private Log log=new Log(PayRecordManagePage.class);
 
 	//缴费记录管理-订单号输入框
-	protected Locator payManOrderNumberInputBox=XmlUtils.readXml("PayRecordManagePage").get("payManOrderNumberInputBox");
-	protected Locator payManPatientInputBox=XmlUtils.readXml("PayRecordManagePage").get("payManPatientInputBox");
-	protected Locator payManSearchButton=XmlUtils.readXml("PayRecordManagePage").get("payManSearchButton");
-	protected Locator payManExportPayInfoButton=XmlUtils.readXml("PayRecordManagePage").get("payManExportPayInfoButton");
+	protected Locator payManOrderNumberInputBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManOrderNumberInputBox");
+	protected Locator payManPatientInputBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManPatientInputBox");
+	protected Locator payManSearchButton=XmlUtils.getElementXml("PayRecordManagePage").get("payManSearchButton");
+	protected Locator payManExportPayInfoButton=XmlUtils.getElementXml("PayRecordManagePage").get("payManExportPayInfoButton");
 	
 	//缴费记录管理-订单状态-全选多选框
-	protected Locator payManOrderStateAllSelectCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManOrderStateAllSelectCheckBox");
-	protected Locator payManWaitPayCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManWaitPayCheckBox");
-	protected Locator payManAlreadyPayNoInformHisCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManAlreadyPayNoInformHisCheckBox");
-	protected Locator payManAlreadyRefundCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManAlreadyRefundCheckBox");
-	protected Locator payManPayFailCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManPayFailCheckBox");	
-	protected Locator payManIsPayCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManIsPayCheckBox");
-	protected Locator payManAlreadyPayInformHisFailCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManAlreadyPayInformHisFailCheckBox");
-	protected Locator payManAlreadyPayInformHisSuccessCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManAlreadyPayInformHisSuccessCheckBox");
+	protected Locator payManOrderStateAllSelectCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManOrderStateAllSelectCheckBox");
+	protected Locator payManWaitPayCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManWaitPayCheckBox");
+	protected Locator payManAlreadyPayNoInformHisCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManAlreadyPayNoInformHisCheckBox");
+	protected Locator payManAlreadyRefundCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManAlreadyRefundCheckBox");
+	protected Locator payManPayFailCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManPayFailCheckBox");	
+	protected Locator payManIsPayCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManIsPayCheckBox");
+	protected Locator payManAlreadyPayInformHisFailCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManAlreadyPayInformHisFailCheckBox");
+	protected Locator payManAlreadyPayInformHisSuccessCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManAlreadyPayInformHisSuccessCheckBox");
 	
 	//缴费记录管理-支付类型-全选多选框
-	protected Locator payManPayTypeAllSelectCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManPayTypeAllSelectCheckBox");
-	protected Locator payManWeChatCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManWeChatCheckBox");	
-	protected Locator payManAlipayCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManAlipayCheckBox");
-	protected Locator payManMobilePhoneWeChatCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManMobilePhoneWeChatCheckBox");
-	protected Locator payManMobilePhoneAlipayCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManMobilePhoneAlipayCheckBox");
-	protected Locator payManMinipayWeChatCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManMinipayWeChatCheckBox");
-	protected Locator payManMinipayAlipayCheckBox=XmlUtils.readXml("PayRecordManagePage").get("payManMinipayAlipayCheckBox");
+	protected Locator payManPayTypeAllSelectCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManPayTypeAllSelectCheckBox");
+	protected Locator payManWeChatCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManWeChatCheckBox");	
+	protected Locator payManAlipayCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManAlipayCheckBox");
+	protected Locator payManMobilePhoneWeChatCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManMobilePhoneWeChatCheckBox");
+	protected Locator payManMobilePhoneAlipayCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManMobilePhoneAlipayCheckBox");
+	protected Locator payManMinipayWeChatCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManMinipayWeChatCheckBox");
+	protected Locator payManMinipayAlipayCheckBox=XmlUtils.getElementXml("PayRecordManagePage").get("payManMinipayAlipayCheckBox");
 
 	//缴费记录管理-默认列表单选按钮
-	protected Locator payManDefaultListRadioButton=XmlUtils.readXml("PayRecordManagePage").get("payManDefaultListRadioButton");
-	protected Locator payManOrderPayInfoRadioButton=XmlUtils.readXml("PayRecordManagePage").get("payManOrderPayInfoRadioButton");	
-	protected Locator payManTotalAmount=XmlUtils.readXml("PayRecordManagePage").get("payManTotalAmount");
-		protected Locator payManOrderNumer=XmlUtils.readXml("PayRecordManagePage").get("payManOrderNumer");
-		protected Locator payManOrderAmount=XmlUtils.readXml("PayRecordManagePage").get("payManOrderAmount");
-		protected Locator payManOrderState=XmlUtils.readXml("PayRecordManagePage").get("payManOrderState");	
-		protected Locator payManClinicCard=XmlUtils.readXml("PayRecordManagePage").get("payManClinicCard");
-		protected Locator payManClinicNumber=XmlUtils.readXml("PayRecordManagePage").get("payManClinicNumber");
-		protected Locator payManPatientName=XmlUtils.readXml("PayRecordManagePage").get("payManPatientName");
-		protected Locator payManGender=XmlUtils.readXml("PayRecordManagePage").get("payManGender");	
-		protected Locator payManAge=XmlUtils.readXml("PayRecordManagePage").get("payManAge");
-		protected Locator payManIDCard=XmlUtils.readXml("PayRecordManagePage").get("payManIDCard");
-		protected Locator payManClinicDepartment=XmlUtils.readXml("PayRecordManagePage").get("payManClinicDepartment");
-		protected Locator payManPayType=XmlUtils.readXml("PayRecordManagePage").get("payManPayType");
-		protected Locator payManFeeType=XmlUtils.readXml("PayRecordManagePage").get("payManFeeType");	
-		protected Locator payManPayDate=XmlUtils.readXml("PayRecordManagePage").get("payManPayDate");
-		protected Locator payManDetailButton=XmlUtils.readXml("PayRecordManagePage").get("payManDetailButton");
+	protected Locator payManDefaultListRadioButton=XmlUtils.getElementXml("PayRecordManagePage").get("payManDefaultListRadioButton");
+	protected Locator payManOrderPayInfoRadioButton=XmlUtils.getElementXml("PayRecordManagePage").get("payManOrderPayInfoRadioButton");	
+	protected Locator payManTotalAmount=XmlUtils.getElementXml("PayRecordManagePage").get("payManTotalAmount");
+		protected Locator payManOrderNumer=XmlUtils.getElementXml("PayRecordManagePage").get("payManOrderNumer");
+		protected Locator payManOrderAmount=XmlUtils.getElementXml("PayRecordManagePage").get("payManOrderAmount");
+		protected Locator payManOrderState=XmlUtils.getElementXml("PayRecordManagePage").get("payManOrderState");	
+		protected Locator payManClinicCard=XmlUtils.getElementXml("PayRecordManagePage").get("payManClinicCard");
+		protected Locator payManClinicNumber=XmlUtils.getElementXml("PayRecordManagePage").get("payManClinicNumber");
+		protected Locator payManPatientName=XmlUtils.getElementXml("PayRecordManagePage").get("payManPatientName");
+		protected Locator payManGender=XmlUtils.getElementXml("PayRecordManagePage").get("payManGender");	
+		protected Locator payManAge=XmlUtils.getElementXml("PayRecordManagePage").get("payManAge");
+		protected Locator payManIDCard=XmlUtils.getElementXml("PayRecordManagePage").get("payManIDCard");
+		protected Locator payManClinicDepartment=XmlUtils.getElementXml("PayRecordManagePage").get("payManClinicDepartment");
+		protected Locator payManPayType=XmlUtils.getElementXml("PayRecordManagePage").get("payManPayType");
+		protected Locator payManFeeType=XmlUtils.getElementXml("PayRecordManagePage").get("payManFeeType");	
+		protected Locator payManPayDate=XmlUtils.getElementXml("PayRecordManagePage").get("payManPayDate");
+		protected Locator payManDetailButton=XmlUtils.getElementXml("PayRecordManagePage").get("payManDetailButton");
 
 	//缴费记录管理-详情按钮
-	protected Locator payMan=XmlUtils.readXml("PayRecordManagePage").get("payMan");
+	protected Locator payMan=XmlUtils.getElementXml("PayRecordManagePage").get("payMan");
 
 	
 	//缴费记录管理-输入订单号

@@ -15,40 +15,40 @@ public class DepartmentCategoryManagePage extends MainPage{
 	private Log log=new Log(DepartmentCategoryManagePage.class);
 	
 	//科室管理-导入科室信息按钮
-	protected Locator cateManImportDepartmentInfoButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManImportDepartmentInfoButton");
-	protected Locator cateManDownloadDepartmentExcelButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManDownloadDepartmentExcelButton");
-	protected Locator cateManExportDepartmentInfoButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManExportDepartmentInfoButton");
-	protected Locator cateManSynchronousDepartmentHISButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManSynchronousDepartmentHISButton");
+	protected Locator cateManImportDepartmentInfoButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManImportDepartmentInfoButton");
+	protected Locator cateManDownloadDepartmentExcelButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManDownloadDepartmentExcelButton");
+	protected Locator cateManExportDepartmentInfoButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManExportDepartmentInfoButton");
+	protected Locator cateManSynchronousDepartmentHISButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManSynchronousDepartmentHISButton");
 	
 	//科室管理-科室名称输入框
-	protected Locator cateManCategoryNameInputBox=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManCategoryNameInputBox");
-	protected Locator cateManSearchButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManSearchButton");
+	protected Locator cateManCategoryNameInputBox=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManCategoryNameInputBox");
+	protected Locator cateManSearchButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManSearchButton");
 	
 	//科室管理-新增一级科室按钮
-	protected Locator cateManAddCategoryButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManAddCategoryButton");
-	protected Locator cateManEditButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManEditButton");
-		protected Locator catePageCategoryNameInputBox=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageCategoryNameInputBox");
-		protected Locator catePageCategoryCodeInputBox=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageCategoryCodeInputBox");
-		protected Locator catePageCategoryLogoButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageCategoryLogoButton");
-		protected Locator catePageSaveButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageSaveButton");
-		protected Locator catePageUpdateButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageUpdateButton");
-		protected Locator catePageReturnButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("catePageReturnButton");
+	protected Locator cateManAddCategoryButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManAddCategoryButton");
+	protected Locator cateManEditButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManEditButton");
+		protected Locator catePageCategoryNameInputBox=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("catePageCategoryNameInputBox");
+		protected Locator catePageCategoryCodeInputBox=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("catePageCategoryCodeInputBox");
+		protected Locator catePageCategoryLogoButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("catePageCategoryLogoButton");
+		protected Locator catePageSaveButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("catePageSaveButton");
+		protected Locator catePageUpdateButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("catePageUpdateButton");
+		protected Locator catePageReturnButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("catePageReturnButton");
 	
 	//科室管理-序号
-	protected Locator cateManNumber=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManNumber");
-	protected Locator cateManFirstCategoryName=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManFirstCategoryName");
-	protected Locator cateManSecondCategoryName=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManSecondCategoryName");
-	protected Locator cateManContainDepartments=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManContainDepartments");
+	protected Locator cateManNumber=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManNumber");
+	protected Locator cateManFirstCategoryName=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManFirstCategoryName");
+	protected Locator cateManSecondCategoryName=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManSecondCategoryName");
+	protected Locator cateManContainDepartments=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManContainDepartments");
 	
 	//科室管理-删除按钮
-	protected Locator cateManDeleteButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManDeleteButton");
-	protected Locator cateManViewDepartmentButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManViewDepartmentButton");
-	protected Locator cateManMoveUpButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManMoveUpButton");
-	protected Locator cateManMoveDownButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManMoveDownButton");
-	protected Locator cateManMoveTopButton=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManMoveTopButton");
+	protected Locator cateManDeleteButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManDeleteButton");
+	protected Locator cateManViewDepartmentButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManViewDepartmentButton");
+	protected Locator cateManMoveUpButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManMoveUpButton");
+	protected Locator cateManMoveDownButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManMoveDownButton");
+	protected Locator cateManMoveTopButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManMoveTopButton");
 	
 	//新增的一级科室名称
-	protected Locator cateManAddedCategoryName=XmlUtils.readXml("DepartmentCategoryManagePage").get("cateManAddedCategoryName");
+	protected Locator cateManAddedCategoryName=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManAddedCategoryName");
 	
 	//点击科室管理-导入科室信息按钮
 	public void clickCateManImportDepartmentInfoButton(){

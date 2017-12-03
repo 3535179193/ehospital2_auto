@@ -16,10 +16,10 @@ public class LoginPage extends BasePage{
 	
 	private Log log=new Log(LoginPage.class);
 	
-	protected Locator userNameInputBox=XmlUtils.readXml("LoginPage").get("userNameInputBox");
-	protected Locator passwordInputBox=XmlUtils.readXml("LoginPage").get("passwordInputBox");
-	protected Locator validationInputBox=XmlUtils.readXml("LoginPage").get("validationInputBox");
-	protected Locator loginButton=XmlUtils.readXml("LoginPage").get("loginButton");
+	protected Locator userNameInputBox=XmlUtils.getElementXml("LoginPage").get("userNameInputBox");
+	protected Locator passwordInputBox=XmlUtils.getElementXml("LoginPage").get("passwordInputBox");
+	protected Locator validationInputBox=XmlUtils.getElementXml("LoginPage").get("validationInputBox");
+	protected Locator loginButton=XmlUtils.getElementXml("LoginPage").get("loginButton");
 	
 	public void login(String userName,String password,String validation){
 		getUrl(Global.NEW_LOGIN_URL);

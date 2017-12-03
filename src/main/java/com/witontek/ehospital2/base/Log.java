@@ -28,19 +28,19 @@ public class Log {
 	}
 	
 	public void fatal(String content){
-		log.fatal(clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:#ff0000'>"+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.fatal(DateUtils.getSystemTime()+" [FATAL] "+clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:#ff0000'>"+DateUtils.getSystemTime()+" [FATAL] "+clazz.getCanonicalName()+":"+content+"</span><br />");
 	}
 	
 	public void error(String content){
-		log.error(clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:red'>"+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.error(DateUtils.getSystemTime()+" [ERROR] "+clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:red'>"+DateUtils.getSystemTime()+" [ERROR] "+clazz.getCanonicalName()+":"+content+"</span><br />");
 
 	}
 	
 	public void errorShot(String content,WebDriver driver){
-		log.error(clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:red'>"+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.error(DateUtils.getSystemTime()+" [ERROR] "+clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:red'>"+DateUtils.getSystemTime()+" [ERROR] "+clazz.getCanonicalName()+":"+content+"</span><br />");
 		BrowserUtils browser=new BrowserUtils(driver);
 		String path=browser.screenShot();
 		int width=500;
@@ -50,23 +50,23 @@ public class Log {
 	}
 	
 	public void warn(String content){
-		log.warn(clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:orange'>"+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.warn(DateUtils.getSystemTime()+" [WARN] "+clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:orange'>"+DateUtils.getSystemTime()+" [WARN] "+clazz.getCanonicalName()+":"+content+"</span><br />");
 	}
 	
 	public void info(String content){
-		log.info(clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:blue'>"+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.info(DateUtils.getSystemTime()+" [INFO] "+clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:blue'>"+DateUtils.getSystemTime()+" [INFO] "+clazz.getCanonicalName()+":"+content+"</span><br />");
 	}
 	
 	public void debug(String content){
-		log.debug(clazz.getCanonicalName()+":"+content);
-		Reporter.log(clazz.getCanonicalName()+":"+content+"<br />");
+		log.debug(DateUtils.getSystemTime()+" [DEBUG] "+clazz.getCanonicalName()+":"+content);
+		Reporter.log(DateUtils.getSystemTime()+" [DEBUG] "+clazz.getCanonicalName()+":"+content+"<br />");
 	}
 	
 	public void trace(String content){
-		log.trace(clazz.getCanonicalName()+":"+content);
-		Reporter.log(clazz.getCanonicalName()+":"+content+"<br />");
+		log.trace(DateUtils.getSystemTime()+" [TRACE] "+clazz.getCanonicalName()+":"+content);
+		Reporter.log(DateUtils.getSystemTime()+" [TRACE] "+clazz.getCanonicalName()+":"+content+"<br />");
 	}
 	
 }

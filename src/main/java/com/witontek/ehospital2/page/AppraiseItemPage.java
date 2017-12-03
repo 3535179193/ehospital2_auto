@@ -15,34 +15,34 @@ public class AppraiseItemPage extends AppraiseManagePage{
 	private Log log=new Log(AppraiseItemPage.class);
 	
 	//新增评价项-评价项名称输入框
-	protected Locator appIteAppraiseItemNameInputBox=XmlUtils.readXml("AppraiseItemPage").get("appIteAppraiseItemNameInputBox");
-	protected Locator appIteAppraiseItemTypeDropBox=XmlUtils.readXml("AppraiseItemPage").get("appIteAppraiseItemTypeDropBox");
-	protected Locator appIteSelectTextTypeButton=XmlUtils.readXml("AppraiseItemPage").get("appIteSelectTextTypeButton");
-	protected Locator appIteSelectStarTypeButton=XmlUtils.readXml("AppraiseItemPage").get("appIteSelectStarTypeButton");
-	protected Locator appIteSaveButton=XmlUtils.readXml("AppraiseItemPage").get("appIteSaveButton");
-	protected Locator appIteCancleButton=XmlUtils.readXml("AppraiseItemPage").get("appIteCancleButton");
+	protected Locator appIteAppraiseItemNameInputBox=XmlUtils.getElementXml("AppraiseItemPage").get("appIteAppraiseItemNameInputBox");
+	protected Locator appIteAppraiseItemTypeDropBox=XmlUtils.getElementXml("AppraiseItemPage").get("appIteAppraiseItemTypeDropBox");
+	protected Locator appIteSelectTextTypeButton=XmlUtils.getElementXml("AppraiseItemPage").get("appIteSelectTextTypeButton");
+	protected Locator appIteSelectStarTypeButton=XmlUtils.getElementXml("AppraiseItemPage").get("appIteSelectStarTypeButton");
+	protected Locator appIteSaveButton=XmlUtils.getElementXml("AppraiseItemPage").get("appIteSaveButton");
+	protected Locator appIteCancleButton=XmlUtils.getElementXml("AppraiseItemPage").get("appIteCancleButton");
 	
 	//就医评价管理-新增评价问卷按钮
-	protected Locator appIteFromAppraiseAddButton=XmlUtils.readXml("AppraiseItemPage").get("appIteFromAppraiseAddButton");
-		protected Locator froAppAppraiseNameInputBox=XmlUtils.readXml("AppraiseItemPage").get("froAppAppraiseNameInputBox");
-		protected Locator froAppSearchInputButton=XmlUtils.readXml("AppraiseItemPage").get("froAppSearchInputButton");
-		protected Locator froAppMoreButton=XmlUtils.readXml("AppraiseItemPage").get("froAppMoreButton");
-		protected Locator froAppAppraiseItemName=XmlUtils.readXml("AppraiseItemPage").get("froAppAppraiseItemName");
-		protected Locator froAppAppraiseItemType=XmlUtils.readXml("AppraiseItemPage").get("froAppAppraiseItemType");
-		protected Locator froAppAddButton=XmlUtils.readXml("AppraiseItemPage").get("froAppAddButton");
-		protected Locator froAppCloseButton=XmlUtils.readXml("AppraiseItemPage").get("addAppStopStatusButton");
+	protected Locator appIteFromAppraiseAddButton=XmlUtils.getElementXml("AppraiseItemPage").get("appIteFromAppraiseAddButton");
+		protected Locator froAppAppraiseNameInputBox=XmlUtils.getElementXml("AppraiseItemPage").get("froAppAppraiseNameInputBox");
+		protected Locator froAppSearchInputButton=XmlUtils.getElementXml("AppraiseItemPage").get("froAppSearchInputButton");
+		protected Locator froAppMoreButton=XmlUtils.getElementXml("AppraiseItemPage").get("froAppMoreButton");
+		protected Locator froAppAppraiseItemName=XmlUtils.getElementXml("AppraiseItemPage").get("froAppAppraiseItemName");
+		protected Locator froAppAppraiseItemType=XmlUtils.getElementXml("AppraiseItemPage").get("froAppAppraiseItemType");
+		protected Locator froAppAddButton=XmlUtils.getElementXml("AppraiseItemPage").get("froAppAddButton");
+		protected Locator froAppCloseButton=XmlUtils.getElementXml("AppraiseItemPage").get("addAppStopStatusButton");
 		
 	//已添加星级评价项-序号
-	protected Locator appIteStarNumber=XmlUtils.readXml("AppraiseItemPage").get("appIteStarNumber");
-	protected Locator appIteStarName=XmlUtils.readXml("AppraiseItemPage").get("appIteStarName");
-	protected Locator appIteStarType=XmlUtils.readXml("AppraiseItemPage").get("appIteStarType");
-	protected Locator appIteStarDeleteButton=XmlUtils.readXml("AppraiseItemPage").get("appIteStarDeleteButton");
+	protected Locator appIteStarNumber=XmlUtils.getElementXml("AppraiseItemPage").get("appIteStarNumber");
+	protected Locator appIteStarName=XmlUtils.getElementXml("AppraiseItemPage").get("appIteStarName");
+	protected Locator appIteStarType=XmlUtils.getElementXml("AppraiseItemPage").get("appIteStarType");
+	protected Locator appIteStarDeleteButton=XmlUtils.getElementXml("AppraiseItemPage").get("appIteStarDeleteButton");
 	
 	//已添加文本评价项-序号
-	protected Locator appIteTextNumber=XmlUtils.readXml("AppraiseItemPage").get("appIteTextNumber");
-	protected Locator appIteTextName=XmlUtils.readXml("AppraiseItemPage").get("appIteTextName");
-	protected Locator appIteTextType=XmlUtils.readXml("AppraiseItemPage").get("appIteTextType");
-	protected Locator appIteTextDeleteButton=XmlUtils.readXml("AppraiseItemPage").get("appIteTextDeleteButton");
+	protected Locator appIteTextNumber=XmlUtils.getElementXml("AppraiseItemPage").get("appIteTextNumber");
+	protected Locator appIteTextName=XmlUtils.getElementXml("AppraiseItemPage").get("appIteTextName");
+	protected Locator appIteTextType=XmlUtils.getElementXml("AppraiseItemPage").get("appIteTextType");
+	protected Locator appIteTextDeleteButton=XmlUtils.getElementXml("AppraiseItemPage").get("appIteTextDeleteButton");
 
 
 	//新增评价项-输入评价项名称

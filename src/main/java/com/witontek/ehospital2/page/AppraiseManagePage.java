@@ -15,40 +15,40 @@ public class AppraiseManagePage extends MainPage{
 	private Log log=new Log(AppraiseManagePage.class);
 	
 	//就医评价管理-问卷名称输入框
-	protected Locator appManAppraiseNameInputBox=XmlUtils.readXml("AppraiseManagePage").get("appManAppraiseNameInputBox");
-	protected Locator appManSearchButton=XmlUtils.readXml("AppraiseManagePage").get("appManSearchButton");
+	protected Locator appManAppraiseNameInputBox=XmlUtils.getElementXml("AppraiseManagePage").get("appManAppraiseNameInputBox");
+	protected Locator appManSearchButton=XmlUtils.getElementXml("AppraiseManagePage").get("appManSearchButton");
 	
 	//就医评价管理-新增评价问卷按钮
-	protected Locator appManAddAppraiseButton=XmlUtils.readXml("AppraiseManagePage").get("appManAddAppraiseButton");
-		protected Locator appBoxAppraiseNameInputBox=XmlUtils.readXml("AppraiseManagePage").get("appBoxAppraiseNameInputBox");
-		protected Locator appBoxAppraiseDescInputBox=XmlUtils.readXml("AppraiseManagePage").get("appBoxAppraiseDescInputBox");
-		protected Locator appBoxAppraiseTypeDropBox=XmlUtils.readXml("AppraiseManagePage").get("appBoxAppraiseTypeDropBox");
-		protected Locator appBoxAppraiseTypeButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxAppraiseTypeButton");
-		protected Locator appBoxDraftStatusButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxDraftStatusButton");
-		protected Locator appBoxPostedStatusButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxPostedStatusButton");
-		protected Locator appBoxStopStatusButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxStopStatusButton");
-		protected Locator appBoxSaveButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxSaveButton");
-		protected Locator appBoxSaveAndAddButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxSaveAndAddButton");
-		protected Locator appBoxCancleButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxCancleButton");
+	protected Locator appManAddAppraiseButton=XmlUtils.getElementXml("AppraiseManagePage").get("appManAddAppraiseButton");
+		protected Locator appBoxAppraiseNameInputBox=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxAppraiseNameInputBox");
+		protected Locator appBoxAppraiseDescInputBox=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxAppraiseDescInputBox");
+		protected Locator appBoxAppraiseTypeDropBox=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxAppraiseTypeDropBox");
+		protected Locator appBoxAppraiseTypeButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxAppraiseTypeButton");
+		protected Locator appBoxDraftStatusButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxDraftStatusButton");
+		protected Locator appBoxPostedStatusButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxPostedStatusButton");
+		protected Locator appBoxStopStatusButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxStopStatusButton");
+		protected Locator appBoxSaveButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxSaveButton");
+		protected Locator appBoxSaveAndAddButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxSaveAndAddButton");
+		protected Locator appBoxCancleButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxCancleButton");
 		
 	//就医评价管理-序号
-	protected Locator appManNumber=XmlUtils.readXml("AppraiseManagePage").get("appManNumber");
-	protected Locator appManAppraiseName=XmlUtils.readXml("AppraiseManagePage").get("appManAppraiseName");
-	protected Locator appManAppraiseType=XmlUtils.readXml("AppraiseManagePage").get("appManAppraiseType");
-	protected Locator appManAuthor=XmlUtils.readXml("AppraiseManagePage").get("appManAuthor");
-	protected Locator appManCreateDate=XmlUtils.readXml("AppraiseManagePage").get("appManCreateDate");
-	protected Locator appManUpdateDate=XmlUtils.readXml("AppraiseManagePage").get("appManUpdateDate");
-	protected Locator appManStatus=XmlUtils.readXml("AppraiseManagePage").get("appManStatus");
-	protected Locator appManFillNumber=XmlUtils.readXml("AppraiseManagePage").get("appManFillNumber");
-	protected Locator appManDeleteButton=XmlUtils.readXml("AppraiseManagePage").get("appManDeleteButton");
+	protected Locator appManNumber=XmlUtils.getElementXml("AppraiseManagePage").get("appManNumber");
+	protected Locator appManAppraiseName=XmlUtils.getElementXml("AppraiseManagePage").get("appManAppraiseName");
+	protected Locator appManAppraiseType=XmlUtils.getElementXml("AppraiseManagePage").get("appManAppraiseType");
+	protected Locator appManAuthor=XmlUtils.getElementXml("AppraiseManagePage").get("appManAuthor");
+	protected Locator appManCreateDate=XmlUtils.getElementXml("AppraiseManagePage").get("appManCreateDate");
+	protected Locator appManUpdateDate=XmlUtils.getElementXml("AppraiseManagePage").get("appManUpdateDate");
+	protected Locator appManStatus=XmlUtils.getElementXml("AppraiseManagePage").get("appManStatus");
+	protected Locator appManFillNumber=XmlUtils.getElementXml("AppraiseManagePage").get("appManFillNumber");
+	protected Locator appManDeleteButton=XmlUtils.getElementXml("AppraiseManagePage").get("appManDeleteButton");
 	
 	//就医咨询管理-编辑按钮
-	protected Locator appManEditButton=XmlUtils.readXml("AppraiseManagePage").get("appManEditButton");
-		protected Locator appBoxEditAppraiseItemButton=XmlUtils.readXml("AppraiseManagePage").get("appBoxEditAppraiseItemButton");
+	protected Locator appManEditButton=XmlUtils.getElementXml("AppraiseManagePage").get("appManEditButton");
+		protected Locator appBoxEditAppraiseItemButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxEditAppraiseItemButton");
 	
 	//被验证的数据
-	protected Locator conManAssertAddConsultDepartmentName=XmlUtils.readXml("AppraiseManagePage").get("conManAssertAddConsultDepartmentName");
-	protected Locator conManAssertEditConsultDepartmentName=XmlUtils.readXml("AppraiseManagePage").get("conManAssertEditConsultDepartmentName");
+	protected Locator conManAssertAddConsultDepartmentName=XmlUtils.getElementXml("AppraiseManagePage").get("conManAssertAddConsultDepartmentName");
+	protected Locator conManAssertEditConsultDepartmentName=XmlUtils.getElementXml("AppraiseManagePage").get("conManAssertEditConsultDepartmentName");
 	
 	
 	//就医评价管理-输入问卷名称

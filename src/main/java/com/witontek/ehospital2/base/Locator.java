@@ -12,6 +12,11 @@ public class Locator {
 	private String attributeValue;
 	private int index;
 	
+	private String driver;
+	private String url;
+	private String username;
+	private String password;
+	
 	public Locator(String name,LocatorWays locatorWay,int waitTime,String attributeValue){
 		this.name=name;
 		this.locatorWay=locatorWay;
@@ -25,6 +30,14 @@ public class Locator {
 		this.waitTime=waitTime;
 		this.attributeValue=attributeValue;
 		this.index=index;
+	}
+	
+	public Locator(String name,String driver,String url,String username,String password){
+		this.name=name;
+		this.driver=driver;
+		this.url=url;
+		this.username=username;
+		this.password=password;
 	}
 	
 	public String getName(){
@@ -46,5 +59,22 @@ public class Locator {
 	public int getIndex(){
 		return index;
 	}
-
+	
+	public String getDriver(){
+		return driver;
+	}
+	
+	public String getUrl(){
+		return url;
+	}
+	
+	public String getUsername(){
+		return username;
+	}
+	
+	public String getPassword(){
+		return password;
+	}
+	
+	
 }

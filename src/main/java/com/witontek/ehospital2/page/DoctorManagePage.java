@@ -16,84 +16,84 @@ public class DoctorManagePage extends MainPage{
 	private Log log=new Log(DoctorManagePage.class);
 
 	/*** 医生管理-导入医生信息按钮 */
-	protected Locator docManImportDoctorInfoButton=XmlUtils.readXml("DoctorManagePage").get("docManImportDoctorInfoButton");
-	protected Locator docManDownloadDoctorExcelButton=XmlUtils.readXml("DoctorManagePage").get("docManDownloadDoctorExcelButton");
-	protected Locator docManExportDoctorInfoButton=XmlUtils.readXml("DoctorManagePage").get("docManExportDoctorInfoButton");
-	protected Locator docManSynchronousDoctorHISButton=XmlUtils.readXml("DoctorManagePage").get("docManSynchronousDoctorHISButton");
+	protected Locator docManImportDoctorInfoButton=XmlUtils.getElementXml("DoctorManagePage").get("docManImportDoctorInfoButton");
+	protected Locator docManDownloadDoctorExcelButton=XmlUtils.getElementXml("DoctorManagePage").get("docManDownloadDoctorExcelButton");
+	protected Locator docManExportDoctorInfoButton=XmlUtils.getElementXml("DoctorManagePage").get("docManExportDoctorInfoButton");
+	protected Locator docManSynchronousDoctorHISButton=XmlUtils.getElementXml("DoctorManagePage").get("docManSynchronousDoctorHISButton");
 	
 	/*** 医生管理-医生名称输入框 */
-	protected Locator docManDoctorNameInputBox=XmlUtils.readXml("DoctorManagePage").get("docManDoctorNameInputBox");
-	protected Locator docManSearchDoctorNameButton=XmlUtils.readXml("DoctorManagePage").get("docManSearchDoctorNameButton");
+	protected Locator docManDoctorNameInputBox=XmlUtils.getElementXml("DoctorManagePage").get("docManDoctorNameInputBox");
+	protected Locator docManSearchDoctorNameButton=XmlUtils.getElementXml("DoctorManagePage").get("docManSearchDoctorNameButton");
 
 	/*** 医生管理-新增医生信息按钮 */
-	protected Locator docManAddDoctorButton=XmlUtils.readXml("DoctorManagePage").get("docManAddDoctorButton");
-		protected Locator addDocDoctorCodeInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocDoctorCodeInputBox");	
-		protected Locator addDocDoctorNameInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocDoctorNameInputBox");
-		protected Locator addDocSelectWorkJobDropBox=XmlUtils.readXml("DoctorManagePage").get("addDocSelectWorkJobDropBox");
-		protected Locator addDocSelectWorkJobButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectWorkJobButton");
-		protected Locator addDocPhoneInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocPhoneInputBox");
+	protected Locator docManAddDoctorButton=XmlUtils.getElementXml("DoctorManagePage").get("docManAddDoctorButton");
+		protected Locator addDocDoctorCodeInputBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocDoctorCodeInputBox");	
+		protected Locator addDocDoctorNameInputBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocDoctorNameInputBox");
+		protected Locator addDocSelectWorkJobDropBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectWorkJobDropBox");
+		protected Locator addDocSelectWorkJobButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectWorkJobButton");
+		protected Locator addDocPhoneInputBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocPhoneInputBox");
 		
 		/*** 新增医生-选定右移所属科室 */
-		protected Locator addDocSelectRightBelongDepartment=XmlUtils.readXml("DoctorManagePage").get("addDocSelectRightBelongDepartment");
-		protected Locator addDocBelongDepartmentRightButton=XmlUtils.readXml("DoctorManagePage").get("addDocBelongDepartmentRightButton");
-		protected Locator addDocSelectLeftBelongDepartment=XmlUtils.readXml("DoctorManagePage").get("addDocSelectLeftBelongDepartment");
-		protected Locator addDocBelongDepartmentLeftButton=XmlUtils.readXml("DoctorManagePage").get("addDocBelongDepartmentLeftButton");	
+		protected Locator addDocSelectRightBelongDepartment=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectRightBelongDepartment");
+		protected Locator addDocBelongDepartmentRightButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocBelongDepartmentRightButton");
+		protected Locator addDocSelectLeftBelongDepartment=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectLeftBelongDepartment");
+		protected Locator addDocBelongDepartmentLeftButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocBelongDepartmentLeftButton");	
 		
 		/*** 新增医生-短号输入框 */
-		protected Locator addDocShortNumInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocShortNumInputBox");
-		protected Locator addDocSelectHeadPhotoButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectHeadPhotoButton");
-		protected Locator addDocSelectGenderDropBox=XmlUtils.readXml("DoctorManagePage").get("addDocSelectGenderDropBox");
-		protected Locator addDocSelectGenderButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectGenderButton");	
+		protected Locator addDocShortNumInputBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocShortNumInputBox");
+		protected Locator addDocSelectHeadPhotoButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectHeadPhotoButton");
+		protected Locator addDocSelectGenderDropBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectGenderDropBox");
+		protected Locator addDocSelectGenderButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectGenderButton");	
 		
 		/*** 新增医生-出生年月选择器 */
-		protected Locator addDocBirthSelector=XmlUtils.readXml("DoctorManagePage").get("addDocBirthSelector");
-		protected Locator addDocSelectBirthYearButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectBirthYearButton");
-		protected Locator addDocSelectBirthMonthButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectBirthMonthButton");
-		protected Locator addDocSelectBirthDateButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectBirthDateButton");
+		protected Locator addDocBirthSelector=XmlUtils.getElementXml("DoctorManagePage").get("addDocBirthSelector");
+		protected Locator addDocSelectBirthYearButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectBirthYearButton");
+		protected Locator addDocSelectBirthMonthButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectBirthMonthButton");
+		protected Locator addDocSelectBirthDateButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectBirthDateButton");
 		
 		/*** 新增医生-选择职称下拉框 */
-		protected Locator addDocSelectTechnicalTitleDropBox=XmlUtils.readXml("DoctorManagePage").get("addDocSelectTechnicalTitleDropBox");		
-		protected Locator addDocSelectTechnicalTitleBUTTON=XmlUtils.readXml("DoctorManagePage").get("addDocSelectTechnicalTitleBUTTON");
-		protected Locator addDocSelectPositionDropBox=XmlUtils.readXml("DoctorManagePage").get("addDocSelectPositionDropBox");
-		protected Locator addDocSelectPositionButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectPositionButton");
-		protected Locator addDocSchoolNameInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocSchoolNameInputBox");	
+		protected Locator addDocSelectTechnicalTitleDropBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectTechnicalTitleDropBox");		
+		protected Locator addDocSelectTechnicalTitleBUTTON=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectTechnicalTitleBUTTON");
+		protected Locator addDocSelectPositionDropBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectPositionDropBox");
+		protected Locator addDocSelectPositionButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectPositionButton");
+		protected Locator addDocSchoolNameInputBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocSchoolNameInputBox");	
 		
 		/*** 新增医生-进入本院时间选择器 */
-		protected Locator addDocEnterHospitalTimeSelector=XmlUtils.readXml("DoctorManagePage").get("addDocEnterHospitalTimeSelector");
-		protected Locator addDocSelectEnterHospitalYearButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectEnterHospitalYearButton");	
-		protected Locator addDocSelectEnterHospitalMonthButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectEnterHospitalMonthButton");
-		protected Locator addDocSelectEnterHospitalDateButton=XmlUtils.readXml("DoctorManagePage").get("addDocSelectEnterHospitalDateButton");
+		protected Locator addDocEnterHospitalTimeSelector=XmlUtils.getElementXml("DoctorManagePage").get("addDocEnterHospitalTimeSelector");
+		protected Locator addDocSelectEnterHospitalYearButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectEnterHospitalYearButton");	
+		protected Locator addDocSelectEnterHospitalMonthButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectEnterHospitalMonthButton");
+		protected Locator addDocSelectEnterHospitalDateButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocSelectEnterHospitalDateButton");
 		
 		/*** 新增医生-医生简介输入框 */
-		protected Locator addDocDoctorSummaryInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocDoctorSummaryInputBox");
-		protected Locator addDocDoctorSpecialtyInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocDoctorSpecialtyInputBox");		
-		protected Locator addDocAcademicTitleDropBox=XmlUtils.readXml("DoctorManagePage").get("addDocAcademicTitleDropBox");
-		protected Locator addDocAcademicTitleButton=XmlUtils.readXml("DoctorManagePage").get("addDocAcademicTitleButton");
-		protected Locator addDocEmailInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocEmailInputBox");
-		protected Locator addDocMedicalLicenseInputBox=XmlUtils.readXml("DoctorManagePage").get("addDocMedicalLicenseInputBox");	
-		protected Locator addDocHospitalTitleDropBox=XmlUtils.readXml("DoctorManagePage").get("addDocHospitalTitleDropBox");		
-		protected Locator addDocHospitalTitleButton=XmlUtils.readXml("DoctorManagePage").get("addDocHospitalTitleButton");
-		protected Locator addDocSaveButton=XmlUtils.readXml("DoctorManagePage").get("addDocSaveButton");
-		protected Locator addDocRetuenButton=XmlUtils.readXml("DoctorManagePage").get("addDocRetuenButton");
+		protected Locator addDocDoctorSummaryInputBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocDoctorSummaryInputBox");
+		protected Locator addDocDoctorSpecialtyInputBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocDoctorSpecialtyInputBox");		
+		protected Locator addDocAcademicTitleDropBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocAcademicTitleDropBox");
+		protected Locator addDocAcademicTitleButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocAcademicTitleButton");
+		protected Locator addDocEmailInputBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocEmailInputBox");
+		protected Locator addDocMedicalLicenseInputBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocMedicalLicenseInputBox");	
+		protected Locator addDocHospitalTitleDropBox=XmlUtils.getElementXml("DoctorManagePage").get("addDocHospitalTitleDropBox");		
+		protected Locator addDocHospitalTitleButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocHospitalTitleButton");
+		protected Locator addDocSaveButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocSaveButton");
+		protected Locator addDocRetuenButton=XmlUtils.getElementXml("DoctorManagePage").get("addDocRetuenButton");
 	
 	/*** 医生管理-序号 */
-	protected Locator docManNumber=XmlUtils.readXml("DoctorManagePage").get("docManNumber");
-	protected Locator docManDoctorCode=XmlUtils.readXml("DoctorManagePage").get("docManDoctorCode");	
-	protected Locator docManDoctorName=XmlUtils.readXml("DoctorManagePage").get("docManDoctorName");
-	protected Locator docManFirstDoctorName=XmlUtils.readXml("DoctorManagePage").get("docManFirstDoctorName");
-	protected Locator docManSecondDoctorName=XmlUtils.readXml("DoctorManagePage").get("docManSecondDoctorName");
-	protected Locator docManBelongToDepartment=XmlUtils.readXml("DoctorManagePage").get("docManBelongToDepartment");
-	protected Locator docManPersonalType=XmlUtils.readXml("DoctorManagePage").get("docManPersonalType");
-	protected Locator docManHospitalTitle=XmlUtils.readXml("DoctorManagePage").get("docManHospitalTitle");
-	protected Locator docManPostion=XmlUtils.readXml("DoctorManagePage").get("docManPostion");
-	protected Locator docManAcademicTitle=XmlUtils.readXml("DoctorManagePage").get("docManAcademicTitle");
+	protected Locator docManNumber=XmlUtils.getElementXml("DoctorManagePage").get("docManNumber");
+	protected Locator docManDoctorCode=XmlUtils.getElementXml("DoctorManagePage").get("docManDoctorCode");	
+	protected Locator docManDoctorName=XmlUtils.getElementXml("DoctorManagePage").get("docManDoctorName");
+	protected Locator docManFirstDoctorName=XmlUtils.getElementXml("DoctorManagePage").get("docManFirstDoctorName");
+	protected Locator docManSecondDoctorName=XmlUtils.getElementXml("DoctorManagePage").get("docManSecondDoctorName");
+	protected Locator docManBelongToDepartment=XmlUtils.getElementXml("DoctorManagePage").get("docManBelongToDepartment");
+	protected Locator docManPersonalType=XmlUtils.getElementXml("DoctorManagePage").get("docManPersonalType");
+	protected Locator docManHospitalTitle=XmlUtils.getElementXml("DoctorManagePage").get("docManHospitalTitle");
+	protected Locator docManPostion=XmlUtils.getElementXml("DoctorManagePage").get("docManPostion");
+	protected Locator docManAcademicTitle=XmlUtils.getElementXml("DoctorManagePage").get("docManAcademicTitle");
 	
 	/*** 医生管理-编辑按钮 */
-	protected Locator docManEditButton=XmlUtils.readXml("DoctorManagePage").get("docManEditButton");
-	protected Locator docManMoveUpButton=XmlUtils.readXml("DoctorManagePage").get("docManMoveUpButton");
-	protected Locator docManMoveDownButton=XmlUtils.readXml("DoctorManagePage").get("docManMoveDownButton");
-	protected Locator docManMoveTopButton=XmlUtils.readXml("DoctorManagePage").get("docManMoveTopButton");	
-	protected Locator docManHideButton=XmlUtils.readXml("DoctorManagePage").get("docManHideButton");	
+	protected Locator docManEditButton=XmlUtils.getElementXml("DoctorManagePage").get("docManEditButton");
+	protected Locator docManMoveUpButton=XmlUtils.getElementXml("DoctorManagePage").get("docManMoveUpButton");
+	protected Locator docManMoveDownButton=XmlUtils.getElementXml("DoctorManagePage").get("docManMoveDownButton");
+	protected Locator docManMoveTopButton=XmlUtils.getElementXml("DoctorManagePage").get("docManMoveTopButton");	
+	protected Locator docManHideButton=XmlUtils.getElementXml("DoctorManagePage").get("docManHideButton");	
 	
 	//点击导入医生信息
 	public void cliclDocManImportDoctorInfoButton(){

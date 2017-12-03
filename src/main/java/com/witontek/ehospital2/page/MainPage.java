@@ -14,79 +14,79 @@ public class MainPage extends LoginPage{
 	
 	private Log log=new Log(MainPage.class);
 
-	protected Locator userName=XmlUtils.readXml("MainPage").get("userName");
-	protected Locator modifyPassword=XmlUtils.readXml("MainPage").get("modifyPasswordButton");
-	protected Locator loginOut=XmlUtils.readXml("MainPage").get("loginOutButton");
+	protected Locator userName=XmlUtils.getElementXml("MainPage").get("userName");
+	protected Locator modifyPassword=XmlUtils.getElementXml("MainPage").get("modifyPasswordButton");
+	protected Locator loginOut=XmlUtils.getElementXml("MainPage").get("loginOutButton");
 
 	//医院配置
-	protected Locator hospitalConfigButton=XmlUtils.readXml("MainPage").get("hospitalConfigButton");
-	protected Locator wechatConfigButton=XmlUtils.readXml("MainPage").get("wechatConfigButton");
-	protected Locator alipayConfigButton=XmlUtils.readXml("MainPage").get("alipayConfigButton");
-	protected Locator menuConfigButton=XmlUtils.readXml("MainPage").get("menuConfigButton");
-	protected Locator parameterConfigButton=XmlUtils.readXml("MainPage").get("parameterConfigButton");
-	protected Locator templateConfigButton=XmlUtils.readXml("MainPage").get("templateConfigButton");
-	protected Locator permissionManageButton=XmlUtils.readXml("MainPage").get("permissionManageButton");
+	protected Locator hospitalConfigButton=XmlUtils.getElementXml("MainPage").get("hospitalConfigButton");
+	protected Locator wechatConfigButton=XmlUtils.getElementXml("MainPage").get("wechatConfigButton");
+	protected Locator alipayConfigButton=XmlUtils.getElementXml("MainPage").get("alipayConfigButton");
+	protected Locator menuConfigButton=XmlUtils.getElementXml("MainPage").get("menuConfigButton");
+	protected Locator parameterConfigButton=XmlUtils.getElementXml("MainPage").get("parameterConfigButton");
+	protected Locator templateConfigButton=XmlUtils.getElementXml("MainPage").get("templateConfigButton");
+	protected Locator permissionManageButton=XmlUtils.getElementXml("MainPage").get("permissionManageButton");
 	
 	//微官网
-	protected Locator miniWebsiteButton=XmlUtils.readXml("MainPage").get("miniWebsiteButton");
-	protected Locator hospitalInformationButton=XmlUtils.readXml("MainPage").get("hospitalInformationButton");
-	protected Locator contentManagementButton=XmlUtils.readXml("MainPage").get("contentManagementButton");
-	protected Locator categoryButton=XmlUtils.readXml("MainPage").get("categoryButton");
+	protected Locator miniWebsiteButton=XmlUtils.getElementXml("MainPage").get("miniWebsiteButton");
+	protected Locator hospitalInformationButton=XmlUtils.getElementXml("MainPage").get("hospitalInformationButton");
+	protected Locator contentManagementButton=XmlUtils.getElementXml("MainPage").get("contentManagementButton");
+	protected Locator categoryButton=XmlUtils.getElementXml("MainPage").get("categoryButton");
 	
 	//业务信息管理
-	protected Locator businessInformationButton=XmlUtils.readXml("MainPage").get("businessInformationButton");
-	protected Locator departmentCategoryManageButton=XmlUtils.readXml("MainPage").get("departmentCategoryManageButton");
-	protected Locator dutyRoomManageButton=XmlUtils.readXml("MainPage").get("dutyRoomManageButton");
-	protected Locator doctorManageButton=XmlUtils.readXml("MainPage").get("doctorManageButton");
-	protected Locator scheduleManageButton=XmlUtils.readXml("MainPage").get("scheduleManageButton");
-	protected Locator subscriptionManageButton=XmlUtils.readXml("MainPage").get("subscriptionManageButton");
-	protected Locator lineUpManageButton=XmlUtils.readXml("MainPage").get("lineUpManageButton");
-	protected Locator consultManageButton=XmlUtils.readXml("MainPage").get("consultManageButton");
-	protected Locator appraiseManageButton=XmlUtils.readXml("MainPage").get("appraiseManageButton");
-	protected Locator registerManageButton=XmlUtils.readXml("MainPage").get("registerManageButton");
-	protected Locator smartGuideButton=XmlUtils.readXml("MainPage").get("smartGuideButton");
-	protected Locator departmentBusynessButton=XmlUtils.readXml("MainPage").get("departmentBusynessButton");
-	protected Locator payItemButton=XmlUtils.readXml("MainPage").get("payItemButton");
+	protected Locator businessInformationButton=XmlUtils.getElementXml("MainPage").get("businessInformationButton");
+	protected Locator departmentCategoryManageButton=XmlUtils.getElementXml("MainPage").get("departmentCategoryManageButton");
+	protected Locator dutyRoomManageButton=XmlUtils.getElementXml("MainPage").get("dutyRoomManageButton");
+	protected Locator doctorManageButton=XmlUtils.getElementXml("MainPage").get("doctorManageButton");
+	protected Locator scheduleManageButton=XmlUtils.getElementXml("MainPage").get("scheduleManageButton");
+	protected Locator subscriptionManageButton=XmlUtils.getElementXml("MainPage").get("subscriptionManageButton");
+	protected Locator lineUpManageButton=XmlUtils.getElementXml("MainPage").get("lineUpManageButton");
+	protected Locator consultManageButton=XmlUtils.getElementXml("MainPage").get("consultManageButton");
+	protected Locator appraiseManageButton=XmlUtils.getElementXml("MainPage").get("appraiseManageButton");
+	protected Locator registerManageButton=XmlUtils.getElementXml("MainPage").get("registerManageButton");
+	protected Locator smartGuideButton=XmlUtils.getElementXml("MainPage").get("smartGuideButton");
+	protected Locator departmentBusynessButton=XmlUtils.getElementXml("MainPage").get("departmentBusynessButton");
+	protected Locator payItemButton=XmlUtils.getElementXml("MainPage").get("payItemButton");
 	
 	//统计分析
-	protected Locator analysisButton=XmlUtils.readXml("MainPage").get("analysisButton");
-	protected Locator loginLogButton=XmlUtils.readXml("MainPage").get("loginLogButton");
-	protected Locator registerUserManageButton=XmlUtils.readXml("MainPage").get("registerUserManageButton");
-	protected Locator patientManagementButton=XmlUtils.readXml("MainPage").get("patientManagementButton");
-	protected Locator inspectReportAnalysisButton=XmlUtils.readXml("MainPage").get("inspectReportAnalysisButton");
-	protected Locator payRecordManageButton=XmlUtils.readXml("MainPage").get("payRecordManageButton");
-	protected Locator automaticCheckAccountButton=XmlUtils.readXml("MainPage").get("automaticCheckAccountButton");
+	protected Locator analysisButton=XmlUtils.getElementXml("MainPage").get("analysisButton");
+	protected Locator loginLogButton=XmlUtils.getElementXml("MainPage").get("loginLogButton");
+	protected Locator registerUserManageButton=XmlUtils.getElementXml("MainPage").get("registerUserManageButton");
+	protected Locator patientManagementButton=XmlUtils.getElementXml("MainPage").get("patientManagementButton");
+	protected Locator inspectReportAnalysisButton=XmlUtils.getElementXml("MainPage").get("inspectReportAnalysisButton");
+	protected Locator payRecordManageButton=XmlUtils.getElementXml("MainPage").get("payRecordManageButton");
+	protected Locator automaticCheckAccountButton=XmlUtils.getElementXml("MainPage").get("automaticCheckAccountButton");
 	
 	//公共元素-每页显示数下拉框
-	protected Locator eachPageRecordersDropBox=XmlUtils.readXml("MainPage").get("eachPageRecordersDropBox");
-	protected Locator eachPageTenRecorders=XmlUtils.readXml("MainPage").get("eachPageTenRecorders");
-	protected Locator totalRecorders=XmlUtils.readXml("MainPage").get("totalRecorders");
-	protected Locator totalPages=XmlUtils.readXml("MainPage").get("totalPages");
-	protected Locator currentPage=XmlUtils.readXml("MainPage").get("currentPage");
-	protected Locator firstPageButton=XmlUtils.readXml("MainPage").get("firstPageButton");
-	protected Locator upPageButton=XmlUtils.readXml("MainPage").get("upPageButton");
-	protected Locator nextPageButton=XmlUtils.readXml("MainPage").get("nextPageButton");
-	protected Locator lastPageButton=XmlUtils.readXml("MainPage").get("lastPageButton");
+	protected Locator eachPageRecordersDropBox=XmlUtils.getElementXml("MainPage").get("eachPageRecordersDropBox");
+	protected Locator eachPageTenRecorders=XmlUtils.getElementXml("MainPage").get("eachPageTenRecorders");
+	protected Locator totalRecorders=XmlUtils.getElementXml("MainPage").get("totalRecorders");
+	protected Locator totalPages=XmlUtils.getElementXml("MainPage").get("totalPages");
+	protected Locator currentPage=XmlUtils.getElementXml("MainPage").get("currentPage");
+	protected Locator firstPageButton=XmlUtils.getElementXml("MainPage").get("firstPageButton");
+	protected Locator upPageButton=XmlUtils.getElementXml("MainPage").get("upPageButton");
+	protected Locator nextPageButton=XmlUtils.getElementXml("MainPage").get("nextPageButton");
+	protected Locator lastPageButton=XmlUtils.getElementXml("MainPage").get("lastPageButton");
 	
 	//公共元素-弹框关闭按钮
-	protected Locator alertCloseButton=XmlUtils.readXml("MainPage").get("alertCloseButton");
-	protected Locator alertDeleteButton=XmlUtils.readXml("MainPage").get("alertDeleteButton");
-	protected Locator alertCancleButton=XmlUtils.readXml("MainPage").get("alertCancleButton");
-	protected Locator alertAcceptButton=XmlUtils.readXml("MainPage").get("alertAcceptButton");
+	protected Locator alertCloseButton=XmlUtils.getElementXml("MainPage").get("alertCloseButton");
+	protected Locator alertDeleteButton=XmlUtils.getElementXml("MainPage").get("alertDeleteButton");
+	protected Locator alertCancleButton=XmlUtils.getElementXml("MainPage").get("alertCancleButton");
+	protected Locator alertAcceptButton=XmlUtils.getElementXml("MainPage").get("alertAcceptButton");
 	
 	//选择起始日期按钮
-	protected Locator selectStartDateButton=XmlUtils.readXml("MainPage").get("selectStartDateButton");
-	protected Locator selectEndDateButton=XmlUtils.readXml("MainPage").get("selectEndDateButton");
-	protected Locator dateSelTodayButton=XmlUtils.readXml("MainPage").get("dateSelTodayButton");
-	protected Locator dateSelDeleteButton=XmlUtils.readXml("MainPage").get("dateSelDeleteButton");
-	protected Locator dateSelGiveUpButton=XmlUtils.readXml("MainPage").get("dateSelGiveUpButton");
-	protected Locator dateSelDefaultTodayButton=XmlUtils.readXml("MainPage").get("dateSelDefaultTodayButton");
-	protected Locator defaultDateButton=XmlUtils.readXml("MainPage").get("defaultDateButton");
-	protected Locator defaultMonthButton=XmlUtils.readXml("MainPage").get("defaultMonthButton");
-	protected Locator monthToggleButton=XmlUtils.readXml("MainPage").get("monthToggleButton");
-	protected Locator yearToggleButton=XmlUtils.readXml("MainPage").get("yearToggleButton");
-	protected Locator leftButton=XmlUtils.readXml("MainPage").get("leftButton");
-	protected Locator rightButton=XmlUtils.readXml("MainPage").get("rightButton");
+	protected Locator selectStartDateButton=XmlUtils.getElementXml("MainPage").get("selectStartDateButton");
+	protected Locator selectEndDateButton=XmlUtils.getElementXml("MainPage").get("selectEndDateButton");
+	protected Locator dateSelTodayButton=XmlUtils.getElementXml("MainPage").get("dateSelTodayButton");
+	protected Locator dateSelDeleteButton=XmlUtils.getElementXml("MainPage").get("dateSelDeleteButton");
+	protected Locator dateSelGiveUpButton=XmlUtils.getElementXml("MainPage").get("dateSelGiveUpButton");
+	protected Locator dateSelDefaultTodayButton=XmlUtils.getElementXml("MainPage").get("dateSelDefaultTodayButton");
+	protected Locator defaultDateButton=XmlUtils.getElementXml("MainPage").get("defaultDateButton");
+	protected Locator defaultMonthButton=XmlUtils.getElementXml("MainPage").get("defaultMonthButton");
+	protected Locator monthToggleButton=XmlUtils.getElementXml("MainPage").get("monthToggleButton");
+	protected Locator yearToggleButton=XmlUtils.getElementXml("MainPage").get("yearToggleButton");
+	protected Locator leftButton=XmlUtils.getElementXml("MainPage").get("leftButton");
+	protected Locator rightButton=XmlUtils.getElementXml("MainPage").get("rightButton");
 
 	//得到用户名
 	public String getUserName(){

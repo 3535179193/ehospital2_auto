@@ -16,53 +16,53 @@ public class ScheduleManagePage extends MainPage{
 	private Log log=new Log(ScheduleManagePage.class);
 	
 	//排班管理-导入专家排班
-	protected Locator schManImportSpecialistScheduleButton=XmlUtils.readXml("ScheduleManagePage").get("schManImportSpecialistScheduleButton");
-	protected Locator schManImportNumberAndFeeButton=XmlUtils.readXml("ScheduleManagePage").get("schManImportNumberAndFeeButton");
-	protected Locator schManImportGeneralScheduleButton=XmlUtils.readXml("ScheduleManagePage").get("schManImportGeneralScheduleButton");
-	protected Locator schManDownloadAllExcelButton=XmlUtils.readXml("ScheduleManagePage").get("schManDownloadAllExcelButton");
-	protected Locator schManGetScheduleButton=XmlUtils.readXml("ScheduleManagePage").get("schManGetScheduleButton");
-	protected Locator schManBatchStopMedicalButton=XmlUtils.readXml("ScheduleManagePage").get("schManBatchStopMedicalButton");
-	protected Locator schManBatchStartMedicalButton=XmlUtils.readXml("ScheduleManagePage").get("schManBatchStartMedicalButton");
+	protected Locator schManImportSpecialistScheduleButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManImportSpecialistScheduleButton");
+	protected Locator schManImportNumberAndFeeButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManImportNumberAndFeeButton");
+	protected Locator schManImportGeneralScheduleButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManImportGeneralScheduleButton");
+	protected Locator schManDownloadAllExcelButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManDownloadAllExcelButton");
+	protected Locator schManGetScheduleButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManGetScheduleButton");
+	protected Locator schManBatchStopMedicalButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManBatchStopMedicalButton");
+	protected Locator schManBatchStartMedicalButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManBatchStartMedicalButton");
 	
 	//排班管理-科室名称输入框
-	protected Locator schManDepartmentInputBox=XmlUtils.readXml("ScheduleManagePage").get("schManDepartmentInputBox");
-	protected Locator schManDoctorInputBox=XmlUtils.readXml("ScheduleManagePage").get("schManDoctorInputBox");
-	protected Locator schManClinicTypeDropBox=XmlUtils.readXml("ScheduleManagePage").get("schManClinicTypeDropBox");
-	protected Locator schManSelectSpecialistClinic=XmlUtils.readXml("ScheduleManagePage").get("schManSelectSpecialistClinic");
-	protected Locator schManSelectGeneralClinic=XmlUtils.readXml("ScheduleManagePage").get("schManSelectGeneralClinic");
-	protected Locator schManResourceTypeDropBox=XmlUtils.readXml("ScheduleManagePage").get("schManResourceTypeDropBox");
-	protected Locator schManSelectRegisterResource=XmlUtils.readXml("ScheduleManagePage").get("schManSelectRegisterResource");
-	protected Locator schManSelectSubscriptionResource=XmlUtils.readXml("ScheduleManagePage").get("schManSelectSubscriptionResource");
-	protected Locator schManSearchButton=XmlUtils.readXml("ScheduleManagePage").get("schManSearchButton");
-	protected Locator schManExportScheduleInfoButton=XmlUtils.readXml("ScheduleManagePage").get("schManExportScheduleInfoButton");
+	protected Locator schManDepartmentInputBox=XmlUtils.getElementXml("ScheduleManagePage").get("schManDepartmentInputBox");
+	protected Locator schManDoctorInputBox=XmlUtils.getElementXml("ScheduleManagePage").get("schManDoctorInputBox");
+	protected Locator schManClinicTypeDropBox=XmlUtils.getElementXml("ScheduleManagePage").get("schManClinicTypeDropBox");
+	protected Locator schManSelectSpecialistClinic=XmlUtils.getElementXml("ScheduleManagePage").get("schManSelectSpecialistClinic");
+	protected Locator schManSelectGeneralClinic=XmlUtils.getElementXml("ScheduleManagePage").get("schManSelectGeneralClinic");
+	protected Locator schManResourceTypeDropBox=XmlUtils.getElementXml("ScheduleManagePage").get("schManResourceTypeDropBox");
+	protected Locator schManSelectRegisterResource=XmlUtils.getElementXml("ScheduleManagePage").get("schManSelectRegisterResource");
+	protected Locator schManSelectSubscriptionResource=XmlUtils.getElementXml("ScheduleManagePage").get("schManSelectSubscriptionResource");
+	protected Locator schManSearchButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManSearchButton");
+	protected Locator schManExportScheduleInfoButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManExportScheduleInfoButton");
 		
 	//排班管理-全选按钮
-	protected Locator schManSelectAllButton=XmlUtils.readXml("ScheduleManagePage").get("schManSelectAllButton");
-	protected Locator schManSelectFirstCheckBox=XmlUtils.readXml("ScheduleManagePage").get("schManSelectFirstCheckBox");
-	protected Locator schManNumber=XmlUtils.readXml("ScheduleManagePage").get("schManNumber");
-	protected Locator schManDepartmentName=XmlUtils.readXml("ScheduleManagePage").get("schManDepartmentName");
-	protected Locator schManAddress=XmlUtils.readXml("ScheduleManagePage").get("schManAddress");
-	protected Locator schManClinicType=XmlUtils.readXml("ScheduleManagePage").get("schManClinicType");
-	protected Locator schManDoctor=XmlUtils.readXml("ScheduleManagePage").get("schManDoctor");
-	protected Locator schManClinicTime=XmlUtils.readXml("ScheduleManagePage").get("schManClinicTime");
-	protected Locator schManClinicTimePeriod=XmlUtils.readXml("ScheduleManagePage").get("schManClinicTimePeriod");
-	protected Locator schManResourse=XmlUtils.readXml("ScheduleManagePage").get("schManResourse");
-	protected Locator schManResourseType=XmlUtils.readXml("ScheduleManagePage").get("schManResourseType");
+	protected Locator schManSelectAllButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManSelectAllButton");
+	protected Locator schManSelectFirstCheckBox=XmlUtils.getElementXml("ScheduleManagePage").get("schManSelectFirstCheckBox");
+	protected Locator schManNumber=XmlUtils.getElementXml("ScheduleManagePage").get("schManNumber");
+	protected Locator schManDepartmentName=XmlUtils.getElementXml("ScheduleManagePage").get("schManDepartmentName");
+	protected Locator schManAddress=XmlUtils.getElementXml("ScheduleManagePage").get("schManAddress");
+	protected Locator schManClinicType=XmlUtils.getElementXml("ScheduleManagePage").get("schManClinicType");
+	protected Locator schManDoctor=XmlUtils.getElementXml("ScheduleManagePage").get("schManDoctor");
+	protected Locator schManClinicTime=XmlUtils.getElementXml("ScheduleManagePage").get("schManClinicTime");
+	protected Locator schManClinicTimePeriod=XmlUtils.getElementXml("ScheduleManagePage").get("schManClinicTimePeriod");
+	protected Locator schManResourse=XmlUtils.getElementXml("ScheduleManagePage").get("schManResourse");
+	protected Locator schManResourseType=XmlUtils.getElementXml("ScheduleManagePage").get("schManResourseType");
 	
 	//排班管理-查看
-	protected Locator schManViewButton=XmlUtils.readXml("ScheduleManagePage").get("schManViewButton");
-		protected Locator schInfDepartmentID=XmlUtils.readXml("ScheduleManagePage").get("schInfDepartmentID");
-		protected Locator schInfDepartmentName=XmlUtils.readXml("ScheduleManagePage").get("schInfDepartmentName");
-		protected Locator schInfClinicType=XmlUtils.readXml("ScheduleManagePage").get("schInfClinicType");
-		protected Locator schInfDoctor=XmlUtils.readXml("ScheduleManagePage").get("schInfDoctor");
-		protected Locator schInfResource=XmlUtils.readXml("ScheduleManagePage").get("schInfResource");
-		protected Locator schInfClinicTime=XmlUtils.readXml("ScheduleManagePage").get("schInfClinicTime");
-		protected Locator schInfSaveButton=XmlUtils.readXml("ScheduleManagePage").get("schInfSaveButton");
-		protected Locator schInfCancelButton=XmlUtils.readXml("ScheduleManagePage").get("schInfCancelButton");
+	protected Locator schManViewButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManViewButton");
+		protected Locator schInfDepartmentID=XmlUtils.getElementXml("ScheduleManagePage").get("schInfDepartmentID");
+		protected Locator schInfDepartmentName=XmlUtils.getElementXml("ScheduleManagePage").get("schInfDepartmentName");
+		protected Locator schInfClinicType=XmlUtils.getElementXml("ScheduleManagePage").get("schInfClinicType");
+		protected Locator schInfDoctor=XmlUtils.getElementXml("ScheduleManagePage").get("schInfDoctor");
+		protected Locator schInfResource=XmlUtils.getElementXml("ScheduleManagePage").get("schInfResource");
+		protected Locator schInfClinicTime=XmlUtils.getElementXml("ScheduleManagePage").get("schInfClinicTime");
+		protected Locator schInfSaveButton=XmlUtils.getElementXml("ScheduleManagePage").get("schInfSaveButton");
+		protected Locator schInfCancelButton=XmlUtils.getElementXml("ScheduleManagePage").get("schInfCancelButton");
 
 	//排班管理-查看
-	protected Locator schManStopMedicalButton=XmlUtils.readXml("ScheduleManagePage").get("schManStopMedicalButton");
-	protected Locator schManViewLogButton=XmlUtils.readXml("ScheduleManagePage").get("schManViewLogButton");
+	protected Locator schManStopMedicalButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManStopMedicalButton");
+	protected Locator schManViewLogButton=XmlUtils.getElementXml("ScheduleManagePage").get("schManViewLogButton");
 
 
 	//点击排班管理-导入专家排班按钮

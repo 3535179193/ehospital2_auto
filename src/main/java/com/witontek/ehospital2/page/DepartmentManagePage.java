@@ -15,39 +15,39 @@ public class DepartmentManagePage extends DepartmentCategoryManagePage{
 	private Log log=new Log(DepartmentManagePage.class);
 	
 	//二级科室管理-科室名称输入框
-	protected Locator depManDepartmentNameInputBox=XmlUtils.readXml("DepartmentManagePage").get("depManDepartmentNameInputBox");
-	protected Locator depManSearchButton=XmlUtils.readXml("DepartmentManagePage").get("depManSearchButton");
+	protected Locator depManDepartmentNameInputBox=XmlUtils.getElementXml("DepartmentManagePage").get("depManDepartmentNameInputBox");
+	protected Locator depManSearchButton=XmlUtils.getElementXml("DepartmentManagePage").get("depManSearchButton");
 	
 	//二级科室管理-新增一级科室按钮
-	protected Locator depManAddDepartmentButton=XmlUtils.readXml("DepartmentManagePage").get("depManAddDepartmentButton");
-	protected Locator depManEditButton=XmlUtils.readXml("DepartmentManagePage").get("depManEditButton");	
-		protected Locator depPageDepartmentNameInputBox=XmlUtils.readXml("DepartmentManagePage").get("depPageDepartmentNameInputBox");
-		protected Locator depPageDepartmentCodeInputBox=XmlUtils.readXml("DepartmentManagePage").get("depPageDepartmentCodeInputBox");
-		protected Locator depPageSelectBelongCategoryDropBox=XmlUtils.readXml("DepartmentManagePage").get("depPageSelectBelongCategoryDropBox");
-		protected Locator depPageSelectBelongCategoryButton=XmlUtils.readXml("DepartmentManagePage").get("depPageSelectBelongCategoryButton");
-		protected Locator depPageDepartmentLogoButton=XmlUtils.readXml("DepartmentManagePage").get("depPageDepartmentLogoButton");
-		protected Locator depPageDepartmentPhoneInputBox=XmlUtils.readXml("DepartmentManagePage").get("depPageDepartmentPhoneInputBox");
-		protected Locator depPageDepartmentAddressInputBox=XmlUtils.readXml("DepartmentManagePage").get("depPageDepartmentAddressInputBox");
-		protected Locator depPageDepartmentFeatureInputBox=XmlUtils.readXml("DepartmentManagePage").get("depPageDepartmentFeatureInputBox");
-		protected Locator depPageDepartmentSummaryInputBox=XmlUtils.readXml("DepartmentManagePage").get("depPageDepartmentSummaryInputBox");
-		protected Locator depPageAttentionInputBox=XmlUtils.readXml("DepartmentManagePage").get("depPageAttentionInputBox");
-		protected Locator depPageSaveButton=XmlUtils.readXml("DepartmentManagePage").get("depPageSaveButton");
-		protected Locator depPageUpdateButton=XmlUtils.readXml("DepartmentManagePage").get("depPageUpdateButton");
-		protected Locator depPageReturnButton=XmlUtils.readXml("DepartmentManagePage").get("depPageReturnButton");
+	protected Locator depManAddDepartmentButton=XmlUtils.getElementXml("DepartmentManagePage").get("depManAddDepartmentButton");
+	protected Locator depManEditButton=XmlUtils.getElementXml("DepartmentManagePage").get("depManEditButton");	
+		protected Locator depPageDepartmentNameInputBox=XmlUtils.getElementXml("DepartmentManagePage").get("depPageDepartmentNameInputBox");
+		protected Locator depPageDepartmentCodeInputBox=XmlUtils.getElementXml("DepartmentManagePage").get("depPageDepartmentCodeInputBox");
+		protected Locator depPageSelectBelongCategoryDropBox=XmlUtils.getElementXml("DepartmentManagePage").get("depPageSelectBelongCategoryDropBox");
+		protected Locator depPageSelectBelongCategoryButton=XmlUtils.getElementXml("DepartmentManagePage").get("depPageSelectBelongCategoryButton");
+		protected Locator depPageDepartmentLogoButton=XmlUtils.getElementXml("DepartmentManagePage").get("depPageDepartmentLogoButton");
+		protected Locator depPageDepartmentPhoneInputBox=XmlUtils.getElementXml("DepartmentManagePage").get("depPageDepartmentPhoneInputBox");
+		protected Locator depPageDepartmentAddressInputBox=XmlUtils.getElementXml("DepartmentManagePage").get("depPageDepartmentAddressInputBox");
+		protected Locator depPageDepartmentFeatureInputBox=XmlUtils.getElementXml("DepartmentManagePage").get("depPageDepartmentFeatureInputBox");
+		protected Locator depPageDepartmentSummaryInputBox=XmlUtils.getElementXml("DepartmentManagePage").get("depPageDepartmentSummaryInputBox");
+		protected Locator depPageAttentionInputBox=XmlUtils.getElementXml("DepartmentManagePage").get("depPageAttentionInputBox");
+		protected Locator depPageSaveButton=XmlUtils.getElementXml("DepartmentManagePage").get("depPageSaveButton");
+		protected Locator depPageUpdateButton=XmlUtils.getElementXml("DepartmentManagePage").get("depPageUpdateButton");
+		protected Locator depPageReturnButton=XmlUtils.getElementXml("DepartmentManagePage").get("depPageReturnButton");
 	
 	//二级科室管理-序号
-	protected Locator depManNumber=XmlUtils.readXml("DepartmentManagePage").get("depManNumber");
-	protected Locator depManFirstDepartmentName=XmlUtils.readXml("DepartmentManagePage").get("depManFirstDepartmentName");
-	protected Locator depManSecondDepartmentName=XmlUtils.readXml("DepartmentManagePage").get("depManSecondDepartmentName");
-	protected Locator depManDepartmentAddress=XmlUtils.readXml("DepartmentManagePage").get("depManDepartmentAddress");
-	protected Locator depManDepartmentFeature=XmlUtils.readXml("DepartmentManagePage").get("depManDepartmentFeature");
-	protected Locator depManDepartmentSummary=XmlUtils.readXml("DepartmentManagePage").get("depManDepartmentSummary");
+	protected Locator depManNumber=XmlUtils.getElementXml("DepartmentManagePage").get("depManNumber");
+	protected Locator depManFirstDepartmentName=XmlUtils.getElementXml("DepartmentManagePage").get("depManFirstDepartmentName");
+	protected Locator depManSecondDepartmentName=XmlUtils.getElementXml("DepartmentManagePage").get("depManSecondDepartmentName");
+	protected Locator depManDepartmentAddress=XmlUtils.getElementXml("DepartmentManagePage").get("depManDepartmentAddress");
+	protected Locator depManDepartmentFeature=XmlUtils.getElementXml("DepartmentManagePage").get("depManDepartmentFeature");
+	protected Locator depManDepartmentSummary=XmlUtils.getElementXml("DepartmentManagePage").get("depManDepartmentSummary");
 	
 	//二级科室管理-上移按钮
-	protected Locator depManMoveUpButton=XmlUtils.readXml("DepartmentManagePage").get("depManMoveUpButton");
-	protected Locator depManMoveDownButton=XmlUtils.readXml("DepartmentManagePage").get("depManMoveDownButton");
-	protected Locator depManMoveTopButton=XmlUtils.readXml("DepartmentManagePage").get("depManMoveTopButton");
-	protected Locator depManHideButton=XmlUtils.readXml("DepartmentManagePage").get("depManHideButton");
+	protected Locator depManMoveUpButton=XmlUtils.getElementXml("DepartmentManagePage").get("depManMoveUpButton");
+	protected Locator depManMoveDownButton=XmlUtils.getElementXml("DepartmentManagePage").get("depManMoveDownButton");
+	protected Locator depManMoveTopButton=XmlUtils.getElementXml("DepartmentManagePage").get("depManMoveTopButton");
+	protected Locator depManHideButton=XmlUtils.getElementXml("DepartmentManagePage").get("depManHideButton");
 	
 	
 	//二级科室管理-输入科室名称
