@@ -28,22 +28,24 @@
 			</class>
 		</classes>
 	</test>
--->
 
+-->
 	<test name="test03" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentManageTest">
 				<methods>
 					<include name="insertDepartment"></include>
-					<include name="moveTopDoctor"></include>
-					<include name="editDoctor"></include>
-					<include name="moveDownDoctor"></include>
-					<include name="moveUpDoctor"></include>
-					<include name="searchDoctor"></include>
+					<include name="moveTopDepartment"></include>
+					<include name="searchDepartment"></include>
+					<include name="updateDepartment"></include>
+					<include name="moveUpDepartment"></include>
+					<include name="moveDownDepartment"></include>
+					<include name="hideDepartment"></include>
 				</methods>
 			</class>
 		</classes>
 	</test>
+
 <!--
 	<test name="test3" preserve-order="true">
 		<classes>
@@ -93,6 +95,7 @@
 		</classes>
 	</test>
 -->
+<!--
 	<test name="test98" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentManageTest">
@@ -102,7 +105,8 @@
 			</class>
 		</classes>
 	</test>
-<!--
+
+
 	<test name="test99" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentCategoryManageTest">

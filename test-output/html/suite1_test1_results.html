@@ -3,16 +3,16 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - test02</title>
+  <title>Test Results Report - test03</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>test02</h1>
+<h1>test03</h1>
 <p>
-  Test duration: 43.267s
+  Test duration: 73.775s
 </p>
 
 
@@ -20,47 +20,121 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.witontek.ehospital2.test.DepartmentCategoryManageTest</td>
+        <td colspan="3" class="group">com.witontek.ehospital2.test.DepartmentManageTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  insertCategory
+                  moveTopDepartment
       </td>
   <td class="duration">
-    17.584s
+    1.936s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"����һ������", "�һ������", {categoryName=�һ������, categoryCode=100001}</span><br />
+          <i>Method arguments: </i><span class="arguments">"置顶二级科室", "睿博二级科室", {departmentName=睿博二级科室}</span><br />
     
             <div class="testOutput">
-                        <span style='color:blue'>2017-12-03 20:26:23:397 [INFO] com.witontek.ehospital2.base.WebElementsUtils:���ҵ����Ϣ����</span><br />
-                                <span style='color:blue'>2017-12-03 20:26:25:315 [INFO] com.witontek.ehospital2.base.WebElementsUtils:������ҹ���</span><br />
-                                <span style='color:blue'>2017-12-03 20:26:25:919 [INFO] com.witontek.ehospital2.base.WebElementsUtils:������ҹ���-����һ�����Ұ�ť</span><br />
-                                <span style='color:blue'>2017-12-03 20:26:26:563 [INFO] com.witontek.ehospital2.base.WebElementsUtils:��һ������ҳ��-����������������룺�һ������</span><br />
-                                <span style='color:blue'>2017-12-03 20:26:27:143 [INFO] com.witontek.ehospital2.base.WebElementsUtils:��һ������ҳ��-���ұ�����������룺100001</span><br />
-                                <span style='color:blue'>2017-12-03 20:26:27:681 [INFO] com.witontek.ehospital2.base.WebElementsUtils:���һ������ҳ��-���水ť</span><br />
-                                <span style='color:blue'>2017-12-03 20:26:28:749 [INFO] com.witontek.ehospital2.base.WebElementsUtils:�������رհ�ť</span><br />
-                                <span style='color:red'>2017-12-03 20:26:39:728 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:������ĩҳ��ť����ҳԪ��ʱ����,������Ϣ��no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='page form-ctrl']/div[2]/a[4]"}
-  (Session info: chrome=60.0.3112.113)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.06 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'DESKTOP-26I71CM', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ningjing\AppData\Local\Temp\scoped_dir14588_23669}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.113, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 4a61b3d60c91bd074497a57a3537302c
-*** Element info: {Using=xpath, value=//div[@class='page form-ctrl']/div[2]/a[4]}</span><br />
-                                <span style='color:blue'>2017-12-03 20:26:40:073 [INFO] com.witontek.ehospital2.base.BrowserUtils:��ͼ�ɹ�</span><br />
-                                <a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-12-03 20.26.39-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-12-03 20.26.39-picture.png' /></a>
-                                <span style='color:blue'>��ͼƬ��ַ��D:\java\workspace\ehospital2_auto\screenShot\2017-12-03 20.26.39-picture.png</span><br />
+                        <span style='color:blue'>2017-12-03 23:31:13:127 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-查看二级科室按钮</span><br />
+                                <span style='color:red'>2017-12-03 23:31:13:638 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找二级科室管理-置顶按钮带索引的网页元素时出错,报错信息：Index: 1, Size: 1</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:14:086 [INFO] com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br />
+                                <a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-12-03 23.31.13-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-12-03 23.31.13-picture.png' /></a>
+                                <span style='color:blue'>【图片地址】D:\java\workspace\ehospital2_auto\screenShot\2017-12-03 23.31.13-picture.png</span><br />
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: �������ʧ�ܣ����ж�ִ�д����� expected [2] but found [1]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]</b></a><br />
     <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:93)<br />
+              org.testng.Assert.failNotEquals(Assert.java:512)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:134)<br />
+              org.testng.Assert.assertEquals(Assert.java:115)<br />
+              org.testng.Assert.assertEquals(Assert.java:388)<br />
+              com.witontek.ehospital2.base.Log.errorShot(Log.java:49)<br />
+              com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:44)<br />
+              com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:59)<br />
+              com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:1)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)<br />
+              com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:56)<br />
+              com.witontek.ehospital2.base.WebElementsUtils.click(WebElementsUtils.java:71)<br />
+              com.witontek.ehospital2.page.DepartmentManagePage.clickDepManMoveTopButton(DepartmentManagePage.java:227)<br />
+              com.witontek.ehospital2.business.DepartmentManage.moveTopDepartment(DepartmentManage.java:125)<br />
+              com.witontek.ehospital2.test.DepartmentManageTest.moveTopDepartment(DepartmentManageTest.java:47)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:661)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:744)<br />
+              org.testng.TestRunner.run(TestRunner.java:602)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:380)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:289)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1226)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1144)<br />
+              org.testng.TestNG.run(TestNG.java:1115)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  moveUpDepartment
+      </td>
+  <td class="duration">
+    23.701s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"上移二级科室", "睿博二级科室", {departmentName=睿博二级科室, departmentAddress=科室地址, departmentPhone=2713350, departmentCode=100003, Attention=注意事项, departmentSummary=科室简介, departmentFeature=科室特色}</span><br />
+    
+            <div class="testOutput">
+                        <span style='color:blue'>2017-12-03 23:31:22:763 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:23:289 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:25:797 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击科室管理</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:26:366 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-查看二级科室按钮</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:27:209 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击二级科室管理-新增二级科室按钮</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:27:951 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室名称输入框输入：睿博二级科室</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:28:577 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室编码输入框输入：100003</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:29:179 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击二级科室页面-选择所属一级科室下拉框</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:29:689 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击二级科室页面-选择所属一级科室按钮</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:30:387 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室电话输入框输入：2713350</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:30:967 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室地址输入框输入：科室地址</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:31:558 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室特色输入框输入：科室特色</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:32:108 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室简介输入框输入：科室简介</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:32:678 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-注意事项输入框输入：注意事项</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:33:254 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击二级科室页面-保存按钮</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:34:308 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />
+                                <span style='color:red'>2017-12-03 23:31:45:269 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找二级科室管理-序号1的二级科室名称的网页元素时出错,报错信息：no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='second-department-list']/div[4]/ul[2]/li[2]"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir18092_10169}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 5e96d77fc84c19e33d1fb3f735b86b6c
+*** Element info: {Using=xpath, value=//div[@class='second-department-list']/div[4]/ul[2]/li[2]}</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:45:586 [INFO] com.witontek.ehospital2.base.BrowserUtils:截图成功</span><br />
+                                <a target='_blank' href='D:\java\workspace\ehospital2_auto\screenShot\2017-12-03 23.31.45-picture.png'><img width='500' src='D:\java\workspace\ehospital2_auto\screenShot\2017-12-03 23.31.45-picture.png' /></a>
+                                <span style='color:blue'>【图片地址】D:\java\workspace\ehospital2_auto\screenShot\2017-12-03 23.31.45-picture.png</span><br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: 故意断言失败，并中断执行此用例 expected [2] but found [1]</b></a><br />
+    <div class="stackTrace" id="exception-1">
               org.testng.Assert.fail(Assert.java:93)<br />
               org.testng.Assert.failNotEquals(Assert.java:512)<br />
               org.testng.Assert.assertEqualsImpl(Assert.java:134)<br />
@@ -72,10 +146,11 @@ Session ID: 4a61b3d60c91bd074497a57a3537302c
               com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:1)<br />
               org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)<br />
               com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:56)<br />
-              com.witontek.ehospital2.base.WebElementsUtils.click(WebElementsUtils.java:71)<br />
-              com.witontek.ehospital2.page.MainPage.clickLastPageButton(MainPage.java:290)<br />
-              com.witontek.ehospital2.business.DepartmentCategoryManage.insertCategory(DepartmentCategoryManage.java:28)<br />
-              com.witontek.ehospital2.test.DepartmentCategoryManageTest.insertCategory(DepartmentCategoryManageTest.java:31)<br />
+              com.witontek.ehospital2.base.WebElementsUtils.getText(WebElementsUtils.java:119)<br />
+              com.witontek.ehospital2.page.DepartmentManagePage.getDepManFirstDepartmentName(DepartmentManagePage.java:137)<br />
+              com.witontek.ehospital2.business.DepartmentManage.insertDepartment(DepartmentManage.java:45)<br />
+              com.witontek.ehospital2.business.DepartmentManage.moveUpDepartment(DepartmentManage.java:102)<br />
+              com.witontek.ehospital2.test.DepartmentManageTest.moveUpDepartment(DepartmentManageTest.java:92)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
@@ -109,83 +184,19 @@ Session ID: 4a61b3d60c91bd074497a57a3537302c
   <table class="resultsTable" width="100%">
     <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.witontek.ehospital2.test.DepartmentCategoryManageTest</td>
+        <td colspan="3" class="group">com.witontek.ehospital2.test.DepartmentManageTest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  moveDownCategory
+                  moveDownDepartment
       </td>
   <td class="duration">
     0.000s
   </td>
   <td class="result">
                              <i>Depends on method(s): </i>
-        <span class="dependency">com.witontek.ehospital2.test.DepartmentCategoryManageTest.updateCategory</span>
-                
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  moveTopCategory
-      </td>
-  <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                             <i>Depends on method(s): </i>
-        <span class="dependency">com.witontek.ehospital2.test.DepartmentCategoryManageTest.insertCategory</span>
-                
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  moveUpCategory
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                             <i>Depends on method(s): </i>
-        <span class="dependency">com.witontek.ehospital2.test.DepartmentCategoryManageTest.moveDownCategory</span>
-                
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  searchCategory
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                             <i>Depends on method(s): </i>
-        <span class="dependency">com.witontek.ehospital2.test.DepartmentCategoryManageTest.insertCategory</span>
-                
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  updateCategory
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                             <i>Depends on method(s): </i>
-        <span class="dependency">com.witontek.ehospital2.test.DepartmentCategoryManageTest.insertCategory</span>
+        <span class="dependency">com.witontek.ehospital2.test.DepartmentManageTest.moveUpDepartment</span>
                 
     
         
@@ -194,6 +205,71 @@ Session ID: 4a61b3d60c91bd074497a57a3537302c
 </tr>
       </table>
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.witontek.ehospital2.test.DepartmentManageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  insertDepartment
+      </td>
+  <td class="duration">
+    13.053s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"新增二级科室", "睿博二级科室", {departmentName=睿博二级科室, departmentAddress=科室地址, departmentPhone=2713350, departmentCode=100003, Attention=注意事项, departmentSummary=科室简介, departmentFeature=科室特色}</span><br />
+    
+            <div class="testOutput">
+                        <span style='color:blue'>2017-12-03 23:30:57:895 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />
+                                <span style='color:blue'>2017-12-03 23:30:59:723 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击科室管理</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:00:564 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-查看二级科室按钮</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:01:380 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击二级科室管理-新增二级科室按钮</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:02:166 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室名称输入框输入：睿博二级科室</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:02:794 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室编码输入框输入：100003</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:03:399 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击二级科室页面-选择所属一级科室下拉框</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:03:908 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击二级科室页面-选择所属一级科室按钮</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:04:630 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室电话输入框输入：2713350</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:05:200 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室地址输入框输入：科室地址</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:05:774 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室特色输入框输入：科室特色</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:06:340 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-科室简介输入框输入：科室简介</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:06:912 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室页面-注意事项输入框输入：注意事项</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:07:486 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击二级科室页面-保存按钮</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:08:627 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:09:622 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取二级科室管理-序号1的二级科室名称的文本信息</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:09:622 [INFO] com.witontek.ehospital2.page.DepartmentManagePage:二级科室管理-序号1的二级科室名称：睿博二级科室</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:09:625 [INFO] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博二级科室）与预期结果（睿博二级科室）相等，新增二级科室成功</span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  searchDepartment
+      </td>
+  <td class="duration">
+    2.667s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"搜索二级科室", "睿博二级科室", {departmentName=睿博二级科室}</span><br />
+    
+            <div class="testOutput">
+                        <span style='color:blue'>2017-12-03 23:31:17:671 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击科室管理-查看二级科室按钮</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:18:338 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在二级科室管理-科室名称输入框输入：睿博二级科室</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:18:890 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击二级科室管理-搜索科室按钮</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:19:347 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取二级科室管理-序号1的二级科室名称的文本信息</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:19:348 [INFO] com.witontek.ehospital2.page.DepartmentManagePage:二级科室管理-序号1的二级科室名称：睿博二级科室</span><br />
+                                <span style='color:blue'>2017-12-03 23:31:19:348 [INFO] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博二级科室）与预期结果（睿博二级科室）相等，搜索二级科室成功</span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
   
 </body>
 </html>

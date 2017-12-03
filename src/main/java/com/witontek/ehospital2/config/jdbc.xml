@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SQL name="postgresql">
 	<Server name="ali2">
-    	<DateBase name="ehospiatl2" 	url="jdbc:postgresql://121.40.154.101:5432/ehospital2"		username="postgres" password="P0stgreSql"	driver="org.postgresql.Driver">ehospiatl2</DateBase>
+    	<DateBase name="ehospital2" 	url="jdbc:postgresql://121.40.154.101:5432/ehospital2"		username="postgres" password="P0stgreSql"	driver="org.postgresql.Driver">ehospital2</DateBase>
 	</Server>
 	<Server name="ali3">
-    	<DateBase name="ehospiatl_test" url="jdbc:postgresql://120.26.71.193:5432/ehospital_test" 	username="testdev" 	password="test3@witoN"	driver="org.postgresql.Driver">ehospiatl_test</DateBase>
+    	<DateBase name="ehospital_test" url="jdbc:postgresql://120.26.71.193:5432/ehospital_test" 	username="testdev" 	password="test3@witoN"	driver="org.postgresql.Driver">ehospital_test</DateBase>
 	</Server>
 </SQL>    

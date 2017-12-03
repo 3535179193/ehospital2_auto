@@ -37,6 +37,20 @@ public class DepartmentManageTest {
 	public Iterator<Object[]> insertDepartment() {
 		return ExcelUtils.readExcel("DepartmentManage","insertDepartment");
 	}
+	
+	/**
+	 * 二级科室管理-置顶二级科室
+	 */
+	@Test(dataProvider = "moveTopDepartment", dependsOnMethods = {"insertDepartment"}, enabled = true)
+	public void moveTopDepartment(String caseName, String expectedResult, Map<String, String> testData) {
+		DepartmentManage departmentManage = new DepartmentManage(driver);
+		AssertUtils.assertActualEqualExpect(departmentManage.moveTopDepartment(), expectedResult, caseName);
+	}
+
+	@DataProvider(name = "moveTopDepartment")
+	public Iterator<Object[]> moveTopDepartment() {
+		return ExcelUtils.readExcel("DepartmentManage","moveTopDepartment");
+	}
 
 	/**
 	 * 二级科室管理-搜索二级科室
@@ -51,6 +65,7 @@ public class DepartmentManageTest {
 	public Iterator<Object[]> searchDepartment() {
 		return ExcelUtils.readExcel("DepartmentManage","searchDepartment");
 	}
+
 
 	/**
 	 * 二级科室管理-编辑二级科室
@@ -96,20 +111,6 @@ public class DepartmentManageTest {
 	@DataProvider(name = "moveDownDepartment")
 	public Iterator<Object[]> moveDownDepartment() {
 		return ExcelUtils.readExcel("DepartmentManage","moveDownDepartment");
-	}
-	
-	/**
-	 * 二级科室管理-置顶二级科室
-	 */
-	@Test(dataProvider = "moveTopDepartment", dependsOnMethods = {"insertDepartment"}, enabled = true)
-	public void moveTopDepartment(String caseName, String expectedResult, Map<String, String> testData) {
-		DepartmentManage departmentManage = new DepartmentManage(driver);
-		AssertUtils.assertActualEqualExpect(departmentManage.moveTopDepartment(), expectedResult, caseName);
-	}
-
-	@DataProvider(name = "moveTopDepartment")
-	public Iterator<Object[]> moveTopDepartment() {
-		return ExcelUtils.readExcel("DepartmentManage","moveTopDepartment");
 	}
 	
 	/**

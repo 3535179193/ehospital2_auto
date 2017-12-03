@@ -31,6 +31,7 @@ public class DatabaseUtils{
 	      c.close();
 	    } catch ( Exception e ) {
 	      log.error("从数据库删除数据出错，报错信息："+e.getMessage());
+	      e.printStackTrace();
 	      System.exit(0);
 	    }
 	    log.info("从数据库删除数据成功");

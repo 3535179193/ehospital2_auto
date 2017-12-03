@@ -142,8 +142,8 @@ public class DepartmentManage extends DepartmentManagePage {
 	 * @param sql
 	 * @return
 	 */
-	public String deleteDepartment(String datebaseName,String sql) {
-		DatabaseUtils.deleteDate(datebaseName,sql);
+	public String deleteDepartment(String databaseName,String sql) {
+		DatabaseUtils.deleteDate(databaseName,sql);
 		clickDepartmentCategoryManageButton();
 		clickCateManViewDepartmentButton();
 		return getTotalRecorders();

@@ -44,7 +44,7 @@ public class Log {
 		BrowserUtils browser=new BrowserUtils(driver);
 		String path=browser.screenShot();
 		int width=500;
-        Reporter.log("<a target='_blank' href='" + path + "'><img width='" + width + "' src='" + path + "' /></a>");
+        Reporter.log("<a target='_blank' href='" + path + "'><img width='" + width + "' src='" + path + "' /></a><br />");
         Reporter.log("<span style='color:blue'>【图片地址】"+path+"</span><br />");
         Assert.assertEquals(1,2,"故意断言失败，并中断执行此用例");
 	}
