@@ -146,12 +146,12 @@ public class DoctorManage extends DoctorManagePage {
 	 * @param sql
 	 * @param doctorName
 	 */
-	public void deleteDoctor(String sql, String doctorName) {
+	public void deleteDoctor(String databaseName,String sql, String doctorName) {
 		clickDoctorManageButton();
 		int beforeDeleteRecorders = Integer.parseInt(getTotalRecorders());
 		searchDoctor(doctorName);
 		int shouldDeleteRecorders = Integer.parseInt(getTotalRecorders());
-		DatabaseUtils.deleteDate(sql);
+		DatabaseUtils.deleteDate(databaseName,sql);
 		int afterDeleteRecorders = Integer.parseInt(getTotalRecorders());
 		clickDoctorManageButton();
 		if (beforeDeleteRecorders - afterDeleteRecorders == shouldDeleteRecorders) {

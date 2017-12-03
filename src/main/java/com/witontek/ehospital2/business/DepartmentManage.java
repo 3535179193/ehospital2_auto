@@ -3,6 +3,7 @@ package com.witontek.ehospital2.business;
 import org.openqa.selenium.WebDriver;
 
 import com.witontek.ehospital2.base.DatabaseUtils;
+import com.witontek.ehospital2.base.Locator;
 import com.witontek.ehospital2.base.Log;
 import com.witontek.ehospital2.page.DepartmentManagePage;
 
@@ -141,8 +142,8 @@ public class DepartmentManage extends DepartmentManagePage {
 	 * @param sql
 	 * @return
 	 */
-	public String deleteDepartment(String sql) {
-		DatabaseUtils.deleteDate(sql);
+	public String deleteDepartment(String datebaseName,String sql) {
+		DatabaseUtils.deleteDate(datebaseName,sql);
 		clickDepartmentCategoryManageButton();
 		clickCateManViewDepartmentButton();
 		return getTotalRecorders();

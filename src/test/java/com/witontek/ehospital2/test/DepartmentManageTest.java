@@ -132,7 +132,7 @@ public class DepartmentManageTest {
 	@Test(dataProvider = "deleteDepartment", enabled = true)
 	public void deleteDepartment(String caseName, String expectedResult, Map<String, String> testData) {
 		DepartmentManage departmentManage = new DepartmentManage(driver);
-		AssertUtils.assertActualEqualExpect(departmentManage.deleteDepartment(testData.get("sql")), expectedResult, caseName);
+		AssertUtils.assertActualEqualExpect(departmentManage.deleteDepartment(testData.get("databaseName"),testData.get("sql")), expectedResult, caseName);
 	}
 
 	@DataProvider(name = "deleteDepartment")

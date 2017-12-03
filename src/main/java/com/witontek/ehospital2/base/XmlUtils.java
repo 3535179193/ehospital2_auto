@@ -94,7 +94,7 @@ public class XmlUtils extends BasePage {
 	 * @param DataBaseName
 	 * @return
 	 */
-	public Map<String,Locator> getDataBaseXml() {
+	public static Map<String,Locator> getDataBaseXml() {
 		SAXReader reader = new SAXReader();
 		Document document = null;
 		try {
@@ -102,22 +102,25 @@ public class XmlUtils extends BasePage {
 					+ "/src/main/java/com/witontek/ehospital2/config/jdbc.xml"));
 		} catch (Exception e) {
 			log.error("将jdbc.xml文件转换为Document类型失败,报错信息：" + e.getMessage());
-			e.printStackTrace();
 		}
 		Map<String,Locator> map=new HashMap<String,Locator>();
 		Element rootElement = document.getRootElement();
 		List<Element> subelements = rootElement.elements("Server");
-		for(Element subelement:subelements){
-			List<Element> subeles = subelement.elements("DateBase");
-			for(Element subele:subeles){
-				String text=subele.getText();
-				String name=subele.attributeValue("name");
-				String driver=subele.attributeValue("driver");
-				String url=subele.attributeValue("url");
-				String username=subele.attributeValue("username");
-				String password=subele.attributeValue("password");
-				map.put(text, new Locator(name,driver,url,username,password));
+		try{
+			for(Element subelement:subelements){
+				List<Element> subeles = subelement.elements("DateBase");
+				for(Element subele:subeles){
+					String text=subele.getText();
+					String name=subele.attributeValue("name");
+					String driver=subele.attributeValue("driver");
+					String url=subele.attributeValue("url");
+					String username=subele.attributeValue("username");
+					String password=subele.attributeValue("password");
+					map.put(text, new Locator(name,driver,url,username,password));
+				}
 			}
+		}catch(Exception e){
+			log.error("读取jdbc.xml文件失败,报错信息：" + e.getMessage());
 		}
 		return map;
 	}

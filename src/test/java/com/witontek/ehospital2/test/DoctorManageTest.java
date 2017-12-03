@@ -118,7 +118,7 @@ public class DoctorManageTest {
 	@Test(dataProvider = "deleteDoctor", enabled = true)
 	public void deleteDoctor(String caseName, String expectedResult, Map<String, String> testData) {
 		DoctorManage doctorManage = new DoctorManage(driver);
-		doctorManage.deleteDoctor(testData.get("sql"), testData.get("doctorName"));
+		doctorManage.deleteDoctor(testData.get("databaseName"),testData.get("sql"), testData.get("doctorName"));
 	}
 
 	@DataProvider(name = "deleteDoctor")

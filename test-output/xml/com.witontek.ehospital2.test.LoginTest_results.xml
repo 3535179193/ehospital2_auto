@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test1"
+<testsuite name="test01"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="16.441">
+           time="28.278">
   <properties />
   
   
-            <testcase name="loginSuccess" time="16.441" classname="com.witontek.ehospital2.test.LoginTest" />
+            <testcase name="loginSuccess" time="28.278" classname="com.witontek.ehospital2.test.LoginTest" />
       
 </testsuite>
