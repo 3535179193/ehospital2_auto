@@ -25,6 +25,7 @@ public class DepartmentCategoryManage extends DepartmentCategoryManagePage {
 		inputCatePageCategoryCodeInputBox(categoryCode);
 		clickCatePageSaveButton();
 		clickAlertCloseButton();
+		clickCatePageReturnButton();
 		clickLastPageButton();
 		return getCateManAddedCategoryName();
 	}
@@ -40,6 +41,25 @@ public class DepartmentCategoryManage extends DepartmentCategoryManagePage {
 		clickFirstPageButton();
 		return getCateManFirstCategoryName();
 	}
+	
+	/**
+	 * 编辑新增的一级科室
+	 * @param categoryName
+	 * @param categoryCode
+	 * @return
+	 */
+	public String updateCategory(String categoryName, String categoryCode) {
+		clickCateManEditButton();
+		editCatePageCategoryNameInputBox(categoryName+"（改）");
+		editCatePageCategoryCodeInputBox(String.valueOf(Integer.parseInt(categoryCode)+1));
+		clickCatePageUpdateButton();
+		clickAlertCloseButton();
+		//再新增一个一级科室，为后面的测试用例做铺垫
+		clickBusinessInformationButton();
+		insertCategory(categoryName, categoryCode);
+		moveTopCategory();
+		return getCateManSecondCategoryName();
+	}
 
 	/**
 	 * 搜索一级科室
@@ -52,25 +72,12 @@ public class DepartmentCategoryManage extends DepartmentCategoryManagePage {
 		return getCateManFirstCategoryName();
 	}
 
-	// 编辑新增的一级科室
-	public String updateCategory(String categoryName, String categoryCode) {
-		clickCateManEditButton();
-		editCatePageCategoryNameInputBox(categoryName);
-		editCatePageCategoryCodeInputBox(categoryCode);
-		clickCatePageUpdateButton();
-		clickAlertCloseButton();
-		return getCateManFirstCategoryName();
-	}
-
 	/**
 	 * 下移一级科室
 	 * @param categoryName ,categoryCode
 	 * @return
 	 */
 	public String moveDownCategory(String categoryName, String categoryCode) {
-		clickBusinessInformationButton();
-		insertCategory(categoryName, categoryCode);
-		moveTopCategory();
 		clickCateManMoveDownButton();
 		clickAlertCloseButton();
 		return getCateManSecondCategoryName();
@@ -103,11 +110,10 @@ public class DepartmentCategoryManage extends DepartmentCategoryManagePage {
 			inputCateManCategoryNameInputBox(categoryName);
 			clickCateManSearchButton();
 			if (Integer.parseInt(getTotalRecorders()) == 0) {
-				log.info("删除一级科室成功");
+				log.info("删除全部新增的一级科室成功");
 			} else {
-				log.error("删除一级科室失败");
+				log.warn("未删除全部的一级科室，继续删除");
 			}
-
 		}
 	}
 }

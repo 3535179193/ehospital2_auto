@@ -16,14 +16,15 @@ public class Global {
 	//后台登录的用户名
 	public static final String USER_NAME=globalProperties.propertiesValue("USER_NAME");
 	
-	//jdbc连接test服务器中ehospital_test数据库
-	public static final String DATABASE=globalProperties.propertiesValue("DATABASE");
+	//后台登录的密码
+	public static final String PASSWORD=globalProperties.propertiesValue("PASSWORD");
 	
-	//ehospital_test数据库用户名
-	public static final String DATABASE_USERNAME=globalProperties.propertiesValue("DATABASE_USERNAME");
+	//后台登录的验证码
+	public static final String VALIDATION=globalProperties.propertiesValue("VALIDATION");
 	
-	//ehospital_test数据库密码
-	public static final String DATABASE_PASSWORD=globalProperties.propertiesValue("DATABASE_PASSWORD");
+	//数据库名
+	public static final String DATABASE_NAME=globalProperties.propertiesValue("DATABASE_NAME");
+
 
 
 }

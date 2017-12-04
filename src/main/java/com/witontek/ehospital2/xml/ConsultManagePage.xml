@@ -4,23 +4,21 @@
 	<Locator name="就医咨询管理-科室名称输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.getConsultListParams.search_condition']"	>conManDepartmentNameInputBox</Locator>
 	<Locator name="就医咨询管理-搜索按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.searchConsultList()']"					>conManSearchButton</Locator>
 
-	<Locator name="就医咨询管理-新增科室咨询按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.openConsultModal(true,{})']"				>conManAddDepartmentConsultButton</Locator>
+	<Locator name="就医咨询管理-新增科室咨询按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.openConsultModal(true,{})']"				>conManAddConsultDepartmentButton</Locator>
 		<Locator name="科室咨询框-科室名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@id='departmentName']"										>conBoxDepartmentNameInputBox</Locator>
-		<Locator name="科室咨询框-医生ID输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@id='doctorId']"											>conBoxDepartmentIDInputBox</Locator>
+		<Locator name="科室咨询框-医生ID输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@id='doctorId']"											>conBoxDoctorIDInputBox</Locator>
 		<Locator name="科室咨询框-咨询密码输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@id='password']"											>conBoxPasswordInputBox</Locator>
-		<Locator name="科室咨询框-保存按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.addConsult()']"							>conBoxSaveButton</Locator>
-		<Locator name="科室咨询框-保存并继续添加按钮" locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='$ctrl.isAdd']"									>conBoxSaveAndAddButton</Locator>
-		<Locator name="科室咨询框-取消按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.cancelHandle()']"							>conBoxCancleButton</Locator>
+		<Locator name="科室咨询框-保存按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.addConsult()']"							>conBoxSaveButton</Locator>
+		<Locator name="科室咨询框-保存并继续添加按钮" locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='$ctrl.isAdd']"										>conBoxSaveAndAddButton</Locator>
+		<Locator name="科室咨询框-取消按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.cancelHandle()']"							>conBoxCancleButton</Locator>
 					
-	<Locator name="就医咨询管理-序号" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.consultList']/li[1]"		index="0"	>conManNumber</Locator>
-	<Locator name="就医咨询管理-科室名称" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.consultList']/li[2]"		index="0"	>conManDepartmentName</Locator>
-	<Locator name="就医咨询管理-咨询医生ID" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.consultList']/li[3]"		index="0"	>conManDepartmentID</Locator>
-	<Locator name="就医咨询管理-注册密码" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.consultList']/li[4]"		index="0"	>conManPassword</Locator>
+	<Locator name="就医咨询管理-序号" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博二级科室')]/parent::ul/li[1]"		index="0"	>conManNumber</Locator>
+	<Locator name="就医咨询管理-科室名称" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博二级科室')]"						index="0"	>conManDepartmentName</Locator>
+	<Locator name="就医咨询管理-咨询医生ID" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博二级科室')]/parent::ul/li[3]"		index="0"	>conManDoctorID</Locator>
+	<Locator name="就医咨询管理-注册密码" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博二级科室')]/parent::ul/li[4]"		index="0"	>conManPassword</Locator>
 	<Locator name="就医咨询管理-删除按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'删除')]"									index="0"	>conManDeleteButton</Locator>
-	
-	<Locator name="就医咨询管理-编辑按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'编辑')]"									index="0"	>conManEditButton</Locator>
+	<Locator name="就医咨询管理-编辑按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博二级科室')]/parent::ul/li[5]/div/div/a[1]"		index="0"	>conManEditButton</Locator>
 
-	<Locator name="就医咨询管理-被验证的新增咨询科室名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]"								>conManAssertAddConsultDepartmentName</Locator>
-	<Locator name="就医咨询管理-被验证的编辑咨询科室名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室(改)')]"							>conManAssertEditConsultDepartmentName</Locator>
+	<Locator name="就医咨询管理-编辑后的咨询科室名称"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博二级科室（改）')]"					index="0"	>conManEditedConsultDepartmentName</Locator>
 	
 </Page>

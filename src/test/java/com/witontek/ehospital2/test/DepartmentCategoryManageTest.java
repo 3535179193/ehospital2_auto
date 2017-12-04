@@ -68,7 +68,7 @@ public class DepartmentCategoryManageTest {
 	/**
 	 * 科室管理-编辑新增的一级科室
 	 */
-	@Test(dataProvider = "updateCategory", dependsOnMethods = {"insertCategory"}, enabled = true)
+	@Test(dataProvider = "updateCategory", dependsOnMethods = {"moveTopCategory"}, enabled = true)
 	public void updateCategory(String caseName, String expectedResult, Map<String, String> testData) {
 		DepartmentCategoryManage departmentCategoryManage = new DepartmentCategoryManage(driver);
 		AssertUtils.assertActualEqualExpect(departmentCategoryManage.updateCategory(testData.get("categoryName"), testData.get("categoryCode")),
@@ -127,7 +127,7 @@ public class DepartmentCategoryManageTest {
 	@BeforeMethod
 	public void beforeMethod() {
 		LoginPage login = new LoginPage(driver);
-		login.login(Global.USER_NAME, "admin", "1111");
+		login.login(Global.USER_NAME, Global.PASSWORD, Global.VALIDATION);
 	}
 
 	@BeforeClass

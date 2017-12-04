@@ -31,5 +31,5 @@
     <Locator name="二级科室管理-下移按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"			>depManMoveDownButton</Locator>
 	<Locator name="二级科室管理-置顶按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'置顶')]"						index="1"			>depManMoveTopButton</Locator>
 	<Locator name="二级科室管理-隐藏按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@ng-click='$ctrl.changeDepartmentStatus(item)']"		index="0"	>depManHideButton</Locator>
-	
+			
 </Page>

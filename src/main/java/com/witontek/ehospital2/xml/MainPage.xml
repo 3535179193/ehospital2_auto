@@ -28,7 +28,7 @@
 		<Locator name="就医评价管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[8]/span"	>appraiseManageButton</Locator>
 		<Locator name="挂号管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[9]/span"	>registerManageButton</Locator>
 		<Locator name="智能导诊" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[10]/span"	>smartGuideButton</Locator>
-		<Locator name="科室繁忙度" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[11]/span"	>departmentBusynessButton</Locator>
+		<Locator name="科室繁忙度" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[11]/span"	>departmentBusyButton</Locator>
 		<Locator name="收费项目" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'收费项目')]"					>payItemButton</Locator>
 				
 	<Locator name="统计分析" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'统计分析')]"			>analysisButton</Locator>

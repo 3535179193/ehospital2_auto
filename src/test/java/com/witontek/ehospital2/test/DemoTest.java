@@ -61,7 +61,7 @@
 ////	@Test
 ////	public void beforeMethod() {
 ////		LoginPage login = new LoginPage(driver);
-////		login.login(Global.USER_NAME, "admin", "1111");
+////		login.login(Global.USER_NAME, Global.PASSWORD, Global.VALIDATION);
 ////		driver.findElement(By.xpath("//span[contains(.,'业务信息管理')]")).click();
 ////		BrowserUtils.sleep(1);
 ////		driver.findElement(By.xpath("//li[@class='submenu slide-show']/div[1]/span")).click();

@@ -129,7 +129,7 @@ public class DoctorManageTest {
 	@BeforeMethod
 	public void beforeMethod() {
 		LoginPage login = new LoginPage(driver);
-		login.login(Global.USER_NAME, "admin", "1111");
+		login.login(Global.USER_NAME, Global.PASSWORD, Global.VALIDATION);
 	}
 
 	@BeforeClass

@@ -25,54 +25,79 @@ public class ConsultManageTest {
 
 	private WebDriver driver;
 
-
-	//就医咨询管理-新增咨询科室
-	@Test(dataProvider = "insertConsultDepartment",enabled=false)
-	public void insertConsultDepartment(String caseName, String expectedResult,Map<String, String> testData) {
+	/**
+	 * 就医咨询管理-新增咨询科室
+	 */
+	@Test(dataProvider = "insertConsultDepartment", enabled = true)
+	public void insertConsultDepartment(String caseName, String expectedResult, Map<String, String> testData) {
 		ConsultManage consultManage = new ConsultManage(driver);
-		AssertUtils.assertActualEqualExpect(consultManage.insertConsultDepartment(testData.get("departmentName"),testData.get("departmentID"),testData.get("password")),expectedResult, caseName);
+		AssertUtils.assertActualContainExpect(
+				consultManage.insertConsultDepartment(testData.get("departmentName"), testData.get("doctorID"), testData.get("password")),
+				expectedResult, caseName);
 	}
 
 	@DataProvider(name = "insertConsultDepartment")
 	public Iterator<Object[]> insertConsultDepartment() {
-		return ExcelUtils.readExcel("consultManage","insertConsultDepartment");
+		return ExcelUtils.readExcel("consultManage", "insertConsultDepartment");
 	}
-	
-	//就医咨询管理-搜索咨询科室
-	@Test(dataProvider = "searchConsultDepartment",dependsOnMethods={"insertConsultDepartment"},enabled=false)
-	public void searchConsultDepartment(String caseName, String expectedResult,Map<String, String> testData) {
+
+	/**
+	 * 就医咨询管理-保存并继续新增咨询科室
+	 */
+	@Test(dataProvider = "insertConsultDepartment", dependsOnMethods = {"insertConsultDepartment"}, enabled = true)
+	public void insertAndContinueConsultDepartment(String caseName, String expectedResult, Map<String, String> testData) {
 		ConsultManage consultManage = new ConsultManage(driver);
-		AssertUtils.assertActualEqualExpect(consultManage.searchConsultDepartment(testData.get("departmentName")),expectedResult, caseName);
+		consultManage.insertAndContinueConsultDepartment(testData.get("departmentName"), testData.get("doctorID"), testData.get("password"));
+	}
+
+	/**
+	 * 就医咨询管理-搜索咨询科室
+	 */
+	@Test(dataProvider = "searchConsultDepartment", dependsOnMethods = {"insertConsultDepartment"}, enabled = true)
+	public void searchConsultDepartment(String caseName, String expectedResult, Map<String, String> testData) {
+		ConsultManage consultManage = new ConsultManage(driver);
+		AssertUtils.assertActualContainExpect(consultManage.searchConsultDepartment(testData.get("departmentName")), expectedResult, caseName);
 	}
 
 	@DataProvider(name = "searchConsultDepartment")
 	public Iterator<Object[]> searchConsultDepartment() {
-		return ExcelUtils.readExcel("consultManage","searchConsultDepartment");
+		return ExcelUtils.readExcel("consultManage", "searchConsultDepartment");
 	}
 
-	//就医咨询管理-编辑咨询科室
-	@Test(dataProvider = "updateConsultDepartment",dependsOnMethods={"searchConsultDepartment"},enabled=false)
-	public void updateConsultDepartment(String caseName, String expectedResult,Map<String, String> testData) {
+	/**
+	 * 就医咨询管理-编辑咨询科室
+	 */
+	@Test(dataProvider = "updateConsultDepartment", dependsOnMethods = {"insertConsultDepartment"}, enabled = true)
+	public void updateConsultDepartment(String caseName, String expectedResult, Map<String, String> testData) {
 		ConsultManage consultManage = new ConsultManage(driver);
-		AssertUtils.assertActualEqualExpect(consultManage.updateConsultDepartment(testData.get("departmentName"),testData.get("departmentID"),testData.get("password")),expectedResult, caseName);
+		AssertUtils.assertActualEqualExpect(
+				consultManage.updateConsultDepartment(testData.get("departmentName"), testData.get("doctorID"), testData.get("password")),
+				expectedResult, caseName);
 	}
 
 	@DataProvider(name = "updateConsultDepartment")
 	public Iterator<Object[]> updateConsultDepartment() {
-		return ExcelUtils.readExcel("consultManage","updateConsultDepartment");
+		return ExcelUtils.readExcel("consultManage", "updateConsultDepartment");
 	}
-	
-	//就医咨询管理-删除咨询科室
-	@Test(dependsOnMethods={"updateConsultDepartment"},enabled=false)
-	public void deleteConsultDepartment() {
+
+	/**
+	 * 就医咨询管理-删除咨询科室
+	 */
+	@Test(dataProvider = "deleteConsultDepartment", enabled = true)
+	public void deleteConsultDepartment(String caseName, String expectedResult, Map<String, String> testData) {
 		ConsultManage consultManage = new ConsultManage(driver);
-		consultManage.deleteConsultDepartment();
+		consultManage.deleteConsultDepartment(testData.get("departmentName"));
+	}
+
+	@DataProvider(name = "deleteConsultDepartment")
+	public Iterator<Object[]> deleteConsultDepartment() {
+		return ExcelUtils.readExcel("consultManage", "deleteConsultDepartment");
 	}
 
 	@BeforeMethod
 	public void beforeMethod() {
 		LoginPage login = new LoginPage(driver);
-		login.login(Global.USER_NAME, "admin", "1111");
+		login.login(Global.USER_NAME, Global.PASSWORD, Global.VALIDATION);
 	}
 
 	@BeforeClass

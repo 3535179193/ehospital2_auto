@@ -45,7 +45,7 @@ public class MainPage extends LoginPage{
 	protected Locator appraiseManageButton=XmlUtils.getElementXml("MainPage").get("appraiseManageButton");
 	protected Locator registerManageButton=XmlUtils.getElementXml("MainPage").get("registerManageButton");
 	protected Locator smartGuideButton=XmlUtils.getElementXml("MainPage").get("smartGuideButton");
-	protected Locator departmentBusynessButton=XmlUtils.getElementXml("MainPage").get("departmentBusynessButton");
+	protected Locator departmentBusyButton=XmlUtils.getElementXml("MainPage").get("departmentBusyButton");
 	protected Locator payItemButton=XmlUtils.getElementXml("MainPage").get("payItemButton");
 	
 	//统计分析
@@ -187,9 +187,9 @@ public class MainPage extends LoginPage{
 	}
 	
 	//点击科室繁忙度
-	public void clickDepartmentBusynessButton(){
+	public void clickDepartmentBusyButton(){
 		clickBusinessInformationButton();
-		click(departmentBusynessButton);
+		click(departmentBusyButton);
 	}
 	
 	//点击收费项目

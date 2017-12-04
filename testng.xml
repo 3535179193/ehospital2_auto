@@ -28,26 +28,25 @@
 			</class>
 		</classes>
 	</test>
-
 -->
+
+<!--
 	<test name="test03" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentManageTest">
 				<methods>
 					<include name="insertDepartment"></include>
-					<include name="moveTopDepartment"></include>
 					<include name="searchDepartment"></include>
-					<include name="updateDepartment"></include>
 					<include name="moveUpDepartment"></include>
 					<include name="moveDownDepartment"></include>
-					<include name="hideDepartment"></include>
+					<include name="moveTopDepartment"></include>
 				</methods>
 			</class>
 		</classes>
 	</test>
 
-<!--
-	<test name="test3" preserve-order="true">
+
+	<test name="test04" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DoctorManageTest">
 				<methods>
@@ -63,17 +62,19 @@
 	</test>
 -->
 
-<!--
-	<test name="test4" preserve-order="true">
+	<test name="test05" preserve-order="true">
 		<classes>
-			<class name="com.witontek.ehospital2.test.SubscriptionManageTest">
+			<class name="com.witontek.ehospital2.test.ConsultManageTest">
 				<methods>
-					<include name="selectSubscriptionDate"></include>
+					<include name="insertConsultDepartment"></include>
+					<include name="insertAndContinueConsultDepartment"></include>
+					<include name="searchConsultDepartment"></include>
+					<include name="updateConsultDepartment"></include>
 				</methods>
 			</class>
 		</classes>
 	</test>
-
+<!--
 	<test name="test5" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.HospitalInformationTest">
@@ -84,7 +85,18 @@
 		</classes>
 	</test>
 
-
+	<test name="test96" preserve-order="true">
+		<classes>
+			<class name="com.witontek.ehospital2.test.ConsultManageTest">
+				<methods>
+					<include name="deleteConsultDepartment"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+-->
+<!--
 	<test name="test97" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DoctorManageTest">
@@ -94,8 +106,7 @@
 			</class>
 		</classes>
 	</test>
--->
-<!--
+
 	<test name="test98" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentManageTest">

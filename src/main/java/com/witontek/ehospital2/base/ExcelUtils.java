@@ -67,7 +67,7 @@ public class ExcelUtils extends BasePage {
 				}
 				testCase.add(new Object[]{caseName, expectedResult, testData});
 			}
-			log.info("读取" + excelFileName + ".xlsx文件中"+sheetName+"表单");
+			log.info("读取" + excelFileName + ".xlsx文件中"+sheetName+"表单成功");
 		} catch (Exception e) {
 			log.error("读取" + excelFileName + ".xlsx文件中"+sheetName+"表单失败,报错信息：" + e.getMessage());
 		}

@@ -19,9 +19,9 @@ public class ConsultManagePage extends MainPage{
 	protected Locator conManSearchButton=XmlUtils.getElementXml("ConsultManagePage").get("conManSearchButton");
 	
 	//就医咨询管理-新增科室咨询按钮
-	protected Locator conManAddDepartmentConsultButton=XmlUtils.getElementXml("ConsultManagePage").get("conManAddDepartmentConsultButton");
+	protected Locator conManAddConsultDepartmentButton=XmlUtils.getElementXml("ConsultManagePage").get("conManAddConsultDepartmentButton");
 		protected Locator conBoxDepartmentNameInputBox=XmlUtils.getElementXml("ConsultManagePage").get("conBoxDepartmentNameInputBox");
-		protected Locator conBoxDepartmentIDInputBox=XmlUtils.getElementXml("ConsultManagePage").get("conBoxDepartmentIDInputBox");
+		protected Locator conBoxDoctorIDInputBox=XmlUtils.getElementXml("ConsultManagePage").get("conBoxDoctorIDInputBox");
 		protected Locator conBoxPasswordInputBox=XmlUtils.getElementXml("ConsultManagePage").get("conBoxPasswordInputBox");
 		protected Locator conBoxSaveButton=XmlUtils.getElementXml("ConsultManagePage").get("conBoxSaveButton");
 		protected Locator conBoxSaveAndAddButton=XmlUtils.getElementXml("ConsultManagePage").get("conBoxSaveAndAddButton");
@@ -30,21 +30,20 @@ public class ConsultManagePage extends MainPage{
 	//就医咨询管理-序号
 	protected Locator conManNumber=XmlUtils.getElementXml("ConsultManagePage").get("conManNumber");
 	protected Locator conManDepartmentName=XmlUtils.getElementXml("ConsultManagePage").get("conManDepartmentName");
-	protected Locator conManDepartmentID=XmlUtils.getElementXml("ConsultManagePage").get("conManDepartmentID");
+	protected Locator conManDoctorID=XmlUtils.getElementXml("ConsultManagePage").get("conManDoctorID");
 	protected Locator conManPassword=XmlUtils.getElementXml("ConsultManagePage").get("conManPassword");
 	protected Locator conManDeleteButton=XmlUtils.getElementXml("ConsultManagePage").get("conManDeleteButton");
 	
 	//就医咨询管理-编辑按钮
 	protected Locator conManEditButton=XmlUtils.getElementXml("ConsultManagePage").get("conManEditButton");
 	
-	//被验证的数据
-	protected Locator conManAssertAddConsultDepartmentName=XmlUtils.getElementXml("ConsultManagePage").get("conManAssertAddConsultDepartmentName");
-	protected Locator conManAssertEditConsultDepartmentName=XmlUtils.getElementXml("ConsultManagePage").get("conManAssertEditConsultDepartmentName");
+	//就医咨询管理-编辑后的咨询科室名称
+	protected Locator conManEditedConsultDepartmentName=XmlUtils.getElementXml("ConsultManagePage").get("conManEditedConsultDepartmentName");
 	
 	
 	//就医咨询管理-输入科室名称
 	public void inputConManDepartmentNameInputBox(String departmentName){
-		input(conManDepartmentNameInputBox, departmentName);
+		clearAndInput(conManDepartmentNameInputBox, departmentName);
 	}
 	
 	//就医咨询管理-点击搜索按钮
@@ -53,8 +52,8 @@ public class ConsultManagePage extends MainPage{
 	}
 	
 	//就医咨询管理-点击新增科室咨询按钮
-	public void clickConManAddDepartmentConsultButton(){
-		click(conManAddDepartmentConsultButton);
+	public void clickConManAddConsultDepartmentButton(){
+		click(conManAddConsultDepartmentButton);
 	}
 	
 	//新增科室咨询-输入科室名称
@@ -63,8 +62,8 @@ public class ConsultManagePage extends MainPage{
 	}
 	
 	//新增科室咨询-输入医生ID
-	public void inputConBoxDepartmentIDInputBox(String departmentID){
-		input(conBoxDepartmentIDInputBox, departmentID);
+	public void inputConBoxDoctorIDInputBox(String departmentID){
+		input(conBoxDoctorIDInputBox, departmentID);
 	}
 	
 	//新增科室咨询-输入咨询密码
@@ -75,6 +74,7 @@ public class ConsultManagePage extends MainPage{
 	//新增科室咨询-点击保存按钮
 	public void clickConBoxSaveButton(){
 		click(conBoxSaveButton);
+		wait(5);
 	}
 	
 	//新增科室咨询-点击保存并继续添加按钮
@@ -85,6 +85,7 @@ public class ConsultManagePage extends MainPage{
 	//新增科室咨询-点击取消按钮
 	public void clickConBoxCancleButton(){
 		click(conBoxCancleButton);
+		wait(5);
 	}
 	
 	//就医咨询管理-获取序号
@@ -102,10 +103,10 @@ public class ConsultManagePage extends MainPage{
 	}
 	
 	//就医咨询管理-获取咨询医生ID
-	public String getConManDepartmentID(){
-		String departmentID=getText(conManDepartmentID);
-		log.info("就医咨询管理-咨询医生ID："+departmentID);
-		return departmentID;
+	public String getConManDoctorID(){
+		String doctorID=getText(conManDoctorID);
+		log.info("就医咨询管理-咨询医生ID："+doctorID);
+		return doctorID;
 	}
 	
 	//就医咨询管理-获取注册密码
@@ -131,8 +132,8 @@ public class ConsultManagePage extends MainPage{
 	}
 	
 	//编辑科室咨询-编辑咨询医生ID
-	public void editConBoxDepartmentIDInputBox(String departmentID){
-		clearAndInput(conBoxDepartmentIDInputBox, departmentID);
+	public void editConBoxDoctorIDInputBox(String departmentID){
+		clearAndInput(conBoxDoctorIDInputBox, departmentID);
 	}
 	
 	//编辑科室咨询-编辑咨询密码
@@ -140,17 +141,10 @@ public class ConsultManagePage extends MainPage{
 		clearAndInput(conBoxPasswordInputBox,password);
 	}
 	
-	//就医咨询管理-被验证的新增咨询科室名称
-	public String getConManAssertAddConsultDepartmentName(){
-		String departmentName=getText(conManAssertAddConsultDepartmentName);
-		log.info("就医咨询管理-被验证的新增咨询科室名称："+departmentName);
-		return departmentName;		
-	}
-	
-	//就医咨询管理-被验证的编辑咨询科室名称
-	public String getConManAssertEditConsultDepartmentName(){
-		String departmentName=getText(conManAssertEditConsultDepartmentName);
-		log.info("就医咨询管理-被验证的编辑咨询科室名称："+departmentName);
+	//获取就医咨询管理-编辑后的咨询科室名称
+	public String getConManEditedConsultDepartmentName(){
+		String departmentName=getText(conManEditedConsultDepartmentName);
+		log.info("就医咨询管理-编辑后的咨询科室名称："+departmentName);
 		return departmentName;		
 	}
 }

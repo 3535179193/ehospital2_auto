@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -82,5 +83,17 @@ public class BrowserUtils {
 	public void forward(){
 		driver.navigate().forward();
 		log.info("前进");
+	}
+	
+	//获取网页标题
+	public void getTitle(){
+		driver.getTitle();
+		log.info("获取网页标题");
+	}
+	
+	//相对当前位置向下滚动i*100像素
+	public void scrollDown(int i){
+		((JavascriptExecutor)driver).executeScript("window.scrollBy(0,"+i*100+")");
+		log.info("相对当前位置向下滚动"+i+"*100像素");
 	}
 }
