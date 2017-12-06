@@ -148,11 +148,11 @@ public class DoctorManage extends DoctorManagePage {
 	 */
 	public void deleteDoctor(String databaseName,String sql, String doctorName) {
 		clickDoctorManageButton();
-		int beforeDeleteRecorders = Integer.parseInt(getTotalRecorders());
+		int beforeDeleteRecorders = Integer.parseInt(getTotalRecords());
 		searchDoctor(doctorName);
-		int shouldDeleteRecorders = Integer.parseInt(getTotalRecorders());
+		int shouldDeleteRecorders = Integer.parseInt(getTotalRecords());
 		DatabaseUtils.deleteDate(databaseName,sql);
-		int afterDeleteRecorders = Integer.parseInt(getTotalRecorders());
+		int afterDeleteRecorders = Integer.parseInt(getTotalRecords());
 		clickDoctorManageButton();
 		if (beforeDeleteRecorders - afterDeleteRecorders == shouldDeleteRecorders) {
 			log.info("通过数据库删除新增的医生成功");

@@ -18,7 +18,7 @@
 		<Locator name="分类管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'分类管理')]"			>categoryButton</Locator>
 
 	<Locator name="业务信息管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'业务信息管理')]"		>businessInformationButton</Locator>
-		<Locator name="科室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[1]/span"	>departmentCategoryManageButton</Locator>
+		<Locator name="科室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'科室管理')]"		index="0"	>departmentCategoryManageButton</Locator>
 		<Locator name="值班室管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'值班室管理')]"				>dutyRoomManageButton</Locator>
 		<Locator name="医生管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[3]/span"	>doctorManageButton</Locator>
 		<Locator name="排班管理" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@class='submenu slide-show']/div[4]/span"	>scheduleManageButton</Locator>
@@ -40,9 +40,9 @@
 		<Locator name="自动对账管理" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'自动对账管理')]"		>automaticCheckAccountButton</Locator>	
 	
 	<!-- 公共元素 -->>
-	<Locator name="每页显示数下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"					>eachPageRecordersDropBox</Locator>
-	<Locator name="选中每页显示10条" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']/option[1]"		>eachPageTenRecorders</Locator>
-	<Locator name="总记录数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/span[1]"			>totalRecorders</Locator>
+	<Locator name="每页显示数下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']"					>eachPageRecordsDropBox</Locator>
+	<Locator name="选中每页显示20条" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@ng-model='$ctrl.pageEvery']/option[2]"		>eachPageTwentyRecords</Locator>
+	<Locator name="总记录数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/span[1]"			>totalRecords</Locator>
 	<Locator name="总页数" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/span[2]"			>totalPages</Locator>
 	<Locator name="当前页数" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/span[3]"			>currentPage</Locator>
 	<Locator name="第一页按钮"		 	locatorWay="XPATH"	waitTime="10"	attributeValue="//div[@class='page form-ctrl']/div[2]/a[1]"				>firstPageButton</Locator>

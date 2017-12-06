@@ -83,32 +83,21 @@ public class DepartmentCategoryManageTest {
 	/**
 	 * 科室管理-下移一级科室
 	 */
-	@Test(dataProvider = "moveDownCategory", dependsOnMethods = {"updateCategory"}, enabled = true)
-	public void moveDownCategory(String caseName, String expectedResult, Map<String, String> testData) {
+	@Test(dependsOnMethods = {"moveTopCategory"}, enabled = true)
+	public void moveDownCategory() {
 		DepartmentCategoryManage departmentCategoryManage = new DepartmentCategoryManage(driver);
-		AssertUtils.assertActualEqualExpect(departmentCategoryManage.moveDownCategory(testData.get("categoryName"), testData.get("categoryCode")),
-				expectedResult, caseName);
-	}
-
-	@DataProvider(name = "moveDownCategory")
-	public Iterator<Object[]> moveDownCategory() {
-		return ExcelUtils.readExcel("departmentCategoryManage","moveDownCategory");
+		departmentCategoryManage.moveDownCategory();
 	}
 	
 	/**
 	 * 科室管理-上移一级科室
 	 */
-	@Test(dataProvider = "moveUpCategory", dependsOnMethods = {"moveDownCategory"}, enabled = true)
-	public void moveUpCategory(String caseName, String expectedResult, Map<String, String> testData) {
+	@Test(dependsOnMethods = {"moveTopCategory"}, enabled = true)
+	public void moveUpCategory() {
 		DepartmentCategoryManage departmentCategoryManage = new DepartmentCategoryManage(driver);
-		AssertUtils.assertActualContainExpect(departmentCategoryManage.moveUpCategory(), expectedResult, caseName);
+		departmentCategoryManage.moveUpCategory();
 	}
 
-	@DataProvider(name = "moveUpCategory")
-	public Iterator<Object[]> moveUpCategory() {
-		return ExcelUtils.readExcel("departmentCategoryManage","moveUpCategory");
-	}
-	
 
 	/**
 	 * 科室管理-删除一级科室

@@ -58,9 +58,9 @@ public class MainPage extends LoginPage{
 	protected Locator automaticCheckAccountButton=XmlUtils.getElementXml("MainPage").get("automaticCheckAccountButton");
 	
 	//公共元素-每页显示数下拉框
-	protected Locator eachPageRecordersDropBox=XmlUtils.getElementXml("MainPage").get("eachPageRecordersDropBox");
-	protected Locator eachPageTenRecorders=XmlUtils.getElementXml("MainPage").get("eachPageTenRecorders");
-	protected Locator totalRecorders=XmlUtils.getElementXml("MainPage").get("totalRecorders");
+	protected Locator eachPageRecordsDropBox=XmlUtils.getElementXml("MainPage").get("eachPageRecordsDropBox");
+	protected Locator eachPageTwentyRecords=XmlUtils.getElementXml("MainPage").get("eachPageTwentyRecords");
+	protected Locator totalRecords=XmlUtils.getElementXml("MainPage").get("totalRecords");
 	protected Locator totalPages=XmlUtils.getElementXml("MainPage").get("totalPages");
 	protected Locator currentPage=XmlUtils.getElementXml("MainPage").get("currentPage");
 	protected Locator firstPageButton=XmlUtils.getElementXml("MainPage").get("firstPageButton");
@@ -130,6 +130,13 @@ public class MainPage extends LoginPage{
 	public void clickDepartmentCategoryManageButton(){
 		clickBusinessInformationButton();
 		click(departmentCategoryManageButton);
+	}
+	
+	//获取科室管理菜单文本信息
+	public String getDepartmentCategoryManageButton(){
+		String menuText=getText(departmentCategoryManageButton);
+		log.info("科室管理菜单文本信息："+menuText);
+		return menuText;
 	}
 	
 	//点击值班室管理
@@ -240,20 +247,20 @@ public class MainPage extends LoginPage{
 	}
 	
 	//点击每页显示数下拉框
-	public void clickEachPageRecordersDropBox(){
-		click(eachPageRecordersDropBox);
+	public void clickEachPageRecordsDropBox(){
+		click(eachPageRecordsDropBox);
 	}
 	
-	//选中每页显示10条
-	public void clickEachPageTenRecorders(){
-		click(eachPageTenRecorders);
+	//选中每页显示20条
+	public void clickEachPageTwentyRecords(){
+		click(eachPageTwentyRecords);
 	}
 	
 	//获取总记录数
-	public String getTotalRecorders(){
-			String recorders=getText(totalRecorders);
-			log.info("总记录数："+recorders);
-			return recorders;
+	public String getTotalRecords(){
+			String records=getText(totalRecords);
+			log.info("总记录数："+records);
+			return records;
 	}
 	
 	//获取总页数

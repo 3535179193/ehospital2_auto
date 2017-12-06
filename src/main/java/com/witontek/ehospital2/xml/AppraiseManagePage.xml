@@ -24,9 +24,9 @@
 	<Locator name="就医评价管理-更新日期" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.evaluationListData']/li[6]"		index="0"	>appManUpdateDate</Locator>
 	<Locator name="就医评价管理-状态" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.evaluationListData']/li[7]"		index="0"	>appManStatus</Locator>
 	<Locator name="就医评价管理-填写数" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@ng-repeat='item in $ctrl.evaluationListData']/li[8]"		index="0"	>appManFillNumber</Locator>
-	<Locator name="就医评价管理-删除按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博医院评价')]/parent::ul/li[9]/div/a[2]"		index="0"	>appManDeleteButton</Locator>
+	<Locator name="就医评价管理-删除按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博')]/parent::ul/li[9]/div/a[2]"		index="0"	>appManDeleteButton</Locator>
 
-	<Locator name="就医咨询管理-编辑按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博医院评价')]/parent::ul/li[9]/div/a[1]"		index="0"	>appManEditButton</Locator>
+	<Locator name="就医咨询管理-编辑按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博')]/parent::ul/li[9]/div/a[1]"		index="0"	>appManEditButton</Locator>
 		<Locator name="评价问卷框-编辑评价项按钮"		locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-if='!$ctrl.isAdd']"											>appBoxEditAppraiseItemButton</Locator>
 
 <!--		

@@ -53,7 +53,7 @@ public class AppraiseManagePage extends MainPage{
 	
 	//就医评价管理-输入问卷名称
 	public void inputAppManAppraiseNameInputBox(String appraiseName){
-		input(appManAppraiseNameInputBox, appraiseName);
+		clearAndInput(appManAppraiseNameInputBox, appraiseName);
 	}
 	
 	//就医评价管理-点击搜索按钮

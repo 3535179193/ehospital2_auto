@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="test02"
-           tests="6"
+           tests="8"
            failures="0"
            errors="0"
            skipped="0"
-           time="40.174">
+           time="36.841">
   <properties />
   
   
-            <testcase name="updateCategory" time="17.959" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
-                <testcase name="moveUpCategory" time="2.713" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
-                <testcase name="searchCategory" time="2.459" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
-                <testcase name="moveTopCategory" time="3.787" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
-                <testcase name="insertCategory" time="10.468" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
-                <testcase name="moveDownCategory" time="2.788" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
+            <testcase name="insertCategory" time="6.024" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
+                <testcase name="moveDownCategory" time="3.228" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
+                <testcase name="moveTopCategory" time="4.291" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
+                <testcase name="searchCategory" time="2.421" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
+                <testcase name="updateCategory" time="5.474" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
+                <testcase name="moveUpCategory" time="3.259" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
+                <testcase name="insertCategory" time="7.751" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
+                <testcase name="moveTopCategory" time="4.393" classname="com.witontek.ehospital2.test.DepartmentCategoryManageTest" />
       
 </testsuite>

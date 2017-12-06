@@ -31,7 +31,7 @@ public class DepartmentManageTest {
 	@Test(dataProvider = "insertDepartment", enabled = true)
 	public void insertDepartment(String caseName, String expectedResult, Map<String, String> testData) {
 		DepartmentManage departmentManage = new DepartmentManage(driver);
-		AssertUtils.assertActualEqualExpect(departmentManage.insertDepartment(testData.get("departmentName"), testData.get("departmentCode"),
+		AssertUtils.assertActualContainExpect(departmentManage.insertDepartment(testData.get("departmentName"), testData.get("departmentCode"),
 				testData.get("departmentPhone"), testData.get("departmentAddress"), testData.get("departmentFeature"),
 				testData.get("departmentSummary"), testData.get("Attention")), expectedResult, caseName);
 	}
@@ -60,7 +60,7 @@ public class DepartmentManageTest {
 	/**
 	 * 二级科室管理-搜索二级科室
 	 */
-	@Test(dataProvider = "searchDepartment", dependsOnMethods = {"updateDepartment"}, enabled = true)
+	@Test(dataProvider = "searchDepartment", dependsOnMethods = {"insertDepartment"}, enabled = true)
 	public void searchDepartment(String caseName, String expectedResult, Map<String, String> testData) {
 		DepartmentManage departmentManage = new DepartmentManage(driver);
 		AssertUtils.assertActualContainExpect(departmentManage.searchDepartment(testData.get("departmentName")), expectedResult, caseName);
@@ -74,7 +74,7 @@ public class DepartmentManageTest {
 	/**
 	 * 二级科室管理-上移二级科室
 	 */
-	@Test(dependsOnMethods = {"updateDepartment"}, enabled = true)
+	@Test(dependsOnMethods = {"insertDepartment"}, enabled = true)
 	public void moveUpDepartment() {
 		DepartmentManage departmentManage = new DepartmentManage(driver);
 		departmentManage.moveUpDepartment();
@@ -83,7 +83,7 @@ public class DepartmentManageTest {
 	/**
 	 * 二级科室管理-下移二级科室
 	 */
-	@Test(dependsOnMethods = {"updateDepartment"}, enabled = true)
+	@Test(dependsOnMethods = {"insertDepartment"}, enabled = true)
 	public void moveDownDepartment() {
 		DepartmentManage departmentManage = new DepartmentManage(driver);
 		departmentManage.moveDownDepartment();
@@ -92,7 +92,7 @@ public class DepartmentManageTest {
 	/**
 	 * 二级科室管理-置顶二级科室
 	 */
-	@Test(dependsOnMethods = {"updateDepartment"}, enabled = true)
+	@Test(dependsOnMethods = {"insertDepartment"}, enabled = true)
 	public void moveTopDepartment() {
 		DepartmentManage departmentManage = new DepartmentManage(driver);
 		departmentManage.moveTopDepartment();

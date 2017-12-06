@@ -9,7 +9,7 @@
 		<Locator name="二级科室页面-科室名称输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='department_name']"			>depPageDepartmentNameInputBox</Locator>
 		<Locator name="二级科室页面-科室编码输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='department_code']"			>depPageDepartmentCodeInputBox</Locator>
 		<Locator name="二级科室页面-选择所属一级科室下拉框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//select[@name='departments_category_id']"				>depPageSelectBelongCategoryDropBox</Locator>		
-		<Locator name="二级科室页面-选择所属一级科室按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//option[@label='睿博一级科室']"		>depPageSelectBelongCategoryButton</Locator>			
+		<Locator name="二级科室页面-选择所属一级科室按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//option[contains(.,'睿博一级科室')]"		index="0"	>depPageSelectBelongCategoryButton</Locator>			
 		<Locator name="二级科室页面-科室LOGO按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//span[contains(.,'请选择')]"				>depPageDepartmentLogoButton</Locator>		
 		<Locator name="二级科室页面-科室电话输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='dep_phone']"					>depPageDepartmentPhoneInputBox</Locator>
 		<Locator name="二级科室页面-科室地址输入框" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@name='department_address']"		>depPageDepartmentAddressInputBox</Locator>

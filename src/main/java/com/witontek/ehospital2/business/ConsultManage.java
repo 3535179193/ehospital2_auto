@@ -39,7 +39,7 @@ public class ConsultManage extends ConsultManagePage{
 	 * @return
 	 */
 	public void insertAndContinueConsultDepartment(String departmentName,String doctorID,String password){
-		int beforeInsert=Integer.parseInt(getTotalRecorders());
+		int beforeInsert=Integer.parseInt(getTotalRecords());
 		clickConManAddConsultDepartmentButton();
 		inputConBoxDepartmentNameInputBox(departmentName+"1");
 		inputConBoxDoctorIDInputBox(String.valueOf(Integer.parseInt(doctorID)+1));
@@ -49,7 +49,7 @@ public class ConsultManage extends ConsultManagePage{
 		inputConBoxDoctorIDInputBox(String.valueOf(Integer.parseInt(doctorID)+2));
 		inputConBoxPasswordInputBox(password);
 		clickConBoxSaveButton();
-		int afterInsert=Integer.parseInt(getTotalRecorders());
+		int afterInsert=Integer.parseInt(getTotalRecords());
 		if(afterInsert==beforeInsert+2){
 			log.info("新增后总记录数（"+afterInsert+"）与新增前（"+beforeInsert+"）相差为2，就医咨询管理-保存并继续新增咨询科室成功");
 		}else {
@@ -92,15 +92,18 @@ public class ConsultManage extends ConsultManagePage{
 		clickConsultManageButton();
 		inputConManDepartmentNameInputBox(departmentName);
 		clickConManSearchButton();
-		for (int i = 0; i < Integer.parseInt(getTotalRecorders());) {
+		int j=0;
+		for (int i = 0; i < Integer.parseInt(getTotalRecords());j++) {
 			inputConManDepartmentNameInputBox(departmentName);
 			clickConManSearchButton();
 			clickConManDeleteButton();
 			clickAlertCloseButton();
 			inputConManDepartmentNameInputBox(departmentName);
 			clickConManSearchButton();
-			if (Integer.parseInt(getTotalRecorders()) == 0) {
+			if (Integer.parseInt(getTotalRecords()) == 0) {
 				log.info("删除全部新增的咨询科室成功");
+			}else if(j>6){
+				log.errorShot("就医咨询管理-删除咨询科室失败", driver);
 			} else {
 				log.warn("未删除全部新增的咨询科室，继续删除");
 			}

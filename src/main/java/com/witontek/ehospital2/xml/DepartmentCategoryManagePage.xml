@@ -29,6 +29,7 @@
 	<Locator name="科室管理-上移按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'上移')]"						index="1"	>cateManMoveUpButton</Locator>
     <Locator name="科室管理-下移按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//a[contains(.,'下移')]"						index="0"	>cateManMoveDownButton</Locator>
 	<Locator name="科室管理-置顶按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]/parent::ul/li[4]/div/div[2]/a[3]"	index="0"	>cateManMoveTopButton</Locator>
-
+	<Locator name="科室管理-置顶按钮" 				locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博一级科室')]/parent::ul/li[4]/div/div[2]/a[3]"	index="1"	>cateManSecondMoveTopButton</Locator>
+	
 	
 </Page>

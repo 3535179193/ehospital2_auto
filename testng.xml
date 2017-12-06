@@ -28,8 +28,8 @@
 			</class>
 		</classes>
 	</test>
--->
 
+-->
 <!--
 	<test name="test03" preserve-order="true">
 		<classes>
@@ -46,6 +46,9 @@
 	</test>
 
 
+-->
+<!--
+					
 	<test name="test04" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DoctorManageTest">
@@ -60,7 +63,6 @@
 			</class>
 		</classes>
 	</test>
--->
 
 	<test name="test05" preserve-order="true">
 		<classes>
@@ -74,17 +76,30 @@
 			</class>
 		</classes>
 	</test>
-<!--
-	<test name="test5" preserve-order="true">
+-->
+
+	<test name="test06" preserve-order="true">
 		<classes>
-			<class name="com.witontek.ehospital2.test.HospitalInformationTest">
+			<class name="com.witontek.ehospital2.test.AppraiseManageTest">
 				<methods>
-					<include name="updateHospitalInformation"></include>
+					<include name="insertAppraise"></include>
+					<include name="searchAppraise"></include>
+					<include name="updateAppraise"></include>
 				</methods>
 			</class>
 		</classes>
 	</test>
-
+	
+	<test name="test95" preserve-order="true">
+		<classes>
+			<class name="com.witontek.ehospital2.test.AppraiseManageTest">
+				<methods>
+					<include name="deleteAppraise"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+<!--
 	<test name="test96" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.ConsultManageTest">

@@ -42,22 +42,32 @@ public class AppraiseManage extends AppraiseManagePage{
 		clickAppBoxAppraiseTypeDropBox();
 		clickAppBoxAppraiseTypeButton();
 		clickAppBoxPostedStatusButton();
-		clickAppBoxEditAppraiseItemButton();
+		clickAppBoxSaveButton();
 		clickAlertCloseButton();
 		return getAppManAppraiseName();
 	}
 	
 	//就医评价管理-删除评价问卷
-	public void deleteAppraise(){
-		String beforeDeleteReconds=getTotalRecorders();
-		clickAppManDeleteButton();
-		clickAlertDeleteButton();
-		clickAlertCloseButton();
-		String afterDeleteReconds=getTotalRecorders();
-		if(!beforeDeleteReconds.equals(afterDeleteReconds)){
-			log.info("删除前评价问卷总数:"+beforeDeleteReconds+"，比删除后评价问卷总数:"+afterDeleteReconds+"多1，删除评价问卷成功");
-		}else {
-			log.errorShot("删除前评价问卷总数:"+beforeDeleteReconds+"，与删除后评价问卷总数:"+afterDeleteReconds+"相同，删除评价问卷失败", driver);
+	public void deleteAppraise(String appraiseName){
+		clickAppraiseManageButton();
+		inputAppManAppraiseNameInputBox(appraiseName);
+		clickAppManSearchButton();
+		int j=0;
+		for (int i = 0; i < Integer.parseInt(getTotalRecords());j++) {
+			inputAppManAppraiseNameInputBox(appraiseName);
+			clickAppManSearchButton();
+			clickAppManDeleteButton();
+			clickAlertDeleteButton();
+			clickAlertCloseButton();
+			inputAppManAppraiseNameInputBox(appraiseName);
+			clickAppManSearchButton();
+			if (Integer.parseInt(getTotalRecords()) == 0) {
+				log.info("删除全部新增的评价问卷成功");
+			}else if(j>6){
+				log.errorShot("就医咨询管理-删除评价问卷失败", driver);
+			} else {
+				log.warn("未删除全部新增的评价问卷，继续删除");
+			}
 		}
 	}
 	

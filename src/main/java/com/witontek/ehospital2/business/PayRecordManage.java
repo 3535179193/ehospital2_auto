@@ -19,7 +19,7 @@ public class PayRecordManage extends PayRecordManagePage{
 		clickPayRecordManageButton();
 		inputPayManOrderNumberInputBox(orderNumber);
 		clickPayManSearchButton();
-		if(getTotalRecorders().equals("0")){
+		if(getTotalRecords().equals("0")){
 			return null;
 		}
 		else{

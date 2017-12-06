@@ -46,6 +46,7 @@ public class DepartmentCategoryManagePage extends MainPage{
 	protected Locator cateManMoveUpButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManMoveUpButton");
 	protected Locator cateManMoveDownButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManMoveDownButton");
 	protected Locator cateManMoveTopButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManMoveTopButton");
+	protected Locator cateManSecondMoveTopButton=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManSecondMoveTopButton");
 	
 	//新增的一级科室名称
 	protected Locator cateManAddedCategoryName=XmlUtils.getElementXml("DepartmentCategoryManagePage").get("cateManAddedCategoryName");
@@ -181,6 +182,11 @@ public class DepartmentCategoryManagePage extends MainPage{
 	//点击科室管理-置顶按钮
 	public void clickCateManMoveTopButton(){
 		click(cateManMoveTopButton);
+	}
+	
+	//点击科室管理-第二个置顶按钮
+	public void clickCateManSecondMoveTopButton(){
+		click(cateManSecondMoveTopButton);
 	}
 	
 	/**

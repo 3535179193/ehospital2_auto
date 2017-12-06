@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test98"
-           tests="1"
+<testsuite name="test03"
+           tests="6"
            failures="0"
            errors="0"
            skipped="0"
-           time="4.552">
+           time="35.131">
   <properties />
   
   
-            <testcase name="deleteDepartment" time="4.552" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
+            <testcase name="moveDownDepartment" time="3.780" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
+                <testcase name="insertDepartment" time="9.610" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
+                <testcase name="moveTopDepartment" time="3.803" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
+                <testcase name="searchDepartment" time="2.571" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
+                <testcase name="insertDepartment" time="11.420" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
+                <testcase name="moveUpDepartment" time="3.947" classname="com.witontek.ehospital2.test.DepartmentManageTest" />
       
 </testsuite>

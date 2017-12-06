@@ -28,7 +28,9 @@ public class DepartmentManage extends DepartmentManagePage {
 	 */
 	public String insertDepartment(String departmentName, String departmentCode, String departmentPhone, String departmentAddress,
 			String departmentFeature, String departmentSummary, String Attention) {
-		clickDepartmentCategoryManageButton();
+		if(!getDepartmentCategoryManageButton().equals("科室管理")){
+			clickDepartmentCategoryManageButton();
+		}
 		clickCateManViewDepartmentButton();
 		clickDepManAddDepartmentButton();
 		inputDepPageDepartmentNameInputBox(departmentName);
@@ -59,20 +61,17 @@ public class DepartmentManage extends DepartmentManagePage {
 	public String updateDepartment(String departmentName, String departmentCode, String departmentPhone, String departmentAddress,
 			String departmentFeature, String departmentSummary, String Attention) {
 		clickDepManEditButton();
-		editDepPageDepartmentNameInputBox(departmentName + "（改）");
-		editDepPageDepartmentCodeInputBox(String.valueOf(Integer.parseInt(departmentCode) + 1));
+		editDepPageDepartmentNameInputBox(departmentName );
+		editDepPageDepartmentCodeInputBox(departmentCode);
 		clickDepPageSelectBelongCategoryDropBox();
 		clickDepPageSelectBelongCategoryButton();
 		editDepPageDepartmentPhoneInputBox(departmentPhone);
-		editDepPageDepartmentAddressInputBox(departmentAddress + "（改）");
-		editDepPageDepartmentFeatureInputBox(departmentFeature + "（改）");
-		editDepPageDepartmentSummaryInputBox(departmentSummary + "（改）");
-		editDepPageAttentionInputBox(Attention + "（改）");
+		editDepPageDepartmentAddressInputBox(departmentAddress);
+		editDepPageDepartmentFeatureInputBox(departmentFeature);
+		editDepPageDepartmentSummaryInputBox(departmentSummary);
+		editDepPageAttentionInputBox(Attention);
 		clickDepPageUpdateButton();
 		clickAlertCloseButton();
-		// 再新增二级科室，为后面的测试用例做铺垫
-		clickBusinessInformationButton();
-		insertDepartment(departmentName, departmentCode, departmentPhone, departmentAddress, departmentFeature, departmentSummary, Attention);
 		return getDepManFirstDepartmentName();
 	}
 
@@ -93,14 +92,14 @@ public class DepartmentManage extends DepartmentManagePage {
 	 */
 	public void moveUpDepartment() {
 		clickCateManViewDepartmentButton();
-		String beforeMoveUpDepartmentName = getDepManSecondDepartmentName();
+		String beforeMove = getDepManSecondDepartmentName();
 		clickDepManMoveUpButton();
 		clickAlertCloseButton();
-		String afterMoveUpDepartmentName = getDepManFirstDepartmentName();
-		if (beforeMoveUpDepartmentName.equals(afterMoveUpDepartmentName)) {
-			log.info("上移前二级科室（" + beforeMoveUpDepartmentName + "）与上移后二级科室（" + afterMoveUpDepartmentName + "）相同，二级科室管理-上移二级科室成功");
+		String afterMove = getDepManFirstDepartmentName();
+		if (beforeMove.equals(afterMove)) {
+			log.info("上移前二级科室（" + beforeMove + "）与上移后二级科室（" + afterMove + "）相同，二级科室管理-上移二级科室成功");
 		} else {
-			log.errorShot("上移前二级科室（" + beforeMoveUpDepartmentName + "）与上移后二级科室（" + afterMoveUpDepartmentName + "）不相同，二级科室管理-上移二级科室失败", driver);
+			log.errorShot("上移前二级科室（" + beforeMove + "）与上移后二级科室（" + afterMove + "）不相同，二级科室管理-上移二级科室失败", driver);
 		}
 	}
 
@@ -109,14 +108,14 @@ public class DepartmentManage extends DepartmentManagePage {
 	 */
 	public void moveDownDepartment() {
 		clickCateManViewDepartmentButton();
-		String beforeMoveDownDepartmentName = getDepManFirstDepartmentName();
+		String beforeMove= getDepManFirstDepartmentName();
 		clickDepManMoveDownButton();
 		clickAlertCloseButton();
-		String afterMoveDownDepartmentName = getDepManSecondDepartmentName();
-		if (beforeMoveDownDepartmentName.equals(afterMoveDownDepartmentName)) {
-			log.info("下移前二级科室（" + beforeMoveDownDepartmentName + "）与下移后二级科室（" + afterMoveDownDepartmentName + "）相同，二级科室管理-下移二级科室成功");
+		String afterMove= getDepManSecondDepartmentName();
+		if (beforeMove.equals(afterMove)) {
+			log.info("下移前二级科室（" + beforeMove + "）与下移后二级科室（" + afterMove + "）相同，二级科室管理-下移二级科室成功");
 		} else {
-			log.errorShot("下移前二级科室（" + beforeMoveDownDepartmentName + "）与下移后二级科室（" + afterMoveDownDepartmentName + "）不相同，二级科室管理-下移二级科室失败", driver);
+			log.errorShot("下移前二级科室（" + beforeMove + "）与下移后二级科室（" + afterMove + "）不相同，二级科室管理-下移二级科室失败", driver);
 		}
 	}
 
@@ -125,14 +124,14 @@ public class DepartmentManage extends DepartmentManagePage {
 	 */
 	public void moveTopDepartment() {
 		clickCateManViewDepartmentButton();
-		String beforeMoveTopDepartmentName = getDepManSecondDepartmentName();
+		String beforeMove = getDepManSecondDepartmentName();
 		clickDepManMoveTopButton();
 		clickAlertCloseButton();
-		String afterMoveTopDepartmentName = getDepManFirstDepartmentName();
-		if (beforeMoveTopDepartmentName.equals(afterMoveTopDepartmentName)) {
-			log.info("置顶前二级科室（" + beforeMoveTopDepartmentName + "）与置顶后二级科室（" + afterMoveTopDepartmentName + "）相同，二级科室管理-置顶二级科室成功");
+		String afterMove = getDepManFirstDepartmentName();
+		if (beforeMove.equals(afterMove)) {
+			log.info("置顶前二级科室（" + beforeMove + "）与置顶后二级科室（" + afterMove + "）相同，二级科室管理-置顶二级科室成功");
 		} else {
-			log.errorShot("置顶前二级科室（" + beforeMoveTopDepartmentName + "）与置顶后二级科室（" + afterMoveTopDepartmentName + "）不相同，二级科室管理-置顶二级科室失败", driver);
+			log.errorShot("置顶前二级科室（" + beforeMove + "）与置顶后二级科室（" + afterMove + "）不相同，二级科室管理-置顶二级科室失败", driver);
 		}
 	}
 
@@ -156,7 +155,7 @@ public class DepartmentManage extends DepartmentManagePage {
 		DatabaseUtils.deleteDate(databaseName, sql);
 		clickDepartmentCategoryManageButton();
 		clickCateManViewDepartmentButton();
-		return getTotalRecorders();
+		return getTotalRecords();
 
 	}
 }
