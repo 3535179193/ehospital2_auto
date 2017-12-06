@@ -1,53 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 3, Errors: 0, Skipped: 3, Time elapsed: 177.293 sec <<< FAILURE!
-insertDepartmentsCategory(com.witontek.ehospital2.test.DepartmentManageTest)  Time elapsed: 15.444 sec  <<< FAILURE!
-java.lang.AssertionError: æ•…æ„æ–­è¨€å¤±è´¥ï¼Œå¹¶ä¸­æ–­æ‰§è¡Œæ­¤ç”¨ä¾‹ expected [2] but found [1]
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 163.176 sec <<< FAILURE!
+updateAppraise(com.witontek.ehospital2.test.AppraiseManageT)  Time elapsed: 9.043 sec  <<< FAILURE!
+java.lang.AssertionError: ¹ÊÒâ¶ÏÑÔÊ§°Ü£¬²¢ÖĞ¶ÏÖ´ĞĞ´ËÓÃÀı expected [2] but found [1]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:388)
 	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
-	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:31)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:57)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:54)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:54)
-	at com.witontek.ehospital2.base.WebElementsUtils.click(WebElementsUtils.java:69)
-	at com.witontek.ehospital2.page.DepartmentManagePage.clickDepManLastPageButton(DepartmentManagePage.java:265)
-	at com.witontek.ehospital2.business.DepartmentMange.insertDepartmentsCategory(DepartmentMange.java:59)
-	at com.witontek.ehospital2.test.DepartmentManageTest.insertDepartmentsCategory(DepartmentManageTest.java:57)
+	at com.witontek.ehospital2.base.AssertUtils.assertActualEqualExpect(AssertUtils.java:19)
+	at com.witontek.ehospital2.test.AppraiseManageT.updateAppraise(AppraiseManageT.java:54)
 
-searchDocManDoctor(com.witontek.ehospital2.test.DoctorManageTest)  Time elapsed: 1.202 sec  <<< FAILURE!
-java.lang.AssertionError: æ•…æ„æ–­è¨€å¤±è´¥ï¼Œå¹¶ä¸­æ–­æ‰§è¡Œæ­¤ç”¨ä¾‹ expected [2] but found [1]
+deleteAppraise(com.witontek.ehospital2.test.AppraiseManageT)  Time elapsed: 40.746 sec  <<< FAILURE!
+java.lang.AssertionError: ¹ÊÒâ¶ÏÑÔÊ§°Ü£¬²¢ÖĞ¶ÏÖ´ĞĞ´ËÓÃÀı expected [2] but found [1]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:388)
 	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
-	at com.witontek.ehospital2.base.WebElementsUtils.click(WebElementsUtils.java:71)
-	at com.witontek.ehospital2.page.MainPage.clickDoctorManageButton(MainPage.java:114)
-	at com.witontek.ehospital2.business.DoctorManage.searchDocManDoctor(DoctorManage.java:17)
-	at com.witontek.ehospital2.test.DoctorManageTest.searchDocManDoctor(DoctorManageTest.java:31)
-
-searchSecondDepartmentsByName(com.witontek.ehospital2.test.SecondLevelDepartmentTest)  Time elapsed: 3.519 sec  <<< FAILURE!
-java.lang.AssertionError: æ•…æ„æ–­è¨€å¤±è´¥ï¼Œå¹¶ä¸­æ–­æ‰§è¡Œæ­¤ç”¨ä¾‹ expected [2] but found [1]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:388)
-	at com.witontek.ehospital2.base.Log.errorShot(Log.java:49)
-	at com.witontek.ehospital2.base.WebElementsUtils.getElement(WebElementsUtils.java:44)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:57)
-	at com.witontek.ehospital2.base.WebElementsUtils$1.apply(WebElementsUtils.java:54)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at com.witontek.ehospital2.base.WebElementsUtils.findElement(WebElementsUtils.java:54)
-	at com.witontek.ehospital2.base.WebElementsUtils.getText(WebElementsUtils.java:118)
-	at com.witontek.ehospital2.page.SecondLevelDepartmentPage.getSecLevFirstDepartmentName(SecondLevelDepartmentPage.java:162)
-	at com.witontek.ehospital2.business.SecondLevelDepartment.searchSecondDepartmentsByName(SecondLevelDepartment.java:23)
-	at com.witontek.ehospital2.test.SecondLevelDepartmentTest.searchSecondDepartmentsByName(SecondLevelDepartmentTest.java:32)
+	at com.witontek.ehospital2.base.WebElementsUtils.click(WebElementsUtils.java:73)
+	at com.witontek.ehospital2.page.MainPage.clickAlertCloseButton(MainPage.java:303)
+	at com.witontek.ehospital2.business.AppraiseManage.deleteAppraise(AppraiseManage.java:61)
+	at com.witontek.ehospital2.test.AppraiseManageT.deleteAppraise(AppraiseManageT.java:67)
 

@@ -18,7 +18,7 @@ import com.witontek.ehospital2.base.Global;
 import com.witontek.ehospital2.business.AppraiseManage;
 import com.witontek.ehospital2.page.LoginPage;
 
-public class AppraiseManageTest {
+public class AppraiseManageT {
 
 	private WebDriver driver;
 

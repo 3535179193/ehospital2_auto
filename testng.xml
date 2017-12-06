@@ -80,7 +80,7 @@
 
 	<test name="test06" preserve-order="true">
 		<classes>
-			<class name="com.witontek.ehospital2.test.AppraiseManageTest">
+			<class name="com.witontek.ehospital2.test.AppraiseManageT">
 				<methods>
 					<include name="insertAppraise"></include>
 					<include name="searchAppraise"></include>
@@ -92,7 +92,7 @@
 	
 	<test name="test95" preserve-order="true">
 		<classes>
-			<class name="com.witontek.ehospital2.test.AppraiseManageTest">
+			<class name="com.witontek.ehospital2.test.AppraiseManageT">
 				<methods>
 					<include name="deleteAppraise"></include>
 				</methods>
