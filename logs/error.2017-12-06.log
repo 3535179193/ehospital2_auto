@@ -1,0 +1,112 @@
+main 2017-12-06 19:43:48:034 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找科室管理的网页元素时出错,报错信息：no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='submenu slide-show']/div[1]/span"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir18712_23537}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 791fbf4f76519064a3952548b052d94f
+*** Element info: {Using=xpath, value=//li[@class='submenu slide-show']/div[1]/span}
+main 2017-12-06 19:50:33:437 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找科室管理-新增一级科室按钮的网页元素时出错,报错信息：no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(.,'新增一级科室')]"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir21016_15700}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: ecd19aecf208930f6522284876523281
+*** Element info: {Using=xpath, value=//button[contains(.,'新增一级科室')]}
+main 2017-12-06 19:51:03:567 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找科室管理-新增一级科室按钮的网页元素时出错,报错信息：no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(.,'新增一级科室')]"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir21016_15700}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: ecd19aecf208930f6522284876523281
+*** Element info: {Using=xpath, value=//button[contains(.,'新增一级科室')]}
+main 2017-12-06 19:52:11:302 [ERROR] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博一级科室）不包含预期结果（睿博一级科室1），新增一级科室失败
+main 2017-12-06 20:28:23:729 [ERROR] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博一级科室1）不包含预期结果（睿博一级科室2），新增一级科室失败
+main 2017-12-06 20:32:07:990 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找科室管理-置顶按钮带索引的网页元素时出错,报错信息：Index: 1, Size: 1
+main 2017-12-06 20:46:37:345 [ERROR] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博一级科室3）与预期结果（睿博一级科室）不相等，下移一级科室失败
+main 2017-12-06 21:14:25:752 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找二级科室页面-选择所属一级科室按钮的网页元素时出错,报错信息：no such element: Unable to locate element: {"method":"xpath","selector":"//option[@label='睿博一级科室']"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir15416_25592}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c412b3844e1908f8ef411009efeba139
+*** Element info: {Using=xpath, value=//option[@label='睿博一级科室']}
+main 2017-12-06 21:14:42:743 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找二级科室页面-选择所属一级科室按钮的网页元素时出错,报错信息：no such element: Unable to locate element: {"method":"xpath","selector":"//option[@label='睿博一级科室']"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir15416_25592}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c412b3844e1908f8ef411009efeba139
+*** Element info: {Using=xpath, value=//option[@label='睿博一级科室']}
+main 2017-12-06 21:18:37:588 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找二级科室页面-选择所属一级科室按钮带索引的网页元素时出错,报错信息：Index: 0, Size: 0
+main 2017-12-06 21:18:54:384 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找二级科室页面-选择所属一级科室按钮带索引的网页元素时出错,报错信息：Index: 0, Size: 0
+main 2017-12-06 21:23:07:352 [ERROR] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博二级科室1）与预期结果（睿博二级科室）不相等，新增二级科室失败
+main 2017-12-06 21:23:19:503 [ERROR] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博二级科室1）与预期结果（睿博二级科室）不相等，新增二级科室失败
+main 2017-12-06 21:30:38:823 [ERROR] com.witontek.ehospital2.business.DepartmentManage:上移前二级科室（睿博二级科室2）与上移后二级科室（睿博二级科室1）不相同，二级科室管理-上移二级科室失败
+main 2017-12-06 21:53:17:622 [ERROR] com.witontek.ehospital2.business.ConsultManage:就医咨询管理-删除咨询科室失败
+main 2017-12-06 22:20:00:712 [ERROR] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博医院评价）与预期结果（睿博）不相等，搜索评价问卷失败
+main 2017-12-06 22:20:19:591 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找弹框关闭按钮的网页元素时出错,报错信息：no such element: Unable to locate element: {"method":"xpath","selector":"//div[@ng-show='$ctrl.showCloseButton']/button"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir24820_4792}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 77e2b33749656650c3fab54e7467c6e2
+*** Element info: {Using=xpath, value=//div[@ng-show='$ctrl.showCloseButton']/button}
+main 2017-12-06 22:20:54:396 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找总记录数的网页元素时出错,报错信息：no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='page form-ctrl']/div[2]/span[1]"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir24592_16944}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 241262a8ae06724fb01d69d28d3dc486
+*** Element info: {Using=xpath, value=//div[@class='page form-ctrl']/div[2]/span[1]}
+main 2017-12-06 22:42:30:074 [ERROR] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博医院评价）与预期结果（睿博）不相等，搜索评价问卷失败
+main 2017-12-06 22:42:48:874 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找弹框关闭按钮的网页元素时出错,报错信息：no such element: Unable to locate element: {"method":"xpath","selector":"//div[@ng-show='$ctrl.showCloseButton']/button"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir19228_6220}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0d81bba95b864cfeb5667f88051c6e89
+*** Element info: {Using=xpath, value=//div[@ng-show='$ctrl.showCloseButton']/button}
+main 2017-12-06 22:43:29:794 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:查找就医评价管理-删除按钮带索引的网页元素时出错,报错信息：Index: 0, Size: 0
+main 2017-12-06 22:49:44:853 [ERROR] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博医院评价）与预期结果（睿博就医评价）不相等，编辑评价问卷失败
+main 2017-12-06 22:50:20:305 [ERROR] com.witontek.ehospital2.base.WebElementsUtils:未定位到页面元素，点击弹框关闭按钮失败,报错信息：element not visible
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 41 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir25364_9567}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c9a3cba9420ba0101814af57767d1420
+main 2017-12-06 22:54:44:486 [ERROR] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博医院评价）与预期结果（睿博就医评价）不相等，编辑评价问卷失败
