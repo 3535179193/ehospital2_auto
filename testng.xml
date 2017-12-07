@@ -75,7 +75,7 @@
 		</classes>
 	</test>
 -->
-<!--
+
 	<test name="AppraiseManageTest" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.AppraiseManageTest">
@@ -98,7 +98,7 @@
 			</class>
 		</classes>
 	</test>
-
+<!--
 	<test name="DeleteConsultDepartment" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.ConsultManageTest">
