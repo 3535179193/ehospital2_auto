@@ -18,7 +18,7 @@ import com.witontek.ehospital2.base.Global;
 import com.witontek.ehospital2.business.AppraiseManage;
 import com.witontek.ehospital2.page.LoginPage;
 
-public class AppraiseManageT {
+public class AppraiseManageTest {
 
 	private WebDriver driver;
 
@@ -33,6 +33,13 @@ public class AppraiseManageT {
 	@DataProvider(name = "insertAppraise")
 	public Iterator<Object[]> insertAppraise() {
 		return ExcelUtils.readExcel("appraiseManage", "insertAppraise");
+	}
+
+	// 就医评价管理-保存并继续添加就医评价
+	@Test(dataProvider = "insertAppraise", dependsOnMethods = {"insertAppraise"}, enabled = true)
+	public void insertAndContinueAppraise(String caseName, String expectedResult, Map<String, String> testData) {
+		AppraiseManage appraiseManage = new AppraiseManage(driver);
+		appraiseManage.insertAndContinueAppraise(testData.get("appraiseName"), testData.get("appraiseDesc"));
 	}
 
 	// 就医评价管理-搜索评价问卷
@@ -66,7 +73,7 @@ public class AppraiseManageT {
 		AppraiseManage appraiseManage = new AppraiseManage(driver);
 		appraiseManage.deleteAppraise(testData.get("appraiseName"));
 	}
-	
+
 	@DataProvider(name = "deleteAppraise")
 	public Iterator<Object[]> deleteAppraise() {
 		return ExcelUtils.readExcel("appraiseManage", "deleteAppraise");

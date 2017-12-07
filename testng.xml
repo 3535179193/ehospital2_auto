@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="suite01">
-
+<suite name="suite">
 <!--
-	<test name="test01" preserve-order="true">
+	<test name="LoginTest" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.LoginTest">
 				<methods>
@@ -14,7 +13,7 @@
 	</test>
 
 
-	<test name="test02" preserve-order="true">
+	<test name="DepartmentCategoryManageTest" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentCategoryManageTest">
 				<methods>
@@ -31,7 +30,7 @@
 
 -->
 <!--
-	<test name="test03" preserve-order="true">
+	<test name="DepartmentManageTest" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentManageTest">
 				<methods>
@@ -45,11 +44,10 @@
 		</classes>
 	</test>
 
-
 -->
 <!--
 					
-	<test name="test04" preserve-order="true">
+	<test name="DoctorManageTest" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DoctorManageTest">
 				<methods>
@@ -64,7 +62,7 @@
 		</classes>
 	</test>
 
-	<test name="test05" preserve-order="true">
+	<test name="ConsultManageTest" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.ConsultManageTest">
 				<methods>
@@ -77,30 +75,31 @@
 		</classes>
 	</test>
 -->
-
-	<test name="test06" preserve-order="true">
+<!--
+	<test name="AppraiseManageTest" preserve-order="true">
 		<classes>
-			<class name="com.witontek.ehospital2.test.AppraiseManageT">
+			<class name="com.witontek.ehospital2.test.AppraiseManageTest">
 				<methods>
 					<include name="insertAppraise"></include>
+					<include name="insertAndContinueAppraise"></include>
 					<include name="searchAppraise"></include>
-					<include name="updateAppraise"></include>
+					<!--<include name="updateAppraise"></include>-->	
 				</methods>
 			</class>
 		</classes>
 	</test>
-	
-	<test name="test95" preserve-order="true">
+						
+	<test name="DeleteAppraise" preserve-order="true">
 		<classes>
-			<class name="com.witontek.ehospital2.test.AppraiseManageT">
+			<class name="com.witontek.ehospital2.test.AppraiseManageTest">
 				<methods>
 					<include name="deleteAppraise"></include>
 				</methods>
 			</class>
 		</classes>
 	</test>
-<!--
-	<test name="test96" preserve-order="true">
+
+	<test name="DeleteConsultDepartment" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.ConsultManageTest">
 				<methods>
@@ -112,7 +111,7 @@
 	
 -->
 <!--
-	<test name="test97" preserve-order="true">
+	<test name="DeleteDoctor" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DoctorManageTest">
 				<methods>
@@ -122,7 +121,7 @@
 		</classes>
 	</test>
 
-	<test name="test98" preserve-order="true">
+	<test name="DeleteDepartment" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentManageTest">
 				<methods>
@@ -133,7 +132,7 @@
 	</test>
 
 
-	<test name="test99" preserve-order="true">
+	<test name="DeleteCategory" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentCategoryManageTest">
 				<methods>

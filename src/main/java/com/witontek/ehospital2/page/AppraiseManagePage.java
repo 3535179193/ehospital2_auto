@@ -23,7 +23,8 @@ public class AppraiseManagePage extends MainPage{
 		protected Locator appBoxAppraiseNameInputBox=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxAppraiseNameInputBox");
 		protected Locator appBoxAppraiseDescInputBox=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxAppraiseDescInputBox");
 		protected Locator appBoxAppraiseTypeDropBox=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxAppraiseTypeDropBox");
-		protected Locator appBoxAppraiseTypeButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxAppraiseTypeButton");
+		protected Locator appBoxClinicAppraise=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxClinicAppraise");
+		protected Locator appBoxHospitalAppraise=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxHospitalAppraise");
 		protected Locator appBoxDraftStatusButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxDraftStatusButton");
 		protected Locator appBoxPostedStatusButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxPostedStatusButton");
 		protected Locator appBoxStopStatusButton=XmlUtils.getElementXml("AppraiseManagePage").get("appBoxStopStatusButton");
@@ -81,9 +82,14 @@ public class AppraiseManagePage extends MainPage{
 		click(appBoxAppraiseTypeDropBox);
 	}
 	
-	//评价问卷框-选择问卷类型按钮
-	public void clickAppBoxAppraiseTypeButton(){
-		click(appBoxAppraiseTypeButton);
+	//评价问卷框-选择医院评价
+	public void clickAppBoxClinicAppraise(){
+		click(appBoxClinicAppraise);
+	}
+	
+	//评价问卷框-选择就诊评价
+	public void clickAppBoxHospitalAppraise(){
+		click(appBoxHospitalAppraise);
 	}
 	
 	//点击评价问卷框-草稿问卷状态按钮

@@ -18,16 +18,4 @@
       </class> <!-- com.witontek.ehospital2.test.AppraiseManageT -->
     </classes>
   </test> <!-- test06(failed) -->
-  <test name="test95(failed)">
-    <classes>
-      <class name="com.witontek.ehospital2.test.AppraiseManageT">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="deleteAppraise" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.witontek.ehospital2.test.AppraiseManageT -->
-    </classes>
-  </test> <!-- test95(failed) -->
 </suite> <!-- Failed suite [suite01] -->

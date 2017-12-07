@@ -13,41 +13,89 @@ public class AppraiseManage extends AppraiseManagePage{
 
 	private Log log=new Log(AppraiseManage.class);
 	
-	//就医评价管理-新增评价问卷
+	/**
+	 * 就医评价管理-新增医院评价
+	 * @param appraiseName
+	 * @param appraiseDesc
+	 * @return
+	 */
 	public String insertAppraise(String appraiseName,String appraiseDesc){
 		clickAppraiseManageButton();
 		clickAppManAddAppraiseButton();
 		inputAppBoxAppraiseNameInputBox(appraiseName);
 		inputAppBoxAppraiseDescInputBox(appraiseDesc);
 		clickAppBoxAppraiseTypeDropBox();
-		clickAppBoxAppraiseTypeButton();
+		clickAppBoxHospitalAppraise();
 		clickAppBoxPostedStatusButton();
 		clickAppBoxSaveButton();
 		clickAlertCloseButton();
 		return getAppManAppraiseName();
 	}
 	
-	//就医评价管理-搜索评价问卷
+	/**
+	 * 就医评价管理-保存并继续添加医院评价
+	 * @param appraiseName
+	 * @param appraiseDesc
+	 */
+	public void insertAndContinueAppraise(String appraiseName,String appraiseDesc){
+		int beforeInsert=Integer.parseInt(getTotalRecords());
+		clickAppraiseManageButton();
+		clickAppManAddAppraiseButton();
+		inputAppBoxAppraiseNameInputBox(appraiseName+"1");
+		inputAppBoxAppraiseDescInputBox(appraiseDesc+"1");
+		clickAppBoxAppraiseTypeDropBox();
+		clickAppBoxHospitalAppraise();
+		clickAppBoxDraftStatusButton();
+		clickAppBoxSaveAndAddButton();
+		clickAlertCloseButton();
+		inputAppBoxAppraiseNameInputBox(appraiseName+"2");
+		inputAppBoxAppraiseDescInputBox(appraiseDesc+"2");
+		clickAppBoxAppraiseTypeDropBox();
+		clickAppBoxHospitalAppraise();
+		clickAppBoxStopStatusButton();
+		clickAppBoxSaveButton();
+		clickAlertCloseButton();
+		int afterInsert=Integer.parseInt(getTotalRecords());
+		if(afterInsert==beforeInsert+2){
+			log.info("新增后总记录数（"+afterInsert+"）与新增前（"+beforeInsert+"）相差为2，就医评价管理-保存并继续添加就医评价成功");
+		}else {
+			log.error("新增后总记录数（"+afterInsert+"）与新增前（"+beforeInsert+"）相差不为2，就医评价管理-保存并继续添加就医评价失败");
+		}
+	}
+	
+	/**
+	 * 就医评价管理-搜索评价问卷
+	 * @param appraiseName
+	 * @return
+	 */
 	public String searchAppraise (String appraiseName){
 		inputAppManAppraiseNameInputBox(appraiseName);
 		clickAppManSearchButton();
 		return getAppManAppraiseName();
 	}
 	
-	//就医评价管理-编辑评价问卷
+	/**
+	 * 就医评价管理-编辑医院评价
+	 * @param appraiseName
+	 * @param appraiseDesc
+	 * @return
+	 */
 	public String updateAppraise(String appraiseName,String appraiseDesc){
 		clickAppManEditButton();
 		editAppBoxAppraiseNameInputBox(appraiseName);
 		editAppBoxAppraiseDescInputBox(appraiseDesc);
 		clickAppBoxAppraiseTypeDropBox();
-		clickAppBoxAppraiseTypeButton();
+		clickAppBoxHospitalAppraise();
 		clickAppBoxPostedStatusButton();
 		clickAppBoxSaveButton();
 		clickAlertCloseButton();
 		return getAppManAppraiseName();
 	}
 	
-	//就医评价管理-删除评价问卷
+	/**
+	 * 就医评价管理-删除评价问卷
+	 * @param appraiseName
+	 */
 	public void deleteAppraise(String appraiseName){
 		clickAppraiseManageButton();
 		inputAppManAppraiseNameInputBox(appraiseName);

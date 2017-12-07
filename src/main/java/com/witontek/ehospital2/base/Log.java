@@ -28,19 +28,19 @@ public class Log {
 	}
 	
 	public void fatal(String content){
-		log.fatal(DateUtils.getSystemTime()+" [FATAL] "+clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:#ff0000'>"+DateUtils.getSystemTime()+" [FATAL] "+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.fatal(DateUtils.getSystemTime()+" 【FATAL】 "+clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:#ff0000'>"+DateUtils.getSystemTime()+"【FATAL】 "+clazz.getCanonicalName()+":"+content+"</span><br />");
 	}
 	
 	public void error(String content){
-		log.error(DateUtils.getSystemTime()+" [ERROR] "+clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:red'>"+DateUtils.getSystemTime()+" [ERROR] "+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.error(DateUtils.getSystemTime()+" 【ERROR】 "+clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:red'>"+DateUtils.getSystemTime()+" 【ERROR】 "+clazz.getCanonicalName()+":"+content+"</span><br />");
 
 	}
 	
 	public void errorShot(String content,WebDriver driver){
-		log.error(DateUtils.getSystemTime()+" [ERROR] "+clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:red'>"+DateUtils.getSystemTime()+" [ERROR] "+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.error(DateUtils.getSystemTime()+"【ERROR】 "+clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:red'>"+DateUtils.getSystemTime()+" 【ERROR】 "+clazz.getCanonicalName()+":"+content+"</span><br />");
 		BrowserUtils browser=new BrowserUtils(driver);
 		String path=browser.screenShot();
 		int width=500;
@@ -50,8 +50,8 @@ public class Log {
 	}
 	
 	public void warn(String content){
-		log.warn(DateUtils.getSystemTime()+" [WARN] "+clazz.getCanonicalName()+":"+content);
-		Reporter.log("<span style='color:orange'>"+DateUtils.getSystemTime()+" [WARN] "+clazz.getCanonicalName()+":"+content+"</span><br />");
+		log.warn(DateUtils.getSystemTime()+" 【WARN】 "+clazz.getCanonicalName()+":"+content);
+		Reporter.log("<span style='color:orange'>"+DateUtils.getSystemTime()+" 【WARN】 "+clazz.getCanonicalName()+":"+content+"</span><br />");
 	}
 	
 	public void info(String content){
