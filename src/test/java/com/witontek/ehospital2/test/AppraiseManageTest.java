@@ -28,7 +28,7 @@ public class AppraiseManageTest {
 		AppraiseManage appraiseManage = new AppraiseManage(driver);
 		AssertUtils.assertActualEqualExpect(appraiseManage.insertAppraise(testData.get("appraiseName"), testData.get("appraiseDesc")),
 				expectedResult, caseName);
-	}
+	} 
 
 	@DataProvider(name = "insertAppraise")
 	public Iterator<Object[]> insertAppraise() {
