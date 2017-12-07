@@ -83,7 +83,7 @@
 					<include name="insertAppraise"></include>
 					<include name="insertAndContinueAppraise"></include>
 					<include name="searchAppraise"></include>
-					<!--<include name="updateAppraise"></include>-->	
+					<include name="updateAppraise"></include>	
 				</methods>
 			</class>
 		</classes>
