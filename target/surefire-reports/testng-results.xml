@@ -1,841 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="10" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:11:213 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+      <![CDATA[<span style='color:blue'>2017-12-08 11:03:35:036 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:12:515 [INFO] com.witontek.ehospital2.base.ExcelUtils:读取appraiseManage.xlsx文件中insertAppraise表单成功</span><br />]]>
+      <![CDATA[<span style='color:blue'>2017-12-08 11:03:36:009 [INFO] com.witontek.ehospital2.base.ExcelUtils:读取login.xlsx文件中loginSuccess表单成功</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:25:686 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+      <![CDATA[<span style='color:blue'>2017-12-08 11:03:50:175 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:26:435 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin</span><br />]]>
+      <![CDATA[<span style='color:blue'>2017-12-08 11:03:50:798 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:27:098 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
+      <![CDATA[<span style='color:blue'>2017-12-08 11:03:51:325 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:27:809 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
+      <![CDATA[<span style='color:blue'>2017-12-08 11:03:51:891 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:28:485 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
+      <![CDATA[<span style='color:blue'>2017-12-08 11:03:52:441 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:30:400 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
+      <![CDATA[<span style='color:blue'>2017-12-08 11:03:53:357 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取用户名的文本信息</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:32:387 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理</span><br />]]>
+      <![CDATA[<span style='color:blue'>2017-12-08 11:03:53:358 [INFO] com.witontek.ehospital2.base.AssertUtils:实际结果（undefined）与预期结果（undefined）相等，登录成功</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:33:079 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-新增评价问卷按钮</span><br />]]>
+      <![CDATA[<span style='color:blue'>2017-12-08 11:03:56:365 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
     </line>
     <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:33:848 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷名称输入框输入：睿博医院评价</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:34:602 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷说明输入框输入：睿博医院评价说明</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:35:476 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-问卷类型下拉框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:36:064 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-选择就医评价</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:36:687 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-发布问卷状态按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:37:350 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-保存按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:38:427 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:39:486 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取就医评价管理-评价问卷名称的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:39:486 [INFO] com.witontek.ehospital2.page.AppraiseManagePage:就医评价管理-评价问卷名称：睿博医院评价</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:39:486 [INFO] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博医院评价）与预期结果（睿博医院评价）相等，新增评价问卷成功</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:39:674 [INFO] com.witontek.ehospital2.base.ExcelUtils:读取appraiseManage.xlsx文件中insertAppraise表单成功</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:39:746 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:40:429 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:41:048 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:41:696 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:42:300 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:43:132 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:43:132 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：2</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:43:727 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:45:519 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:46:172 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-新增评价问卷按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:46:859 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷名称输入框输入：睿博医院评价1</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:47:467 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷说明输入框输入：睿博医院评价说明1</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:48:088 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-问卷类型下拉框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:48:577 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-选择就医评价</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:49:189 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-草稿问卷状态按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:49:832 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-保存后继续添加按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:50:895 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:52:020 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷名称输入框输入：睿博医院评价2</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:52:665 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷说明输入框输入：睿博医院评价说明2</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:53:202 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-问卷类型下拉框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:53:708 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-选择就医评价</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:54:358 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-暂停问卷状态按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:54:980 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-保存按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:56:098 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:57:063 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:57:063 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：4</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:57:063 [INFO] com.witontek.ehospital2.business.AppraiseManage:新增后总记录数（4）与新增前（2）相差为2，就医评价管理-保存并继续添加就医评价成功</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:57:166 [INFO] com.witontek.ehospital2.base.ExcelUtils:读取appraiseManage.xlsx文件中searchAppraise表单成功</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:57:238 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:57:954 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:58:587 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:59:205 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:43:59:777 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:00:562 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:01:156 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:01:730 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:02:236 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取就医评价管理-评价问卷名称的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:02:236 [INFO] com.witontek.ehospital2.page.AppraiseManagePage:就医评价管理-评价问卷名称：睿博医院评价2</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:02:240 [INFO] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博医院评价2）包含预期结果（睿博），搜索评价问卷成功</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:05:241 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:07:998 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:17:054 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:17:148 [INFO] com.witontek.ehospital2.base.ExcelUtils:读取appraiseManage.xlsx文件中deleteAppraise表单成功</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:30:618 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:31:247 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:31:938 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:32:598 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:33:228 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:34:336 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:36:365 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:36:939 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:37:529 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:38:149 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:38:684 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:38:684 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：3</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:39:168 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:39:710 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:40:222 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:40:891 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-删除按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:42:033 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框确认删除按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:43:631 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:44:611 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:45:117 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:45:652 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:46:131 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:46:131 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：2</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:orange'>2017-12-07 23:44:46:131 【WARN】 com.witontek.ehospital2.business.AppraiseManage:未删除全部新增的评价问卷，继续删除</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:46:598 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:46:598 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：2</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:47:086 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:47:635 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:48:174 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:48:783 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-删除按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:49:869 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框确认删除按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:51:464 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:52:462 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:53:003 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:53:632 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:54:104 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:54:104 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：1</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:orange'>2017-12-07 23:44:54:104 【WARN】 com.witontek.ehospital2.business.AppraiseManage:未删除全部新增的评价问卷，继续删除</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:54:575 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:54:575 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：1</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:55:038 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:55:574 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:56:090 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:56:792 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-删除按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:57:929 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框确认删除按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:44:59:481 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:45:00:482 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:45:01:027 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:45:01:564 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:45:02:034 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:45:02:038 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：0</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:45:02:038 [INFO] com.witontek.ehospital2.business.AppraiseManage:删除全部新增的评价问卷成功</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:45:02:500 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:45:02:500 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：0</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:45:05:509 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
-    </line>
-    <line>
-      <![CDATA[<span style='color:blue'>2017-12-07 23:45:06:530 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+      <![CDATA[<span style='color:blue'>2017-12-08 11:03:58:095 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
     </line>
   </reporter-output>
-  <suite name="suite" duration-ms="123852" started-at="2017-12-07T15:43:02Z" finished-at="2017-12-07T15:45:06Z">
+  <suite name="suite" duration-ms="28278" started-at="2017-12-08T03:03:29Z" finished-at="2017-12-08T03:03:58Z">
     <groups>
     </groups>
-    <test name="AppraiseManageTest" duration-ms="65320" started-at="2017-12-07T15:43:02Z" finished-at="2017-12-07T15:44:07Z">
-      <class name="com.witontek.ehospital2.test.AppraiseManageTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@29ee9faa]" name="beforeClass" is-config="true" duration-ms="8535" started-at="2017-12-07T23:43:02Z" finished-at="2017-12-07T23:43:11Z">
+    <test name="LoginTest" duration-ms="28278" started-at="2017-12-08T03:03:29Z" finished-at="2017-12-08T03:03:58Z">
+      <class name="com.witontek.ehospital2.test.LoginTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@c038203]" name="beforeClass" is-config="true" duration-ms="5215" started-at="2017-12-08T11:03:29Z" finished-at="2017-12-08T11:03:35Z">
           <reporter-output>
             <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:11:213 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
+              <![CDATA[<span style='color:blue'>2017-12-08 11:03:35:036 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@29ee9faa]" name="beforeMethod" is-config="true" duration-ms="15954" started-at="2017-12-07T23:43:12Z" finished-at="2017-12-07T23:43:28Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:25:686 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:26:435 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:27:098 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:27:809 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:28:485 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="insertAppraise(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@29ee9faa]" name="insertAppraise" duration-ms="11001" started-at="2017-12-07T23:43:28Z" data-provider="insertAppraise" finished-at="2017-12-07T23:43:39Z">
+        <test-method status="PASS" signature="loginSuccess(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.LoginTest@c038203]" name="loginSuccess" duration-ms="17338" started-at="2017-12-08T11:03:36Z" data-provider="loginSuccess" finished-at="2017-12-08T11:03:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[新增评价问卷]]>
+                <![CDATA[登录]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[睿博医院评价]]>
+                <![CDATA[undefined]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[{appraiseName=睿博医院评价, appraiseDesc=睿博医院评价说明}]]>
+                <![CDATA[{password=admin, userName=sqsrmyyadmin, validation=1111}]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:30:400 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
+              <![CDATA[<span style='color:blue'>2017-12-08 11:03:50:175 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:32:387 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理</span><br />]]>
+              <![CDATA[<span style='color:blue'>2017-12-08 11:03:50:798 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:33:079 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-新增评价问卷按钮</span><br />]]>
+              <![CDATA[<span style='color:blue'>2017-12-08 11:03:51:325 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:33:848 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷名称输入框输入：睿博医院评价</span><br />]]>
+              <![CDATA[<span style='color:blue'>2017-12-08 11:03:51:891 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:34:602 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷说明输入框输入：睿博医院评价说明</span><br />]]>
+              <![CDATA[<span style='color:blue'>2017-12-08 11:03:52:441 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:35:476 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-问卷类型下拉框</span><br />]]>
+              <![CDATA[<span style='color:blue'>2017-12-08 11:03:53:357 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取用户名的文本信息</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:36:064 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-选择就医评价</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:36:687 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-发布问卷状态按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:37:350 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-保存按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:38:427 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:39:486 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取就医评价管理-评价问卷名称的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:39:486 [INFO] com.witontek.ehospital2.page.AppraiseManagePage:就医评价管理-评价问卷名称：睿博医院评价</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:39:486 [INFO] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博医院评价）与预期结果（睿博医院评价）相等，新增评价问卷成功</span><br />]]>
+              <![CDATA[<span style='color:blue'>2017-12-08 11:03:53:358 [INFO] com.witontek.ehospital2.base.AssertUtils:实际结果（undefined）与预期结果（undefined）相等，登录成功</span><br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- insertAppraise -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@29ee9faa]" name="beforeMethod" is-config="true" duration-ms="2626" started-at="2017-12-07T23:43:39Z" finished-at="2017-12-07T23:43:42Z">
+        </test-method> <!-- loginSuccess -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.witontek.ehospital2.test.LoginTest@c038203]" name="afterClass" is-config="true" duration-ms="4732" started-at="2017-12-08T11:03:53Z" finished-at="2017-12-08T11:03:58Z">
           <reporter-output>
             <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:39:746 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
+              <![CDATA[<span style='color:blue'>2017-12-08 11:03:56:365 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
             </line>
             <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:40:429 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:41:048 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:41:696 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:42:300 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="insertAndContinueAppraise(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@29ee9faa]" name="insertAndContinueAppraise" duration-ms="14763" started-at="2017-12-07T23:43:42Z" data-provider="insertAppraise" depends-on-methods="com.witontek.ehospital2.test.AppraiseManageTest.insertAppraise" finished-at="2017-12-07T23:43:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[新增评价问卷]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[睿博医院评价]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{appraiseName=睿博医院评价, appraiseDesc=睿博医院评价说明}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:43:132 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:43:132 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：2</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:43:727 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:45:519 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:46:172 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-新增评价问卷按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:46:859 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷名称输入框输入：睿博医院评价1</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:47:467 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷说明输入框输入：睿博医院评价说明1</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:48:088 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-问卷类型下拉框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:48:577 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-选择就医评价</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:49:189 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-草稿问卷状态按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:49:832 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-保存后继续添加按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:50:895 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:52:020 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷名称输入框输入：睿博医院评价2</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:52:665 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在评价问卷框-问卷说明输入框输入：睿博医院评价说明2</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:53:202 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-问卷类型下拉框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:53:708 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-选择就医评价</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:54:358 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-暂停问卷状态按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:54:980 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击评价问卷框-保存按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:56:098 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:57:063 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:57:063 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：4</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:57:063 [INFO] com.witontek.ehospital2.business.AppraiseManage:新增后总记录数（4）与新增前（2）相差为2，就医评价管理-保存并继续添加就医评价成功</span><br />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- insertAndContinueAppraise -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@29ee9faa]" name="beforeMethod" is-config="true" duration-ms="2611" started-at="2017-12-07T23:43:57Z" finished-at="2017-12-07T23:43:59Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:57:238 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:57:954 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:58:587 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:59:205 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:43:59:777 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="searchAppraise(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@29ee9faa]" name="searchAppraise" duration-ms="2463" started-at="2017-12-07T23:43:59Z" data-provider="searchAppraise" depends-on-methods="com.witontek.ehospital2.test.AppraiseManageTest.insertAppraise" finished-at="2017-12-07T23:44:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[搜索评价问卷]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[睿博]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{appraiseName=睿博}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:00:562 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:01:156 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:01:730 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:02:236 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取就医评价管理-评价问卷名称的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:02:236 [INFO] com.witontek.ehospital2.page.AppraiseManagePage:就医评价管理-评价问卷名称：睿博医院评价2</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:02:240 [INFO] com.witontek.ehospital2.base.AssertUtils:实际结果（睿博医院评价2）包含预期结果（睿博），搜索评价问卷成功</span><br />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- searchAppraise -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@29ee9faa]" name="afterClass" is-config="true" duration-ms="5758" started-at="2017-12-07T23:44:02Z" finished-at="2017-12-07T23:44:07Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:05:241 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:07:998 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
+              <![CDATA[<span style='color:blue'>2017-12-08 11:03:58:095 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.witontek.ehospital2.test.AppraiseManageTest -->
-    </test> <!-- AppraiseManageTest -->
-    <test name="DeleteAppraise" duration-ms="58428" started-at="2017-12-07T15:44:08Z" finished-at="2017-12-07T15:45:06Z">
-      <class name="com.witontek.ehospital2.test.AppraiseManageTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@ae45eb6]" name="beforeClass" is-config="true" duration-ms="8948" started-at="2017-12-07T23:44:08Z" finished-at="2017-12-07T23:44:17Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:17:054 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器</span><br />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@ae45eb6]" name="beforeMethod" is-config="true" duration-ms="16080" started-at="2017-12-07T23:44:17Z" finished-at="2017-12-07T23:44:33Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:30:618 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://yltest.witontek.com/ehospital3web/web/admin.html#!/</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:31:247 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:31:938 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:32:598 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在验证码输入框输入：1111</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:33:228 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮</span><br />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="deleteAppraise(java.lang.String, java.lang.String, java.util.Map)[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@ae45eb6]" name="deleteAppraise" duration-ms="29272" started-at="2017-12-07T23:44:33Z" data-provider="deleteAppraise" finished-at="2017-12-07T23:45:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[删除评价问卷]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{appraiseName=睿博}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:34:336 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击业务信息管理</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:36:365 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:36:939 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:37:529 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:38:149 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:38:684 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:38:684 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：3</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:39:168 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:39:710 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:40:222 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:40:891 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-删除按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:42:033 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框确认删除按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:43:631 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:44:611 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:45:117 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:45:652 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:46:131 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:46:131 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：2</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:orange'>2017-12-07 23:44:46:131 【WARN】 com.witontek.ehospital2.business.AppraiseManage:未删除全部新增的评价问卷，继续删除</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:46:598 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:46:598 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：2</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:47:086 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:47:635 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:48:174 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:48:783 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-删除按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:49:869 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框确认删除按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:51:464 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:52:462 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:53:003 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:53:632 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:54:104 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:54:104 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：1</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:orange'>2017-12-07 23:44:54:104 【WARN】 com.witontek.ehospital2.business.AppraiseManage:未删除全部新增的评价问卷，继续删除</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:54:575 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:54:575 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：1</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:55:038 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:55:574 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:56:090 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:56:792 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-删除按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:57:929 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框确认删除按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:44:59:481 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击弹框关闭按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:45:00:482 [INFO] com.witontek.ehospital2.base.WebElementsUtils:清空就医评价管理-问卷名称输入框</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:45:01:027 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在就医评价管理-问卷名称输入框输入：睿博</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:45:01:564 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击就医评价管理-搜索按钮</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:45:02:034 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:45:02:038 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：0</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:45:02:038 [INFO] com.witontek.ehospital2.business.AppraiseManage:删除全部新增的评价问卷成功</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:45:02:500 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:45:02:500 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：0</span><br />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- deleteAppraise -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.witontek.ehospital2.test.AppraiseManageTest@ae45eb6]" name="afterClass" is-config="true" duration-ms="4030" started-at="2017-12-07T23:45:02Z" finished-at="2017-12-07T23:45:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:45:05:509 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒</span><br />]]>
-            </line>
-            <line>
-              <![CDATA[<span style='color:blue'>2017-12-07 23:45:06:530 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器</span><br />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.witontek.ehospital2.test.AppraiseManageTest -->
-    </test> <!-- DeleteAppraise -->
+      </class> <!-- com.witontek.ehospital2.test.LoginTest -->
+    </test> <!-- LoginTest -->
   </suite> <!-- suite -->
 </testng-results>

@@ -30,6 +30,12 @@ public class ExcelUtils extends BasePage {
 
 	private static Log log = new Log(ExcelUtils.class);
 
+	/**
+	 * 读取Excel文件
+	 * @param excelFileName
+	 * @param sheetName
+	 * @return
+	 */
 	public static Iterator<Object[]> readExcel(String excelFileName,String sheetName) {
 		Workbook workbook = null;
 		try {
@@ -75,6 +81,11 @@ public class ExcelUtils extends BasePage {
 
 	}
 
+	/**
+	 * 将Excel文件中单元格类型转换为String类型
+	 * @param cell
+	 * @return
+	 */
 	public static String switchCellType(Cell cell) {
 
 		String cellValue = null;

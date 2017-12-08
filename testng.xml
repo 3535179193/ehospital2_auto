@@ -99,7 +99,6 @@
 		</classes>
 	</test>
 
-
 	<test name="DeleteConsultDepartment" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.ConsultManageTest">

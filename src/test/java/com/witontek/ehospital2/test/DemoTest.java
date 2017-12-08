@@ -25,8 +25,29 @@
 //
 //public class DemoTest {
 //	
-////	public static void main(String[] args){
-////		System.out.println(XmlUtils.getDataBaseXml().get("ehospital2").getDriver());
+//	public static void main(String[] args){
+//
+//        String downloadFilepath = "D:\\java";
+//        HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+//        chromePrefs.put("profile.default_content_settings.popups", 0);
+//        chromePrefs.put("download.default_directory", downloadFilepath);
+//        ChromeOptions options = new ChromeOptions();
+//        HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
+//        options.setExperimentalOption("prefs",chromePrefs);
+//        options.addArguments("--test-type");
+//        DesiredCapabilities cap = DesiredCapabilities.chrome();
+//        cap.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
+//        cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+//        cap.setCapability(ChromeOptions.CAPABILITY, options);
+//        
+//        WebDriver driver = new ChromeDriver(cap);
+//
+//        driver.get("https://www.baidu.com");
+//        driver.findElement(By.id("kw")).click();
+//        driver.findElement(By.id("su")).click();
+//        Thread.sleep(2000);
+//        driver.findElement(By.linkText("普通下载")).click();
+//	}
 //					
 //
 //		
@@ -56,30 +77,31 @@
 //	
 //	
 //	
-//	private WebDriver driver;
-//
-//	@Test
-//	public void beforeMethod() {
-//		LoginPage login = new LoginPage(driver);
-//		login.login(Global.USER_NAME, Global.PASSWORD, Global.VALIDATION);
-//		driver.findElement(By.xpath("//span[contains(.,'业务信息管理')]")).click();
-//		BrowserUtils.sleep(1);
-//		driver.findElement(By.xpath("//li[@class='submenu slide-show']/div[1]/span")).click();
-//		BrowserUtils.sleep(1);
-//		driver.findElement(By.xpath("//div[@class='department-management']/page/div/div[2]/a[4]/parent::div/a[4]")).click();
-//		
-//	
-//	}
-//
-//	@BeforeTest
-//	public void beforeTest() {
-//		driver = DriverUtils.getChromeDriver();
-//	}
-//
-//	@AfterTest
-//	public void afterTest() {
-//		BrowserUtils.sleep(3);
-//		BrowserUtils.quit();
-//	}
+////	private WebDriver driver;
+////
+////	@Test
+////	public void beforeMethod() {
+////		String downloadPath=System.getProperty("usr.dir")+"/downloadFilePath";
+////		
+////		
+////		
+////		
+////		LoginPage login = new LoginPage(driver);
+////		login.login("http://web.witontek.com/ehospital4web/web/refund.html?!#!/", "qdcyrmyyadmin", "admin");
+////		driver.findElement(By.xpath("//button[@ng-click='$ctrl.exportPaymentInfo()']")).click();
+////		
+////	
+////	}
+////
+////	@BeforeTest
+////	public void beforeTest() {
+////		driver = DriverUtils.getChromeDriver();
+////	}
+////
+////	@AfterTest
+////	public void afterTest() {
+////		BrowserUtils.sleep(3);
+////		BrowserUtils.quit();
+////	}
 //
 //}
