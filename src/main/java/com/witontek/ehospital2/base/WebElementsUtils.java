@@ -29,6 +29,7 @@ public class WebElementsUtils extends BrowserUtils{
 				}
 				}catch(Exception e){
 					log.errorShot("查找"+locator.getName()+"的网页元素时出错,报错信息："+e.getMessage(), driver);
+					
 				}
 		else
 			try{

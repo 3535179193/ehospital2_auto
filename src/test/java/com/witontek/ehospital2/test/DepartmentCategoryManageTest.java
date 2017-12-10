@@ -34,7 +34,7 @@ public class DepartmentCategoryManageTest {
 
 	@DataProvider(name = "insertCategory")
 	public Iterator<Object[]> insertCategory() {
-		return ExcelUtils.readExcel("departmentCategoryManage","insertCategory");
+		return ExcelUtils.readTestDataExcel("departmentCategoryManage","insertCategory");
 	}
 
 	/**
@@ -48,7 +48,7 @@ public class DepartmentCategoryManageTest {
 
 	@DataProvider(name = "moveTopCategory")
 	public Iterator<Object[]> moveTopCategory() {
-		return ExcelUtils.readExcel("departmentCategoryManage","moveTopCategory");
+		return ExcelUtils.readTestDataExcel("departmentCategoryManage","moveTopCategory");
 	}
 
 	/**
@@ -62,7 +62,7 @@ public class DepartmentCategoryManageTest {
 
 	@DataProvider(name = "searchCategory")
 	public Iterator<Object[]> searchCategory() {
-		return ExcelUtils.readExcel("departmentCategoryManage","searchCategory");
+		return ExcelUtils.readTestDataExcel("departmentCategoryManage","searchCategory");
 	}
 
 	/**
@@ -77,7 +77,7 @@ public class DepartmentCategoryManageTest {
 
 	@DataProvider(name = "updateCategory")
 	public Iterator<Object[]> updateCategory() {
-		return ExcelUtils.readExcel("departmentCategoryManage","updateCategory");
+		return ExcelUtils.readTestDataExcel("departmentCategoryManage","updateCategory");
 	}
 
 	/**
@@ -110,7 +110,7 @@ public class DepartmentCategoryManageTest {
 
 	@DataProvider(name = "deleteCategory")
 	public Iterator<Object[]> deleteCategory() {
-		return ExcelUtils.readExcel("departmentCategoryManage","deleteCategory");
+		return ExcelUtils.readTestDataExcel("departmentCategoryManage","deleteCategory");
 	}
 
 	@BeforeMethod

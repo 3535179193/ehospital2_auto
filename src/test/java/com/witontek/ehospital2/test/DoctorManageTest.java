@@ -37,7 +37,7 @@ public class DoctorManageTest {
 
 	@DataProvider(name = "insertDoctor")
 	public Iterator<Object[]> insertDoctor() {
-		return ExcelUtils.readExcel("doctorManage","insertDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage","insertDoctor");
 	}
 
 	/**
@@ -51,7 +51,7 @@ public class DoctorManageTest {
 	
 	@DataProvider(name = "moveTopDoctor")
 	public Iterator<Object[]> moveTopDoctor() {
-		return ExcelUtils.readExcel("doctorManage","moveTopDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage","moveTopDoctor");
 	}
 
 	/**
@@ -65,7 +65,7 @@ public class DoctorManageTest {
 	
 	@DataProvider(name = "editDoctor")
 	public Iterator<Object[]> editDoctor() {
-		return ExcelUtils.readExcel("doctorManage","editDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage","editDoctor");
 	}
 
 	/**
@@ -81,7 +81,7 @@ public class DoctorManageTest {
 
 	@DataProvider(name = "moveDownDoctor")
 	public Iterator<Object[]> moveDownDoctor() {
-		return ExcelUtils.readExcel("doctorManage","moveDownDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage","moveDownDoctor");
 	}
 
 	/**
@@ -95,7 +95,7 @@ public class DoctorManageTest {
 
 	@DataProvider(name = "moveUpDoctor")
 	public Iterator<Object[]> moveUpDoctor() {
-		return ExcelUtils.readExcel("doctorManage","moveUpDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage","moveUpDoctor");
 	}
 
 	/**
@@ -109,7 +109,7 @@ public class DoctorManageTest {
 
 	@DataProvider(name = "searchDoctor")
 	public Iterator<Object[]> searchDoctor() {
-		return ExcelUtils.readExcel("doctorManage","searchDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage","searchDoctor");
 	}
 	
 	/**
@@ -123,7 +123,7 @@ public class DoctorManageTest {
 
 	@DataProvider(name = "deleteDoctor")
 	public Iterator<Object[]> deleteDoctor() {
-		return ExcelUtils.readExcel("doctorManage","deleteDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage","deleteDoctor");
 	}
 
 	@BeforeMethod

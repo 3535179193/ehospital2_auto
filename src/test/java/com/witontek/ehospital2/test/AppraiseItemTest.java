@@ -32,7 +32,7 @@ public class AppraiseItemTest {
 
 	@DataProvider(name = "insertAppraiseItem")
 	public Iterator<Object[]> insertAppraiseItem() {
-		return ExcelUtils.readExcel("appraiseItem","insertAppraiseItem");
+		return ExcelUtils.readTestDataExcel("appraiseItem","insertAppraiseItem");
 	}
 	
 	//删除文本评价项
@@ -51,7 +51,7 @@ public class AppraiseItemTest {
 
 	@DataProvider(name = "insertFromAppraiseItem")
 	public Iterator<Object[]> insertFromAppraiseItem() {
-		return ExcelUtils.readExcel("appraiseItem","insertFromAppraiseItem");
+		return ExcelUtils.readTestDataExcel("appraiseItem","insertFromAppraiseItem");
 	}
 
 	//搜索现有文本评价项
@@ -63,7 +63,7 @@ public class AppraiseItemTest {
 
 	@DataProvider(name = "searchFromAppraiseItem")
 	public Iterator<Object[]> searchFromAppraiseItem() {
-		return ExcelUtils.readExcel("appraiseItem","searchFromAppraiseItem");
+		return ExcelUtils.readTestDataExcel("appraiseItem","searchFromAppraiseItem");
 	}
 	
 

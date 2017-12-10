@@ -38,7 +38,7 @@ public class ConsultManageTest {
 
 	@DataProvider(name = "insertConsultDepartment")
 	public Iterator<Object[]> insertConsultDepartment() {
-		return ExcelUtils.readExcel("consultManage", "insertConsultDepartment");
+		return ExcelUtils.readTestDataExcel("consultManage", "insertConsultDepartment");
 	}
 
 	/**
@@ -61,7 +61,7 @@ public class ConsultManageTest {
 
 	@DataProvider(name = "searchConsultDepartment")
 	public Iterator<Object[]> searchConsultDepartment() {
-		return ExcelUtils.readExcel("consultManage", "searchConsultDepartment");
+		return ExcelUtils.readTestDataExcel("consultManage", "searchConsultDepartment");
 	}
 
 	/**
@@ -77,7 +77,7 @@ public class ConsultManageTest {
 
 	@DataProvider(name = "updateConsultDepartment")
 	public Iterator<Object[]> updateConsultDepartment() {
-		return ExcelUtils.readExcel("consultManage", "updateConsultDepartment");
+		return ExcelUtils.readTestDataExcel("consultManage", "updateConsultDepartment");
 	}
 
 	/**
@@ -91,7 +91,7 @@ public class ConsultManageTest {
 
 	@DataProvider(name = "deleteConsultDepartment")
 	public Iterator<Object[]> deleteConsultDepartment() {
-		return ExcelUtils.readExcel("consultManage", "deleteConsultDepartment");
+		return ExcelUtils.readTestDataExcel("consultManage", "deleteConsultDepartment");
 	}
 
 	@BeforeMethod

@@ -32,7 +32,7 @@ public class AppraiseManageTest {
 
 	@DataProvider(name = "insertAppraise")
 	public Iterator<Object[]> insertAppraise() {
-		return ExcelUtils.readExcel("appraiseManage", "insertAppraise");
+		return ExcelUtils.readTestDataExcel("appraiseManage", "insertAppraise");
 	}
 
 	// 就医评价管理-保存并继续添加就医评价
@@ -51,7 +51,7 @@ public class AppraiseManageTest {
 
 	@DataProvider(name = "searchAppraise")
 	public Iterator<Object[]> searchAppraise() {
-		return ExcelUtils.readExcel("appraiseManage", "searchAppraise");
+		return ExcelUtils.readTestDataExcel("appraiseManage", "searchAppraise");
 	}
 
 	// 就医评价管理-编辑评价问卷
@@ -64,7 +64,7 @@ public class AppraiseManageTest {
 
 	@DataProvider(name = "updateAppraise")
 	public Iterator<Object[]> updateAppraise() {
-		return ExcelUtils.readExcel("appraiseManage", "updateAppraise");
+		return ExcelUtils.readTestDataExcel("appraiseManage", "updateAppraise");
 	}
 
 	// 就医评价管理-删除评价问卷
@@ -76,7 +76,7 @@ public class AppraiseManageTest {
 
 	@DataProvider(name = "deleteAppraise")
 	public Iterator<Object[]> deleteAppraise() {
-		return ExcelUtils.readExcel("appraiseManage", "deleteAppraise");
+		return ExcelUtils.readTestDataExcel("appraiseManage", "deleteAppraise");
 	}
 
 	@BeforeMethod

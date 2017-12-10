@@ -30,12 +30,13 @@ public class Log {
 	public void fatal(String content){
 		log.fatal(DateUtils.getSystemTime()+" 【FATAL】 "+clazz.getCanonicalName()+":"+content);
 		Reporter.log("<span style='color:#ff0000'>"+DateUtils.getSystemTime()+"【FATAL】 "+clazz.getCanonicalName()+":"+content+"</span><br />");
+		Assert.assertEquals(1,2,"故意断言失败，并中断执行此用例");
 	}
 	
 	public void error(String content){
 		log.error(DateUtils.getSystemTime()+" 【ERROR】 "+clazz.getCanonicalName()+":"+content);
 		Reporter.log("<span style='color:red'>"+DateUtils.getSystemTime()+" 【ERROR】 "+clazz.getCanonicalName()+":"+content+"</span><br />");
-
+		Assert.assertEquals(1,2,"故意断言失败，并中断执行此用例");
 	}
 	
 	public void errorShot(String content,WebDriver driver){

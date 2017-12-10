@@ -23,7 +23,6 @@ public class XmlUtils extends BasePage {
 
 	/**
 	 * 获取xml文件中的存放的页面元素
-	 * 
 	 * @param pageName
 	 * @return
 	 */
@@ -66,7 +65,6 @@ public class XmlUtils extends BasePage {
 
 	/**
 	 * 将字符串类型转换成枚举类型LocatorWays
-	 * 
 	 * @param way
 	 * @return
 	 */

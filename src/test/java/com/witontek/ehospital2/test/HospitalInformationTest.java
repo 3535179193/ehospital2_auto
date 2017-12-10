@@ -48,7 +48,7 @@ public class HospitalInformationTest {
 
 	@DataProvider(name = "updateHospitalInformation")
 	public Iterator<Object[]> updateHospitalInformation() {
-		return ExcelUtils.readExcel("hospitalInformation","updateHospitalInformation");
+		return ExcelUtils.readTestDataExcel("hospitalInformation","updateHospitalInformation");
 	}
 
 	@BeforeMethod

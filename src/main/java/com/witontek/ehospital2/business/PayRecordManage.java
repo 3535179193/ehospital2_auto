@@ -2,6 +2,8 @@ package com.witontek.ehospital2.business;
 
 import org.openqa.selenium.WebDriver;
 
+import com.witontek.ehospital2.base.ExcelUtils;
+import com.witontek.ehospital2.base.FileUtils;
 import com.witontek.ehospital2.base.Log;
 import com.witontek.ehospital2.page.PayRecordManagePage;
 import com.witontek.ehospital2.page.SubscriptionManagePage;
@@ -45,5 +47,22 @@ public class PayRecordManage extends PayRecordManagePage{
 		return getPayManPayDate();
 	}
 	
+	/**
+	 * 缴费记录管理-导出缴费信息
+	 * @param execlFileName
+	 * @param line
+	 * @param column
+	 * @return
+	 */
+	public String downloadPayRecords(String execlFileName, String line, String column){
+//		clickPayRecordManageButton();
+		FileUtils.deleteDownloadExcel(execlFileName);
+		clickPayManExportPayInfoButton();
+		sleep(3);
+		String excelCell=ExcelUtils.readDownloadExecl(execlFileName, line, column);
+		FileUtils.deleteDownloadExcel(execlFileName);
+		return excelCell;
+		
+	}
 
 }

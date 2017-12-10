@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="suite">
-
+<!--
 	<test name="LoginTest" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.LoginTest">
@@ -11,7 +11,7 @@
 			</class>
 		</classes>
 	</test>
-<!--
+
 
 	<test name="DepartmentCategoryManageTest" preserve-order="true">
 		<classes>
@@ -88,7 +88,17 @@
 			</class>
 		</classes>
 	</test>
-						
+-->
+	<test name="PayRecordManage" preserve-order="true">
+		<classes>
+			<class name="com.witontek.ehospital2.test.PayRecordManageTest">
+				<methods>
+					<include name="downloadPayRecords"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+<!--				
 	<test name="DeleteAppraise" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.AppraiseManageTest">

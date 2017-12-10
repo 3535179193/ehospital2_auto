@@ -38,7 +38,7 @@ public class DepartmentManageTest {
 
 	@DataProvider(name = "insertDepartment")
 	public Iterator<Object[]> insertDepartment() {
-		return ExcelUtils.readExcel("DepartmentManage", "insertDepartment");
+		return ExcelUtils.readTestDataExcel("DepartmentManage", "insertDepartment");
 	}
 
 	/**
@@ -54,7 +54,7 @@ public class DepartmentManageTest {
 
 	@DataProvider(name = "updateDepartment")
 	public Iterator<Object[]> updateDepartment() {
-		return ExcelUtils.readExcel("DepartmentManage", "updateDepartment");
+		return ExcelUtils.readTestDataExcel("DepartmentManage", "updateDepartment");
 	}
 
 	/**
@@ -68,7 +68,7 @@ public class DepartmentManageTest {
 
 	@DataProvider(name = "searchDepartment")
 	public Iterator<Object[]> searchDepartment() {
-		return ExcelUtils.readExcel("DepartmentManage", "searchDepartment");
+		return ExcelUtils.readTestDataExcel("DepartmentManage", "searchDepartment");
 	}
 
 	/**
@@ -109,7 +109,7 @@ public class DepartmentManageTest {
 
 	@DataProvider(name = "hideDepartment")
 	public Iterator<Object[]> hideDepartment() {
-		return ExcelUtils.readExcel("DepartmentManage", "hideDepartment");
+		return ExcelUtils.readTestDataExcel("DepartmentManage", "hideDepartment");
 	}
 
 	/**
@@ -124,7 +124,7 @@ public class DepartmentManageTest {
 
 	@DataProvider(name = "deleteDepartment")
 	public Iterator<Object[]> deleteDepartment() {
-		return ExcelUtils.readExcel("departmentManage", "deleteDepartment");
+		return ExcelUtils.readTestDataExcel("departmentManage", "deleteDepartment");
 	}
 
 	@BeforeMethod

@@ -35,7 +35,7 @@ public class SubscriptionManageTest {
 
 	@DataProvider(name = "seacheDepartment")
 	public Iterator<Object[]> seacheDepartment() {
-		return ExcelUtils.readExcel("subscriptionManage","seacheDepartment");
+		return ExcelUtils.readTestDataExcel("subscriptionManage","seacheDepartment");
 	}
 
 	// 预约管理-查询医生成功
@@ -47,7 +47,7 @@ public class SubscriptionManageTest {
 
 	@DataProvider(name = "seacheDoctor")
 	public Iterator<Object[]> seacheDoctor() {
-		return ExcelUtils.readExcel("subscriptionManage","seacheDoctor");
+		return ExcelUtils.readTestDataExcel("subscriptionManage","seacheDoctor");
 	}
 	
 	// 预约管理-查询病人成功
@@ -59,7 +59,7 @@ public class SubscriptionManageTest {
 
 	@DataProvider(name = "seachePatient")
 	public Iterator<Object[]> seachePatient() {
-		return ExcelUtils.readExcel("subscriptionManage","seachePatient");
+		return ExcelUtils.readTestDataExcel("subscriptionManage","seachePatient");
 	}
 
 

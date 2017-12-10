@@ -25,7 +25,7 @@ public class LoginPage extends BasePage{
 		getUrl(Global.NEW_LOGIN_URL);
 		input(userNameInputBox, userName);
 		input(passwordInputBox, password);
-		input(validationInputBox, validation);
+//		input(validationInputBox, validation);
 		click(loginButton);
 		
 	}
