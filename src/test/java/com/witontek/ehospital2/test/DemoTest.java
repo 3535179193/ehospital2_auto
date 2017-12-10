@@ -5,9 +5,14 @@
 //import java.sql.DriverManager;
 //import java.sql.ResultSet;
 //import java.sql.Statement;
+//import java.util.HashMap;
 //
 //import org.openqa.selenium.By;
 //import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.remote.CapabilityType;
+//import org.openqa.selenium.remote.DesiredCapabilities;
 //import org.openqa.selenium.support.ui.Sleeper;
 //import org.testng.annotations.AfterTest;
 //import org.testng.annotations.BeforeTest;
@@ -27,26 +32,19 @@
 //	
 //	public static void main(String[] args){
 //
-//        String downloadFilepath = "D:\\java";
-//        HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
-//        chromePrefs.put("profile.default_content_settings.popups", 0);
-//        chromePrefs.put("download.default_directory", downloadFilepath);
-//        ChromeOptions options = new ChromeOptions();
-//        HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
-//        options.setExperimentalOption("prefs",chromePrefs);
-//        options.addArguments("--test-type");
-//        DesiredCapabilities cap = DesiredCapabilities.chrome();
-//        cap.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
-//        cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-//        cap.setCapability(ChromeOptions.CAPABILITY, options);
+//		
+//		
+//		DesiredCapabilities cap=null;
 //        
-//        WebDriver driver = new ChromeDriver(cap);
-//
-//        driver.get("https://www.baidu.com");
-//        driver.findElement(By.id("kw")).click();
-//        driver.findElement(By.id("su")).click();
-//        Thread.sleep(2000);
-//        driver.findElement(By.linkText("普通下载")).click();
+//        WebDriver driver = DriverUtils.getChromeDriver(cap);
+//        
+//        driver.get("http://web.witontek.com/ehospital4web/web/refund.html?!#!/");
+//        driver.findElement(By.xpath("//input[@name='u_name']")).sendKeys("sqszyyadmin");
+//        driver.findElement(By.xpath("//input[@name='u_pass']")).sendKeys("admin");
+//        driver.findElement(By.xpath("//button[@type='submit']")).submit();
+//        driver.findElement(By.xpath("//button[@ng-click='$ctrl.exportPaymentInfo()']")).click();
+//        BrowserUtils.wait(30);
+//        driver.quit();
 //	}
 //					
 //
