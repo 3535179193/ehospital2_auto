@@ -32,7 +32,6 @@ public class PayRecordManage extends PayRecordManagePage{
 		else{
 			return getPayManOrderNumer();
 		}
-
 	}
 	
 	/**
