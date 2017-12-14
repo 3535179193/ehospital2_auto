@@ -97,9 +97,9 @@ public class Locator {
 	 * @param attributeValue
 	 * @return
 	 */
-	public static Locator replaceAttributeValue(Locator locator, String attributeValue) {
-		log.info("替换定位的属性值为："+attributeValue);
-		return new Locator(locator.getName(), locator.getLocatorWay(), locator.getWaitTime(), "//li[contains(.,'"+attributeValue+"')]", locator.getIndex());
+	public static Locator replaceAttributeValue(Locator locator, String textAttribute) {
+		log.info("替换定位的属性值为："+textAttribute);
+		return new Locator(locator.getName(), locator.getLocatorWay(), locator.getWaitTime(), "//li[contains(.,'"+textAttribute+"')]", locator.getIndex());
 	}
 
 }

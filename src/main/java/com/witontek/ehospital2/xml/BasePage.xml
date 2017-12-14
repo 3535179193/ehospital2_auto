@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="基础页">
+
+	<Locator name="替换属性值" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[contains(.,'睿博文本评价项')]"	index="0" >replace</Locator>
+
+</Page>

@@ -398,4 +398,6 @@ public class MainPage extends LoginPage{
 	public void clickRightButton(){
 		click(rightButton);
 	}
+	
+
 }

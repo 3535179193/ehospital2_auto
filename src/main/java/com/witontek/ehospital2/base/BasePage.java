@@ -10,5 +10,12 @@ public class BasePage extends WebElementsUtils{
 		super(driver);
 	}
 	
+	Locator replace=XmlUtils.getElementXml("BasePage").get("replace");
+	
+	//替换属性值的属性
+	public Locator replaceAttributeValue(String textAttribute){
+		return Locator.replaceAttributeValue(replace, textAttribute);
+	}
+	
 
 }

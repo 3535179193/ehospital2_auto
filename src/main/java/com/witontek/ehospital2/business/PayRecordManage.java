@@ -7,7 +7,6 @@ import com.witontek.ehospital2.base.FileUtils;
 import com.witontek.ehospital2.base.Locator;
 import com.witontek.ehospital2.base.Log;
 import com.witontek.ehospital2.page.PayRecordManagePage;
-import com.witontek.ehospital2.page.SubscriptionManagePage;
 
 public class PayRecordManage extends PayRecordManagePage{
 
@@ -19,30 +18,28 @@ public class PayRecordManage extends PayRecordManagePage{
 	
 	/**
 	 * 缴费记录管理-通过订单号查询
-	 * @param orderNumber
 	 * @return
 	 */
-	public String seacheOrderNumber(String orderNumber){
-		clickPayRecordManageButton();
-		inputPayManOrderNumberInputBox(orderNumber);
-		clickPayManSearchButton();
+	public void seacheOrderNumber(){
 		if(getTotalRecords().equals("0")){
-			return null;
+			log.warn("无缴费订单，不执行此测试用例");
 		}
 		else{
-			return getPayManOrderNumer();
+			inputPayManOrderNumberInputBox(getPayManOrderNumer());
+			clickPayManSearchButton();
+			if(getTotalRecords().equals("1"))
+				log.info("缴费记录管理-通过订单号查询成功");
+			else
+				log.errorShot("缴费记录管理-通过订单号查询失败", driver);
 		}
 	}
 	
 	/**
 	 * 缴费记录管理-通过就诊人查询
-	 * @param patientName
 	 * @return
 	 */
-	public String seachePatientName(String patientName){
-		inputPayManPatientInputBox(patientName);
-		clickPayManSearchButton();
-		return getPayManPatientName();
+	public void seachePatientName(){
+		inputPayManPatientInputBox(getPayManPatientName());
 	}
 	
 	/**

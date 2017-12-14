@@ -22,7 +22,7 @@
 	<Locator name="缴费记录管理-支付类型-手机微信支付多选框"			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-change='$ctrl.typeIsCheckAllHandle()']"		index="3"	>payManMobilePhoneAlipayCheckBox</Locator>
 	<Locator name="缴费记录管理-支付类型-Minipay微信支付多选框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-change='$ctrl.typeIsCheckAllHandle()']"		index="4"	>payManMinipayWeChatCheckBox</Locator>
 	<Locator name="缴费记录管理-支付类型-Minipay支付宝支付多选框"	 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-change='$ctrl.typeIsCheckAllHandle()']"		index="5"	>payManMinipayAlipayCheckBox</Locator>
-   
+   	
 	<Locator name="缴费记录管理-默认列表单选按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@value='default-table']"			>payManDefaultListRadioButton</Locator>
 	<Locator name="缴费记录管理-订单缴费信息单选按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@value='order-table']"				>payManOrderPayInfoRadioButton</Locator>
 	<Locator name="缴费记录管理-总金额" 					locatorWay="XPATH"	waitTime="10"	attributeValue="$ctrl.paymentRecordsListData['totle_amt']"	>payManTotalAmount</Locator>	
@@ -39,7 +39,7 @@
 		<Locator name="缴费记录管理-支付类型"		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['pay_type'] | payType']"		index="0"	>payManPayType</Locator>
  		<Locator name="缴费记录管理-费用类型"		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['fee_type']']"					index="0"	>payManFeeType</Locator>
 		<Locator name="缴费记录管理-缴费日期"		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['update_time']']"				index="0"	>payManPayDate</Locator>			
-
+	
 	<Locator name="缴费记录管理-详情按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[@ng-click='$ctrl.goToRecordsDetail(item)']"		index="0"	>payManDetailButton</Locator>
-						
+							
 </Page>
