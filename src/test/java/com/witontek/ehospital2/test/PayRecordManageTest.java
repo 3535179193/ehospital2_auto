@@ -36,6 +36,13 @@ public class PayRecordManageTest {
 	public Iterator<Object[]> downloadPayRecords() {
 		return ExcelUtils.readTestDataExcel("payRecordManage", "downloadPayRecords");
 	}
+	
+	// 缴费记录管理
+	@Test(enabled = true)
+	public void clickLast() {
+		PayRecordManage payRecordManage = new PayRecordManage(driver);
+		payRecordManage.clickLast();
+	}
 
 	@BeforeMethod
 	public void beforeMethod() {

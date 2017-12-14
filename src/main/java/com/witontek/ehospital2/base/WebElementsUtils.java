@@ -14,8 +14,11 @@ public class WebElementsUtils extends BrowserUtils{
 		super(driver);
 	}
 	
-	
-	//定位页面元素
+	/**
+	 * 定位页面元素
+	 * @param locator
+	 * @return
+	 */
 	public WebElement getElement(Locator locator){
 		WebElement webElement = null;
 		if(locator.getIndex()==999)
@@ -47,10 +50,13 @@ public class WebElementsUtils extends BrowserUtils{
 		return webElement;
 	}
 	
-	//每定位一个元素都加上一个显示等待
+	/**
+	 * 每定位一个元素都加上一个显示等待
+	 * @param locator
+	 * @return
+	 */
 	public WebElement findElement(final Locator locator){
-		//等待0.4秒，防止页面元素加载过慢，定位不到页面元素
-		wait(4);
+		wait(4);		//等待0.4秒，防止虽然已定位到页面元素，但是页面还没展开
 		WebElement webElement=null;
 		WebDriverWait wait=new WebDriverWait(driver, locator.getWaitTime());
 		
@@ -65,7 +71,10 @@ public class WebElementsUtils extends BrowserUtils{
 		return webElement;
 	}
 
-	//点击
+	/**
+	 * 点击
+	 * @param locator
+	 */
 	public void click(Locator locator){
 		try{
 			
@@ -76,7 +85,11 @@ public class WebElementsUtils extends BrowserUtils{
 		log.info("点击"+locator.getName());
 	}
 	
-	//先清空输入框再输入
+	/**
+	 * 先清空输入框再输入
+	 * @param locator
+	 * @param content
+	 */
 	public void clearAndInput(Locator locator,String content){
 		try{
 			findElement(locator).clear();
@@ -93,7 +106,11 @@ public class WebElementsUtils extends BrowserUtils{
 		log.info("在"+locator.getName()+"输入："+content);
 	}
 	
-	//输入
+	/**
+	 * 输入
+	 * @param locator
+	 * @param content
+	 */
 	public void input(Locator locator,String content){
 		try{
 			findElement(locator).sendKeys(content);
@@ -103,7 +120,10 @@ public class WebElementsUtils extends BrowserUtils{
 		log.info("在"+locator.getName()+"输入："+content);
 	}
 	
-	//提交
+	/**
+	 * 提交
+	 * @param locator
+	 */
 	public void submit(Locator locator){
 		try{
 			findElement(locator).submit();
@@ -113,7 +133,11 @@ public class WebElementsUtils extends BrowserUtils{
 		log.info("提交"+locator.getName());
 	}
 	
-	//获取页面元素文本信息
+	/**
+	 * 获取页面元素文本信息
+	 * @param locator
+	 * @return
+	 */
 	public String getText(Locator locator){
 		String text=null;
 		try{
@@ -125,21 +149,28 @@ public class WebElementsUtils extends BrowserUtils{
 		return text;
 	}
 	
-	//弹框-确认
+	/**
+	 * 弹框-确认
+	 */
 	public void alertAccept(){
 		sleep(1);
 		driver.switchTo().alert().accept();
 		log.info("点击弹框的确认按钮");
 	}
 	
-	//弹框-取消
+	/**
+	 * 弹框-取消
+	 */
 	public void alertDismiss(){
 		sleep(1);
 		driver.switchTo().alert().dismiss();
 		log.info("点击弹框的取消按钮");
 	}
 	
-	//获取弹框文本
+	/**
+	 * 获取弹框文本
+	 * @return
+	 */
 	public String alertText(){
 		sleep(1);
 		String text=driver.switchTo().alert().getText();
@@ -147,14 +178,20 @@ public class WebElementsUtils extends BrowserUtils{
 		return text;
 	}
 	
-	//向弹框输入文本信息
+	/**
+	 * 向弹框输入文本信息
+	 * @param text
+	 */
 	public void inputAlertText(String text){
 		sleep(1);
 		driver.switchTo().alert().sendKeys(text);
 		log.info("向弹框输入文本信息:"+text);
 	}
 	
-	//跳转frame
+	/**
+	 * 跳转frame
+	 * @param locator
+	 */
 	public void switchToFrame(Locator locator){
 		try{
 			driver.switchTo().frame(findElement(locator));
@@ -164,7 +201,9 @@ public class WebElementsUtils extends BrowserUtils{
 		log.info("跳转至"+locator.getName());
 	}
 	
-	//返回上一级frame
+	/**
+	 * 返回上一级frame
+	 */
 	public void switchToDefault(){
 		driver.switchTo().defaultContent();
 		log.info("返回上一级表单");

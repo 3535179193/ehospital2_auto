@@ -1,6 +1,10 @@
 package com.witontek.ehospital2.base;
 
+import com.witontek.ehospital2.page.PayRecordManagePage;
+
 public class Locator {
+	
+	private static Log log=new Log(Locator.class);
 	
 	public enum LocatorWays{
 		XPATH,CSS,ID,NAME,LINK,
@@ -74,6 +78,18 @@ public class Locator {
 	
 	public String getPassword(){
 		return password;
+	}
+	
+	/**
+	 * 替换索引index
+	 * @param locator
+	 * @param index
+	 * @return
+	 */
+	public static Locator replaceIndex(Locator locator,int index){
+		log.info("替换定位的索引");
+		return new Locator(locator.getName(),locator.getLocatorWay(), locator.getWaitTime(), locator.getAttributeValue(), index-1);
+		
 	}
 	
 	

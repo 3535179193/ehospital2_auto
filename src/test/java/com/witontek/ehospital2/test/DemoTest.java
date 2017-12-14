@@ -6,6 +6,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 import org.openqa.selenium.By;
@@ -20,6 +23,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.reporters.XMLUtils;
 
+import com.sun.jna.platform.unix.X11.XClientMessageEvent.Data;
 import com.witontek.ehospital2.base.BrowserUtils;
 import com.witontek.ehospital2.base.DateUtils;
 import com.witontek.ehospital2.base.DriverUtils;
@@ -34,14 +38,28 @@ import com.witontek.ehospital2.page.LoginPage;
 public class DemoTest {
 	
 	public static void main(String[] args){
-		String string=ExcelUtils.readDownloadExecl("宿迁市中医院缴费信息.xls", "3", "2");
-		System.out.println(string);
-//		FileUtils.deleteDownloadExcel("宿迁市中医院缴费信息.xls");
-	}
-					
 
+//		SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//		String string="2017-12-12 16:50:01";
+//		String string2="2017-12-12 16:50:00";
+//		Date date=null;
+//		Date date2=null;
+//		try {
+//			date=simpleDateFormat.parse(string);
+//			date2=simpleDateFormat.parse(string2);
+//		} catch (ParseException e) {
+//			e.printStackTrace();
+//		}
+//		long timeStamp=date.getTime();
+//		long timeStamp2=date2.getTime();
+//		System.out.println(timeStamp);
+//		System.out.println(timeStamp2);
+//	}
+		int i=266%26;
+		System.out.println(i);
 		
-		
+	}
+}
 //	    Connection c = null;
 //	    Statement stmt = null;
 //	    try {
@@ -94,4 +112,4 @@ public class DemoTest {
 //		BrowserUtils.quit();
 //	}
 
-}
+

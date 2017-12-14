@@ -11,11 +11,11 @@ public class DateUtils{
 	 * @return
 	 */
 	public static String getDates(long day){
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
 		long timeStamp=date.getTime()+day*1000*60*60*24;
 		Date dates=new Date(timeStamp);
-		return format.format(dates);
+		return simpleDateFormat.format(dates);
 	}
 	
 	/**
@@ -23,9 +23,9 @@ public class DateUtils{
 	 * @return
 	 */
 	public static String getSystemTime(){
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
 		Date date = new Date();
-		return format.format(date.getTime());
+		return simpleDateFormat.format(date.getTime());
 	}
 
 }
