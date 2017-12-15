@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="PayRecordManage"
-           tests="1"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="4.904">
+           time="9.099">
   <properties />
   
   
-            <testcase name="clickLast" time="4.904" classname="com.witontek.ehospital2.test.PayRecordManageTest" />
+            <testcase name="searchPatientName" time="5.026" classname="com.witontek.ehospital2.test.PayRecordManageTest" />
+                <testcase name="seacheOrderNumber" time="4.073" classname="com.witontek.ehospital2.test.PayRecordManageTest" />
       
 </testsuite>

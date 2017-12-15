@@ -1,0 +1,187 @@
+main 2017-12-13 23:03:59:825 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
+main 2017-12-13 23:04:09:557 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/ehospital5web/web/admin.html#!/
+main 2017-12-13 23:04:10:398 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin
+main 2017-12-13 23:04:10:964 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin
+main 2017-12-13 23:04:11:511 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮
+main 2017-12-13 23:04:13:320 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击统计分析
+main 2017-12-13 23:04:13:859 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理
+main 2017-12-13 23:04:14:436 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击最末页按钮
+main 2017-12-13 23:04:14:922 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息
+main 2017-12-13 23:04:14:923 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：266
+main 2017-12-13 23:04:15:417 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总页数的文本信息
+main 2017-12-13 23:04:15:417 [INFO] com.witontek.ehospital2.page.MainPage:总页数：27
+main 2017-12-13 23:04:15:896【ERROR】 com.witontek.ehospital2.base.WebElementsUtils:查找缴费记录管理-详情按钮带索引的网页元素时出错,报错信息：Index: 23, Size: 12
+main 2017-12-13 23:04:16:850 [INFO] com.witontek.ehospital2.base.BrowserUtils:截图成功
+main 2017-12-13 23:04:19:909 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒
+main 2017-12-13 23:04:21:772 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器
+main 2017-12-13 23:07:50:939 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
+main 2017-12-13 23:07:59:279 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/ehospital5web/web/admin.html#!/
+main 2017-12-13 23:07:59:917 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin
+main 2017-12-13 23:08:00:475 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin
+main 2017-12-13 23:08:01:007 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮
+main 2017-12-13 23:08:02:369 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击统计分析
+main 2017-12-13 23:08:02:949 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理
+main 2017-12-13 23:08:03:505 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击最末页按钮
+main 2017-12-13 23:08:03:987 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息
+main 2017-12-13 23:08:03:988 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：266
+main 2017-12-13 23:08:04:497 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总页数的文本信息
+main 2017-12-13 23:08:04:498 [INFO] com.witontek.ehospital2.page.MainPage:总页数：27
+main 2017-12-13 23:08:04:499 [INFO] com.witontek.ehospital2.base.Locator:替换定位的索引
+main 2017-12-13 23:08:04:958【ERROR】 com.witontek.ehospital2.base.WebElementsUtils:查找缴费记录管理-详情按钮带索引的网页元素时出错,报错信息：Index: 23, Size: 12
+main 2017-12-13 23:08:05:367 [INFO] com.witontek.ehospital2.base.BrowserUtils:截图成功
+main 2017-12-13 23:08:08:375 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒
+main 2017-12-13 23:08:09:798 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器
+main 2017-12-13 23:11:49:930 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
+main 2017-12-13 23:11:58:490 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/ehospital5web/web/admin.html#!/
+main 2017-12-13 23:11:59:101 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin
+main 2017-12-13 23:11:59:634 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin
+main 2017-12-13 23:12:00:189 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮
+main 2017-12-13 23:12:01:628 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击统计分析
+main 2017-12-13 23:12:02:167 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理
+main 2017-12-13 23:12:02:710 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击最末页按钮
+main 2017-12-13 23:12:03:201 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息
+main 2017-12-13 23:12:03:203 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：266
+main 2017-12-13 23:12:03:694 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总页数的文本信息
+main 2017-12-13 23:12:03:695 [INFO] com.witontek.ehospital2.page.MainPage:总页数：27
+main 2017-12-13 23:12:03:696 [INFO] com.witontek.ehospital2.base.Locator:替换定位的索引
+main 2017-12-13 23:12:04:304【ERROR】 com.witontek.ehospital2.base.WebElementsUtils:未定位到页面元素，点击缴费记录管理-详情按钮失败,报错信息：element not visible
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 42 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir12976_26385}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2d2c57af82c4c577a35af2c5dad5d3bf
+main 2017-12-13 23:12:04:734 [INFO] com.witontek.ehospital2.base.BrowserUtils:截图成功
+main 2017-12-13 23:12:07:741 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒
+main 2017-12-13 23:12:09:273 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器
+main 2017-12-13 23:14:59:051 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
+main 2017-12-13 23:15:07:867 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/ehospital5web/web/admin.html#!/
+main 2017-12-13 23:15:08:473 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin
+main 2017-12-13 23:15:09:032 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin
+main 2017-12-13 23:15:09:591 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮
+main 2017-12-13 23:15:10:872 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击统计分析
+main 2017-12-13 23:15:11:429 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理
+main 2017-12-13 23:15:11:981 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击最末页按钮
+main 2017-12-13 23:15:12:542 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理-订单缴费信息单选按钮
+main 2017-12-13 23:15:13:034 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息
+main 2017-12-13 23:15:13:035 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：266
+main 2017-12-13 23:15:13:525 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总页数的文本信息
+main 2017-12-13 23:15:13:526 [INFO] com.witontek.ehospital2.page.MainPage:总页数：27
+main 2017-12-13 23:15:13:526 [INFO] com.witontek.ehospital2.base.Locator:替换定位的索引
+main 2017-12-13 23:15:14:125 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理-详情按钮
+main 2017-12-13 23:15:17:130 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒
+main 2017-12-13 23:15:18:714 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器
+main 2017-12-13 23:15:41:371 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
+main 2017-12-13 23:15:49:860 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/ehospital5web/web/admin.html#!/
+main 2017-12-13 23:15:50:451 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin
+main 2017-12-13 23:15:50:982 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin
+main 2017-12-13 23:15:51:524 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮
+main 2017-12-13 23:15:52:929 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击统计分析
+main 2017-12-13 23:15:53:463 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理
+main 2017-12-13 23:15:54:020 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击最末页按钮
+main 2017-12-13 23:15:54:579 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理-订单缴费信息单选按钮
+main 2017-12-13 23:15:55:080 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息
+main 2017-12-13 23:15:55:081 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：266
+main 2017-12-13 23:15:55:584 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总页数的文本信息
+main 2017-12-13 23:15:55:584 [INFO] com.witontek.ehospital2.page.MainPage:总页数：27
+main 2017-12-13 23:15:55:585 [INFO] com.witontek.ehospital2.base.Locator:替换定位的索引
+main 2017-12-13 23:15:56:191 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理-详情按钮
+main 2017-12-13 23:15:59:195 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒
+main 2017-12-13 23:16:00:629 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器
+main 2017-12-13 23:17:18:288 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
+main 2017-12-13 23:17:30:247 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/ehospital5web/web/admin.html#!/
+main 2017-12-13 23:17:30:858 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin
+main 2017-12-13 23:17:31:412 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin
+main 2017-12-13 23:17:31:986 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮
+main 2017-12-13 23:17:33:557 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击统计分析
+main 2017-12-13 23:17:34:097 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理
+main 2017-12-13 23:17:34:649 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击最末页按钮
+main 2017-12-13 23:17:35:202 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理-订单缴费信息单选按钮
+main 2017-12-13 23:17:35:716 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息
+main 2017-12-13 23:17:35:718 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：266
+main 2017-12-13 23:17:36:208 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总页数的文本信息
+main 2017-12-13 23:17:36:209 [INFO] com.witontek.ehospital2.page.MainPage:总页数：27
+main 2017-12-13 23:17:36:209 [INFO] com.witontek.ehospital2.base.Locator:替换定位的索引
+main 2017-12-13 23:17:36:710【ERROR】 com.witontek.ehospital2.base.WebElementsUtils:未定位到页面元素，点击缴费记录管理-详情按钮失败,报错信息：element not visible
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir15180_18805}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 639883f99c70c50d6b86563d03207479
+main 2017-12-13 23:17:37:140 [INFO] com.witontek.ehospital2.base.BrowserUtils:截图成功
+main 2017-12-13 23:17:40:148 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒
+main 2017-12-13 23:17:41:438 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器
+main 2017-12-13 23:18:35:004 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
+main 2017-12-13 23:18:43:725 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/ehospital5web/web/admin.html#!/
+main 2017-12-13 23:18:44:338 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin
+main 2017-12-13 23:18:44:885 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin
+main 2017-12-13 23:18:45:423 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮
+main 2017-12-13 23:18:46:744 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击统计分析
+main 2017-12-13 23:18:47:285 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理
+main 2017-12-13 23:18:47:836 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击最末页按钮
+main 2017-12-13 23:18:48:389 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理-订单缴费信息单选按钮
+main 2017-12-13 23:18:48:876 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息
+main 2017-12-13 23:18:48:877 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：266
+main 2017-12-13 23:18:49:363 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总页数的文本信息
+main 2017-12-13 23:18:49:364 [INFO] com.witontek.ehospital2.page.MainPage:总页数：27
+main 2017-12-13 23:18:49:365 [INFO] com.witontek.ehospital2.base.Locator:替换定位的索引
+main 2017-12-13 23:18:49:880【ERROR】 com.witontek.ehospital2.base.WebElementsUtils:未定位到页面元素，点击缴费记录管理-详情按钮失败,报错信息：element not visible
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir14288_19709}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: e9ce4029c7ff4d84b9b579317c86dbeb
+main 2017-12-13 23:18:50:296 [INFO] com.witontek.ehospital2.base.BrowserUtils:截图成功
+main 2017-12-13 23:18:53:304 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒
+main 2017-12-13 23:18:54:838 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器
+main 2017-12-13 23:19:49:279 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
+main 2017-12-13 23:19:57:855 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/ehospital5web/web/admin.html#!/
+main 2017-12-13 23:19:58:476 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin
+main 2017-12-13 23:19:59:029 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin
+main 2017-12-13 23:19:59:566 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮
+main 2017-12-13 23:20:00:953 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击统计分析
+main 2017-12-13 23:20:01:501 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理
+main 2017-12-13 23:20:02:045 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击最末页按钮
+main 2017-12-13 23:20:02:613 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理-订单缴费信息单选按钮
+main 2017-12-13 23:20:03:099 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息
+main 2017-12-13 23:20:03:100 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：266
+main 2017-12-13 23:20:03:589 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总页数的文本信息
+main 2017-12-13 23:20:03:590 [INFO] com.witontek.ehospital2.page.MainPage:总页数：27
+main 2017-12-13 23:20:03:591 [INFO] com.witontek.ehospital2.base.Locator:替换定位的索引
+main 2017-12-13 23:20:04:101【ERROR】 com.witontek.ehospital2.base.WebElementsUtils:未定位到页面元素，点击缴费记录管理-详情按钮失败,报错信息：element not visible
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'USER-20160525XQ', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir9816_7580}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: e59680256531c63fdcda9c9a9d5337cb
+main 2017-12-13 23:20:04:544 [INFO] com.witontek.ehospital2.base.BrowserUtils:截图成功
+main 2017-12-13 23:20:07:552 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒
+main 2017-12-13 23:20:09:245 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器
+main 2017-12-13 23:24:30:769 [INFO] com.witontek.ehospital2.base.DriverUtils:打开谷歌浏览器
+main 2017-12-13 23:24:39:177 [INFO] com.witontek.ehospital2.base.BrowserUtils:打开网址:http://web.witontek.com/ehospital5web/web/admin.html#!/
+main 2017-12-13 23:24:39:780 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在用户名输入框输入：sqszyyadmin
+main 2017-12-13 23:24:40:330 [INFO] com.witontek.ehospital2.base.WebElementsUtils:在密码输入框输入：admin
+main 2017-12-13 23:24:40:847 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击登录按钮
+main 2017-12-13 23:24:42:506 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击统计分析
+main 2017-12-13 23:24:43:043 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理
+main 2017-12-13 23:24:43:588 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击最末页按钮
+main 2017-12-13 23:24:44:148 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理-订单缴费信息单选按钮
+main 2017-12-13 23:24:44:644 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总记录数的文本信息
+main 2017-12-13 23:24:44:645 [INFO] com.witontek.ehospital2.page.MainPage:总记录数：266
+main 2017-12-13 23:24:45:148 [INFO] com.witontek.ehospital2.base.WebElementsUtils:获取总页数的文本信息
+main 2017-12-13 23:24:45:148 [INFO] com.witontek.ehospital2.page.MainPage:总页数：27
+main 2017-12-13 23:24:45:149 [INFO] com.witontek.ehospital2.base.Locator:替换定位的索引
+main 2017-12-13 23:24:45:751 [INFO] com.witontek.ehospital2.base.WebElementsUtils:点击缴费记录管理-详情按钮
+main 2017-12-13 23:24:48:755 [INFO] com.witontek.ehospital2.base.BrowserUtils:等待3秒
+main 2017-12-13 23:24:50:138 [INFO] com.witontek.ehospital2.base.BrowserUtils:退出浏览器

@@ -88,18 +88,23 @@
 			</class>
 		</classes>
 	</test>
-	<include name="downloadPayRecords"></include>
+	
+	
+	
 -->
 	<test name="PayRecordManage" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.PayRecordManageTest">
 				<methods>
-					
+					<include name="downloadPayRecords"></include>
+					<include name="seacheOrderNumber"></include>
+					<include name="searchPatientName"></include>
 					<include name="clickLast"></include>
 				</methods>
 			</class>
 		</classes>
 	</test>
+
 <!--				
 	<test name="DeleteAppraise" preserve-order="true">
 		<classes>
@@ -142,8 +147,8 @@
 			</class>
 		</classes>
 	</test>
-
-
+-->
+<!--
 	<test name="DeleteCategory" preserve-order="true">
 		<classes>
 			<class name="com.witontek.ehospital2.test.DepartmentCategoryManageTest">

@@ -37,7 +37,7 @@ public class DoctorManageTest {
 
 	@DataProvider(name = "insertDoctor")
 	public Iterator<Object[]> insertDoctor() {
-		return ExcelUtils.readTestDataExcel("doctorManage","insertDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage", "insertDoctor");
 	}
 
 	/**
@@ -48,10 +48,10 @@ public class DoctorManageTest {
 		DoctorManage doctorManage = new DoctorManage(driver);
 		AssertUtils.assertActualEqualExpect(doctorManage.moveTopDoctor(), expectedResult, caseName);
 	}
-	
+
 	@DataProvider(name = "moveTopDoctor")
 	public Iterator<Object[]> moveTopDoctor() {
-		return ExcelUtils.readTestDataExcel("doctorManage","moveTopDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage", "moveTopDoctor");
 	}
 
 	/**
@@ -62,10 +62,10 @@ public class DoctorManageTest {
 		DoctorManage doctorManage = new DoctorManage(driver);
 		AssertUtils.assertActualEqualExpect(doctorManage.editDoctor(), expectedResult, caseName);
 	}
-	
+
 	@DataProvider(name = "editDoctor")
 	public Iterator<Object[]> editDoctor() {
-		return ExcelUtils.readTestDataExcel("doctorManage","editDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage", "editDoctor");
 	}
 
 	/**
@@ -74,14 +74,14 @@ public class DoctorManageTest {
 	@Test(dataProvider = "moveDownDoctor", dependsOnMethods = {"moveTopDoctor"}, enabled = true)
 	public void moveDownDoctor(String caseName, String expectedResult, Map<String, String> testData) {
 		DoctorManage doctorManage = new DoctorManage(driver);
-		AssertUtils.assertActualEqualExpect(doctorManage.moveDownDoctor(testData.get("doctorName"), testData.get("doctorCode"), testData.get("phone"),
-				testData.get("shortNumber"), testData.get("schoolName"), testData.get("doctorSummary"), testData.get("doctorSpecialty"),
-				testData.get("email"), testData.get("medicalLicense")), expectedResult, caseName);
+		AssertUtils.assertActualEqualExpect(doctorManage.moveDownDoctor(testData.get("doctorName"), testData.get("doctorCode"),
+				testData.get("phone"), testData.get("shortNumber"), testData.get("schoolName"), testData.get("doctorSummary"),
+				testData.get("doctorSpecialty"), testData.get("email"), testData.get("medicalLicense")), expectedResult, caseName);
 	}
 
 	@DataProvider(name = "moveDownDoctor")
 	public Iterator<Object[]> moveDownDoctor() {
-		return ExcelUtils.readTestDataExcel("doctorManage","moveDownDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage", "moveDownDoctor");
 	}
 
 	/**
@@ -95,7 +95,7 @@ public class DoctorManageTest {
 
 	@DataProvider(name = "moveUpDoctor")
 	public Iterator<Object[]> moveUpDoctor() {
-		return ExcelUtils.readTestDataExcel("doctorManage","moveUpDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage", "moveUpDoctor");
 	}
 
 	/**
@@ -109,21 +109,22 @@ public class DoctorManageTest {
 
 	@DataProvider(name = "searchDoctor")
 	public Iterator<Object[]> searchDoctor() {
-		return ExcelUtils.readTestDataExcel("doctorManage","searchDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage", "searchDoctor");
 	}
-	
+
 	/**
 	 * 数据库操作-删除新增的医生
 	 */
 	@Test(dataProvider = "deleteDoctor", enabled = true)
 	public void deleteDoctor(String caseName, String expectedResult, Map<String, String> testData) {
 		DoctorManage doctorManage = new DoctorManage(driver);
-		doctorManage.deleteDoctor(testData.get("databaseName"),testData.get("sql"), testData.get("doctorName"));
+		doctorManage
+				.deleteDoctor(testData.get("doctorName"), testData.get("tableName"), testData.get("conditionKey"), testData.get("conditionValue"));
 	}
 
 	@DataProvider(name = "deleteDoctor")
 	public Iterator<Object[]> deleteDoctor() {
-		return ExcelUtils.readTestDataExcel("doctorManage","deleteDoctor");
+		return ExcelUtils.readTestDataExcel("doctorManage", "deleteDoctor");
 	}
 
 	@BeforeMethod

@@ -25,6 +25,7 @@ import org.testng.reporters.XMLUtils;
 
 import com.sun.jna.platform.unix.X11.XClientMessageEvent.Data;
 import com.witontek.ehospital2.base.BrowserUtils;
+import com.witontek.ehospital2.base.DatabaseUtils;
 import com.witontek.ehospital2.base.DateUtils;
 import com.witontek.ehospital2.base.DriverUtils;
 import com.witontek.ehospital2.base.ExcelUtils;
@@ -37,7 +38,7 @@ import com.witontek.ehospital2.page.LoginPage;
 
 public class DemoTest {
 	
-	public static void main(String[] args){
+//	public static void main(String[] args){
 
 //		SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //		String string="2017-12-12 16:50:01";
@@ -55,11 +56,16 @@ public class DemoTest {
 //		System.out.println(timeStamp);
 //		System.out.println(timeStamp2);
 //	}
-		int i=266%26;
-		System.out.println(i);
 		
-	}
-}
+//		DatabaseUtils.deleteDate("doctors", "doctor_name", "宁璟");
+//		DatabaseUtils.deleteDate("departments", "department_name", "睿博二级科室");
+//		DatabaseUtils.selectCountNumber("new_order", "patient_name", "彭金侠");
+		
+//	}
+//}
+
+
+
 //	    Connection c = null;
 //	    Statement stmt = null;
 //	    try {
@@ -85,31 +91,29 @@ public class DemoTest {
 	
 	
 	
-//	private WebDriver driver;
-//
-//	@Test
-//	public void beforeMethod() {
-//		String downloadPath=System.getProperty("usr.dir")+"/downloadFilePath";
-//		
-//		
-//		
-//		
-//		LoginPage login = new LoginPage(driver);
-//		login.login("http://web.witontek.com/ehospital4web/web/refund.html?!#!/", "qdcyrmyyadmin", "admin");
-//		driver.findElement(By.xpath("//button[@ng-click='$ctrl.exportPaymentInfo()']")).click();
-//		
-//	
-//	}
-//
-//	@BeforeTest
-//	public void beforeTest() {
-//		driver = DriverUtils.getChromeDriver();
-//	}
-//
-//	@AfterTest
-//	public void afterTest() {
-//		BrowserUtils.sleep(3);
-//		BrowserUtils.quit();
-//	}
+	private WebDriver driver;
 
+	@Test
+	public void beforeMethod() {
+		LoginPage login = new LoginPage(driver);
+		login.login(Global.USER_NAME, Global.PASSWORD, Global.VALIDATION);
+		driver.findElement(By.xpath("//span[contains(.,'统计分析')]")).click();
+		BrowserUtils.sleep(3);
+		driver.findElements(By.xpath("//span[contains(.,'缴费记录管理')]")).get(0).click();
+		BrowserUtils.sleep(3);
+		String textString=driver.findElements(By.xpath("//ul[@class='d-table-row ng-scope']/li[1]")).get(0).getText();
+		System.out.println(textString);
+	}
+
+	@BeforeTest
+	public void beforeTest() {
+		driver = DriverUtils.getChromeDriver();
+	}
+
+	@AfterTest
+	public void afterTest() {
+		BrowserUtils.sleep(3);
+		BrowserUtils.quit();
+	}
+}
 

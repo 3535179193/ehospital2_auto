@@ -143,6 +143,7 @@ public class WebElementsUtils extends BrowserUtils{
 		try{
 			text=findElement(locator).getText();
 		}catch(Exception e){
+			e.printStackTrace();
 			log.errorShot("未定位到页面元素，获取"+locator.getName()+"的文本信息失败,报错信息："+e.getMessage(), driver);
 		}
 		log.info("获取"+locator.getName()+"的文本信息");

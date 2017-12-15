@@ -150,9 +150,8 @@ public class DepartmentManage extends DepartmentManagePage {
 	 * @param sql
 	 * @return
 	 */
-	public String deleteDepartment(String databaseName, String sql) {
-		System.out.println(databaseName);
-		DatabaseUtils.deleteDate(databaseName, sql);
+	public String deleteDepartment(String tableName, String conditionKey, String conditionValue) {
+		DatabaseUtils.deleteDate(tableName, conditionKey, conditionValue);
 		clickDepartmentCategoryManageButton();
 		clickCateManViewDepartmentButton();
 		return getTotalRecords();

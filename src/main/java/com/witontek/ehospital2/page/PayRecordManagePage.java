@@ -44,7 +44,7 @@ public class PayRecordManagePage extends MainPage{
 	protected Locator payManDefaultListRadioButton=XmlUtils.getElementXml("PayRecordManagePage").get("payManDefaultListRadioButton");
 	protected Locator payManOrderPayInfoRadioButton=XmlUtils.getElementXml("PayRecordManagePage").get("payManOrderPayInfoRadioButton");	
 	protected Locator payManTotalAmount=XmlUtils.getElementXml("PayRecordManagePage").get("payManTotalAmount");
-		protected Locator payManOrderNumer=XmlUtils.getElementXml("PayRecordManagePage").get("payManOrderNumer");
+		protected Locator payManOrderNumber=XmlUtils.getElementXml("PayRecordManagePage").get("payManOrderNumber");
 		protected Locator payManOrderAmount=XmlUtils.getElementXml("PayRecordManagePage").get("payManOrderAmount");
 		protected Locator payManOrderState=XmlUtils.getElementXml("PayRecordManagePage").get("payManOrderState");	
 		protected Locator payManClinicCard=XmlUtils.getElementXml("PayRecordManagePage").get("payManClinicCard");
@@ -176,10 +176,10 @@ public class PayRecordManagePage extends MainPage{
 	}
 	
 	//获取缴费记录管理-订单号
-	public String getPayManOrderNumer(){
-		String orderNumer=getText(payManOrderNumer);
-		log.info("缴费记录管理-订单号："+orderNumer);
-		return orderNumer;
+	public String getPayManOrderNumber(){
+		String orderNumber=getText(payManOrderNumber);
+		log.info("缴费记录管理-订单号："+orderNumber);
+		return orderNumber;
 	}
 	
 	//获取缴费记录管理-订单金额

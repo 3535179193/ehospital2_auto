@@ -1,7 +1,5 @@
 package com.witontek.ehospital2.base;
 
-import com.witontek.ehospital2.page.PayRecordManagePage;
-
 public class Locator {
 
 	private static Log log = new Log(Locator.class);

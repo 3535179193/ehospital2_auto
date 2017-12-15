@@ -2,7 +2,7 @@
 <Page name="缴费记录管理">
 
 	<Locator name="缴费记录管理-订单号输入框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.paymentRecordsListParam.trade_no']"	>payManOrderNumberInputBox</Locator>
-	<Locator name="缴费记录管理-就诊人输入框"			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-model='$ctrl.paymentRecordsListParam.key_word	']"	>payManPatientInputBox</Locator>
+	<Locator name="缴费记录管理-就诊人输入框"			locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@placeholder='请输入就诊人姓名搜索']"						>payManPatientInputBox</Locator>
 	<Locator name="缴费记录管理-搜索按钮" 			locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.searchPaymentRecordList()']"			>payManSearchButton</Locator>
 	<Locator name="缴费记录管理-导出缴费信息按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//button[@ng-click='$ctrl.exportPaymentInfo()']"				>payManExportPayInfoButton</Locator>
 
@@ -23,23 +23,23 @@
 	<Locator name="缴费记录管理-支付类型-Minipay微信支付多选框" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-change='$ctrl.typeIsCheckAllHandle()']"		index="4"	>payManMinipayWeChatCheckBox</Locator>
 	<Locator name="缴费记录管理-支付类型-Minipay支付宝支付多选框"	 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@ng-change='$ctrl.typeIsCheckAllHandle()']"		index="5"	>payManMinipayAlipayCheckBox</Locator>
    	
-	<Locator name="缴费记录管理-默认列表单选按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@value='default-table']"			>payManDefaultListRadioButton</Locator>
-	<Locator name="缴费记录管理-订单缴费信息单选按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@value='order-table']"				>payManOrderPayInfoRadioButton</Locator>
-	<Locator name="缴费记录管理-总金额" 					locatorWay="XPATH"	waitTime="10"	attributeValue="$ctrl.paymentRecordsListData['totle_amt']"	>payManTotalAmount</Locator>	
-		<Locator name="缴费记录管理-订单号" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['trade_no']']"					index="0"	>payManOrderNumer</Locator>
-		<Locator name="缴费记录管理-订单金额" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['order_amount']']"				index="0"	>payManOrderAmount</Locator>
-		<Locator name="缴费记录管理-订单状态" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['order_status']| payStatus']"	index="0"	>payManOrderState</Locator>
-		<Locator name="缴费记录管理-就诊卡号" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['patient_card']']"				index="0"	>payManClinicCard</Locator>
-		<Locator name="缴费记录管理-门诊号" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['his_id']']"					index="0"	>payManClinicNumber</Locator>
- 		<Locator name="缴费记录管理-就诊人姓名"	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['patient_name']']"				index="0"	>payManPatientName</Locator>
-		<Locator name="缴费记录管理-性别"		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['gender']']"					index="0"	>payManGender</Locator>
-		<Locator name="缴费记录管理-年龄" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['age']']"						index="0"	>payManAge</Locator>
-		<Locator name="缴费记录管理-身份证号" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['id_card']']"					index="0"	>payManIDCard</Locator>
- 		<Locator name="缴费记录管理-就诊科室"		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['department_name']']"			index="0"	>payManClinicDepartment</Locator>
-		<Locator name="缴费记录管理-支付类型"		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['pay_type'] | payType']"		index="0"	>payManPayType</Locator>
- 		<Locator name="缴费记录管理-费用类型"		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['fee_type']']"					index="0"	>payManFeeType</Locator>
-		<Locator name="缴费记录管理-缴费日期"		locatorWay="XPATH"	waitTime="10"	attributeValue="//li[@ng-bind='item['update_time']']"				index="0"	>payManPayDate</Locator>			
+	<Locator name="缴费记录管理-默认列表单选按钮" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@value='default-table']"				>payManDefaultListRadioButton</Locator>
+	<Locator name="缴费记录管理-订单缴费信息单选按钮" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//input[@value='order-table']"					>payManOrderPayInfoRadioButton</Locator>
+	<Locator name="缴费记录管理-总金额" 					locatorWay="XPATH"	waitTime="10"	attributeValue="//span[@class='fc-red ng-binding']"	index="0"	>payManTotalAmount</Locator>	
+		<Locator name="缴费记录管理-订单号" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[1]"	index="0"	>payManOrderNumber</Locator>
+		<Locator name="缴费记录管理-订单金额" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[2]"	index="0"	>payManOrderAmount</Locator>
+		<Locator name="缴费记录管理-订单状态" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[3]"	index="0"	>payManOrderState</Locator>
+		<Locator name="缴费记录管理-就诊卡号" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[4]"	index="0"	>payManClinicCard</Locator>
+		<Locator name="缴费记录管理-门诊号" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[5]"	index="0"	>payManClinicNumber</Locator>
+ 		<Locator name="缴费记录管理-就诊人姓名"	locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[6]"	index="0"	>payManPatientName</Locator>
+		<Locator name="缴费记录管理-性别"		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[7]"	index="0"	>payManGender</Locator>
+		<Locator name="缴费记录管理-年龄" 		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[8]"	index="0"	>payManAge</Locator>
+		<Locator name="缴费记录管理-身份证号" 	locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[9]"	index="0"	>payManIDCard</Locator>
+ 		<Locator name="缴费记录管理-就诊科室"		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[10]"	index="0"	>payManClinicDepartment</Locator>
+		<Locator name="缴费记录管理-支付类型"		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[11]"	index="0"	>payManPayType</Locator>
+ 		<Locator name="缴费记录管理-费用类型"		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[12]"	index="0"	>payManFeeType</Locator>
+		<Locator name="缴费记录管理-缴费日期"		locatorWay="XPATH"	waitTime="10"	attributeValue="//ul[@class='d-table-row ng-scope']/li[13]"	index="0"	>payManPayDate</Locator>			
 	
-	<Locator name="缴费记录管理-详情按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[@ng-click='$ctrl.goToRecordsDetail(item)']"		index="0"	>payManDetailButton</Locator>
+	<Locator name="缴费记录管理-详情按钮"			locatorWay="XPATH"	waitTime="10"	attributeValue="//a[@ng-click='$ctrl.goToRecordsDetail(item)']"	index="0"	>payManDetailButton</Locator>
 							
 </Page>
