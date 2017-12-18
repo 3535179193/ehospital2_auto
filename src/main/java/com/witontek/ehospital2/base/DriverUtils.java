@@ -3,9 +3,11 @@ package com.witontek.ehospital2.base;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.bcel.generic.RETURN;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -45,5 +47,16 @@ public class DriverUtils {
 		return driver;
 	}
 	
+	public static WebDriver getGeckoDriver(){
+		System.out.println(System.getProperty("user.dir")+Global.GECKO_DRIVER_PATH);
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+Global.GECKO_DRIVER_PATH);
+		WebDriver driver = new FirefoxDriver();  
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		log.info("打开火狐浏览器");
+		
+		return driver;
+	}
 
 }

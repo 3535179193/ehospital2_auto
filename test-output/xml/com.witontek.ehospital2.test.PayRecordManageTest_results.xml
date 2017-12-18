@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="9.099">
+           time="8.889">
   <properties />
   
   
-            <testcase name="searchPatientName" time="5.026" classname="com.witontek.ehospital2.test.PayRecordManageTest" />
-                <testcase name="seacheOrderNumber" time="4.073" classname="com.witontek.ehospital2.test.PayRecordManageTest" />
+            <testcase name="seacheOrderNumber" time="4.748" classname="com.witontek.ehospital2.test.PayRecordManageTest" />
+                <testcase name="searchPatientName" time="4.141" classname="com.witontek.ehospital2.test.PayRecordManageTest" />
       
 </testsuite>

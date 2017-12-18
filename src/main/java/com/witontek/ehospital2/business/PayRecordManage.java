@@ -59,7 +59,6 @@ public class PayRecordManage extends PayRecordManagePage{
 	 * @param conditionKey
 	 */
 	public void searchPatientName(String tableName,String conditionKey){
-		clickPayRecordManageButton();
 		inputPayManPatientInputBox(getPayManPatientName());
 		clickPayManSearchButton();
 		String totalRecord=DatabaseUtils.selectCountNumber(tableName, conditionKey, getPayManPatientName());
@@ -76,15 +75,18 @@ public class PayRecordManage extends PayRecordManagePage{
 	 * @param orderNumber
 	 * @return
 	 */
-	public String seacheDepartment(String orderNumber){
-		clickSelectStartDateButton();
-		clickDateSelDefaultTodayButton();
-		clickSelectEndDateButton();
-		clickDateSelDefaultTodayButton();
-		clickPayManSearchButton();
+	public String searchStartDate(){
+		
+		
 		return getPayManPayDate();
 	}
 	
+	
+	
+	
+	/*
+	 * 
+	 */
 	public void clickLast(){
 		clickPayRecordManageButton();
 		clickLastPageButton();

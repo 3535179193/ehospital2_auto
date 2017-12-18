@@ -81,12 +81,12 @@ public class MainPage extends LoginPage{
 	protected Locator dateSelDeleteButton=XmlUtils.getElementXml("MainPage").get("dateSelDeleteButton");
 	protected Locator dateSelGiveUpButton=XmlUtils.getElementXml("MainPage").get("dateSelGiveUpButton");
 	protected Locator dateSelDefaultTodayButton=XmlUtils.getElementXml("MainPage").get("dateSelDefaultTodayButton");
-	protected Locator defaultDateButton=XmlUtils.getElementXml("MainPage").get("defaultDateButton");
-	protected Locator defaultMonthButton=XmlUtils.getElementXml("MainPage").get("defaultMonthButton");
-	protected Locator monthToggleButton=XmlUtils.getElementXml("MainPage").get("monthToggleButton");
-	protected Locator yearToggleButton=XmlUtils.getElementXml("MainPage").get("yearToggleButton");
-	protected Locator leftButton=XmlUtils.getElementXml("MainPage").get("leftButton");
-	protected Locator rightButton=XmlUtils.getElementXml("MainPage").get("rightButton");
+	protected Locator dateSelDefaultDateButton=XmlUtils.getElementXml("MainPage").get("dateSelDefaultDateButton");
+	protected Locator dateSelDefaultMonthButton=XmlUtils.getElementXml("MainPage").get("dateSelDefaultMonthButton");
+	protected Locator dateSelMonthToggleButton=XmlUtils.getElementXml("MainPage").get("dateSelMonthToggleButton");
+	protected Locator dateSelYearToggleButton=XmlUtils.getElementXml("MainPage").get("dateSelYearToggleButton");
+	protected Locator dateSelLeftButton=XmlUtils.getElementXml("MainPage").get("dateSelLeftButton");
+	protected Locator dateSelRightButton=XmlUtils.getElementXml("MainPage").get("dateSelRightButton");
 
 	//得到用户名
 	public String getUserName(){
@@ -371,32 +371,32 @@ public class MainPage extends LoginPage{
 	
 	//点击日期选择器-默认日期按钮
 	public void clickDefaultDateButton(){
-		click(defaultDateButton);
+		click(dateSelDefaultDateButton);
 	}
 	
 	//点击日期选择器-默认月份按钮
 	public void clickDefaultMonthButton(){
-		click(defaultMonthButton);
+		click(dateSelDefaultMonthButton);
 	}
 	
 	//点击日期选择器-月份切换按钮
 	public void clickMonthToggleButton(){
-		click(monthToggleButton);
+		click(dateSelMonthToggleButton);
 	}
 	
 	//点击日期选择器-年份切换按钮
 	public void clickYearToggleButton(){
-		click(yearToggleButton);
+		click(dateSelYearToggleButton);
 	}
 	
 	//点击日期选择器-左移按钮
 	public void clickLeftButton(){
-		click(leftButton);
+		click(dateSelLeftButton);
 	}
 	
 	//点击日期选择器-右移按钮
 	public void clickRightButton(){
-		click(rightButton);
+		click(dateSelRightButton);
 	}
 	
 

@@ -7,6 +7,9 @@ public class Global {
 	//ChromeDriver的路径
 	public static final String CHROME_DRIVER_PATH=globalProperties.propertiesValue("CHROME_DRIVER_PATH");
 	
+	//GeckoDriver的路径
+	public static final String GECKO_DRIVER_PATH=globalProperties.propertiesValue("GECKO_DRIVER_PATH");
+	
 	//新医路通后台url
 	public static final String LOGIN_URL=globalProperties.propertiesValue("LOGIN_URL");
 	

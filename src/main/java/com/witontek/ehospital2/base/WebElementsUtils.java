@@ -31,7 +31,7 @@ public class WebElementsUtils extends BrowserUtils{
 				case LINK:webElement=driver.findElement(By.partialLinkText(locator.getAttributeValue()));break;
 				}
 				}catch(Exception e){
-					log.errorShot("查找"+locator.getName()+"的网页元素时出错,报错信息："+e.getMessage(), driver);
+					log.errorShot("查找（"+locator.getName()+"）的网页元素时出错,报错信息："+e.getMessage(), driver);
 					
 				}
 		else
@@ -45,7 +45,7 @@ public class WebElementsUtils extends BrowserUtils{
 				case LINK:webElement=driver.findElements(By.partialLinkText(locator.getAttributeValue())).get(locator.getIndex());break;
 				}
 				}catch(Exception e){
-					log.errorShot("查找"+locator.getName()+"带索引的网页元素时出错,报错信息："+e.getMessage(), driver);
+					log.errorShot("查找（"+locator.getName()+"）带索引的网页元素时出错,报错信息："+e.getMessage(), driver);
 				}
 		return webElement;
 	}
@@ -66,7 +66,7 @@ public class WebElementsUtils extends BrowserUtils{
 				return getElement(locator);
 			}
 		});}catch(Exception e){
-			log.errorShot("查找"+locator.getName()+"的网页元素时超时显示等待时间,报错信息："+e.getMessage(), driver);
+			log.errorShot("查找（"+locator.getName()+"）的网页元素时超时显示等待时间,报错信息："+e.getMessage(), driver);
 		}
 		return webElement;
 	}
@@ -80,9 +80,9 @@ public class WebElementsUtils extends BrowserUtils{
 			
 			findElement(locator).click();
 		}catch(Exception e){
-			log.errorShot("未定位到页面元素，点击"+locator.getName()+"失败,报错信息："+e.getMessage(), driver);
+			log.errorShot("未定位到页面元素，点击（"+locator.getName()+"）失败,报错信息："+e.getMessage(), driver);
 		}
-		log.info("点击"+locator.getName());
+		log.info("点击（"+locator.getName()+"）");
 	}
 	
 	/**
@@ -94,16 +94,16 @@ public class WebElementsUtils extends BrowserUtils{
 		try{
 			findElement(locator).clear();
 		}catch(Exception e){
-			log.errorShot("未定位到页面元素，清空"+locator.getName()+"失败,报错信息："+e.getMessage(), driver);
+			log.errorShot("未定位到页面元素，清空（"+locator.getName()+"）失败,报错信息："+e.getMessage(), driver);
 		}
-		log.info("清空"+locator.getName());
+		log.info("清空（"+locator.getName()+"）");
 		
 		try{
 			findElement(locator).sendKeys(content);
 		}catch(Exception e){
-			log.errorShot("未定位到页面元素，在"+locator.getName()+"输入："+content+"失败,报错信息："+e.getMessage(), driver);
+			log.errorShot("未定位到页面元素，在（"+locator.getName()+"）输入："+content+"失败,报错信息："+e.getMessage(), driver);
 		}
-		log.info("在"+locator.getName()+"输入："+content);
+		log.info("在（"+locator.getName()+"）输入："+content);
 	}
 	
 	/**
@@ -115,9 +115,9 @@ public class WebElementsUtils extends BrowserUtils{
 		try{
 			findElement(locator).sendKeys(content);
 		}catch(Exception e){
-			log.errorShot("未定位到页面元素，在"+locator.getName()+"输入："+content+"失败,报错信息："+e.getMessage(), driver);
+			log.errorShot("未定位到页面元素，在（"+locator.getName()+"）输入："+content+"失败,报错信息："+e.getMessage(), driver);
 		}
-		log.info("在"+locator.getName()+"输入："+content);
+		log.info("在（"+locator.getName()+"）输入："+content);
 	}
 	
 	/**
@@ -128,9 +128,9 @@ public class WebElementsUtils extends BrowserUtils{
 		try{
 			findElement(locator).submit();
 		}catch(Exception e){
-			log.errorShot("未定位到页面元素，提交"+locator.getName()+"失败,报错信息："+e.getMessage(), driver);
+			log.errorShot("未定位到页面元素，提交（"+locator.getName()+"）失败,报错信息："+e.getMessage(), driver);
 		}
-		log.info("提交"+locator.getName());
+		log.info("提交（"+locator.getName()+"）");
 	}
 	
 	/**
@@ -144,9 +144,9 @@ public class WebElementsUtils extends BrowserUtils{
 			text=findElement(locator).getText();
 		}catch(Exception e){
 			e.printStackTrace();
-			log.errorShot("未定位到页面元素，获取"+locator.getName()+"的文本信息失败,报错信息："+e.getMessage(), driver);
+			log.errorShot("未定位到页面元素，获取（"+locator.getName()+"）的文本信息失败,报错信息："+e.getMessage(), driver);
 		}
-		log.info("获取"+locator.getName()+"的文本信息");
+		log.info("获取（"+locator.getName()+"）的文本信息");
 		return text;
 	}
 	

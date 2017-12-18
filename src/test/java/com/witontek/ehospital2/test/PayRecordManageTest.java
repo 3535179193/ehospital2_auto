@@ -71,7 +71,7 @@ public class PayRecordManageTest {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = DriverUtils.getChromeDriver();
+		driver = DriverUtils.getGeckoDriver();
 	}
 
 	@AfterClass
