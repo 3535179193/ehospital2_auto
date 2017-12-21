@@ -27,18 +27,31 @@ public class Log {
 		System.setProperty("org.uncommons.reportng.escape-output","false");
 	}
 	
+	/**
+	 * 打印fatal级别的日志
+	 * @param content
+	 */
 	public void fatal(String content){
 		log.fatal(DateUtils.getSystemTime()+" 【FATAL】 "+clazz.getCanonicalName()+":"+content);
 		Reporter.log("<span style='color:#ff0000'>"+DateUtils.getSystemTime()+"【FATAL】 "+clazz.getCanonicalName()+":"+content+"</span><br />");
 		Assert.assertEquals(1,2,"故意断言失败，并中断执行此用例");
 	}
 	
+	/**
+	 * 打印error级别的日志
+	 * @param content
+	 */
 	public void error(String content){
 		log.error(DateUtils.getSystemTime()+" 【ERROR】 "+clazz.getCanonicalName()+":"+content);
 		Reporter.log("<span style='color:red'>"+DateUtils.getSystemTime()+" 【ERROR】 "+clazz.getCanonicalName()+":"+content+"</span><br />");
 		Assert.assertEquals(1,2,"故意断言失败，并中断执行此用例");
 	}
 	
+	/**
+	 * 打印error级别的日志并截图
+	 * @param content
+	 * @param driver
+	 */
 	public void errorShot(String content,WebDriver driver){
 		log.error(DateUtils.getSystemTime()+"【ERROR】 "+clazz.getCanonicalName()+":"+content);
 		Reporter.log("<span style='color:red'>"+DateUtils.getSystemTime()+" 【ERROR】 "+clazz.getCanonicalName()+":"+content+"</span><br />");
@@ -50,21 +63,37 @@ public class Log {
         Assert.assertEquals(1,2,"故意断言失败，并中断执行此用例");
 	}
 	
+	/**
+	 * 打印warn级别的日志
+	 * @param content
+	 */
 	public void warn(String content){
 		log.warn(DateUtils.getSystemTime()+" 【WARN】 "+clazz.getCanonicalName()+":"+content);
 		Reporter.log("<span style='color:orange'>"+DateUtils.getSystemTime()+" 【WARN】 "+clazz.getCanonicalName()+":"+content+"</span><br />");
 	}
 	
+	/**
+	 * 打印info级别的日志
+	 * @param content
+	 */
 	public void info(String content){
 		log.info(DateUtils.getSystemTime()+" [INFO] "+clazz.getCanonicalName()+":"+content);
 		Reporter.log("<span style='color:blue'>"+DateUtils.getSystemTime()+" [INFO] "+clazz.getCanonicalName()+":"+content+"</span><br />");
 	}
 	
+	/**
+	 * 打印debug级别的日志
+	 * @param content
+	 */
 	public void debug(String content){
 		log.debug(DateUtils.getSystemTime()+" [DEBUG] "+clazz.getCanonicalName()+":"+content);
 		Reporter.log(DateUtils.getSystemTime()+" [DEBUG] "+clazz.getCanonicalName()+":"+content+"<br />");
 	}
 	
+	/**
+	 * 打印trace级别的日志
+	 * @param content
+	 */
 	public void trace(String content){
 		log.trace(DateUtils.getSystemTime()+" [TRACE] "+clazz.getCanonicalName()+":"+content);
 		Reporter.log(DateUtils.getSystemTime()+" [TRACE] "+clazz.getCanonicalName()+":"+content+"<br />");

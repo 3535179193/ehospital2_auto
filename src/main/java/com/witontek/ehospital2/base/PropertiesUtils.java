@@ -17,6 +17,11 @@ public class PropertiesUtils {
 		this.propertiesName=propertiesName;
 	}
 	
+	/**
+	 * 读取properties文件中的值
+	 * @param key
+	 * @return
+	 */
 	public String propertiesValue(String key){
 //		InputStream in=PropertiesUtils.class.getClassLoader().getResourceAsStream("com/witontek/ehospital2/config/"+propertiesName+".properties");
 		
